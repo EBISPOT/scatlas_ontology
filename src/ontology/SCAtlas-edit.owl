@@ -1,0 +1,61 @@
+
+Prefix(:=<http://purl.obolibrary.org/obo/SCAtlas.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/SCAtlas.owl>
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/bto_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/cl_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/chebi_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/go_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/peco_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/pato_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/to_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/po_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/wbls_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/ncit_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/uberon_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/uberon-bridge-to-fbbt_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/ncbitaxon_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/SCAtlas/imports/efo_import.owl>)
+
+
+
+Annotation(dce:title "Single Cell Atlas")
+Annotation(dcterms:license "Unspecified")
+Annotation(dce:description "None")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/SCATLAS_00000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/SCATLAS_00000000>
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SCATLAS_00000000> "root node"@en)
+
+
+)
+

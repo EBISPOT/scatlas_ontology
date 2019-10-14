@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/bto_import.owl" uri="imports/bto_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/bto_import.obo" uri="imports/bto_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/cl_import.owl" uri="imports/cl_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/cl_import.obo" uri="imports/cl_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/go_import.owl" uri="imports/go_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/go_import.obo" uri="imports/go_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/peco_import.owl" uri="imports/peco_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/peco_import.obo" uri="imports/peco_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/pato_import.obo" uri="imports/pato_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/to_import.owl" uri="imports/to_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/to_import.obo" uri="imports/to_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/po_import.owl" uri="imports/po_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/po_import.obo" uri="imports/po_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/wbls_import.owl" uri="imports/wbls_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/wbls_import.obo" uri="imports/wbls_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/ncit_import.obo" uri="imports/ncit_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/uberon-bridge-to-fbbt_import.owl" uri="imports/uberon-bridge-to-fbbt_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/uberon-bridge-to-fbbt_import.obo" uri="imports/uberon-bridge-to-fbbt_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
+  
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/efo_import.owl" uri="imports/efo_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/SCAtlas/imports/efo_import.obo" uri="imports/efo_import.obo"/>
+  
+
+
+  
+
+  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
+</catalog>
