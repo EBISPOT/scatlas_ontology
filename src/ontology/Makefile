@@ -1,5 +1,5 @@
 # ----------------------------------------
-# Makefile for SCAtlas
+# Makefile for scatlas
 # Generated using ontology-starter-kit
 # ODK Version: v1.2.18
 # ----------------------------------------
@@ -11,7 +11,7 @@
 # these can be overwritten on the command line
 
 URIBASE=                    http://purl.obolibrary.org/obo
-ONT=                        SCAtlas
+ONT=                        scatlas
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
@@ -185,7 +185,7 @@ OTHER_SRC =
 
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
-	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/SCAtlas_terms.sparql $@
+	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/scatlas_terms.sparql $@
 
 
 
@@ -479,4 +479,4 @@ build-docker:
 
 
 
-include SCAtlas.Makefile
+include scatlas.Makefile
