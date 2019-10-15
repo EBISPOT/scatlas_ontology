@@ -67,7 +67,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  bto cl chebi go peco pato to po wbls ncit uberon ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
+IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
@@ -314,6 +314,16 @@ mirror/pato.trigger: $(SRC)
 
 mirror/pato.owl: mirror/pato.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pato.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: fbbt
+## Copy of fbbt is re-downloaded whenever source changes
+mirror/fbbt.trigger: $(SRC)
+
+mirror/fbbt.owl: mirror/fbbt.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/fbbt.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

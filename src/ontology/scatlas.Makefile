@@ -6,3 +6,69 @@
 
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
 	cat $< | cut -f3 -s > $@
+
+seed.txt: ../curation/scatlas_seed.txt
+	mv $< $@
+	echo 'http://www.ebi.ac.uk/efo/EFO_0000001' >> $@
+
+
+COMPONENT_FILES= $(patsubst %.owl, components/%.owl, $(notdir $(wildcard components/*.owl)))
+
+
+all_components: $(COMPONENT_FILES)
+	echo $(COMPONENT_FILES)
+
+
+SCATLAS_KEEPRELATIONS= ../curation/scatlas_relations.txt
+
+components/%_simple_seed.txt: seed.txt
+	cp $< $@
+
+
+
+components/simple_seed.txt: ../sparql/seed_extract.sparql components/%.owl
+	$(ROBOT) query -i components/%.owl --query ../sparql/seed_extract.sparql $@
+
+
+components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	$(ROBOT) merge --input $<  \
+		reason --reasoner ELK  \
+		relax \
+		remove --axioms equivalent \
+		remove --axioms disjoint \
+		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
+		relax \
+		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: components/%.owl
+
+
+imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
+	$(ROBOT) 	merge $(patsubst %, -i %, $^) \
+	remove --axioms disjoint  -o $@
+
+imports/fbbt_import.owl: imports/fbbt_merged.owl imports/fbbt_terms_combined.txt
+	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/fbbt_terms_combined.txt --force true --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: imports/fbbt_import.owl
+
+../template/subclass_terms.owl: ../template/subclass_terms.csv
+	$(ROBOT) template --merge-before --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" -o $@
+
+
+
+
+components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	$(ROBOT) merge --input $<  \
+		reason --reasoner ELK  \
+		relax \
+		remove --axioms equivalent \
+		remove --axioms disjoint \
+		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
+		relax \
+		filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: components/%.owl
