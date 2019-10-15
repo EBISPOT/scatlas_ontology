@@ -38,21 +38,33 @@ components/%_seed_extract.sparql: seed.txt
 
 components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt
 	$(ROBOT) query --input $< --select components/$*_seed_extract.sparql $@.tmp && \
-	cat seed.txt $@.tmp | sort | uniq > $@ # && rm $@.tmp
+	cat seed.txt $@.tmp | sort | uniq > $@  && rm $@.tmp
+	#sed -i '/BFO_0000001/d' $@
+	#sed -i '/BFO_0000002/d' $@
+	#sed -i '/BFO_0000003/d' $@
+	#sed -i '/BTO_0000000/d' $@
+	#sed -i '/UBERON_0000000/d' $@
+	#sed -i '/Orphanet_183634/d' $@
+	#sed -i '/Orphanet_208593/d' $@
+	#sed -i '/orpha.*ObsoleteClass/d' $@
 
 
+
+
+	#comm -2 -3 $@ ../curation/blacklist.txt > $@
+  #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
 components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) merge --input $<  \
 		reason --reasoner ELK  \
-		remove --axioms disjoint \
+		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
 		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
-		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: components/%.owl
 
+	#reduce -r ELK \
 
 imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
 	$(ROBOT) 	merge $(patsubst %, -i %, $^) \
@@ -65,7 +77,7 @@ imports/fbbt_import.owl: imports/fbbt_merged.owl imports/fbbt_terms_combined.txt
 .PRECIOUS: imports/fbbt_import.owl
 
 components/subclasses.owl: ../template/subclass_terms.csv
-	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
+	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
 

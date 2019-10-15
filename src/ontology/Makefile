@@ -23,7 +23,7 @@ REPORTDIR=                  reports
 TMPDIR=                     tmp
 SPARQLDIR =                 ../sparql
 REPORT_FAIL_ON =            ERROR
-OBO_FORMAT_OPTIONS =        
+OBO_FORMAT_OPTIONS =
 SPARQL_VALIDATION_CHECKS =  equivalent-classes trailing-whitespace owldef-self-reference xref-syntax nolabels
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms
 ODK_VERSION =               v1.2.18
@@ -41,7 +41,7 @@ RELEASE_ARTEFACTS = $(sort  full base base full)
 # ----------------------------------------
 
 .PHONY: .FORCE
-all: odkversion all_imports all_main all_subsets sparql_test all_reports all_assets
+all: odkversion all_imports all_components all_main all_subsets sparql_test all_reports all_assets
 test: odkversion sparql_test all_reports
 	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed all --output test.owl && rm test.owl && echo "Success"
 
@@ -57,7 +57,7 @@ $TMPDIR:
 ## By default this is the cross-product of {ont, ont-base} x FORMATS
 
 MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(ONT)-$(r)) $(ONT))
-MAIN_GZIPPED = 
+MAIN_GZIPPED =
 MAIN_FILES = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
 
 all_main: $(MAIN_FILES)
@@ -99,7 +99,7 @@ all_subsets: $(SUBSET_FILES)
 ##
 
 
-PATTERNS = 
+PATTERNS =
 
 PATTERN_ROOTS = $(patsubst %, $(PATTERNDIR)/%, $(PATTERNS))
 PATTERN_FILES = $(foreach n,$(PATTERN_ROOTS), $(n).owl)
@@ -181,20 +181,11 @@ ANNOTATE_VERSION_IRI = annotate -V $(ONTBASE)/releases/$(TODAY)/$@.owl
 # by default we use ELK to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 
-OTHER_SRC =  
+OTHER_SRC =
 
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/scatlas_terms.sparql $@
-
-
-
-
-
-
-
-
-
 
 
 # base: OTHER sources of interest, such as definitions owl
