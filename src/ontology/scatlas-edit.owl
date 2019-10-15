@@ -37,6 +37,10 @@ Import(<http://purl.obolibrary.org/obo/scatlas/components/ordo.owl>)
 
 Import(<http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl>)
 
+Import(<http://purl.obolibrary.org/obo/scatlas/components/fbbt.owl>)
+
+Import(<http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl>)
+
 Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
 
 

@@ -5,10 +5,12 @@
 ## changes here rather than in the main Makefile
 
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
-	cat $< | cut -f3 -s > $@
+	cat $< | cut -f3 -s | sort | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | uniq > $@
+
+
 
 seed.txt: ../curation/scatlas_seed.txt
-	mv $< $@
+	cp $< $@
 	echo 'http://www.ebi.ac.uk/efo/EFO_0000001' >> $@
 
 
@@ -21,20 +23,28 @@ all_components: $(COMPONENT_FILES)
 
 SCATLAS_KEEPRELATIONS= ../curation/scatlas_relations.txt
 
-components/%_simple_seed.txt: seed.txt
-	cp $< $@
+
+components_sparql = $(patsubst %, components/%_seed_extract.sparql, $(IMPORTS))
+components_seeds = $(patsubst %, components/%_simple_seed.txt, $(IMPORTS))
+.PHONY: prepare_components
+prepare_components:
+	touch $(components_sparql)   &&\
+	touch $(components_seeds)
 
 
+components/%_seed_extract.sparql: seed.txt
+	sh ../scripts/generate_sparql_subclass_query.sh seed.txt $@
 
-components/simple_seed.txt: ../sparql/seed_extract.sparql components/%.owl
-	$(ROBOT) query -i components/%.owl --query ../sparql/seed_extract.sparql $@
+
+components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt
+	$(ROBOT) query --input $< --select components/$*_seed_extract.sparql $@.tmp && \
+	cat seed.txt $@.tmp | sort | uniq > $@ # && rm $@.tmp
+
 
 
 components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) merge --input $<  \
 		reason --reasoner ELK  \
-		relax \
-		remove --axioms equivalent \
 		remove --axioms disjoint \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
@@ -54,8 +64,8 @@ imports/fbbt_import.owl: imports/fbbt_merged.owl imports/fbbt_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/fbbt_import.owl
 
-../template/subclass_terms.owl: ../template/subclass_terms.csv
-	$(ROBOT) template --merge-before --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" -o $@
+components/subclasses.owl: ../template/subclass_terms.csv
+	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
 
