@@ -94,6 +94,11 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl" uri="components/ncbitaxon.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.obo" uri="components/ncbitaxon.obo"/>
 
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/fbbt.owl" uri="components/fbbt.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl" uri="components/subclasses.owl"/>
+
+
+
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.owl" uri="components/efo.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.obo" uri="components/efo.obo"/>
 
