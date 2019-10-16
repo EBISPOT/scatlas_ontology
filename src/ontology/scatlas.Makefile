@@ -5,7 +5,7 @@
 ## changes here rather than in the main Makefile
 
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
-	cat $< | cut -f3 -s | sort | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | uniq > $@
+	cat $< | cut -f3 -s | sed 's/\r//' | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
 
 
 
@@ -95,10 +95,30 @@ components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(S
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: components/%.owl
 
-sca.owl:
-	$(ROBOT) merge --input $(SRC) \
-		remove -T curation/blacklist.txt \ 
+$(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
+	$(ROBOT) merge --input $(SRC) -i components/subclasses.owl \
+		remove --axioms equivalent --trim false \
+		remove --term-file ../curation/blacklist.txt \
 		reason --reasoner ELK --equivalent-classes-allowed all \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+
+
+../curation/retrieved_seed.txt:   ../sparql/seed_class.sparql
+	$(ROBOT) query -i sca.owl --query ../sparql/seed_class.sparql $@.tmp
+	cat $@.tmp | sed 's/\r//' | sort | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
+
+#sca.owl to be added as dependent
+
+../curation/both_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
+	comm -12 ../curation/retrieved_seed.txt  ../curation/scatlas_seed.txt > $@
+
+
+../curation/not_in_curated_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
+	comm -12 ../curation/retrieved_seed.txt  ../curation/scatlas_seed.txt > $@
+
+../curation/not_retrieved_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
+	comm -12 ../curation/scatlas_seed.txt ../curation/retrieved_seed.txt  > $@
+
+all_diffs: ../curation/both_seeds.txt ../curation/not_in_curated_seeds.txt ../curation/not_retrieved_seeds.txt ../curation/retrieved_seed.txt

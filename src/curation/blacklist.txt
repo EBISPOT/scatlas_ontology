@@ -4,3 +4,4 @@ http://www.orpha.net/ORDO/ObsoleteClass
 http://www.orpha.net/ORDO/Orphanet_183634
 http://www.orpha.net/ORDO/Orphanet_208593
 http://purl.obolibrary.org/obo/NCIT_C20189
+http://purl.obolibrary.org/obo/CL_0000000
