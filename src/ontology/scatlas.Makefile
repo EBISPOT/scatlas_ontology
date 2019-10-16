@@ -94,3 +94,11 @@ components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(S
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: components/%.owl
+
+sca.owl:
+	$(ROBOT) merge --input $(SRC) \
+		remove -T curation/blacklist.txt \ 
+		reason --reasoner ELK --equivalent-classes-allowed all \
+		relax \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
