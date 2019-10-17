@@ -80,8 +80,6 @@ components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-
-
 components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) merge --input $<  \
 		reason --reasoner ELK  \
@@ -110,15 +108,11 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 	cat $@.tmp | sed 's/\r//' | sort | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
 
 #sca.owl to be added as dependent
+../curation/curated_but_not_retrieved.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
+	comm -13  ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt > $@
 
-../curation/both_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
-	comm -12 ../curation/retrieved_seed.txt  ../curation/scatlas_seed.txt > $@
+../curation/curated_and_retrieved.txt: ../curation/curated_but_not_retrieved.txt ../curation/scatlas_seed.txt
+	comm -13  ../curation/curated_but_not_retrieved.txt ../curation/scatlas_seed.txt > $@
 
 
-../curation/not_in_curated_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
-	comm -12 ../curation/retrieved_seed.txt  ../curation/scatlas_seed.txt > $@
-
-../curation/not_retrieved_seeds.txt: ../curation/retrieved_seed.txt ../curation/scatlas_seed.txt
-	comm -12 ../curation/scatlas_seed.txt ../curation/retrieved_seed.txt  > $@
-
-all_diffs: ../curation/both_seeds.txt ../curation/not_in_curated_seeds.txt ../curation/not_retrieved_seeds.txt ../curation/retrieved_seed.txt
+all_diffs: ../curation/curated_but_not_retrieved.txt ../curation/curated_and_retrieved.txt
