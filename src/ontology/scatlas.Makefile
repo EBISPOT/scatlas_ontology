@@ -103,8 +103,8 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 
 
-../curation/retrieved_seed.txt:   ../sparql/seed_class.sparql
-	$(ROBOT) query -i sca.owl --query ../sparql/seed_class.sparql $@.tmp
+../curation/retrieved_seed.txt: $(ONT)-full.owl  ../sparql/seed_class.sparql
+	$(ROBOT) query -i $(ONT)-full.owl --query ../sparql/seed_class.sparql $@.tmp
 	cat $@.tmp | sed 's/\r//' | sort | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
 
 #sca.owl to be added as dependent
@@ -115,4 +115,4 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 	comm -13  ../curation/curated_but_not_retrieved.txt ../curation/scatlas_seed.txt > $@
 
 
-all_diffs: ../curation/curated_but_not_retrieved.txt ../curation/curated_and_retrieved.txt
+all_diffs: ../curation/retrieved_seed.txt ../curation/curated_but_not_retrieved.txt ../curation/curated_and_retrieved.txt
