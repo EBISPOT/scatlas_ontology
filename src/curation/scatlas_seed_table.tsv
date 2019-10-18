@@ -17596,7 +17596,7 @@ organism part	head	http://purl.obolibrary.org/obo/UBERON_0000033	E-GEOD-25988	GS
 organism part	head	http://purl.obolibrary.org/obo/UBERON_0000033	E-GEOD-27927	GSM690660 1	Laura Huerta	03/03/2016 10:00
 organism part	head	http://purl.obolibrary.org/obo/UBERON_0000033	E-GEOD-8330	GSE8330GSM206428	Laura Huerta	03/03/2016 10:00
 organism part	head	http://purl.obolibrary.org/obo/UBERON_0000033	E-MEXP-1179	ebi.ac.uk:MIAMExpress:BioSample:Extraction.29744	Laura Huerta	03/03/2016 10:00
-organism part	Head and neck	http://purl.obolibrary.org/obo/UBERON_000003|http://purl.obolibrary.org/obo/UBERON_0000974	E-GEOD-21050	GSM526033 1	Laura Huerta	03/03/2016 10:00
+organism part	Head and neck	http://purl.obolibrary.org/obo/UBERON_0000033|http://purl.obolibrary.org/obo/UBERON_0000974	E-GEOD-21050	GSM526033 1	Laura Huerta	03/03/2016 10:00
 organism part	head capsule	http://purl.obolibrary.org/obo/UBERON_0003153	E-GEOD-7763	Head biological rep4	Laura Huerta	03/03/2016 10:00
 organism part	heart	http://purl.obolibrary.org/obo/UBERON_0000948	E-GEOD-10744	GSM271247 1	Laura Huerta	03/03/2016 10:00
 organism part	heart	http://purl.obolibrary.org/obo/UBERON_0000948	E-GEOD-1479	ebi.ac.uk:Tab2MAGE:E-GEOD-1479.27.DerivedBioAssay	Laura Huerta	03/03/2016 10:00
