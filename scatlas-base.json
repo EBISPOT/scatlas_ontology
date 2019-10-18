@@ -1,0 +1,26 @@
+{
+  "graphs" : [ {
+    "nodes" : [ ],
+    "edges" : [ ],
+    "id" : "http://purl.obolibrary.org/obo/scatlas/scatlas-base.json",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Single Cell Atlas"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "Unspecified"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/scatlas-base.json"
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}

@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/components/wbls.owl#"
+     xml:base="http://purl.obolibrary.org/obo/scatlas/components/wbls.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/wbls.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-17/components/wbls.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">occurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000101"/>
+        <obo:IAO_0000115>The nematode life-cycle stage that occurs entirely outside of a host organism.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl16</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-03-19T10:42:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000001</oboInOwl:id>
+        <rdfs:label>free-living nematode stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The nematode life-cycle stage that occurs entirely outside of a host organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:jl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000001"/>
+        <obo:IAO_0000115>All C. elegans development stages, including embryo, larva and adult stage.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>all stages</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000002</oboInOwl:id>
+        <rdfs:label>all stages Ce</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>All C. elegans development stages, including embryo, larva and adult stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:wjc</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000803"/>
+        <obo:IAO_0000115>The whole period of embryogenesis, from the formation of an egg till its hatch.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>embryo</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000003</oboInOwl:id>
+        <rdfs:label>embryo Ce</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The whole period of embryogenesis, from the formation of an egg till its hatch.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:wjc</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000816"/>
+        <obo:IAO_0000115>The stage that begins when a C.elegans individual is fully-developed and has reached maturity.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>adult</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000041</oboInOwl:id>
+        <rdfs:label>adult Ce</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The stage that begins when a C.elegans individual is fully-developed and has reached maturity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:wjc</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000075">
+        <oboInOwl:created_by>danielaraciti</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-05-30T09:04:28Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000075</oboInOwl:id>
+        <rdfs:label>worm life stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000075"/>
+        <obo:IAO_0000115>Any developmental stage in a nematode, including embryo, larva and adult stage.</obo:IAO_0000115>
+        <oboInOwl:created_by>danielaraciti</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-11-25T06:13:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>all stages nematode</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nematode developmental stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000101</oboInOwl:id>
+        <rdfs:label>Nematode life stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000101"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any developmental stage in a nematode, including embryo, larva and adult stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:dr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:jl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000101"/>
+        <obo:IAO_0000115>The whole period of embryogenesis, from the formation of an egg till its hatch.</obo:IAO_0000115>
+        <oboInOwl:created_by>danielaraciti</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-11-25T06:14:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>embryo nematode</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nematode egg stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000102</oboInOwl:id>
+        <rdfs:label>nematode embryo</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000102"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The whole period of embryogenesis, from the formation of an egg till its hatch.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:dr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000101"/>
+        <obo:IAO_0000115>The nematode life-stage that begins when the organism is fully-developed and has reached maturity.</obo:IAO_0000115>
+        <oboInOwl:created_by>danielaraciti</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-11-25T06:18:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>L5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>adult nematode</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000104</oboInOwl:id>
+        <rdfs:label>nematode adult</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000104"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The nematode life-stage that begins when the organism is fully-developed and has reached maturity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:dr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000803">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
+        <obo:IAO_0000115>A C. elegans life stage that occurs during embryogenesis</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000803</oboInOwl:id>
+        <rdfs:label xml:lang="en">C. elegans life stage occurring during embryogenesis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000803"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A C. elegans life stage that occurs during embryogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:WBPerson2987</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000804">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
+        <obo:IAO_0000115>A C. elegans life stage that occurs after embryogenesis</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000804</oboInOwl:id>
+        <rdfs:label xml:lang="en">C. elegans life stage occurring post embryogenesis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000804"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A C. elegans life stage that occurs after embryogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:WBPerson2987</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000804"/>
+        <obo:IAO_0000115>A C. elegans life stage that occurs during the adult life stage</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000816</oboInOwl:id>
+        <rdfs:label xml:lang="en">C. elegans life stage occurring during adulthood</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000816"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A C. elegans life stage that occurs during the adult life stage</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:WBPerson2987</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

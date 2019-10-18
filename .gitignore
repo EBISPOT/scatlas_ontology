@@ -21,3 +21,10 @@ src/ontology/patterns
 *.tmp.obo
 *.tmp.owl
 /imports
+src/ontology/components/*extract.sparql
+src/ontology/imports/*.json
+src/ontology/imports/*.obo
+src/ontology/imports/*_terms.txt
+src/ontology/components/*_simple_seed.txt
+src/ontology/imports/fbbt_merged.owl
+src/ontology/imports/fbbt_merge.owl
