@@ -1,0 +1,2 @@
+git add docs/*.md
+
