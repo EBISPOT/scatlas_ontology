@@ -13072,8 +13072,8 @@ def: "external genital organs of the female mammal[WP]." [http://en.wikipedia.or
 subset: efo_slim
 subset: pheno_slim
 subset: uberon_slim
-synonym: "female pudendum" EXACT [BTO:0003101]
 synonym: "female pudendum" EXACT [FMA:20462]
+synonym: "female pudendum" EXACT [BTO:0003101]
 synonym: "mammalian vulva" EXACT []
 synonym: "puboperineal region" EXACT [FMA:20462]
 synonym: "pudendum" RELATED [BTO:0003101]
@@ -18116,8 +18116,8 @@ namespace: uberon
 def: "Ganglion containing neurons that receive innervation from parasympathetic neurons in the central nervous system and subserves parasympathetic functions through innervation of smooth muscle, cardiac muscle and glands." [NLXANAT:100303]
 subset: pheno_slim
 subset: uberon_slim
-synonym: "ganglion parasympathicum" RELATED [BTO:0001256]
 synonym: "ganglion parasympathicum" RELATED LATIN [http://en.wikipedia.org/wiki/Parasympathetic_ganglion]
+synonym: "ganglion parasympathicum" RELATED [BTO:0001256]
 xref: BTO:0001256
 xref: EHDAA2:0001400
 xref: EMAPA:32813
@@ -22892,8 +22892,8 @@ xref: EV:0100173
 xref: FMA:77624
 xref: GAID:633
 xref: HBA:9303
-xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279 {source="BIRNLEX:1137"}
 xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279 {source="BIRNLEX:1137"}
 xref: http://linkedlifedata.com/resource/umls/id/C0028936
 xref: http://www.snomedbrowser.com/Codes/Details/279394006
 xref: MA:0000194
