@@ -47,6 +47,20 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
 
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/fbdv_import.owl" uri="imports/fbdv_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/fbdv_import.obo" uri="imports/fbdv_import.obo"/>
+
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+
+
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/omit_import.owl" uri="imports/omit_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/omit_import.obo" uri="imports/omit_import.obo"/>
+
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.owl" uri="imports/rs_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.obo" uri="imports/rs_import.obo"/>
+
+
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/efo_import.owl" uri="imports/efo_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/imports/efo_import.obo" uri="imports/efo_import.obo"/>
 
@@ -97,7 +111,10 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/fbbt.owl" uri="components/fbbt.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl" uri="components/subclasses.owl"/>
 
-
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/fbdv.owl" uri="components/fbdv.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/omit.owl" uri="components/omit.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/rs.owl" uri="components/rs.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/doid.owl" uri="components/doid.owl"/>
 
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.owl" uri="components/efo.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.obo" uri="components/efo.obo"/>

@@ -1,14 +1,366 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.owl"/>
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/rs_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/imports/rs_import.owl"/>
+    </owl:Ontology>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 61000</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Spontaneously Hypertensive Rat</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000015</oboInOwl:id>
+        <rdfs:label>SHR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000695"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>CD. IGS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>CDIGS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Crl:CD*(SD)IGSBR</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Crl:CD.(SD)IGSBR</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Crl:CDÂ®(SD)IGSBR</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 734476</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000064</oboInOwl:id>
+        <rdfs:label>Crl:CD(SD)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Piebald Virol Glaxo</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 61006</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000224</oboInOwl:id>
+        <rdfs:label>PVG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000457"/>
+        <oboInOwl:created_by>RNigam</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-08-04T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0000271</oboInOwl:id>
+        <rdfs:label>chromosome altered</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000015"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 61100</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Spontaneously Hypertensive Rat/Ola</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000402</oboInOwl:id>
+        <rdfs:label>SHR/Ola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000457">
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0000457</oboInOwl:id>
+        <rdfs:label>rat strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000457"/>
+        <obo:IAO_0000115>Rat strains  carrying mutated alleles, spontaneously occurred, chemical-induced,  genome-edited and others, are  included in the mutant strain.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0000461</oboInOwl:id>
+        <rdfs:label>mutant strain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RS_0000461"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Rat strains  carrying mutated alleles, spontaneously occurred, chemical-induced,  genome-edited and others, are  included in the mutant strain.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidelines_for_Nomenclature_of_Mouse_and_Rat_Strains:http://www.informatics.jax.org/mgihome/nomen/strains.shtml</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000457"/>
+        <obo:IAO_0000115>Outbreds are intentionally not bred with siblings or close relatives, as the purpose of an outbred stock is to maintain maximum heterozygosity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0000462</oboInOwl:id>
+        <rdfs:label>outbred strain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RS_0000462"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Outbreds are intentionally not bred with siblings or close relatives, as the purpose of an outbred stock is to maintain maximum heterozygosity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidelines_for_Nomenclature_of_Mouse_and_Rat_Strains:http://www.informatics.jax.org/mgihome/nomen/strains.shtml</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000462"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 70508</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Sprague Dawley</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Sprague-Dawley</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000681</oboInOwl:id>
+        <rdfs:label>SD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000681"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 737891</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Sprague-Dawley/Crl</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000695</oboInOwl:id>
+        <rdfs:label>Crl:SD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000713 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000713">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 68137</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000713</oboInOwl:id>
+        <rdfs:label>SHHF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000402"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>MDC-01-25</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MDC-01-25-2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 631848</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000715</oboInOwl:id>
+        <rdfs:label>SHR/OlaIpcv</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000749 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000749">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000015"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>MDC-01-79</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 61110</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000749</oboInOwl:id>
+        <rdfs:label>SHR/Mol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>MDC-01-80</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 61010</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Spontaneously Hypertensive Rat, Stroke Prone</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0000759</oboInOwl:id>
+        <rdfs:label>SHRSP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000765 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000457"/>
+        <obo:IAO_0000115>Inbred Strains are produced by brother x sister mating for 20 or more consecutive generations, and individuals of the strain can be traced to a single ancestral pair at the 20th or subsequent generation.</obo:IAO_0000115>
+        <oboInOwl:created_by>RNigam</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-02-10T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0000765</oboInOwl:id>
+        <rdfs:label>inbred strain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Inbred Strains are produced by brother x sister mating for 20 or more consecutive generations, and individuals of the strain can be traced to a single ancestral pair at the 20th or subsequent generation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidelines_for_Nomenclature_of_Mouse_and_Rat_Strains:http://www.informatics.jax.org/mgihome/nomen/strains.shtml</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0001101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0001101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000765"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 70459</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Vancouver diabetic fatty Zucker</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0001101</oboInOwl:id>
+        <rdfs:label>ZDF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0001413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0001413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0002759"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0003823"/>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>RGD ID: 2293729</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SHR-Dca</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SHR-Gja8m1/Cub</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>SHR-dominant cataract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RS:0001413</oboInOwl:id>
+        <rdfs:label>SHR-Gja8m1Cub</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0002699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0002699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000271"/>
+        <oboInOwl:created_by>RNigam</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-08-10T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0002699</oboInOwl:id>
+        <rdfs:label>chromosome 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0002759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0002759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0002699"/>
+        <oboInOwl:created_by>RNigam</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-08-12T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0002759</oboInOwl:id>
+        <rdfs:label>chromosome 2 mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0003823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0003823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RS_0000461"/>
+        <oboInOwl:created_by>RNigam</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-11-03T01:54:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>rat_strain_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>RS:0003823</oboInOwl:id>
+        <rdfs:label>SHR mutants</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

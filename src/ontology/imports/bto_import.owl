@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-17/imports/bto_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/imports/bto_import.owl"/>
     </owl:Ontology>
     
 
@@ -880,7 +880,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000379"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An animal in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems; especially: the developing human individual from the time of implantation to the end of the eighth week after conception.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=embryo</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=embryo</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -903,7 +903,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000404"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The outer epithelial layer of the external integument of the animal body that is derived from the embryonic epiblast; specifically: the outer nonsensitive and nonvascular layer of the skin of a vertebrate that overlies the dermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1093,7 +1093,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000539"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A polymorphonuclear white blood cell with granule-containingcytoplasm. In humans the granulocytes are also classified as polymorphonuclear leucocytes and are subdivided according to the staining properties of the granules into eosinophils, basophils and neutrophils, some invertebrate blood cells are also referred to, not very helpfully, as granulocytes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=granulocyte</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=granulocyte</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mondofacto_Dictionary:http://www.mondofacto.com/facts/dictionary?</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2249,7 +2249,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001253"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The integument of an animal (as a fur-bearing mammal or a bird) separated from the body usually with its hair or feathers.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=skin</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=skin</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2273,7 +2273,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001260"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle tissue that lacks cross striations, that is made up of elongated spindle-shaped cells having a central nucleus, and that is found in vertebrate visceral structures (as the stomach and bladder) as thin sheets performing functions not subject to conscious control by the mind and in all or most of the musculature of invertebrates other than arthropods.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=smooth+muscle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=smooth+muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3047,7 +3047,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002180"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 184A1N4 and 184B5 cell lines are nontumorigenic cell lines derived from primary cultures of HMECs that were immortalized with benzo(a)pyrene.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15827326</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:15827326</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

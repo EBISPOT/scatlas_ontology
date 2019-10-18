@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/bto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-17/components/bto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/components/bto.owl"/>
     </owl:Ontology>
     
 
@@ -349,7 +349,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000539"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A polymorphonuclear white blood cell with granule-containingcytoplasm. In humans the granulocytes are also classified as polymorphonuclear leucocytes and are subdivided according to the staining properties of the granules into eosinophils, basophils and neutrophils, some invertebrate blood cells are also referred to, not very helpfully, as granulocytes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=granulocyte</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=granulocyte</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mondofacto_Dictionary:http://www.mondofacto.com/facts/dictionary?</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -960,7 +960,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002180"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The 184A1N4 and 184B5 cell lines are nontumorigenic cell lines derived from primary cultures of HMECs that were immortalized with benzo(a)pyrene.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15827326</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:15827326</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

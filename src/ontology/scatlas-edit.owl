@@ -43,7 +43,13 @@ Import(<http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl>)
 
 Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
 
+Import(<http://purl.obolibrary.org/obo/scatlas/components/fbdv.owl>)
 
+Import(<http://purl.obolibrary.org/obo/scatlas/components/omit.owl>)
+
+Import(<http://purl.obolibrary.org/obo/scatlas/components/rs.owl>)
+
+Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
 
 Annotation(dce:title "Single Cell Atlas")
 Annotation(dcterms:license "Unspecified")
