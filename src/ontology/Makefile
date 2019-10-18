@@ -67,7 +67,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit ordo doid obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
+IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit ordo obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
@@ -414,16 +414,6 @@ mirror/ordo.trigger: $(SRC)
 
 mirror/ordo.owl: mirror/ordo.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ordo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: mirror/%.owl
-
-
-## ONTOLOGY: doid
-## Copy of doid is re-downloaded whenever source changes
-mirror/doid.trigger: $(SRC)
-
-mirror/doid.owl: mirror/doid.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/doid.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
