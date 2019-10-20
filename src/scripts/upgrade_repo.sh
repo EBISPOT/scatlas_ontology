@@ -1,12 +1,14 @@
-echo "This is an experimental upgrade repo script. It will overwrite your repositories Makefile, update sparql queries, add missing files and update the docker wrapper. This file must be run on the client machine directly, and not inside a docker container."
+echo "This is an experimental upgrade repo script. It will overwrite your repositories Makefile, update sparql queries and add missing files."
 
 set -e
 
 OID=scatlas
-SRCDIR=..
+SRCDIR=../
 
-rm -f target
+rm -rf target
 mkdir target
-./seed-via-docker.sh -c -g False -C $OID"-odk.yaml"
-cp -rn target/$OID/src $SRCDIR
+/tools/odk.py seed -c -g False -C $OID"-odk.yaml"
+ls -l target/$OID/src
+ls -l $SRCDIR
+rsync -r -u --ignore-existing target/$OID/src/ $SRCDIR
 
