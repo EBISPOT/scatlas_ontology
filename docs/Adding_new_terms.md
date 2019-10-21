@@ -1,4 +1,4 @@
-# adding_new_terms
+# Adding new terms to SCATLAS 
 
 ```
 
