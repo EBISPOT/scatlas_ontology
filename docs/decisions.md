@@ -1,4 +1,4 @@
-# adding_new_terms
+# decisions
 
 ```
 ![schema](../scatlas.jpeg)
