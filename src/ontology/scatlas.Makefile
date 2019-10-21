@@ -130,3 +130,7 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 
 
 all_diffs: ../curation/retrieved_seed.txt ../curation/curated_but_not_retrieved.txt ../curation/curated_and_retrieved.txt
+
+
+update_repo:
+	sh ../scripts/update_repo.sh
