@@ -1,4 +1,4 @@
-# background_info
+# Background Information
 
 ```
 
