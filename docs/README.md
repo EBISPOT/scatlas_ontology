@@ -10,8 +10,8 @@ The Single Cell Atlas Ontology (SCAO) provides a systematic description of many 
 - [The GNU makefile work flow](GNUmakefile.md) - `The Makefile work flow`
 
 - [Documentations on: ](documentations.md) -  `How to work with SCATLAS`
-  - [1. How to add terms to the scatlas ontology](adding_new_terms.md) - `Adding new terms to SCATLAS`
-  - [2. How to add a new ontology to the scatlas ontology](adding_new_ontology.md) - `Adding new ontology to SCATLAS`
+  - [1. How to add terms to the scatlas ontology](Adding_new_terms.md) - `Adding new terms to SCATLAS`
+  - [2. How to add a new ontology to the scatlas ontology](Adding_new_ontology.md) - `Adding new ontology to SCATLAS`
   - [3. General background: How did we create the scatlas ontology?](background_info.md) - `How to create SCATLAS ontology`
   - [4. Decisions made]() - `Decisions`
 
