@@ -5,7 +5,9 @@ The Single Cell Atlas Ontology (SCAO) provides a systematic description of many 
 
 - [The work flow diagram](workflow.png) – `The Work Flow Diagram`
 - [Requirements - Install Docker ](https://www.docker.com/get-docker) - `Install and Start Docker`
-  - [- `Ontology-Development-Kit (ODK)`](https://github.com/INCATools/ontology-development-kit)
+  - [- Ontology-Development-Kit (ODK)](https://github.com/INCATools/ontology-development-kit) `Download and run the ODK`
+
+
 
 ## Contributing
 
