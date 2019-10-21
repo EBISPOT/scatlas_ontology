@@ -1,1 +1,1 @@
-![GNUmakefile](GNUmakefile.png)
+![GNUMakefile](GNUmakefile.png)
