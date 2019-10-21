@@ -28,3 +28,4 @@ src/ontology/imports/*_terms.txt
 src/ontology/components/*_simple_seed.txt
 src/ontology/imports/fbbt_merged.owl
 src/ontology/imports/fbbt_merge.owl
+docs/case.md

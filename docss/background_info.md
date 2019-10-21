@@ -1,5 +1,0 @@
-# documentations
-
-```
-![schema](../scatlas.jpeg)
-```
