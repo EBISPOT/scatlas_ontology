@@ -6,8 +6,14 @@ The Single Cell Atlas Ontology (SCAO) provides a systematic description of many 
 - [The work flow diagram](workflow.md) – `The Work Flow Diagram`
 - [Requirements - Install Docker ](https://www.docker.com/get-docker) - `Install and Start Docker`
   - [- Ontology-Development-Kit (ODK)](https://github.com/INCATools/ontology-development-kit) `Download and run the ODK`
-
+  - [Using the ODK]() - `Using the ODK`
 - [The GNU makefile work flow](GNUmakefile.png) - `The Makefile work flow`
+
+- [Documentations on: ]() -  `How to work with SCATLAS`
+  - [1. How to add terms to the scatlas ontology] - `Adding new terms to SCATLAS`
+  - [2. How to add a new ontology to the scatlas ontology]() - `Adding new ontology to SCATLAS`
+  - [3. General background: How did we create the scatlas ontology?] () - `How to create SCATLAS ontology`
+  - [4. Decisions did made] () - `Decisions`
 
 
 ## Contributing
