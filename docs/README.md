@@ -13,7 +13,7 @@ The Single Cell Atlas Ontology (SCAO) provides a systematic description of many 
   - [1. How to add terms to the scatlas ontology]() - `Adding new terms to SCATLAS`
   - [2. How to add a new ontology to the scatlas ontology]() - `Adding new ontology to SCATLAS`
   - [3. General background: How did we create the scatlas ontology?]() - `How to create SCATLAS ontology`
-  - [4. Decisions did made]() - `Decisions`
+  - [4. Decisions made]() - `Decisions`
 
 
 ## Contributing
