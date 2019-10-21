@@ -1,4 +1,4 @@
-# adding_new_ontology
+# Adding new ontology to SCATLAS
 
 ```
 
