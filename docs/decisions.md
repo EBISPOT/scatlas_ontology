@@ -1,4 +1,4 @@
-# decisions
+# Decisions
 
 ```
 
