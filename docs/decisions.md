@@ -1,5 +1,5 @@
 # decisions
 
 ```
-![schema](../scatlas.jpeg)
+
 ```

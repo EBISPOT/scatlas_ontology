@@ -1,5 +1,5 @@
 # adding_new_terms
 
 ```
-![schema](../scatlas.jpeg)
+
 ```

@@ -1,5 +1,5 @@
 # documentations
 
 ```
-![schema](../scatlas.jpeg)
+
 ```
