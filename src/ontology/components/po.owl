@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/po.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/components/po.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-11-13/components/po.owl"/>
     </owl:Ontology>
     
 
@@ -4374,7 +4374,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>BBCH growth stage 4.0 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
@@ -5557,7 +5557,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.02-kernel hard (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007116</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
@@ -5779,7 +5779,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>6.01-dilatory in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007026</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -5884,7 +5884,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>0.07.01 Cotyledons and hypocotyl emerge in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
@@ -5908,7 +5908,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>hypocotyl emergence in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000010</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6139,13 +6139,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cotyledon emergence in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000008</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cotyledons fully open in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000397</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000397</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
@@ -6322,7 +6322,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>BBCH principal growth stage 0 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
@@ -7323,7 +7323,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.13 12th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
@@ -7353,7 +7353,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V12 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
@@ -7412,13 +7412,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.14 13th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>14 rosette leaf in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000417</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000417</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
@@ -7442,7 +7442,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V13 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
@@ -8184,7 +8184,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.03 2nd trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000017</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -8232,7 +8232,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>V2 stage in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000017</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -8675,19 +8675,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
@@ -8699,7 +8699,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-32, Feekes scale-7 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
@@ -8740,7 +8740,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.16 15th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -8770,7 +8770,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V15 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -9783,8 +9783,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:978-0879015329</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:9780964022157</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0879015329</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780964022157</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
@@ -11412,7 +11412,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009064"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>torus (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:5eff5207-47cc-4137-82cc-ea32569cf60f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:5eff5207-47cc-4137-82cc-ea32569cf60f</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009064"/>
@@ -13577,7 +13577,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>plant axes (exact, plural)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:2355281f-ab10-4ae2-a3d8-672cace068a8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:2355281f-ab10-4ae2-a3d8-672cace068a8</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
@@ -14474,7 +14474,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025094"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>spore case (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:808e89e2-7155-41e5-b7b9-a887000d1734</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:808e89e2-7155-41e5-b7b9-a887000d1734</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025094"/>

@@ -4,7 +4,7 @@ echo "(2) and add missing files, if any."
 
 set -e
 
-OID=scatlas
+OID=ejp-rd
 SRCDIR=../
 CONFIG=$OID"-odk.yaml"
 

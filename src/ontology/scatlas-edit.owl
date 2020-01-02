@@ -1,59 +1,60 @@
-
-
 Prefix(:=<http://purl.obolibrary.org/obo/scatlas.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas.owl>
-
 Import(<http://purl.obolibrary.org/obo/scatlas/components/bto.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/cl.owl>)
-
 Import(<http://purl.obolibrary.org/obo/scatlas/components/chebi.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/go.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/peco.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/pato.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/to.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/po.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/wbls.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/ncit.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/uberon.owl>)
-Import(<http://purl.obolibrary.org/obo/scatlas/components/ordo.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl>)
-
+Import(<http://purl.obolibrary.org/obo/scatlas/components/cl.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/fbbt.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
-
 Import(<http://purl.obolibrary.org/obo/scatlas/components/fbdv.owl>)
-
+Import(<http://purl.obolibrary.org/obo/scatlas/components/go.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/omit.owl>)
-
+Import(<http://purl.obolibrary.org/obo/scatlas/components/ordo.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/pato.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/peco.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/po.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/rs.owl>)
-
-Import(<http://purl.obolibrary.org/obo/scatlas/components/efo.owl>)
-
+Import(<http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/to.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/uberon.owl>)
+Import(<http://purl.obolibrary.org/obo/scatlas/components/wbls.owl>)
+Annotation(:creator "Olamidipupo Ajigboye"^^xsd:string)
+Annotation(:format-version "1.0"^^xsd:string)
+Annotation(:format-version "1.0.0"^^xsd:string)
+Annotation(dce:description "The scope of SCAO is to support the annotation, analysis and visualization of data handled by the Exprsssion Atlas group at the EBI and as the core ontology for Single Cell Atlas project (https://www.ebi.ac.uk/gxa/sc/home)."^^xsd:string)
+Annotation(dce:rights "Copyright [2019] EMBL - European Bioinformatics Institute 
+Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the 
+License."^^xsd:string)
 Annotation(dce:title "Single Cell Atlas")
-Annotation(dcterms:license "Unspecified")
-Annotation(dce:description "None")
+Annotation(dcterms:license "www.apache.org/licenses/LICENSE-2.0"^^xsd:string)
+
+Declaration(AnnotationProperty(:creator))
+Declaration(AnnotationProperty(:format-version))
+Declaration(AnnotationProperty(dce:rights))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(owl:versionInfo))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: :creator (:creator)
+
+AnnotationAssertion(dce:creator :creator "Olamidipupo Ajigboye"^^xsd:string)
+
+# Annotation Property: :format-version (:format-version)
+
+AnnotationAssertion(dce:creator :format-version "Olamidipupo Ajigboye"^^xsd:string)
 
 
 

@@ -23,7 +23,7 @@ REPORTDIR=                  reports
 TMPDIR=                     tmp
 SPARQLDIR =                 ../sparql
 REPORT_FAIL_ON =            ERROR
-OBO_FORMAT_OPTIONS =        
+OBO_FORMAT_OPTIONS =
 SPARQL_VALIDATION_CHECKS =  equivalent-classes trailing-whitespace owldef-self-reference xref-syntax nolabels
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms
 ODK_VERSION =               v1.2.18
@@ -57,7 +57,7 @@ $TMPDIR:
 ## By default this is the cross-product of {ont, ont-base} x FORMATS
 
 MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(ONT)-$(r)) $(ONT))
-MAIN_GZIPPED = 
+MAIN_GZIPPED =
 MAIN_FILES = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
 
 all_main: $(MAIN_FILES)
@@ -99,7 +99,7 @@ all_subsets: $(SUBSET_FILES)
 ##
 
 
-PATTERNS = 
+PATTERNS =
 
 PATTERN_ROOTS = $(patsubst %, $(PATTERNDIR)/%, $(PATTERNS))
 PATTERN_FILES = $(foreach n,$(PATTERN_ROOTS), $(n).owl)
@@ -256,14 +256,6 @@ components/%: .FORCE
 	@if [ $(IMP) = true ]; then $(ROBOT) merge -I $(URIBASE)/$* \
 	annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ -o $@; fi
 .PRECIOUS: components/%
-
-
-
-
-
-
-
-
 
 
 # ----------------------------------------
