@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/wbls.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/components/wbls.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/components/wbls.owl"/>
     </owl:Ontology>
     
 
@@ -113,25 +113,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/WBls_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000001"/>
-        <obo:IAO_0000115>All C. elegans development stages, including embryo, larva and adult stage.</obo:IAO_0000115>
-        <oboInOwl:hasBroadSynonym>all stages</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>WBls:0000002</oboInOwl:id>
-        <rdfs:label>all stages Ce</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>All C. elegans development stages, including embryo, larva and adult stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:wjc</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/WBls_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000003">
@@ -176,7 +157,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000075">
         <oboInOwl:created_by>danielaraciti</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-05-30T09:04:28Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
         <oboInOwl:id>WBls:0000075</oboInOwl:id>
         <rdfs:label>worm life stage</rdfs:label>
@@ -255,7 +235,7 @@
     <!-- http://purl.obolibrary.org/obo/WBls_0000803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000803">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000825"/>
         <obo:IAO_0000115>A C. elegans life stage that occurs during embryogenesis</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
         <oboInOwl:id>WBls:0000803</oboInOwl:id>
@@ -273,7 +253,7 @@
     <!-- http://purl.obolibrary.org/obo/WBls_0000804 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000804">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000825"/>
         <obo:IAO_0000115>A C. elegans life stage that occurs after embryogenesis</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
         <oboInOwl:id>WBls:0000804</oboInOwl:id>
@@ -301,6 +281,24 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000816"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A C. elegans life stage that occurs during the adult life stage</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:WBPerson2987</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/WBls_0000825 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/WBls_0000825">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/WBls_0000001"/>
+        <obo:IAO_0000115>A life stage of the nematode Caenorhabditis elegans</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>WBls:0000825</oboInOwl:id>
+        <rdfs:label xml:lang="en">C. elegans life stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/WBls_0000825"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A life stage of the nematode Caenorhabditis elegans</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB:WBPerson2987</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
