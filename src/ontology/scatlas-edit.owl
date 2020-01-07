@@ -4,6 +4,7 @@ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(obda:=<https://w3id.org/obda/vocabulary#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
@@ -28,15 +29,7 @@ Import(<http://purl.obolibrary.org/obo/scatlas/components/subclasses.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/to.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/uberon.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/wbls.owl>)
-Annotation(:creator "Olamidipupo Ajigboye"^^xsd:string)
-Annotation(:format-version "1.0"^^xsd:string)
-Annotation(:format-version "1.0.0"^^xsd:string)
-Annotation(dce:description "The scope of SCAO is to support the annotation, analysis and visualization of data handled by the Exprsssion Atlas group at the EBI and as the core ontology for Single Cell Atlas project (https://www.ebi.ac.uk/gxa/sc/home)."^^xsd:string)
-Annotation(dce:rights "Copyright [2019] EMBL - European Bioinformatics Institute 
-Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the 
-License."^^xsd:string)
 Annotation(dce:title "Single Cell Atlas")
-Annotation(dcterms:license "www.apache.org/licenses/LICENSE-2.0"^^xsd:string)
 
 Declaration(AnnotationProperty(:creator))
 Declaration(AnnotationProperty(:format-version))
