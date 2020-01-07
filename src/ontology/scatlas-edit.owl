@@ -30,25 +30,8 @@ Import(<http://purl.obolibrary.org/obo/scatlas/components/to.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/uberon.owl>)
 Import(<http://purl.obolibrary.org/obo/scatlas/components/wbls.owl>)
 Annotation(dce:title "Single Cell Atlas")
-
-Declaration(AnnotationProperty(:creator))
-Declaration(AnnotationProperty(:format-version))
-Declaration(AnnotationProperty(dce:rights))
-Declaration(AnnotationProperty(dce:title))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(owl:versionInfo))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: :creator (:creator)
-
-AnnotationAssertion(dce:creator :creator "Olamidipupo Ajigboye"^^xsd:string)
-
-# Annotation Property: :format-version (:format-version)
-
-AnnotationAssertion(dce:creator :format-version "Olamidipupo Ajigboye"^^xsd:string)
-
+Annotation(dcterms:license "Unspecified")
+Annotation(dce:description "None")
 
 
 )
