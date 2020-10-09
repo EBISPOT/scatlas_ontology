@@ -12,7 +12,7 @@ before_install:
 script: 
   - cd src/ontology
   - sh run.sh make update_zooma_seed 
-  - sh run.sh make all
+  - sh run.sh make test
 
 #after_success:
 #  coveralls
