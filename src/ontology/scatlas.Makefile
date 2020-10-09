@@ -32,8 +32,8 @@ components/%_seed_extract.sparql: seed.txt
 
 
 components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt
-	$(ROBOT) query --input $< --select components/$*_seed_extract.sparql $@.tmp && \
-	cat seed.txt $@.tmp | sort | uniq > $@  && rm $@.tmp
+	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
+	cat seed.txt $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
@@ -110,6 +110,15 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+
+
+imports/omit_import.owl:
+	touch $@
+	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
+
+imports/omit_import.obo:
+	touch $@
+	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
 
 
 ../curation/retrieved_seed.txt: $(ONT)-full.owl  ../sparql/seed_class.sparql
