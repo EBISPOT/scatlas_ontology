@@ -1,8 +1,11 @@
+.PHONY: update_zooma_seed
+
+update_zooma_seed:
+	echo 'Pulling new Zooma seed'
+	wget -O ../curation/scatlas_seed_table.tsv https://raw.githubusercontent.com/ebi-gene-expression-group/curated-metadata/master/zoomage_report.CURATED.tsv
 
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
 	cat $< | cut -f3 -s | sed 's/\r//' | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
-
-
 
 seed.txt: ../curation/scatlas_seed.txt
 	cp $< $@
