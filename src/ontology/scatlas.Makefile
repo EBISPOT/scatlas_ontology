@@ -34,9 +34,9 @@ components/%_seed_extract.sparql: seed.txt
 	sh ../scripts/generate_sparql_subclass_query.sh seed.txt $@
 
 
-components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt
+components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat seed.txt $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
+	cat seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
