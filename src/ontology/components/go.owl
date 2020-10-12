@@ -1553,7 +1553,7 @@
         <owl:annotatedTarget>Any vesicle that is part of the extracellular region.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GO_REF:0000064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000064</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24769233</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>

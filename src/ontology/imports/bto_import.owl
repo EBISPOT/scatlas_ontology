@@ -705,7 +705,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000214"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cells taken from a living organism and grown under controlled conditions (in culture). Methods used to maintain cell lines or strains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -739,7 +739,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000221"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Particles floating in (not necessarily on) a liquid medium, or the mix of particles and liquid itself.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -918,7 +918,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000404"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The outer epithelial layer of the external integument of the animal body that is derived from the embryonic epiblast; specifically: the outer nonsensitive and nonvascular layer of the skin of a vertebrate that overlies the dermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -982,7 +982,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000416"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A membranous cellular tissue that covers a free surface or lines a tube or cavity of an animal body and serves especially to enclose and protect the other parts of the body, to produce secretions and excretions, and to function in assimilation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epithelium</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epithelium</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2395,7 +2395,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001384"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Growing plant or animal tissues outside of the body, as in a nutrient medium in a laboratory; similar to cell culture, but cells are maintained in their structured, tissue form.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2430,7 +2430,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001430"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The human breast epithelium is a branching ductal system composed of an inner layer of polarized luminal epithelial cells and an outer layer of myoepithelial cells that terminate in distally located terminal duct lobular units (TDLUs).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16807805</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16807805</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3045,7 +3045,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human Mammary Epithelial Cells (HMEpC) are derived from normal adult mammary glands.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

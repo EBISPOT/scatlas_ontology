@@ -1621,7 +1621,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Osmitrol</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -7231,21 +7231,21 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Cismaplat</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Lederplatin</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Neoplatin</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -7264,13 +7264,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Platamine</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Platinex</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -7284,7 +7284,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Randa</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>DrugBank</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrugBank</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
     </owl:Axiom>
     <owl:Axiom>

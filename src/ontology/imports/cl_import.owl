@@ -2439,9 +2439,9 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0517223651</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A11.329.372.588</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:A11.329.372.588</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15771589</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17105582</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17105582</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7876,8 +7876,8 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000553"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>CFU-Meg</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11722431</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12482498</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11722431</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12482498</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000553"/>
@@ -7895,7 +7895,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000553"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>megakaryocytic progenitor cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12482498</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12482498</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8030,12 +8030,12 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0721601464</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MESH:D055014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D055014</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMCID:PMC2213186</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMCID:PMC548021</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16551251</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16647566</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/CFU-GM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/CFU-GM</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.copewithcytokines.de</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -8166,8 +8166,8 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedTarget>An immature erythrocyte that changes the protein composition of its plasma membrane by exosome formation and extrusion. The types of protein removed differ between species though removal of the transferrin receptor is apparent in mammals and birds.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:15946868</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:2037622</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15946868</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2037622</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10202,9 +10202,9 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0721662544</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D020286</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:16807374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16807374</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17986482</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20024907</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20024907</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000669"/>
@@ -16677,7 +16677,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000936"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>GMLP</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:18371378</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18371378</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16720,7 +16720,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16551251</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:17100874</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17100874</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17593,7 +17593,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:msz</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17992590</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17992590</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18432934</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8006591</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -17650,7 +17650,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:msz</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17992590</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17992590</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18432934</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8006591</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -17769,7 +17769,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:msz</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17992590</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17992590</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18432934</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8006591</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -17905,7 +17905,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000966"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>centrocyte</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17992590</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17992590</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -18912,7 +18912,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <oboInOwl:hasDbXref>PMID:10430905</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11750107</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16551251</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:20024907</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20024907</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9389721</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -19376,7 +19376,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Osteoblast that is non-terminally differentiated and located in cellular bone tissue or under the periosteum in acellular bone.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:curator</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VSAO:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20974,7 +20974,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedTarget>A granulocyte monocyte progenitor that is Kit-positive, CD34-positive, Fc-gamma receptor II/II-positive, and is Sca-1-negative, Il7ra-negative, Cxc3r1-negative, and CD90-negative.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12615892</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16322423</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16322423</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19022770</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19273628</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.immgen.org/index_content.html</oboInOwl:hasDbXref>
@@ -23124,7 +23124,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A hematopoietic multipotent progenitor cell that is CD34-positive, CD38-negative, CD45RA-negative, and CD90-negative.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:18371405</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18371405</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19022770</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -27524,7 +27524,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A circulating endothelial cell of the phenotype CD146-positive, CD105-positive, CD45-negative. This cell type is indicative of recent vascular damage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19652886</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:19652886</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27681,7 +27681,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An immature natural killer cell that is NK1.1-positive and DX-5 negative.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12766763</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12766763</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -27773,7 +27773,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A CD27-low, CD11b-high natural killer cell that has a higher threshold of activation due to higher expression of inhibitory receptors.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:1994922</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:1994922</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -31139,7 +31139,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An epithelial cell of the kidney.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:SJ</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KUPO:SJ</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -37764,7 +37764,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000742"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Intraglomerular mesangial cells are specialized pericytes located among the glomerular capillaries within a renal corpuscle of a kidney.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Intraglomerular_mesangial_cell</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Intraglomerular_mesangial_cell</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000742"/>
@@ -37941,7 +37941,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A neuron residing in the olfactory bulb that serve to process and refine signals arising from olfactory sensory neurons</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18603310</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18603310</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41223,7 +41223,7 @@ Covers cells actively being cultured or stored in a quiescent state for future u
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A ciliated epithelial cell of the esophagus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:CellBLAST</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:29802404</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29802404</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

@@ -863,6 +863,7 @@ is_a: CL:0000151 ! secretory cell
 is_a: CL:0000153 ! glycosaminoglycan secreting cell
 is_a: CL:0000499 ! stromal cell
 is_a: CL:0000667 ! collagen secreting cell
+relationship: located_in UBERON:0002418 ! cartilage tissue
 
 [Term]
 id: CL:0000147
@@ -2099,6 +2100,7 @@ xref: BTO:0001034
 xref: FMA:83025
 is_a: CL:0000235 ! macrophage
 is_a: CL:0000864 ! tissue-resident macrophage
+relationship: located_in UBERON:0001179 ! peritoneal cavity
 relationship: part_of UBERON:0000479 ! tissue
 
 [Term]
@@ -4233,6 +4235,9 @@ def: "A cell of a fetus which is suspended in the amniotic fluid. Amniocytes ar
 xref: BTO:0000066
 is_a: CL:0000349 ! extraembryonic cell
 is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000349 ! extraembryonic cell
+intersection_of: located_in UBERON:0000173 ! amniotic fluid
+relationship: located_in UBERON:0000173 ! amniotic fluid
 created_by: tmeehan
 creation_date: 2010-09-20T10:13:37Z
 
@@ -7000,6 +7005,7 @@ xref: NCIT:C13188
 xref: UMLS:C0002638 {source="ncithesaurus:Amniotic_Fluid"}
 xref: VHOG:0001267
 is_a: UBERON:0000463 ! organism substance
+relationship: located_in UBERON:0000305 ! amnion
 
 [Term]
 id: UBERON:0000175
@@ -9427,8 +9433,8 @@ def: "external genital organs of the female mammal[WP]." [http://en.wikipedia.or
 subset: efo_slim
 subset: pheno_slim
 subset: uberon_slim
-synonym: "female pudendum" EXACT [BTO:0003101]
 synonym: "female pudendum" EXACT [FMA:20462]
+synonym: "female pudendum" EXACT [BTO:0003101]
 synonym: "mammalian vulva" EXACT []
 synonym: "puboperineal region" EXACT [FMA:20462]
 synonym: "pudendum" RELATED [BTO:0003101]
@@ -10268,6 +10274,7 @@ xref: Salivary:gland
 xref: UMLS:C0036098 {source="ncithesaurus:Salivary_Gland"}
 xref: VHOG:0000376
 is_a: UBERON:0000062 ! organ
+relationship: located_in UBERON:0000167 ! oral cavity
 relationship: part_of UBERON:0001007 ! digestive system
 property_value: depicted:by http://upload.wikimedia.org/wikipedia/commons/5/51/Illu_quiz_hn_02.jpg xsd:anyURI
 property_value: IAO:0000232 "currently we define saliva and salivary glands very generally in functional terms but it may be more appropriate to split this class. From WP: In most vertebrates, saliva does not contain any enzymes, consisting of mucus and water only, and its primary function is to moisten food while eating. As a result, true salivary glands are rarely found in fish or aquatic tetrapods, although there are often individual mucus-secreting cells. Amphibians have a single salivary gland, the intermaxillary gland, located in the forward part of the palate. Reptiles and birds normally have only very small glands on the lips, palate, and base of the mouth, although there are some birds with large glands, which produce a sticky saliva that helps in nest-building. The distinct parotid, submandibular, and sublingual glands are only developed in mammals." xsd:string {source="3"}
@@ -11724,6 +11731,7 @@ xref: ncithesaurus:Peritoneal_Fluid
 xref: Peritoneal:fluid
 is_a: UBERON:0007779 ! transudate
 is_a: UBERON:0007794 ! secretion of serous gland
+relationship: located_in UBERON:0001179 ! peritoneal cavity
 
 [Term]
 id: UBERON:0001269
@@ -18505,8 +18513,8 @@ xref: EV:0100173
 xref: FMA:77624
 xref: GAID:633
 xref: HBA:9303
-xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279 {source="BIRNLEX:1137"}
 xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=279 {source="BIRNLEX:1137"}
 xref: http://linkedlifedata.com/resource/umls/id/C0028936
 xref: http://www.snomedbrowser.com/Codes/Details/279394006
 xref: MA:0000194
@@ -19363,6 +19371,7 @@ xref: UMLS:C1519547 {source="ncithesaurus:Tonsilar_Tissue"}
 xref: UMLS:C1519548 {source="ncithesaurus:Tonsillar_Lymphoid_Tissue"}
 xref: VHOG:0001139
 is_a: UBERON:0001744 ! lymphoid tissue
+relationship: located_in UBERON:0000167 ! oral cavity
 property_value: IAO:0000232 "the term 'tonsil' can be ambiguous, sometimes refering specifically to the palatine tonsil, sometimes generically to include the cecal tonsils of avians. This class represents lymphoid tissue that is part of the tonsillar ring, in the mouth/throat region" xsd:string
 
 [Term]
@@ -20333,6 +20342,7 @@ xref: NCIT:C33073
 xref: UMLS:C0588055 {source="ncithesaurus:Mediastinal_Lymph_Node"}
 is_a: UBERON:0000029 ! lymph node
 is_a: UBERON:0005178 ! thoracic cavity element
+relationship: located_in UBERON:0003728 ! mediastinum
 
 [Term]
 id: UBERON:0002529
@@ -21088,6 +21098,7 @@ xref: FMA:86461
 xref: http://en.wikipedia.org/wiki/Septum
 xref: OpenCyc:Mx4rrqot_on_EdaAAAACs0uFOQ
 is_a: UBERON:0000061 ! anatomical structure
+relationship: located_in UBERON:0002553 ! anatomical cavity
 property_value: UBPROP:0000007 "septal" xsd:string
 
 [Term]
@@ -24239,6 +24250,7 @@ xref: Nasal:pit
 xref: XAO:0000275
 xref: XAO:0004073
 is_a: UBERON:0000465 ! material anatomical entity
+relationship: located_in UBERON:0005384 ! nasal cavity epithelium
 relationship: part_of UBERON:0000004 ! nose
 relationship: part_of UBERON:0000922 ! embryo
 property_value: IAO:0000116 "we represent the relationship as develops from, though in fact the pit is formed as an indentation in the placode" xsd:string
@@ -24299,6 +24311,7 @@ is_a: UBERON:0002513 ! endochondral bone
 is_a: UBERON:0005913 ! zone of bone organ
 is_a: UBERON:0010313 ! neural crest-derived structure
 is_a: UBERON:0015212 ! lateral structure
+relationship: located_in UBERON:0001707 ! nasal cavity
 relationship: part_of UBERON:0000033 ! head
 property_value: depicted:by http://upload.wikimedia.org/wikipedia/commons/6/62/Gray192.png xsd:anyURI
 property_value: UBPROP:0000008 "In many carnivores and ungulates, the maxilloturbinal is the most complex element immediately posterior to the vestibule[PMID:25312359]" xsd:string
@@ -25599,6 +25612,7 @@ synonym: "retroperitoneal fat depot" EXACT []
 xref: MA:0002549
 is_a: UBERON:0004120 ! mesoderm-derived structure
 is_a: UBERON:0007808 ! adipose tissue of abdominal region
+relationship: located_in UBERON:0003693 ! retroperitoneal space
 relationship: part_of UBERON:0002358 ! peritoneum
 
 [Term]
@@ -26261,6 +26275,7 @@ synonym: "visceral fat" RELATED [BTO:0004041]
 xref: BTO:0004041
 xref: CALOHA:TS-2405
 is_a: UBERON:0007808 ! adipose tissue of abdominal region
+relationship: located_in UBERON:0001179 ! peritoneal cavity
 relationship: part_of UBERON:0002075 ! viscus
 property_value: http://purl.org/dc/elements/1.1/contributor https://github.com/cindyJax
 property_value: http://purl.org/dc/elements/1.1/contributor https://github.com/cmungall
@@ -26908,6 +26923,12 @@ xref: FBbt:00005526
 is_a: UBERON:0002050 ! embryonic structure
 is_a: UBERON:0004121 ! ectoderm-derived structure
 is_a: UBERON:0010000 ! multicellular anatomical structure
+
+[Typedef]
+id: located_in
+name: located_in
+namespace: uberon
+xref: RO:0001025
 
 [Typedef]
 id: part_of
