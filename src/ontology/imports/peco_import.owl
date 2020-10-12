@@ -13,7 +13,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/peco_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/imports/peco_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/imports/peco_import.owl"/>
     </owl:Ontology>
     
 
@@ -19477,6 +19477,12 @@
         <owl:annotatedTarget>glycine anion</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JCBN</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32588"/>
     
 
 

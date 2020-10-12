@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/bto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/components/bto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/bto.owl"/>
     </owl:Ontology>
     
 
@@ -70,6 +70,35 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -266,6 +295,12 @@
     <!-- http://purl.obolibrary.org/obo/BTO_0000216 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000216">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000214"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>BTO:0000216</oboInOwl:id>
         <rdfs:label>culture condition</rdfs:label>
@@ -304,7 +339,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000284"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Gestalt</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -416,7 +451,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000594"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Malignant (cancer) cells are found in the tissues of the liver.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -775,7 +810,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001461"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Pflanzenkoerper</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -802,19 +837,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Pflanze</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>plantae</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>viridiplantae</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     
 
@@ -955,7 +990,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human Mammary Epithelial Cells (HMEpC) are derived from normal adult mammary glands.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

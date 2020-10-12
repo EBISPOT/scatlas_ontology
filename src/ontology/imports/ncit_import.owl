@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/ncit_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/imports/ncit_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/imports/ncit_import.owl"/>
     </owl:Ontology>
     
 
@@ -28,12 +28,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_A10 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A10"/>
     
 
 
@@ -91,17 +85,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C133857 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C133858 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C133857">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C133858">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C133858 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C133863 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C133858">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C133863">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -131,9 +125,65 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C157711 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C157711">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C158119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C158119">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159029 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159029">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159044 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159044">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159066 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159066">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159098 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159098">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159100 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159100">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159129 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159129">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -155,17 +205,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C54447 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C168622 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C54447">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C168622">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C54450 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54447 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C54450">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C54447">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -760,7 +810,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14209">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25796"/>
         <obo:IAO_0000115>A kingdom of eukaryotic, heterotrophic organisms that live as saprobes or parasites, including mushrooms, yeasts, smuts, molds, etc. They reproduce either sexually or asexually, and have life cycles that range from simple to complex. Filamentous fungi refer to those that grow as multicellular colonies (mushrooms and molds).</obo:IAO_0000115>
-        <obo:NCIT_A10 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <obo:NCIT_A11 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14250"/>
         <obo:NCIT_NHC0>C14209</obo:NCIT_NHC0>
         <obo:NCIT_P106>Fungus</obo:NCIT_P106>
@@ -783,9 +832,7 @@
         <oboInOwl:hasExactSynonym>fungus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128453"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C158119"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62596"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C85491"/>
@@ -845,15 +892,6 @@
         <owl:annotatedTarget>Fungi</owl:annotatedTarget>
         <obo:NCIT_P383>SY</obo:NCIT_P383>
         <obo:NCIT_P384>NICHD</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14209"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Fungus</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>FDA</obo:NCIT_P384>
-        <obo:NCIT_P385>1872</obo:NCIT_P385>
-        <obo:NCIT_P386>CDRH</obo:NCIT_P386>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14209"/>
@@ -1164,7 +1202,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C14283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14250"/>
         <obo:IAO_0000115>An infectious agent which consists of two parts, genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce. Most viruses are capable of passing through fine filters that retain bacteria, and are not visible through a light microscope.</obo:IAO_0000115>
-        <obo:NCIT_A10 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <obo:NCIT_A11 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14250"/>
         <obo:NCIT_NHC0>C14283</obo:NCIT_NHC0>
         <obo:NCIT_P106>Virus</obo:NCIT_P106>
@@ -1189,9 +1226,7 @@
         <oboInOwl:hasExactSynonym>virus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C128453"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C158119"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62596"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <rdfs:label>Virus</rdfs:label>
@@ -1226,15 +1261,6 @@
         <owl:annotatedTarget>VIRUS</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
         <obo:NCIT_P384>CDISC</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14283"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Virus</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>FDA</obo:NCIT_P384>
-        <obo:NCIT_P385>2136</obo:NCIT_P385>
-        <obo:NCIT_P386>CDRH</obo:NCIT_P386>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14283"/>
@@ -1562,7 +1588,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C48655">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
         <obo:IAO_0000115>A specific reason explaining why a meaningful value is not available. A meaningful value answers the question posed by a Data Element Concept. In contrast, a Missing Value Reason answers the implicit question &quot;Why is there no &apos;meaningful&apos; value?&quot;, when there is none.</obo:IAO_0000115>
-        <obo:NCIT_A10 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <obo:NCIT_NHC0>C48655</obo:NCIT_NHC0>
         <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
         <obo:NCIT_P108>Missing Value Reason</obo:NCIT_P108>
@@ -1571,10 +1596,14 @@
         <obo:NCIT_P366>Missing_Value_Reason</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>MVR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Missing Value Reason</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62596"/>
         <rdfs:label>Missing Value Reason</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A specific reason explaining why a meaningful value is not available. A meaningful value answers the question posed by a Data Element Concept. In contrast, a Missing Value Reason answers the implicit question &quot;Why is there no &apos;meaningful&apos; value?&quot;, when there is none.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -1587,22 +1616,7 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Missing Value Reason</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>FDA</obo:NCIT_P384>
-        <obo:NCIT_P385>3192</obo:NCIT_P385>
-        <obo:NCIT_P386>CDRH</obo:NCIT_P386>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Missing Value Reason</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
         <obo:NCIT_P384>NCI</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A specific reason explaining why a meaningful value is not available. A meaningful value answers the question posed by a Data Element Concept. In contrast, a Missing Value Reason answers the implicit question &quot;Why is there no &apos;meaningful&apos; value?&quot;, when there is none.</owl:annotatedTarget>
-        <obo:NCIT_P378>NCI</obo:NCIT_P378>
     </owl:Axiom>
     
 
@@ -1612,8 +1626,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C48660">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
         <obo:IAO_0000115>Determination of a value is not relevant in the current context.</obo:IAO_0000115>
-        <obo:NCIT_A10 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48655"/>
-        <obo:NCIT_A10 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54451"/>
         <obo:NCIT_NHC0>C48660</obo:NCIT_NHC0>
         <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
         <obo:NCIT_P108>Not Applicable</obo:NCIT_P108>
@@ -1621,8 +1633,10 @@
         <obo:NCIT_P317>Device Problem Code (Appendix B)</obo:NCIT_P317>
         <obo:NCIT_P322>CDISC</obo:NCIT_P322>
         <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
         <obo:NCIT_P322>UCUM</obo:NCIT_P322>
         <obo:NCIT_P325>A report has been received but the description provided does not appear to relate to an adverse event. This code allows a report to be recorded for administration purposes, even if it doesn&apos;t meet the requirements for adverse event reporting.</obo:NCIT_P325>
+        <obo:NCIT_P325>Determination of a value is not relevant in the current context.</obo:NCIT_P325>
         <obo:NCIT_P325>Determination of a value is not relevant in the current context. (NCI)</obo:NCIT_P325>
         <obo:NCIT_P325>If a value for test has to be provided, but has no given criteria (e.g., the result is for &quot;report only&quot; or &quot;monitoring&quot;).</obo:NCIT_P325>
         <obo:NCIT_P366>Not_Applicable</obo:NCIT_P366>
@@ -1642,12 +1656,19 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C104319"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C132298"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133805"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133857"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133858"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133863"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C147068"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C150810"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159029"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159044"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159066"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159098"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159100"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159129"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C168622"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54447"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54450"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54451"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54583"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54584"/>
@@ -1681,6 +1702,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Determination of a value is not relevant in the current context.</owl:annotatedTarget>
+        <obo:NCIT_P378>FDA</obo:NCIT_P378>
+        <obo:NCIT_P381>PQCMC</obo:NCIT_P381>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
         <owl:annotatedTarget>Determination of a value is not relevant in the current context. (NCI)</owl:annotatedTarget>
         <obo:NCIT_P378>CDISC</obo:NCIT_P378>
     </owl:Axiom>
@@ -1690,6 +1718,15 @@
         <owl:annotatedTarget>If a value for test has to be provided, but has no given criteria (e.g., the result is for &quot;report only&quot; or &quot;monitoring&quot;).</owl:annotatedTarget>
         <obo:NCIT_P378>FDA</obo:NCIT_P378>
         <obo:NCIT_P381>Stability</obo:NCIT_P381>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Not Applicable</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>DT</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
@@ -1773,14 +1810,6 @@
         <owl:annotatedTarget>NA</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
         <obo:NCIT_P384>FDA</obo:NCIT_P384>
-        <obo:NCIT_P386>PQCMC</obo:NCIT_P386>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>NA</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>FDA</obo:NCIT_P384>
         <obo:NCIT_P386>Stability</obo:NCIT_P386>
     </owl:Axiom>
     <owl:Axiom>
@@ -1789,6 +1818,14 @@
         <owl:annotatedTarget>NA</owl:annotatedTarget>
         <obo:NCIT_P383>SY</obo:NCIT_P383>
         <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>NA</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>PQCMC</obo:NCIT_P386>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
@@ -1860,6 +1897,21 @@
         <owl:annotatedTarget>Not Applicable</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
         <obo:NCIT_P384>CPTAC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Not Applicable</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>PQCMC</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Not Applicable</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48660"/>
@@ -1974,6 +2026,7 @@
         <oboInOwl:hasExactSynonym>FLUBV</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>INFLUENZA B VIRUS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Influenza B Virus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Influenza Type B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Influenza Virus Type B</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116111"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
@@ -2031,6 +2084,13 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Influenza B Virus</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C53468"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Influenza Type B</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
         <obo:NCIT_P384>NCI</obo:NCIT_P384>
     </owl:Axiom>
     <owl:Axiom>

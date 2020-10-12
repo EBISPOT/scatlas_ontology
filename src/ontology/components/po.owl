@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/po.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/components/po.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/po.owl"/>
     </owl:Ontology>
     
 
@@ -25,15 +25,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
     
 
 
@@ -109,6 +139,50 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -123,6 +197,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
@@ -132,6 +212,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">occurrent</rdfs:label>
     </owl:Class>
@@ -142,6 +228,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </owl:Class>
@@ -254,8 +346,28 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>frutex (narrow)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>frutices (narrow)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>prothalli (narrow)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>prothallus (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
@@ -295,26 +407,6 @@
         <owl:annotatedTarget>植物体全体 (Japanese, exact)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>frutex (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>frutices (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>prothalli (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
     </owl:Axiom>
     
 
@@ -396,6 +488,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025615"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vascular leaf (PO:0009025) born in a circular pattern around a stem (PO:0009047) with compressed stem internodes (PO:0020142).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:302</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>hoja en roseta (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -433,6 +531,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root primordium (PO:0005029) that is part of a root (PO:0009005) and is committed to the development of a lateral root (PO:0020121).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:467</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>portion of lateral root primordium tissue (exact)</oboInOwl:hasExactSynonym>
@@ -470,6 +574,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025128"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A phyllome primordium (PO:0025128) that develops from a vascular leaf anlagen (PO:0025431) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a vascular leaf (PO:0009025).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:466</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>leaf primordium (exact)</oboInOwl:hasExactSynonym>
@@ -509,6 +619,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) which is the apical portion of the root (PO:0009005), and includes the root apical meristem (PO:0020147) and root cap (PO:0020123).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:620</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:70</oboInOwl:hasDbXref>
@@ -546,6 +662,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The portion of the primary root including the meristem and root cap.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:620</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>punta de la ra&amp;#237z primaria (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -633,6 +755,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A maximal portion of vascular tissue (PO:0009015) in a whole plant (PO:0000003), collective plant structure (PO:0025497), multi-tissue plant structure (PO:0025496), or cardinal part of multi-tissue plant structure (PO:0025498).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:50</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sistema vascular (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -782,7 +910,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>climbing root (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000042"/>
@@ -1080,6 +1208,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005421"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A relatively unspecialized ground tissue cell with a nucleate protoplast.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>c&amp;#233lula parenquim&amp;#225tica (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>柔組織細胞 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -1233,7 +1367,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0000112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000112">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0006035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of shoot system epidermis (PO:0006035) that is part of a shoot axis (PO:0025029).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>epidermis del eje del tallo (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>シュート軸表皮 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -1317,6 +1468,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000230">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A meristem that gives rise to an inflorescence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>meristema de la inflorescencia (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>花序分裂組織 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -1351,6 +1508,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000252">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of ground tissue (PO:0025059) that is the inner most layer of a cortex (PO:0005708) and has a casparian strip in its anticlinal cell walls.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006064</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:126</oboInOwl:hasDbXref>
@@ -1392,6 +1555,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000258">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005708"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of cortex (PO:0005708) that is part of a root (PO:0009005).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0003010</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:115</oboInOwl:hasDbXref>
@@ -1431,7 +1600,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0000274 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000274">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025407"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005352"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025407"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A fiber cell (PO:0025407) that is part of a portion of xylem (PO:0005352) tissue.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:443</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>fibra del xilema (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -1471,6 +1657,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000282">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0004510</oboInOwl:hasAlternativeId>
         <oboInOwl:hasBroadSynonym>barb trichome (broad)</oboInOwl:hasBroadSynonym>
@@ -1507,7 +1699,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000282"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:19939948</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19939948</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -1642,13 +1834,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000282"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>seta (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:c751440c-a7b3-4997-aed8-47f8254fd05f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:c751440c-a7b3-4997-aed8-47f8254fd05f</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000282"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>setae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:93b95b97-0f1a-4d26-9c86-ebede4157269</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:93b95b97-0f1a-4d26-9c86-ebede4157269</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1657,6 +1849,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000349">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0004011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An initial cell (PO:0004011) that is part of an epidermis (PO:0005679) and gives rise to specialized cell types of the epidermis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>c&amp;#233lula inicial de la epidermis (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>epidermal initial (exact)</oboInOwl:hasExactSynonym>
@@ -1761,6 +1959,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007605"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A microgametophyte development stage (PO:0025602) during which the pollen (PO:0025281) develops.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:589</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -1939,7 +2143,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0003005"/>
@@ -1962,6 +2166,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0003015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0020135"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root differentiation zone that is part of a primary root.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>zona de diferenciaci&amp;#243n de la ra&amp;#237z primary (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>一次根分化帯（層） (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -1997,7 +2207,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0003024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025073"/>
-        <obo:IAO_0000115>A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A branch (PO:0025073) that is prostrate or trailing, and produces  adventitious nodal roots (PO:0003005) and sometimes erect shoots.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:388</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>estol&amp;#243n (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ストロン、ほふく茎 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -2006,13 +2216,13 @@
         <oboInOwl:id>PO:0003024</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#TraitNet"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#reference"/>
-        <rdfs:comment>The stolon develops from an axillary bud and produces adventitious roots at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. A unique part of this process is that the first internode of a stolon is very long and then the shoot becomes an erect rosette.</rdfs:comment>
+        <rdfs:comment>The stolon develops from an axillary bud (PO:0004709) and produces adventitious roots (PO:0003005) at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. Stolons may be above ground, as with strawberries, or below ground as in potatoes.</rdfs:comment>
         <rdfs:label>stolon</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0003024"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes.</owl:annotatedTarget>
+        <owl:annotatedTarget>A branch (PO:0025073) that is prostrate or trailing, and produces  adventitious nodal roots (PO:0003005) and sometimes erect shoots.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APweb:Glossary</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2117,6 +2327,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0004013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A native plant cell (PO:0025606) that is part of a portion of epidermis (PO:0005679).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:591</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>c&amp;#233lula epid&amp;#233rmica (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -2215,7 +2431,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0004545"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>turion (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:da7c2bd5-34b4-42aa-a036-7b5f71f66d36</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:da7c2bd5-34b4-42aa-a036-7b5f71f66d36</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0004545"/>
@@ -2274,6 +2490,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) where a bud (PO:0000055) may form and develop into a branch (PO:0025073), leaf (PO:0025034), flower (PO:0004541), inflorescence (PO:0009049) or nodal root (PO:0003005).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:145</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nodo del epiblasto (epiblastema) (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -2313,6 +2535,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) that is between two shoot axis nodes (PO:0005004).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:146</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>internodo del epiblasto (epiblastema) (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -2364,7 +2592,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0005012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A shoot axis vascular system (PO:0000039) that includes the totality of the portions of vascular tissue in their specific arrangement in a pedicel (PO:0030112).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17217456</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17217456</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -2506,6 +2734,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000252"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000258"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of endodermis that is part of a root cortex.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>endodermis de la ra&amp;#237z (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>根内皮 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -2578,6 +2812,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005360">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is the outermost layer of endosperm (PO:0009089) in a seed (PO:0009010), its cells being characterized by presence of protein bodies (GO:0042735).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0008004</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
@@ -2815,6 +3055,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005645">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the foliage leaf.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mes&amp;#243filo de la hoja (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>葉の葉肉 (Japanese, exact)  (exact)</oboInOwl:hasExactSynonym>
@@ -2988,6 +3234,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>filoma (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>フィロム、葉(的）器官 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -3023,7 +3275,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0006016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006016">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025157"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025157"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of phyllome epidermis (PO:0025157) that is part of a leaf (PO:0025034).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>epidermis de la hoja (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>foliage leaf epidermis (exact)</oboInOwl:hasExactSynonym>
@@ -3061,6 +3330,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of ground tissue (PO:0025059) which comprises a layer or layers of cells surrounding the vascular bundles (PO:0005020) of leaves. It may consist of parenchyma (PO:0005421) or sclerenchyma (PO:0005427).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>vaina del haz (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>維管束鞘 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -3094,7 +3369,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0006035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006035">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0005679"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of epidermis (PO:0005679) that is part of a shoot system (PO:0009006) and arises from the meristem L1 layer (PO:0009020).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:111</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>epidermis del epiblasto (epiblastema) (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -3132,7 +3424,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0006036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006036">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0005679"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of epidermis (PO:0005679) that is part of a root (PO:0009005).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006037</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:111</oboInOwl:hasDbXref>
@@ -3171,7 +3480,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0006048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006048">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0005679"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005679"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of epidermis (PO:0005679) that is part of a seed coat (PO:0009088).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:111</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>epidermis de la cubierta de la semilla (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -3207,6 +3533,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A leaf epidermis that is part of a cotyledon.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>epidermis del cotiled&amp;#243n (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>子葉 表皮 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -3383,6 +3715,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:472</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:583</oboInOwl:hasDbXref>
@@ -3421,6 +3759,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0020147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root apical meristem (PO:0020147) that gives rise to a primary root (PO:0020127).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:577</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>meristema apical de la ra&amp;#237z primaria (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -3540,6 +3884,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of ground tissue (PO:0025059) that is part of a root stele located between the phloem and endodermis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>periciclo (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>portion of pericycle tissue (exact)</oboInOwl:hasExactSynonym>
@@ -3578,6 +3928,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006204">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A native plant cell (PO:0025606) which is diploid (2n), and undergoes meiosis (GO:0007126) to produce four haploid (1n) plant spores (PO:0025017).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>GO:0007126</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:361</oboInOwl:hasDbXref>
@@ -3618,6 +3974,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006220">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is the central region of an endosperm (PO:0009089), composed of cells that are significantly larger than those at the periphery, especially the aleurone and sub-aleurone layers.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>endosperma central (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -3655,6 +4017,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006327">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009108"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An inflorescence apical meristem that gives rise to the two or more florets of a grass inflorescence.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>meristema de la espiguilla (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>小穂分裂組織 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -3890,6 +4258,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006346">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An intercalary meristem (PO:0006073) that is part of a leaf (PO:0006346) and is intercalated between two portions of non-meristematic tissue between a leaf apex (PO:0020137) and a leaf base (PO:0020040).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:449</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>meristema intercalar de la hoja (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -4061,13 +4435,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>09-dough development (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007110</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>7 linear grain-filling in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:64632</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:64632</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
@@ -4079,7 +4453,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>7.3 early dough stage/embryo 3 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67374</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
@@ -4127,25 +4501,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>FR.01 early stage of fruit ripening in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000048</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000048</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>R4 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67374</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>dough stage in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67374</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>early dough stage in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67374</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
@@ -4157,7 +4531,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>embryo stage 3 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67374</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67374</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
@@ -4169,7 +4543,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007001"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>tomato turning stage (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000048</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000048</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4254,25 +4628,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>09-dough development in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007110</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>09-dough development in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007110</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>09-dough development in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007110</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10-dough stage in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007132</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007132</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
@@ -4290,13 +4664,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>dough stage (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007132</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007132</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>dough stage in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:67379</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007010"/>
@@ -4344,19 +4718,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>05-booting in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007090</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>05-booting in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007090</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>05-booting in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007090</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
@@ -4368,7 +4742,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>07-boot stage in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007130</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007130</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
@@ -4386,7 +4760,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum growth stage-6 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007130</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007130</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4396,6 +4770,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007520"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root development stage (PO:0007520) during which a radicle (PO:0020031) emerges from the seed coat (PO:0009088).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0007507</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:386</oboInOwl:hasDbXref>
@@ -4447,25 +4827,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.04-radicle emerged from seed in Triticeae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.04-radicle emerged from seed in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.04-radicle emerged from seed in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.04-radicle emerged from seed in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
@@ -4477,7 +4857,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-5 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007015"/>
@@ -4570,7 +4950,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>09-flowering in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007153</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007153</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -4600,7 +4980,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>5.1 anthesis in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -4618,7 +4998,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>6.1-flowering stage in rice (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007151</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007151</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -4636,19 +5016,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>VT in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>anthesis in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>anthesis stage (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007151</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007151</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -4660,13 +5040,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>pollen shed in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>rice growth stage-6.1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007151</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007151</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -4678,7 +5058,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum growth stage 8 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007153</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007153</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4711,7 +5091,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A sporophyte development stage (PO:0028002) during which a sporophyte participates in multicellular organism senescence.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GO:0010259</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0010259</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -4742,25 +5122,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.04-overripe, straw dead and collapsing in Triticeae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007118</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007118</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.04-overripe, straw dead and collapsing in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007118</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007118</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.04-overripe, straw dead and collapsing in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007118</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007118</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.04-overripe, straw dead and collapsing in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007118</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007118</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
@@ -4948,7 +5328,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007024"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>6.09 End of flowering in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000076</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000076</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007024"/>
@@ -4972,7 +5352,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007024"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>FL.04 end of flowering in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000039</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000039</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007024"/>
@@ -5125,13 +5505,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007027"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>8.04-late milk in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007109</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007109</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007027"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>8.04-late milk in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007109</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007109</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007027"/>
@@ -5366,7 +5746,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007031"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>7.4 late dough stage/embryo 4 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:67379</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007031"/>
@@ -5432,13 +5812,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007031"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>dough stage in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:67379</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007031"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>embryo stage 4 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:67379</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007031"/>
@@ -5551,19 +5931,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.01-kernel medium hard (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007115</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007115</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>10.02-kernel hard (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007116</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>8.09 Final ripening in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000089</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000089</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
@@ -5587,7 +5967,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>FR.04 fruit ripening complete in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000051</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
@@ -5617,7 +5997,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>tomato fully red ripe fruit (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000051</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5648,7 +6028,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An inflorescence detectable phase during which an inflorescence emerges from sheathing leaves or bracts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB_curator:Mary_Schaeffer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB_curator:Mary_Schaeffer</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -5749,7 +6129,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>07-milk stage in rice (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007046</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -5773,13 +6153,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>5 fruit formation in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000040</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>6.01-dilatory in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007026</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -5827,7 +6207,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>milk stage in rice (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007046</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -5845,7 +6225,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>rice growth stage-7 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007046</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -5890,7 +6270,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>0.07.02 Hypocotyl emerges above soil in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000092</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
@@ -5908,7 +6288,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007043"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>hypocotyl emergence in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000010</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5917,6 +6297,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A sporophyte vegetative stage (PO:0007134) during which the coleoptile (PO:0020033) emerges from the seed coat (PO:0009088).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:370</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -5937,7 +6323,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007045"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>0.3 coleoptile emergence from seed in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67352</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67352</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007045"/>
@@ -5972,20 +6358,20 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007047"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A reproductive growth stage during which an inflorescence is detectable.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB_curator:Mary_Schaeffer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB_curator:Mary_Schaeffer</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007047"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>3 inflorescence visible in Solanaceae (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000033</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007047"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>4 Inflorescence Formation in soybean (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000005</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007047"/>
@@ -6055,7 +6441,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.00 Cotyledon visible in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000014</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
@@ -6127,7 +6513,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>VE stage in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000014</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
@@ -6139,13 +6525,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cotyledon emergence in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000008</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cotyledons fully open in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TAIR:0000397</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000397</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007049"/>
@@ -6921,7 +7307,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007072"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>VT vegetative tasseling in maize (US cornbelt) (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00002</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007072"/>
@@ -7323,7 +7709,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.13 12th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
@@ -7353,7 +7739,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V12 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000027</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007083"/>
@@ -7412,13 +7798,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.14 13th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>14 rosette leaf in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TAIR:0000417</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000417</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
@@ -7442,7 +7828,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V13 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
@@ -8172,7 +8558,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>02-three leaf stage in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -8190,7 +8576,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.03-three to four leaves in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -8250,7 +8636,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>maize growth stage-1.3 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -8268,7 +8654,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum growth stage-1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8374,25 +8760,25 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>01-seedling stage of maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007007</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>02-seedling growth of barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007058</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>02-seedling growth of oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007058</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>02-seedling growth of wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007058</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
@@ -8422,13 +8808,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>maize growth stage-1.1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007007</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum principal growth stage 1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8510,7 +8896,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>03-four leaf stage in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007143</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007143</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8522,13 +8908,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.03-three to four leaves in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.04 3rd trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000018</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8546,7 +8932,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.05-four leaves unfolded in Triticeae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007063</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007063</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8576,7 +8962,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V3 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000018</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8588,7 +8974,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-14, Haun scale-3.+ (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007063</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007063</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8618,7 +9004,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum growth stage-2 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007143</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007143</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -8740,7 +9126,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.16 15th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -8770,7 +9156,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V15 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -9198,6 +9584,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007603">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective phyllome structure development stage (PO:0025578) that has as a primary participant a calyx (PO:0009060).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:547</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -9218,6 +9610,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007604">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective phyllome structure development stage (PO:0025578) that has as a primary participant a corolla (PO:0009059).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:547</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -9238,6 +9636,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:547</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -9265,6 +9669,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:547</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -9505,7 +9915,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007632"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>embryo stage EM10 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007177</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007177</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9585,6 +9995,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0008039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The basal part of stem.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>base del tallo (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>gametophore stem base (exact)</oboInOwl:hasExactSynonym>
@@ -9807,7 +10223,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>radix (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
@@ -9820,7 +10236,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>climbing root (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9877,7 +10293,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>thallus (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:02756ad4-a09c-48d7-8754-903254e557a9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:02756ad4-a09c-48d7-8754-903254e557a9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10078,6 +10494,13 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>estructura vegetal (Spanish, exact)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
@@ -10096,13 +10519,6 @@
         <owl:annotatedTarget>&apos;Part&apos; includes both proper parts and the whole plant. CARO:0000003 &apos;connected anatomical structure&apos; is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism&apos;s own genome.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -10118,7 +10534,7 @@
         <oboInOwl:hasRelatedSynonym>Arabidopsis growth (related)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>PO:0009012</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#TraitNet"/>
-        <rdfs:comment>Refers to GO:0032502 &apos;developmental process&apos;, which includies growth, differentiation, and senescence, and BFO:0000003 &apos;ocurrent&apos;.</rdfs:comment>
+        <rdfs:comment>Refers to GO:0032502 &apos;developmental process&apos;, which includes growth, differentiation, and senescence, and BFO:0000003 &apos;ocurrent&apos;.</rdfs:comment>
         <rdfs:label>plant structure development stage</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -10542,6 +10958,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009027"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025395"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A megasporophyll, almost always at the center of a flower, its margins more or less fused together or with other carpels to enclose the ovule(s).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006455</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006470</oboInOwl:hasAlternativeId>
@@ -10705,6 +11127,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005656"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:659</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nectario (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -10962,13 +11390,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>basal flower (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO_125:0000019</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CO_125:0000019</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>hermaphrodite flower (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO_125:0000028</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CO_125:0000028</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11067,7 +11495,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>caudices (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -11147,6 +11575,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A reproductive shoot system (PO:0025082) that is the ultimate and congested, higher order inflorescence axis (PO:0009081) of the grasses.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:383</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:71</oboInOwl:hasDbXref>
@@ -11247,6 +11681,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A nectary (PO:0009035) occurring on a floral organ (PO:0025395) or other part of a flower (PO:0009046).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:659</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>floral nectary (exact)</oboInOwl:hasExactSynonym>
@@ -11287,6 +11727,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective phyllome structure (PO:0025023) composed all of the carpels (PO:0009030) in a flower (PO:0009046).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006317</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006357</oboInOwl:hasAlternativeId>
@@ -11429,6 +11875,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collective plant organ structure (PO:0025007) that is the pollen-bearing part of a stamen (PO:0009029).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006442</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006473</oboInOwl:hasAlternativeId>
@@ -11472,6 +11924,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant structure (PO:0009011) that is the basal portion of a carpel (PO:0009030) or group of fused carpels (gynoecium; PO:0009062) and encloses the plant ovule(s) (PO:0020003).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006456</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006486</oboInOwl:hasAlternativeId>
@@ -11518,6 +11976,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) which is an elongated part of a carpel (PO:0009030) or gynoecium (PO:0009062) between the plant ovary (PO:0009072) and the stigma (PO:0009073), and through which the pollen tube (GO:0090406) grows.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006469</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:376</oboInOwl:hasDbXref>
@@ -11561,6 +12025,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is the outer layer (wall) of a fruit (PO:0009001), and develops from a plant ovary (PO:0009072) or a carpel (PO:0009030) wall.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:511</oboInOwl:hasDbXref>
@@ -11609,6 +12079,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is the outer layer of a pericarp (PO:0009084).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006046</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006217</oboInOwl:hasAlternativeId>
@@ -11656,6 +12132,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue that is the covering of a seed derived from ovular - mainly integumentary - tissue.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cubierta de la semilla (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -11696,6 +12178,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) which is a maximal portion of nutritive plant tissue in a seed (PO:0009010).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>albumen (exact)</oboInOwl:hasExactSynonym>
@@ -11718,7 +12206,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009089"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>albumen (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:1ecc1a22-0b08-4979-ae5e-2de10f4dc4ba</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:1ecc1a22-0b08-4979-ae5e-2de10f4dc4ba</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009089"/>
@@ -11815,7 +12303,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0009109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009109">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000230"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000230"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The meristem which gives rise to the female inflorescence or ear in maize.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>meristema de la espiga (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>雌穂分裂組織 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -11976,6 +12481,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025201"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A megasporangium (PO:0025201) in a seed plant, composed of fleshy subepidermal tissue that is part of a plant ovule (PO:0020003) and surrounds a megasporocyte (PO:0000431).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006462</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006492</oboInOwl:hasAlternativeId>
@@ -12029,6 +12540,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that usually covers a plant ovule (PO:0020003), enveloping a nucellus (PO:0020020) and forming a micropyle (PO:0020025) at the apex.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0006465</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PO:0006507</oboInOwl:hasAlternativeId>
@@ -12176,7 +12693,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020030"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>seed leaf (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:2e1fc560-4493-47fe-b363-500a1189b27d</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:2e1fc560-4493-47fe-b363-500a1189b27d</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020030"/>
@@ -12303,6 +12820,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stalk (PO:0025066) of a vascular leaf (PO:0009025).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>pec&amp;#237olo (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>葉柄 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -12339,6 +12862,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025396"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:428</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:70</oboInOwl:hasDbXref>
@@ -12378,6 +12907,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025140"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A phyllome base (PO:0025140) that is part of a leaf (PO:0025034).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:282</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:70</oboInOwl:hasDbXref>
@@ -12417,6 +12952,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025498"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal part of multi-tissue plant structure (PO:0025498) that is a scar on a seed (PO:0009010) at the place where it was attached to a funicle (PO:0020006).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>hila (exact, plural)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hilo (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -12500,6 +13041,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025280"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A native plant cell (PO:0025606) that is the larger cell of a microgametophyte (PO:0025280) in seed plants. It does not divide further and develops into a pollen tube cell (PO:0025195).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:192</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>c&amp;#233lula vegetativa (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -12618,6 +13165,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) that is the lower part of a vascular leaf (PO:0009025), and which more or less encases the stem (PO:0009047).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:661</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:70</oboInOwl:hasDbXref>
@@ -12715,7 +13268,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A root (PO:0009005) that develops from a lateral root primordium (PO:0000016) that is part of another root on the same plant.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0521288959</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISRR:Richard_Zobel</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISRR:Richard_Zobel</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -12739,6 +13292,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025197"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stele (PO:0025197) that is part of a root (PO:0009005).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0003012</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>PO_GIT:177</oboInOwl:hasDbXref>
@@ -12874,7 +13433,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of root parenchyma tissue that is the central part of a root cap in which the cells are arranged in longitudinal files.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0878938567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0878938567</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -12918,7 +13477,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of root parenchyma tissue that is part of a root cap and is parallel to the sides of a root axis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0878938567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0878938567</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -12979,6 +13538,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025119"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant axis differentiation zone that is the part of a root and is located behind a root elongation zone.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PO:0003002</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>region of root maturation (exact)</oboInOwl:hasExactSynonym>
@@ -13064,6 +13629,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A phyllome apex (PO:0025139) that is part of a leaf (PO:0025034).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:282</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:70</oboInOwl:hasDbXref>
@@ -13197,6 +13768,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A shoot axis node (PO:0005004) that is part of a stem (PO:0009047).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:145</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nodo del tallo (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -13233,6 +13810,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A shoot axis internode (PO:0005005) that is part of a stem (PO:0009047).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>OBO-SF2_PO:146</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>internodo del tallo (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -13311,6 +13894,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of meristem (PO:0009013) tissue located parallel to the sides of a shoot axis (PO:0025029) or root (PO:0009005) that participates in lateral growth.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:437</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>lateral growth meristem (exact)</oboInOwl:hasExactSynonym>
@@ -13351,6 +13940,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006085"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0020144"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root meristem (PO:0006085) located at the root tip (PO:0000025), behind the root cap (PO:0020123).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>promeristem (broad)</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>PO_GIT:577</oboInOwl:hasDbXref>
@@ -13393,6 +13988,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006079"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0020144"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A shoot system meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>promeristem (broad)</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>PO_GIT:472</oboInOwl:hasDbXref>
@@ -13433,6 +14034,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of meristem tissue (PO:0009013) that is part of a root apical meristem (PO:0020147) and consists of mitotically and metabolically inactive cells and is located behind the protoderm (PO:0006210) of the root (PO:0009005).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:190</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>centro de division de c&amp;#233lulas del meristema (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -13469,7 +14076,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025498"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025498"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal part of multi-tissue plant structure (PO:0025498) that is a proper part of a plant organ (PO:0009008) and includes portions of plant tissue (PO:0009007) of at least two different types.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-02-11T01:18:24Z</oboInOwl:creation_date>
@@ -13704,7 +14328,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>verticil (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:12607624-3d2a-4113-bd86-0e2557f2f473</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:12607624-3d2a-4113-bd86-0e2557f2f473</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025022"/>
@@ -13767,7 +14391,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025023"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>verticil (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:12607624-3d2a-4113-bd86-0e2557f2f473</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:12607624-3d2a-4113-bd86-0e2557f2f473</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025023"/>
@@ -13799,6 +14423,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant axis (PO:0025004) that is part of a shoot system (PO:0009006).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-07-01T03:46:35Z</oboInOwl:creation_date>
@@ -13844,6 +14474,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A native plant cell (PO:0025606) that is part of a portion of ground tissue (PO:0025059).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-05-07T02:47:45Z</oboInOwl:creation_date>
@@ -14490,6 +15126,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005421"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of parenchyma tissue (PO:0005421) that is part of a root (PO:0009005).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-10-28T05:14:26Z</oboInOwl:creation_date>
@@ -14526,7 +15168,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025099 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025099">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant structure (PO:0009011) that is part of an plant embryo (PO:0009009).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-05T01:36:24Z</oboInOwl:creation_date>
@@ -14567,6 +15226,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part that is part of a plant axis and is located behind the elongation zone and contains cells that are differentiating into their final form and function.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-12-02T09:04:09Z</oboInOwl:creation_date>
@@ -14604,6 +15269,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000084"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025281"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant sperm cell (PO:0000084) that is part of the pollen (PO:0025281).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T08:05:46Z</oboInOwl:creation_date>
@@ -14688,6 +15359,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) and is part of a shoot apex (PO:0000037) and is committed to the development of a phyllome (PO:0006001).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T09:27:11Z</oboInOwl:creation_date>
@@ -14774,6 +15451,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025139">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The apical portion of a phyllome.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T01:25:20Z</oboInOwl:creation_date>
@@ -14811,6 +15494,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The basal part of a phyllome (PO:0006001), where it attaches to a shoot axis (PO:0025029).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T01:25:26Z</oboInOwl:creation_date>
@@ -14847,6 +15536,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025139"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The apical most portion of a phyllome apex.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T01:34:53Z</oboInOwl:creation_date>
@@ -14884,6 +15579,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020137"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A phyllome tip (PO:0025141) that is part of a leaf apex (PO:0020137).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T01:36:13Z</oboInOwl:creation_date>
@@ -14922,7 +15623,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025157">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0006035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of shoot system epidermis (PO:0006035) that is part of a phyllome (PO:0006001).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-15T02:32:53Z</oboInOwl:creation_date>
@@ -14960,6 +15678,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025165">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0004013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An epidermal cell that is part of a shoot epidermis.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-11-18T10:29:44Z</oboInOwl:creation_date>
@@ -14997,6 +15721,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) which is part of a plant axis (PO:0025004), is located proximal to an apical meristem (PO:0020144), and in which plant cells (PO:0009002) are undergoing longitudinal expansion.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-12-03T08:50:10Z</oboInOwl:creation_date>
@@ -15035,6 +15765,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025180"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant axis elongation zone (PO:0025180) that is part of a root tip (PO:0000025) and located proximal to a root apical meristem (PO:0020147).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-12-03T08:54:52Z</oboInOwl:creation_date>
@@ -15050,7 +15786,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025181"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant axis elongation zone (PO:0025180) that is part of a root tip (PO:0000025) and located proximal to a root apical meristem (PO:0020147).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>POC:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:cooperl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -15074,6 +15810,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is part of an endosperm (PO:0009089) and is composed of basal endosperm transfer cells (PO:0009018).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-12-09T02:23:04Z</oboInOwl:creation_date>
@@ -15112,6 +15854,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cardinal organ part (PO:0025001) that is the central column of a plant axis that consists of the primary vascular tissue and associated ground tissue.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-12-09T03:56:19Z</oboInOwl:creation_date>
@@ -15263,6 +16011,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025257">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025181"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A root elongation zone (PO:0025181) that is part of a primary root tip (PO:0000026).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-01-05T12:05:43Z</oboInOwl:creation_date>
@@ -15278,7 +16032,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A root elongation zone (PO:0025181) that is part of a primary root tip (PO:0000026).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>POC:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025257"/>
@@ -15536,7 +16290,24 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025348">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0005020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025396"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025396"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vascular bundle (PO:0005020) that is part of a phyllome lamina (PO:0025396).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-04-18T01:41:29Z</oboInOwl:creation_date>
@@ -15615,7 +16386,24 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     <!-- http://purl.obolibrary.org/obo/PO_0025395 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025395">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant organ (PO:0009008) that is part of a flower (PO:0009046).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-01-19T11:44:36Z</oboInOwl:creation_date>
@@ -15654,7 +16442,24 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     <!-- http://purl.obolibrary.org/obo/PO_0025396 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025396">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025513"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant organ lamina (PO:0025513) that is part of a phyllome (PO:0006001).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-01-19T12:56:11Z</oboInOwl:creation_date>
@@ -15930,6 +16735,12 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025498">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A plant structure (PO:0009011) that is a proper part of a multi-tissue plant structure (PO:0025496) and includes portions of plant tissues (PO:0009007) of at least two different types.</obo:IAO_0000115>
         <oboInOwl:created_by>Laurel_Cooper</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-06-11T15:28:44Z</oboInOwl:creation_date>
@@ -16126,8 +16937,25 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     <!-- http://purl.obolibrary.org/obo/PO_0025513 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025513">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025060"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A lamina (PO:0025060) that is part of a plant organ (PO:0009008).</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-10-17T15:51:02Z</oboInOwl:creation_date>
@@ -16290,6 +17118,12 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025585">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0007615"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A flower development stage (PO:0007615) that occurs in an individual flower (PO:000904) during the interval between the onset of a floral organ meristem development stage (PO:0007601) and the onset of a flowering stage (PO:0007616).</obo:IAO_0000115>
         <oboInOwl:created_by>moorel</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-06-27T12:02:35Z</oboInOwl:creation_date>
@@ -16768,6 +17602,12 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0030003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A gametophyte meristematic apical cell that is part of a protonema.</obo:IAO_0000115>
         <oboInOwl:created_by>rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-05-11T11:04:52Z</oboInOwl:creation_date>
