@@ -1,7 +1,8 @@
 
+# Assume third column = SEMANTIC_TAG.  Works in this case but not a safe assumption for Zooma tsv files in general.
+# Select column 3. remove header'' Split on '|', strip whitespace, uniq.
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
-	cat $< | cut -f3 -s | sed 's/\r//' | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
-
+	cat $< | cut -f3 |  egrep -v 'SEMANTIC_TAG' | tr '|' '\n' | tr -d ' ' | sort | uniq > $@
 
 
 seed.txt: ../curation/scatlas_seed.txt
