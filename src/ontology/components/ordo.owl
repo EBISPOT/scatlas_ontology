@@ -12,7 +12,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/ordo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2019-10-18/components/ordo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/ordo.owl"/>
     </owl:Ontology>
     
 
@@ -73,6 +73,25 @@
     <!-- http://www.w3.org/2004/02/skos/core#notation -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label xml:lang="en">part_of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -601,6 +620,12 @@
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_178">
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_271847"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">Notochordal sarcoma</efo:alternative_term>
         <efo:definition xml:lang="en">Chordomas are rare malignant tumors arising from embryonic remnants of the notochord in axial skeleton.</efo:definition>
         <efo:definition_citation xml:lang="en">orphanet</efo:definition_citation>
@@ -614,7 +639,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid55">
+            <owl:Axiom rdf:nodeID="genid56">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_178"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:C76.7</owl:annotatedTarget>
@@ -757,7 +782,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid65">
+            <owl:Axiom rdf:nodeID="genid66">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206644"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -793,7 +818,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid68">
+            <owl:Axiom rdf:nodeID="genid69">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206647"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
@@ -857,7 +882,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid76">
+            <owl:Axiom rdf:nodeID="genid77">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206970"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
@@ -918,7 +943,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid81">
+            <owl:Axiom rdf:nodeID="genid82">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_267"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -972,7 +997,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid87">
+            <owl:Axiom rdf:nodeID="genid88">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_268"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -1008,6 +1033,12 @@
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_269">
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_206644"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">FSH dystrophy</efo:alternative_term>
         <efo:alternative_term xml:lang="en">FSHD</efo:alternative_term>
         <efo:alternative_term xml:lang="en">Facioscapulohumeral muscular dystrophy</efo:alternative_term>
@@ -1024,9 +1055,21 @@
         <rdfs:label xml:lang="en">Facioscapulohumeral dystrophy</rdfs:label>
         <skos:notation>ORPHA:269</skos:notation>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>OMIM:600416</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0238288</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid92">
+            <owl:Axiom rdf:nodeID="genid94">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -1061,18 +1104,6 @@
         <owl:annotatedTarget>OMIM:158901</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>OMIM:600416</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0238288</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
     
 
 
@@ -1091,6 +1122,12 @@
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_273">
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_206647"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">DM1</efo:alternative_term>
         <efo:alternative_term xml:lang="en">MD1</efo:alternative_term>
         <efo:alternative_term xml:lang="en">Myotonic dystrophy type 1</efo:alternative_term>
@@ -1106,7 +1143,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid100">
+            <owl:Axiom rdf:nodeID="genid103">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
@@ -1160,7 +1197,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid106">
+            <owl:Axiom rdf:nodeID="genid109">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_276161"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
@@ -1262,7 +1299,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid115">
+            <owl:Axiom rdf:nodeID="genid118">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34217"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
@@ -1316,7 +1353,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid121">
+            <owl:Axiom rdf:nodeID="genid124">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34515"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -1352,6 +1389,18 @@
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_35689">
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_182070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_183500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">Adult-onset PLS</efo:alternative_term>
         <efo:alternative_term xml:lang="en">Adult-onset primary lateral sclerosis</efo:alternative_term>
         <efo:alternative_term xml:lang="en">PLS</efo:alternative_term>
@@ -1367,7 +1416,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid126">
+            <owl:Axiom rdf:nodeID="genid131">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_35689"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G12.2</owl:annotatedTarget>
@@ -1476,7 +1525,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid133">
+            <owl:Axiom rdf:nodeID="genid138">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_391665"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:E78.0</owl:annotatedTarget>
@@ -1549,7 +1598,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid140">
+            <owl:Axiom rdf:nodeID="genid145">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_44890"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:C26.9</owl:annotatedTarget>
@@ -1618,7 +1667,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid148">
+            <owl:Axiom rdf:nodeID="genid153">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_47"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D80.0</owl:annotatedTarget>
@@ -1686,7 +1735,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid156">
+            <owl:Axiom rdf:nodeID="genid161">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_524"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D48.9</owl:annotatedTarget>
@@ -1793,7 +1842,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid170">
+            <owl:Axiom rdf:nodeID="genid175">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_586"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:E84.8</owl:annotatedTarget>
@@ -1864,7 +1913,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid178">
+            <owl:Axiom rdf:nodeID="genid183">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_636"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q85.0</owl:annotatedTarget>
@@ -1951,7 +2000,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid188">
+            <owl:Axiom rdf:nodeID="genid193">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_647"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
@@ -2032,7 +2081,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid197">
+            <owl:Axiom rdf:nodeID="genid202">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_655"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q61.5</owl:annotatedTarget>
@@ -2134,6 +2183,12 @@
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_683">
         <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_183500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">PSP syndrome</efo:alternative_term>
         <efo:definition xml:lang="en">Progressive supranuclear palsy (PSP) is a rare late-onset neurodegenerative disease characterized by supranuclear gaze palsy, postural instability, progressive rigidity, and mild dementia.</efo:definition>
         <efo:definition_citation xml:lang="en">orphanet</efo:definition_citation>
@@ -2156,7 +2211,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid214">
+            <owl:Axiom rdf:nodeID="genid220">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_683"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G23.1</owl:annotatedTarget>
@@ -2293,7 +2348,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid227">
+            <owl:Axiom rdf:nodeID="genid233">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_685"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G11.4</owl:annotatedTarget>
@@ -2388,7 +2443,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid236">
+            <owl:Axiom rdf:nodeID="genid242">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_71290"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D69.4</owl:annotatedTarget>
@@ -2456,7 +2511,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid242">
+            <owl:Axiom rdf:nodeID="genid248">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_733"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D12.6</owl:annotatedTarget>
@@ -2515,7 +2570,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid249">
+            <owl:Axiom rdf:nodeID="genid255">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77259"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
@@ -2564,7 +2619,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid254">
+            <owl:Axiom rdf:nodeID="genid260">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77261"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
@@ -2718,7 +2773,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid272">
+            <owl:Axiom rdf:nodeID="genid278">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_848"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:D56.1</owl:annotatedTarget>
@@ -2787,7 +2842,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid279">
+            <owl:Axiom rdf:nodeID="genid285">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_86814"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G40.3</owl:annotatedTarget>
@@ -2939,7 +2994,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid300">
+            <owl:Axiom rdf:nodeID="genid306">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_881"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q96.9</owl:annotatedTarget>
@@ -2996,7 +3051,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid306">
+            <owl:Axiom rdf:nodeID="genid312">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_95"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G11.1</owl:annotatedTarget>
@@ -3070,7 +3125,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid314">
+            <owl:Axiom rdf:nodeID="genid320">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_974"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:Q87.2</owl:annotatedTarget>
@@ -3240,7 +3295,7 @@
     </owl:Axiom>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid330">
+            <owl:Axiom rdf:nodeID="genid336">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98473"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -3289,7 +3344,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid335">
+            <owl:Axiom rdf:nodeID="genid341">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98759"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G11.8</owl:annotatedTarget>
@@ -3337,7 +3392,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid340">
+            <owl:Axiom rdf:nodeID="genid346">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98853"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -3400,7 +3455,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid348">
+            <owl:Axiom rdf:nodeID="genid354">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98863"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -3457,7 +3512,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid354">
+            <owl:Axiom rdf:nodeID="genid360">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98895"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -3525,7 +3580,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid362">
+            <owl:Axiom rdf:nodeID="genid368">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98896"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
@@ -3585,7 +3640,7 @@
     </owl:Class>
     <owl:Annotation>
         <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid369">
+            <owl:Axiom rdf:nodeID="genid375">
                 <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_99885"/>
                 <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
                 <owl:annotatedTarget>ICD-10:P70.2</owl:annotatedTarget>

@@ -122,14 +122,11 @@ first type
 
     git branch
 
-to make sure you are on master
+Then run:
 
-    cd src/ontology
-    ./build.sh
-
-If this looks good type:
-
-    ./prepare_release.sh
+```
+sh run_release.sh
+```
 
 This generates derived files such as SCAtlas.owl and SCAtlas.obo and places
 them in the top level (../..).
@@ -191,3 +188,11 @@ Note: if you have only just created this project you will need to authorize trav
  3. Click the tick symbol next to SCAtlas
 
 Travis builds should now be activated
+
+# RELEASE
+
+To run a release, run:
+
+```
+sh run_release.sh
+```

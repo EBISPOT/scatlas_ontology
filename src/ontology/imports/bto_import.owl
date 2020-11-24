@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-01-07/imports/bto_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/imports/bto_import.owl"/>
     </owl:Ontology>
     
 
@@ -73,6 +73,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -84,32 +90,38 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/TEMP#develops_from -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#develops_from">
-        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>develops_from</oboInOwl:id>
-        <rdfs:label>derives from/develops from</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TEMP#part_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#part_of">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
         <rdfs:label>part of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/TEMP#related_to -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#related_to">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <oboInOwl:hasDbXref>BFO:0000054</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>related_to</oboInOwl:id>
-        <rdfs:label>related to</rdfs:label>
+        <oboInOwl:id>realized_in</oboInOwl:id>
+        <oboInOwl:shorthand>realized_in</oboInOwl:shorthand>
+        <rdfs:label>realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
+        <oboInOwl:hasDbXref>RO:0002202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>develops_from</oboInOwl:id>
+        <oboInOwl:shorthand>develops_from</oboInOwl:shorthand>
+        <rdfs:label>derives from/develops from</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -169,7 +181,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000003">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -248,19 +260,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Tier</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>animalia</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>metazoa</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     
 
@@ -293,7 +305,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000067">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000671"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -311,7 +323,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001488"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -327,7 +339,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000081">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0003091"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -353,7 +365,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000081"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Geschlechtsorgan</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -407,7 +419,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000088">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -429,7 +441,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000088"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Herz und Gefaesssystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -439,7 +451,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000089">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000570"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -463,7 +475,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000125">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000089"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -513,7 +525,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000136">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000763"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -538,7 +550,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000431"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001368"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -561,7 +573,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000155">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#related_to"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000136"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -604,7 +616,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000174"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>embryonale Struktur</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -637,7 +649,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000269"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -653,7 +665,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000203">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -675,7 +687,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000203"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Atmungssystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -693,7 +705,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000214"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Cells taken from a living organism and grown under controlled conditions (in culture). Methods used to maintain cell lines or strains.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -703,7 +715,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000216">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000214"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -727,7 +739,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000221"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Particles floating in (not necessarily on) a liquid medium, or the mix of particles and liquid itself.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -738,7 +750,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001488"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -754,13 +766,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000269">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000706"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -783,7 +795,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000282">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -814,7 +826,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000284"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Gestalt</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -825,7 +837,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000176"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -859,7 +871,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000353">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000763"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -893,7 +905,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000404">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001253"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -906,7 +918,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000404"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The outer epithelial layer of the external integument of the animal body that is derived from the embryonic epiblast; specifically: the outer nonsensitive and nonvascular layer of the skin of a vertebrate that overlies the dermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -916,7 +928,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000414">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000416"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -939,7 +951,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000415">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000414"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -970,7 +982,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000416"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A membranous cellular tissue that covers a free surface or lines a tube or cavity of an animal body and serves especially to enclose and protect the other parts of the body, to produce secretions and excretions, and to function in assimilation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epithelium</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epithelium</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -980,7 +992,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000421">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1000,7 +1012,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000421"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Bindegewebe</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -1028,7 +1040,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000511">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1051,7 +1063,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000522">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1072,13 +1084,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000522"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Druese</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000522"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>glandula</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     
 
@@ -1107,7 +1119,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000551">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000763"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1131,7 +1143,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000570">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1154,7 +1166,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000570"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Blutbildungssystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -1164,7 +1176,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000574">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000089"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1191,7 +1203,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000580">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000574"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1214,7 +1226,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000594">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000759"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1227,7 +1239,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000594"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Malignant (cancer) cells are found in the tissues of the liver.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1281,7 +1293,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000634">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1306,7 +1318,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000634"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Hautsystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -1316,7 +1328,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000648">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000511"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1361,7 +1373,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000669">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1379,13 +1391,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001491"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001244"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0003092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1408,7 +1420,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000706">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1445,7 +1457,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0002666"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1474,7 +1486,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000725"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>blutbildende Stammzelle</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -1505,7 +1517,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001271"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1541,7 +1553,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000737"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000744"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1602,13 +1614,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000753">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000570"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0005810"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1654,7 +1666,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000353"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000551"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1727,7 +1739,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000773">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000772"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1771,7 +1783,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000580"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000753"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1797,14 +1809,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000801">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000876"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0005810"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0005810"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000876"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Relatively long-lived phagocytic cell of mammalian tissues, derived from blood monocyte. Macrophages from different sites have distinctly different properties. Main types are peritoneal and alveolar macrophages, tissue macrophages (histiocytes), Kupffer cells of the liver, and osteoclasts. In response to foreign materials may become stimulated or activated. Macrophages play an important role in killing of some bacteria, protozoa, and tumour cells, release substances that stimulate other cells of the immune system, and are involved in antigen presentation. May further differentiate within chronic inflammatory lesions to epithelioid cells or may fuse to form foreign body giant cells or Langhans giant cells.</obo:IAO_0000115>
@@ -1828,7 +1840,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000816">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000149"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1863,7 +1875,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001286"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000847"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1887,7 +1899,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000849">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000848"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2000,7 +2012,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001035">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000574"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2034,7 +2046,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001085">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2048,13 +2060,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001085"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The vessels of the body, especially the blood vessels.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NDI:Nephrogenic_Diabetes_Insipidus_Foundation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NDI:Nephrogenic_Diabetes_Insipidus_Foundation</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Gefaesssystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2064,7 +2076,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001090">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000282"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2087,7 +2099,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001090"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The natural opening through which food passes into the body of an animal and which in vertebrates is typically bounded externally by the lips and internally by the pharynx and encloses the tongue, gums, and teeth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=mouth</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=mouth</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2097,7 +2109,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001096">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000753"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2121,7 +2133,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001120">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000416"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2157,7 +2169,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001130">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001129"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2184,7 +2196,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001202">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2208,7 +2220,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000765"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2257,7 +2269,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001253"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The integument of an animal (as a fur-bearing mammal or a bird) separated from the body usually with its hair or feathers.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=skin</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=skin</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2268,7 +2280,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000887"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001369"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2281,7 +2293,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001260"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle tissue that lacks cross striations, that is made up of elongated spindle-shaped cells having a central nucleus, and that is found in vertebrate visceral structures (as the stomach and bladder) as thin sheets performing functions not subject to conscious control by the mind and in all or most of the musculature of invertebrates other than arthropods.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=smooth+muscle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=smooth+muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2292,7 +2304,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000580"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000751"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2315,7 +2327,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001286">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001253"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2339,7 +2351,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001368">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001493"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2383,7 +2395,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001384"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Growing plant or animal tissues outside of the body, as in a nutrient medium in a laboratory; similar to cell culture, but cells are maintained in their structured, tissue form.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Glossary_of_Fermentation_&amp;_Cell_Culture_Terms:http://www.nbsc.com/files/papers/bp0600_gloss_36-44.pdf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2394,7 +2406,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000416"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000149"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2429,7 +2441,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001260"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2485,7 +2497,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001434"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001494"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2509,7 +2521,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000574"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0004730"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2548,7 +2560,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001461"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Pflanzenkoerper</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2558,7 +2570,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001470">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000404"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2609,19 +2621,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Pflanze</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>plantae</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001481"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>viridiplantae</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#SCI"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#SCI"/>
     </owl:Axiom>
     
 
@@ -2631,7 +2643,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001485">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2654,7 +2666,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001485"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Muskelsystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2698,7 +2710,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Koerper</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2726,7 +2738,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001491">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2748,7 +2760,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001491"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Organsystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2758,7 +2770,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001493">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2779,7 +2791,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001493"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Rumpf</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2805,7 +2817,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001494"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Pilz</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -2815,7 +2827,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001613">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2838,7 +2850,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001615">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001613"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2912,7 +2924,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001948">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2975,7 +2987,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0002064">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000421"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2999,7 +3011,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000739"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000731"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3043,7 +3055,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0002180">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0002178"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3070,7 +3082,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000801"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3128,7 +3140,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000762"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0002058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3163,7 +3175,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002666"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>adulte Stammzelle</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -3203,7 +3215,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000816"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0004300"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3219,7 +3231,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0003091">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3242,7 +3254,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0003091"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Urogenitalsystem</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/TEMP#GE"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/bto#GE"/>
     </owl:Axiom>
     
 
@@ -3252,7 +3264,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0003092">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0003091"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3276,7 +3288,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0003096">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3398,7 +3410,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0004300">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001430"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3414,7 +3426,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0004578">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001431"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3440,7 +3452,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0004730">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#develops_from"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0000725"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3465,7 +3477,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0005810">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3490,7 +3502,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0006078">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/TEMP#part_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BTO_0001489"/>
             </owl:Restriction>
         </rdfs:subClassOf>

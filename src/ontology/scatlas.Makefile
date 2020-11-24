@@ -1,3 +1,8 @@
+.PHONY: update_zooma_seed
+
+update_zooma_seed:
+	echo 'Pulling new Zooma seed'
+	wget -O ../curation/scatlas_seed_table.tsv https://raw.githubusercontent.com/ebi-gene-expression-group/curated-metadata/master/zoomage_report.CURATED.tsv
 
 # Assume third column = SEMANTIC_TAG.  Works in this case but not a safe assumption for Zooma tsv files in general.
 # Select column 3. remove header'' Split on '|', strip whitespace, uniq.
@@ -32,9 +37,9 @@ components/%_seed_extract.sparql: seed.txt
 	sh ../scripts/generate_sparql_subclass_query.sh seed.txt $@
 
 
-components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt
+components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat seed.txt $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
+	cat seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
