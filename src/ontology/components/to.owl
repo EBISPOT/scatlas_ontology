@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/to.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/to.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-11-25/components/to.owl"/>
     </owl:Ontology>
     
 
@@ -72,6 +72,12 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     
 
 
@@ -317,7 +323,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</owl:annotatedTarget>
-        <obo1:IAO_0010000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/bfo/axiom/017-002</obo1:IAO_0010000>
+        <obo1:IAO_0010000>http://purl.obolibrary.org/obo/bfo/axiom/017-002</obo1:IAO_0010000>
     </owl:Axiom>
     
 
@@ -370,7 +376,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</owl:annotatedTarget>
-        <obo1:IAO_0010000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/bfo/axiom/050-003</obo1:IAO_0010000>
+        <obo1:IAO_0010000>http://purl.obolibrary.org/obo/bfo/axiom/050-003</obo1:IAO_0010000>
     </owl:Axiom>
     
 
@@ -11061,6 +11067,49 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025228"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A valve that is a part of a fruit that splits apart when the fruit dehisces.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:237</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>valva de fruto (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>果実の弁 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0000033</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Arabidopsis"/>
+        <rdfs:comment>A valve may develop from an entire carpel (as in Brassicaceae) or from part of a carpel (as in Fabaceae). If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.</rdfs:comment>
+        <rdfs:label>fruit valve</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A valve that is a part of a fruit that splits apart when the fruit dehisces.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>valva de fruto (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>果実の弁 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000034">
@@ -11102,7 +11151,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000034"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>vasculature (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:caf918bf-f4c4-423c-8008-87c96e5399a0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:caf918bf-f4c4-423c-8008-87c96e5399a0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000034"/>
@@ -11396,7 +11445,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000055"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>adventitious bud (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:0eed275a-5dae-414a-bf36-81a08e6c6ba9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:0eed275a-5dae-414a-bf36-81a08e6c6ba9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11862,6 +11911,44 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025164"/>
+        <obo:IAO_0000115>A root epidermal cell (PO:0025164) that develops from a trichoblast (PO:0000262) and has as part a root hair (GO:0035618).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>c&amp;#233lula del pelo de la ra&amp;#237z (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>根毛細胞 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0000256</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#CL"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#TraitNet"/>
+        <rdfs:comment>Compare with non-hair root epidermal cell (PO:0000263). This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).</rdfs:comment>
+        <rdfs:label>root hair cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000256"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A root epidermal cell (PO:0025164) that develops from a trichoblast (PO:0000262) and has as part a root hair (GO:0035618).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471245208</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000256"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>c&amp;#233lula del pelo de la ra&amp;#237z (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000256"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>根毛細胞 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0000258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000258">
@@ -12198,6 +12285,46 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
+        <obo:IAO_0000115>A native plant cell (PO:0025606) which is a whole plant (PO:0000003) in the plant zygote stage (PO:0001097).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>zygote (broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:417</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cigoto (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>植物接合子、接合体 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0000423</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#CL"/>
+        <rdfs:comment>A plant zygote is a whole plant that is a single cell formed by fertilization (syngamy).</rdfs:comment>
+        <rdfs:label>plant zygote</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000423"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A native plant cell (PO:0025606) which is a whole plant (PO:0000003) in the plant zygote stage (PO:0001097).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000423"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cigoto (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000423"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>植物接合子、接合体 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0001002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001002">
@@ -12382,6 +12509,36 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0001078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007631"/>
+        <obo:IAO_0000115>A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of rapid elongation of the plant embryo axis (PO:0019018) and plant embryo cotyledons (PO:0025470), and the onset of a plant embryo true leaf formation stage (PO:0001095), when present, or a mature plant embryo stage (PO:0001081).</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PO:0001076</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>PO_GIT:400</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>curled cotyledon stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>torpedo stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0001078</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Angiosperm"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Arabidopsis"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Tomato"/>
+        <rdfs:comment>During this stage, the plant embryo (PO:0009009) continues to undergo a process of developmental growth (as a result of both cell division (GO:0051301) and cell expansion (GO:0016049), which ends with the onset of a mature plant embryo stage (PO:0001081). For species that develop true leaves in the plant embryo, (vascular leaves (PO:0009025) that develop after the cotyledons (PO:0020030) or coleoptile (PO:0020033)), growth may continue in the plant embryo true leaf formation stage (PO:0001095). For other species, the plant embryo transitions directly from a plant embryo cotyledonary stage (PO:0001078) to a mature plant embryo stage (PO:0001081).</rdfs:comment>
+        <rdfs:label>plant embryo cotyledonary stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of rapid elongation of the plant embryo axis (PO:0019018) and plant embryo cotyledons (PO:0025470), and the onset of a plant embryo true leaf formation stage (PO:0001095), when present, or a mature plant embryo stage (PO:0001081).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GO:0016049</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0051301</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Katica_Ilic</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0001083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001083">
@@ -12427,6 +12584,51 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Katica_Ilic</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0001185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007631"/>
+        <obo:IAO_0000115>A plant embryo development stage (PO:0007631) that occurs during the interval between when a plant embryo proper (PO:0000001) increases in diameter through cell division, but retains radial symmetry (with the concomitant formation of a protoderm (PO:0006210)), and the onset of a plant embryo bilateral stage (PO:0004507).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:400</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>dermatogen stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>embryo stage EM3 (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>embryo stage EM4 (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>globular stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>late globular stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mid-globular stage in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0001185</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Angiosperm"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Arabidopsis"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Maize"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Poaceae"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Rice"/>
+        <rdfs:comment>During the plant embryo globular stage, differentiation of the three main tissue systems (vascular system (PO:0000034); epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)) occurs.</rdfs:comment>
+        <rdfs:label>plant embryo globular stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001185"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plant embryo development stage (PO:0007631) that occurs during the interval between when a plant embryo proper (PO:0000001) increases in diameter through cell division, but retains radial symmetry (with the concomitant formation of a protoderm (PO:0006210)), and the onset of a plant embryo bilateral stage (PO:0004507).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Katica_Ilic</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001185"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>embryo stage EM3 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007170</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001185"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>embryo stage EM4 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007173</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -12891,6 +13093,12 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000039"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0030112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A shoot axis vascular system (PO:0000039) that includes the totality of the portions of vascular tissue in their specific arrangement in a pedicel (PO:0030112).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PO_GIT:41</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>sistema vascular del pedicelo (Spanish, exact)</oboInOwl:hasExactSynonym>
@@ -14022,6 +14230,83 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0006075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005417"/>
+        <obo:IAO_0000115>A portion of phloem (PO:0005417) tissue that develops from the procambium (PO:0025275).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>OBO_SF3_PO:433</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>floema primario (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of primary phloem tissue (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>一次師部 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0006075</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#TraitNet"/>
+        <rdfs:comment>In stem or root it is differentiated behind the apical meristem. Primary phloem develops as part of primary growth (GO term for primary growth has been requested).</rdfs:comment>
+        <rdfs:label>primary phloem</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006075"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A portion of phloem (PO:0005417) tissue that develops from the procambium (PO:0025275).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471245208</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006075"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>floema primario (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006075"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>一次師部 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0006077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006075"/>
+        <obo:IAO_0000115>A portion of primary phloem (PO:0006075) tissue has as parts the first-formed sieve elements (PO:0025406) at a particular location and does not have companion cells (PO:0000071, in angiosperms) or albuminous cells (PO:0025412, in gymnosperms) associated with the sieve elements.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>OBO_SF3_PO:433</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>portion of protophloem tissue (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protofloema (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>原生師部 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0006077</oboInOwl:id>
+        <rdfs:comment>Protophloem is the first primary phloem to develop in any particular location in a portion of vascular tissue (PO:0009015). Sieve elements in the protophloem are smaller than in the metaphloem (PO:0006076). The protophloem usually only lasts a short time before it is replaced by metaphloem.</rdfs:comment>
+        <rdfs:label>protophloem</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006077"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A portion of primary phloem (PO:0006075) tissue has as parts the first-formed sieve elements (PO:0025406) at a particular location and does not have companion cells (PO:0000071, in angiosperms) or albuminous cells (PO:0025412, in gymnosperms) associated with the sieve elements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0471245194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>protofloema (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>原生師部 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0006079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006079">
@@ -14519,6 +14804,56 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0006342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
+        <obo:IAO_0000115>A reproductive shoot system (PO:0025082) that develops from an inflorescence (PO:0009049) and has as parts each infructescence axis (PO:0025242) and all of the fruits (PO:0009001) borne by those axes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PO_GIT:260</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:261</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:71</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>infructescencia (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>果序 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>banana bunch (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>fruit bunch (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0006342</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Angiosperm"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Musa"/>
+        <rdfs:label>infructescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006342"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A reproductive shoot system (PO:0025082) that develops from an inflorescence (PO:0009049) and has as parts each infructescence axis (PO:0025242) and all of the fruits (PO:0009001) borne by those axes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006342"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>infructescencia (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006342"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>果序 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006342"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>banana bunch (narrow)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CO_125:0000014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0006343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006343">
@@ -14627,7 +14962,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedTarget>An ear inflorescence axillary meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Pankaj_Jaiswal</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</rdfs:comment>
+        <rdfs:comment>NYBG:Brandon_Sinn</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006360"/>
@@ -15059,7 +15394,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>BBCH growth stage 4.0 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007014"/>
@@ -15291,7 +15626,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>5.1 anthesis in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -15327,13 +15662,13 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>VT in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>anthesis in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -15351,7 +15686,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>pollen shed in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67361</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67361</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
@@ -15402,7 +15737,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A sporophyte development stage (PO:0028002) during which a sporophyte participates in multicellular organism senescence.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GO:0010259</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0010259</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16446,19 +16781,19 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>08-milk development in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007105</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>08-milk development in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007105</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>08-milk development in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007105</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -16494,7 +16829,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-70 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007105</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007042"/>
@@ -16918,7 +17253,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007053"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>FL.02 1/2 of flowers open in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SGN:0000037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000037</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007053"/>
@@ -16965,7 +17300,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>0 Germination in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000001</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
@@ -16977,7 +17312,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>0 germination in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:64055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:64055</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
@@ -17007,7 +17342,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>01-germination in rice (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007043</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
@@ -17019,7 +17354,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>BBCH principal growth stage 0 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
@@ -17037,7 +17372,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>rice growth stage-1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007043</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17358,25 +17693,25 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.06-five leaves unfolded in Triticeae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.06-five leaves unfolded in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.06-five leaves unfolded in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.06-five leaves unfolded in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
@@ -17418,7 +17753,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Triticeae five leaves unfolded (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
@@ -17430,7 +17765,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-15, Haun scale-4.+ (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007064</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007065"/>
@@ -17618,7 +17953,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007072"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>VT vegetative tasseling in maize (US cornbelt) (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO_REF:00002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_REF:00002</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007072"/>
@@ -18115,7 +18450,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>14 rosette leaf in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000417</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000417</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007085"/>
@@ -18355,7 +18690,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007094"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>LP.01 one leaf visible in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000013</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007094"/>
@@ -18479,7 +18814,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007095"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>8 rosette leaves in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000411</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000411</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007095"/>
@@ -18497,7 +18832,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007095"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>LP.08 eight leaves visible in Solanaceae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGN:0000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SGN:0000020</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007095"/>
@@ -18602,7 +18937,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007098"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.2 1-2 leaves in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67353</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67353</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007098"/>
@@ -18662,7 +18997,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007098"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>V2 in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:67353</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67353</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007098"/>
@@ -18731,7 +19066,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.09 8th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000023</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
@@ -18779,7 +19114,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>9 rosette leaf in Arabidopsis (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000412</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000412</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
@@ -18809,7 +19144,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V8 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000023</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007101"/>
@@ -18869,7 +19204,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>02-three leaf stage in sorghum (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -18887,7 +19222,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.03-three to four leaves in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -18947,7 +19282,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>maize growth stage-1.3 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
@@ -18965,7 +19300,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007106"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum growth stage-1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19107,7 +19442,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1 seedling in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:1863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:1863</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
@@ -19125,7 +19460,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>sorghum principal growth stage 1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -19219,7 +19554,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.03-three to four leaves in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007010</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
@@ -19332,6 +19667,89 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0007116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007133"/>
+        <obo:IAO_0000115>The stage at which leaves at eleven nodes, other than the cotyledonary node, are visible above ground.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>1.11 10th trifoliolate leaf unfolded in soybean (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>11 rosette leaves in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>3.02-late whorl stage in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>3.2 late whorl stage of maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>9-11 leaves in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Stage V10 in soybean (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>V11 in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>eleven rosette leaves (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>late whorl stage of maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>maize growth stage-3.2 (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0007116</oboInOwl:id>
+        <rdfs:comment>The leaves can be a single leaf, two, or whorls of leaves at each node.</rdfs:comment>
+        <rdfs:label>LP.11 eleven leaves visible stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The stage at which leaves at eleven nodes, other than the cotyledonary node, are visible above ground.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>1.11 10th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SOY:0000025</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>11 rosette leaves in Arabidopsis (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TAIR:0000414</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>3.02-late whorl stage in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>3.2 late whorl stage of maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>9-11 leaves in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67357</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Stage V10 in soybean (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SOY:0000025</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>V11 in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:67357</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>late whorl stage of maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>maize growth stage-3.2 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0007117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007117">
@@ -19372,19 +19790,19 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in barley (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in oat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>4.03-second node detectable in wheat (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
@@ -19396,7 +19814,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-32, Feekes scale-7 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GRO:0007083</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007117"/>
@@ -19437,7 +19855,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1.16 15th trifoliolate leaf unfolded in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -19467,7 +19885,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Stage V15 in soybean (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SOY:0000030</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOY:0000030</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007119"/>
@@ -19557,7 +19975,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2.07-six leaves unfolded in Triticeae (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007065</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
@@ -19611,7 +20029,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Triticeae six leaves unfolded (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007065</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
@@ -19623,7 +20041,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Zadok scale-16, Haun scale-5.+ (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007065</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007123"/>
@@ -19758,7 +20176,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007133"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1 seedling (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:1863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaizeGDB:1863</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007133"/>
@@ -19806,6 +20224,42 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>vegetative in Arabidopsis (related)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>TAIR:0000305</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0007505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007520"/>
+        <obo:IAO_0000115>The stage at which root primordium originates and develops at specific locations in embryonic and post embryonic roots.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0007505</oboInOwl:id>
+        <rdfs:label>1 root primordium formation stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007505"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The stage at which root primordium originates and develops at specific locations in embryonic and post embryonic roots.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0007511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007505"/>
+        <obo:IAO_0000115>This stage at which the transverse divisions in pericycle cells form the initials of the lateral root primordium.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0007511</oboInOwl:id>
+        <rdfs:label>lateral root primordium formation stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007511"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>This stage at which the transverse divisions in pericycle cells form the initials of the lateral root primordium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -22439,6 +22893,59 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0009086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A portion of plant tissue (PO:0009007) that is the innermost differentiated layer of a pericarp (PO:0009084).</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PO:0006047</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>PO_GIT:149</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO_GIT:511</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>endocarpo (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of endocarp tissue (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>内果皮 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>citrus flesh (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>citrus pulp (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inner epidermis of pericarp (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0009086</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Arabidopsis"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Citrus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Maize"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Poaceae"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Rice"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Tomato"/>
+        <rdfs:label>endocarp</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009086"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A portion of plant tissue (PO:0009007) that is the innermost differentiated layer of a pericarp (PO:0009084).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Pankaj_Jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009086"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>endocarpo (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009086"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>内果皮 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0009088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009088">
@@ -23744,7 +24251,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of root parenchyma tissue that is the central part of a root cap in which the cells are arranged in longitudinal files.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0878938567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0878938567</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -23788,7 +24295,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of root parenchyma tissue that is part of a root cap and is parallel to the sides of a root axis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0878938567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0878938567</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24063,7 +24570,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020139"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>vascular leaf costa (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:e05450e0-b820-465a-ba99-ced17c5a34b0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:e05450e0-b820-465a-ba99-ced17c5a34b0</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020139"/>
@@ -24633,7 +25140,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>cycle (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025022"/>
@@ -24696,7 +25203,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025023"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>cycle (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025023"/>
@@ -25985,6 +26492,49 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0025164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0004013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An epidermal cell that is part of a root epidermis.</obo:IAO_0000115>
+        <oboInOwl:created_by>rwalls</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-11-18T10:29:44Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>c&amp;#233lula epid&amp;#233rmica de la ra&amp;#237z (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>根表皮細胞 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0025164</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#CL"/>
+        <rdfs:label>root epidermal cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025164"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epidermal cell that is part of a root epidermis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025164"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>c&amp;#233lula epid&amp;#233rmica de la ra&amp;#237z (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025164"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>根表皮細胞 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025165">
@@ -26097,7 +26647,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025181"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant axis elongation zone (PO:0025180) that is part of a root tip (PO:0000025) and located proximal to a root apical meristem (PO:0020147).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>POC:cooperl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -26280,6 +26830,43 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0025228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025001"/>
+        <obo:IAO_0000115>A cardinal organ part that is a part of a plant structure that splits apart when the structure dehisces.</obo:IAO_0000115>
+        <oboInOwl:created_by>rwalls</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-12-20T09:21:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>PO_GIT:237</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>valva (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>弁 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0025228</oboInOwl:id>
+        <rdfs:label>valve</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025228"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cardinal organ part that is a part of a plant structure that splits apart when the structure dehisces.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025228"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>valva (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025228"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>弁 (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025230 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025230">
@@ -26343,7 +26930,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A root elongation zone (PO:0025181) that is part of a primary root tip (PO:0000026).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>POC:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025257"/>
@@ -26356,6 +26943,59 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025257"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>一次根伸長帯（層） (Japanese, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A septum that divides a cavity or mass of tissue in a fruit and develops from an ovary septum.</obo:IAO_0000115>
+        <oboInOwl:created_by>rwalls</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-09T02:30:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>fruit dissepiment (broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:277</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PlantSystematics_image_archive:1597</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>septo del fruto (Spanish, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>果実隔壁 (Japanese, exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0025268</oboInOwl:id>
+        <rdfs:comment>Annotations for Arabidopsis should go under fruit replum (PO:0025267), not under fruit septum. The partition between two fruit locules of an orange is a fruit septum. If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.</rdfs:comment>
+        <rdfs:label>fruit septum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025268"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A septum that divides a cavity or mass of tissue in a fruit and develops from an ovary septum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025268"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>fruit dissepiment (broad)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025268"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>septo del fruto (Spanish, exact)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025268"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>果実隔壁 (Japanese, exact)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
     </owl:Axiom>
@@ -27455,6 +28095,28 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0025597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006342"/>
+        <obo:IAO_0000115>An infructescence (PO:0006342) in Zea species that bears kernels (i.e. caryopsis fruit; PO:0030104) on a compact ear infructescence axis (PO:0025623) and develops from the ear inflorescence (PO:0020136).</obo:IAO_0000115>
+        <oboInOwl:created_by>Laurel_Cooper</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-12-07T11:57:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>PO_GIT:580</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0025597</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Maize"/>
+        <rdfs:label>ear infructescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025597"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An infructescence (PO:0006342) in Zea species that bears kernels (i.e. caryopsis fruit; PO:0030104) on a compact ear infructescence axis (PO:0025623) and develops from the ear inflorescence (PO:0020136).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025598 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025598">
@@ -28011,6 +28673,99 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0030108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+        <obo:IAO_0000115>A fruit (PO:0009001) which at maturity comprises a fleshy endocarp (PO:0009086), fleshy mesocarp (PO:0009087), and fleshy exocarp (PO:0009085).</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>indehiscent fruit  (broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:652</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>bacca (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>baya (exact, Spanish)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>beere (exact, German)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>berry (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>pyrine (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0030108</oboInOwl:id>
+        <rdfs:comment>Examples: pepper (Capsicum annuum), papaya (Carica papaya), avocado (Persea americana), may apple (Podophyllum peltatum), date palm (Phoenix dactylifera), tomato (Solanum lycopersicum), potato (Solanum tuberosum), chocolate (Theobroma cacao), blueberry (Vaccinium spp.), and grape (Vitis vinifera).</rdfs:comment>
+        <rdfs:label>berry fruit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A fruit (PO:0009001) which at maturity comprises a fleshy endocarp (PO:0009086), fleshy mesocarp (PO:0009087), and fleshy exocarp (PO:0009085).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>baya (exact, Spanish)</owl:annotatedTarget>
+        <oboInOwl:SynonymTypeProperty>Spanish</oboInOwl:SynonymTypeProperty>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030108"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>beere (exact, German)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#German"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025029"/>
+        <obo:IAO_0000115>A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:created_by>
+        <oboInOwl:creation_date>2017-03-17T00:43:36Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>pedicelo (Spanish, broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:672</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0030112</oboInOwl:id>
+        <rdfs:comment>A pedicel has a single internode, determinate growth, and is the ultimate shoot axis (PO:0025029) in a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).</rdfs:comment>
+        <rdfs:label>pedicel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030112"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0030112"/>
+        <obo:IAO_0000115>A pedicel (PO:0030112) that bears a flower (PO:0009046).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:created_by>
+        <oboInOwl:creation_date>2017-03-17T00:49:32Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>pedicelo (Spanish, broad)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>PO_GIT:673</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0030113</oboInOwl:id>
+        <rdfs:label>flower pedicel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030113"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A pedicel (PO:0030112) that bears a flower (PO:0009046).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/TO_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/TO_0000067">
@@ -28203,10 +28958,10 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
         <owl:annotatedTarget>A measurable or observable characteristic of a cellular component (GO:0005575), biological process (GO:0008150) or molecular function (GO:0003674) that is part of, or has participant a plant anatomical entity (PO:0025131) and/or a plant structure development stage (PO:0009012).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GO:0003674</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005575</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008150</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO:0009012</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PO:0025131</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0025131</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TO:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     

@@ -12,7 +12,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/ordo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/ordo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-11-25/components/ordo.owl"/>
     </owl:Ontology>
     
 
@@ -49,12 +49,6 @@
     <!-- http://www.ebi.ac.uk/efo/definition_citation -->
 
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation"/>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/reason_for_obsolescence -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence"/>
     
 
 
@@ -103,15 +97,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.orpha.net/ORDO/ObsoleteClass -->
-
-    <owl:Class rdf:about="http://www.orpha.net/ORDO/ObsoleteClass">
-        <efo:definition xml:lang="en">ORPHA number no more in use. Deprecated entities are part of them. They are clinical entities thought to be unique in the past but now considered, thanks to the evolution of the knowledge, part of another clinical entity.</efo:definition>
-        <rdfs:label xml:lang="en">obsolete class</rdfs:label>
-    </owl:Class>
     
 
 
@@ -1229,16 +1214,6 @@
     
 
 
-    <!-- http://www.orpha.net/ORDO/Orphanet_278 -->
-
-    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_278">
-        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/ObsoleteClass"/>
-        <efo:reason_for_obsolescence xml:lang="en">use http://www.orpha.net/ORDO/Orphanet_454887 with label: Corticobasal syndrome</efo:reason_for_obsolescence>
-        <rdfs:label xml:lang="en">OBSOLETE: Corticobasal degeneration</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.orpha.net/ORDO/Orphanet_3389 -->
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_3389">
@@ -2307,16 +2282,6 @@
         <owl:annotatedTarget>UMLS:C0027868</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
-    
-
-
-    <!-- http://www.orpha.net/ORDO/Orphanet_68388 -->
-
-    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_68388">
-        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/ObsoleteClass"/>
-        <efo:reason_for_obsolescence xml:lang="en">use http://www.orpha.net/ORDO/Orphanet_98196 with label: Malformation syndrome with hamartosis</efo:reason_for_obsolescence>
-        <rdfs:label xml:lang="en">OBSOLETE: Neurofibromatosis</rdfs:label>
-    </owl:Class>
     
 
 

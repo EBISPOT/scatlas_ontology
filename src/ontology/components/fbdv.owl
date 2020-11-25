@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/fbdv.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/fbdv.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-11-25/components/fbdv.owl"/>
     </owl:Ontology>
     
 
@@ -227,6 +227,27 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A temporal subdivision of a developmental process.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBdv_00005337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBdv_00005337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBdv_00007012"/>
+        <obo:IAO_0000115>The first larval instar begins at hatching and ends at the first larval molt. Anterior spiracles are not yet present; posterior spiracles have two openings each. Salivary glands are very small and all cells are uniform in size. Mouth hooks typically have one tooth. Duration at 25 degrees C: approximately 25 hours (24-49 hours after egg laying; 0-25 hours after hatching).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>L1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>first instar larva</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>FlyBase_development_CV</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBdv:00005337</oboInOwl:id>
+        <rdfs:comment>Temporal ordering number - 410.</rdfs:comment>
+        <rdfs:label>first instar larval stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBdv_00005337"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The first larval instar begins at hatching and ends at the first larval molt. Anterior spiracles are not yet present; posterior spiracles have two openings each. Salivary glands are very small and all cells are uniform in size. Mouth hooks typically have one tooth. Duration at 25 degrees C: approximately 25 hours (24-49 hours after egg laying; 0-25 hours after hatching).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0007733</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
