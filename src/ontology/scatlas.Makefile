@@ -139,5 +139,20 @@ imports/omit_import.obo:
 all_diffs: ../curation/retrieved_seed.txt ../curation/curated_but_not_retrieved.txt ../curation/curated_and_retrieved.txt
 
 
+# Manual import of the VFB drivers ontology
+mirror/vfb_drivers.trigger: $(SRC)
+
+mirror/vfb_drivers.owl: mirror/vfb_drivers.trigger
+	if [ $(MIR) = true ]; then \
+		wget -O mirror/vfb_drivers.owl \
+			http://virtualflybrain.org/data/VFB/OWL/vfb_drivers.owl ; \
+	fi
+
+components/vfb_drivers.owl: mirror/vfb_drivers.owl
+	$(ROBOT) remove --input $< --axioms disjoint \
+		annotate --ontology-iri $(ONTBASE)/$@ \
+			--version-iri $(ONTBASE)/releases/$(TODAY)/$@ \
+			--output $@
+
 update_repo:
 	sh ../scripts/update_repo.sh

@@ -119,6 +119,7 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.owl" uri="components/efo.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/efo.obo" uri="components/efo.obo"/>
 
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/vfb_drivers.owl" uri="components/vfb_drivers.owl"/>
 
 
   <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
