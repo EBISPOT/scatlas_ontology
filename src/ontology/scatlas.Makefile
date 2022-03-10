@@ -65,11 +65,11 @@ components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KE
 	#reduce -r ELK \
 
 imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
-	$(ROBOT) 	merge $(patsubst %, -i %, $^) \
-	remove --axioms disjoint  -o $@
+	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) \
+	  remove --axioms disjoint  -o $@; fi
 
 imports/fbbt_import.owl: imports/fbbt_merged.owl imports/fbbt_terms_combined.txt
-	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/fbbt_terms_combined.txt --force true --method BOT \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/fbbt_terms_combined.txt --force true --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/fbbt_import.owl
