@@ -1,6 +1,7 @@
 id: scatlas
 title: Single Cell Atlas
 github_org: EBISPOT
+git_main_branch: master
 repo: scatlas_ontology
 report_fail_on: ERROR
 export_formats:
