@@ -79,30 +79,25 @@ components/subclasses.owl: ../template/subclass_terms.csv
 
 
 components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input $<  \
-		reason --reasoner ELK  \
-		relax \
-		remove --axioms equivalent \
-		remove --axioms disjoint \
-		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
-		relax \
-		filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
-		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< reason --reasoner ELK relax \
+    remove --axioms equivalent \
+    remove --axioms disjoint \
+    remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
+    relax \
+    filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
+    reduce -r ELK \
+    annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: components/%.owl
 
 
 components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input $<  \
-		relax \
-		remove --axioms disjoint \
-		reason --reasoner ELK  \
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< relax remove --axioms disjoint reason --reasoner ELK \
 		remove --axioms equivalent \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
 		filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: components/%.owl
 
 $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
