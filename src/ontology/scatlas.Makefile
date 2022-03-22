@@ -1,3 +1,6 @@
+RG_ENV=JAVA_OPTS=-Xmx120G
+RG=$(RG_ENV) relation-graph
+
 .PHONY: update_zooma_seed
 
 update_zooma_seed:
@@ -46,23 +49,33 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 	#sed -i '/Orphanet_208593/d' $@
 	#sed -i '/orpha.*ObsoleteClass/d' $@
 
-
-
-
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input $<  \
-		reason --reasoner ELK  \
-		remove --axioms disjoint --trim false --preserve-structure false \
-		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
-		relax \
-		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: components/%.owl
+$(TMPDIR)/%-materialize-direct.nt: imports/%_import.owl
+	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-file $@
 
-	#reduce -r ELK \
+$(TMPDIR)/term.facts: components/%_simple_seed.txt
+	cp $< $@.tmp.facts
+	sed -e 's/^/</' -e 's/\r/>/' <$@.tmp.facts >$@ && rm $@.tmp.facts
+
+$(TMPDIR)/rdf.facts: components/%-materialize-direct.nt
+	sed 's/ /\t/' <$< | sed 's/ /\t/' | sed 's/ \.$$//' >$@
+.PHONY: $(TMPDIR)/rdf.facts
+
+$(TMPDIR)/ontrdf.facts: imports/%_import.owl
+	riot --output=ntriples $< | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$@
+.PHONY: $(TMPDIR)/ontrdf.facts
+
+$(TMPDIR)/%-complete-transitive.ofn: $(TMPDIR)/term.facts $(TMPDIR)/rdf.facts $(TMPDIR)/ontrdf.facts convert.dl
+	souffle -c convert.dl
+	sed -e '1s/^/Ontology(<http:\/\/purl.obolibrary.org\/obo\/kidney-extended.owl>\n/' -e '$$s/$$/)/' <ofn.csv >$@ && rm ofn.csv
+
+components/%.owl: $(TMPDIR)/%-complete-transitive.ofn
+	$(ROBOT) merge --input complete-transitive.ofn \
+					 remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
+           annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: components/%.owl
 
 imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
 	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) \
