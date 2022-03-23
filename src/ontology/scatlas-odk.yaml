@@ -12,29 +12,38 @@ import_group:
   products:
     - id: bto
     - id: cl
-      mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
+      use_base: TRUE
     - id: chebi
-      mirror_from: http://purl.obolibrary.org/obo/chebi.owl.gz
+      make_base: TRUE
+      use_gzipped: TRUE
+      is_large: TRUE
     - id: go
+      use_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/GO_
+        - http://purl.obolibrary.org/obo/GOREL_
+        - http://purl.obolibrary.org/obo/GOCHE_
     - id: peco
       mirror_from: http://purl.obolibrary.org/obo/peco.owl
     - id: pato
+      use_base: TRUE
     - id: fbbt
     - id: to
     - id: po
     - id: wbls
     - id: ncit
     - id: uberon
+      use_base: TRUE
     - id: rs
     - id: fbdv
     - id: omit
-    - id: ordo
     - id: obi
     - id: ordo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
     - id: uberon-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
     - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: efo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt
