@@ -9,4 +9,6 @@ echo "prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?o WHERE {
     VALUES ?sub { <$V> } 
     ?sub rdfs:subClassOf* ?o .
+    FILTER(!IsBlank(?sub))
+    FILTER(!IsBlank(?o))
 } " > "$SPARQL"

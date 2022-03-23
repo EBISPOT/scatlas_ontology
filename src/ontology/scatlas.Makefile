@@ -35,11 +35,11 @@ prepare_components:
 
 components/%_seed_extract.sparql: seed.txt
 	sh ../scripts/generate_sparql_subclass_query.sh seed.txt $@
+.PHONY: components/%_seed_extract.sparql
 
-
-components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt $(SCATLAS_KEEPRELATIONS)
+components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
+	cat $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
@@ -48,34 +48,37 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 	#sed -i '/Orphanet_183634/d' $@
 	#sed -i '/Orphanet_208593/d' $@
 	#sed -i '/orpha.*ObsoleteClass/d' $@
+.PHONY: components/%_simple_seed.txt
 
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-$(TMPDIR)/%-materialize-direct.nt: imports/%_import.owl
+$(TMPDIR)/%-materialize-direct.nt: mirror/%.owl
 	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-file $@
 
-$(TMPDIR)/term.facts: components/%_simple_seed.txt
+$(TMPDIR)/%_term.facts: components/%_simple_seed.txt
 	cp $< $@.tmp.facts
-	sed -e 's/^/</' -e 's/\r/>/' <$@.tmp.facts >$@ && rm $@.tmp.facts
+	sed -e 's/^/</' -e 's/\r/>/' <$@.tmp.facts >$@ && rm $@.tmp.facts && mv $@ $(TMPDIR)/term.facts
+.PHONY: $(TMPDIR)/%_term.facts
 
-$(TMPDIR)/rdf.facts: components/%-materialize-direct.nt
-	sed 's/ /\t/' <$< | sed 's/ /\t/' | sed 's/ \.$$//' >$@
-.PHONY: $(TMPDIR)/rdf.facts
+$(TMPDIR)/%_rdf.facts: $(TMPDIR)/%-materialize-direct.nt
+	sed 's/ /\t/' <$< | sed 's/ /\t/' | sed 's/ \.$$//' >$@ && mv $@ $(TMPDIR)/rdf.facts
+.PHONY: $(TMPDIR)/%_rdf.facts
 
-$(TMPDIR)/ontrdf.facts: imports/%_import.owl
-	riot --output=ntriples $< | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$@
-.PHONY: $(TMPDIR)/ontrdf.facts
+$(TMPDIR)/%_ontrdf.facts: mirror/%.owl
+	riot --output=ntriples $< | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$@ && mv $@ $(TMPDIR)/ontrdf.facts
+.PHONY: $(TMPDIR)/%_ontrdf.facts
 
-$(TMPDIR)/%-complete-transitive.ofn: $(TMPDIR)/term.facts $(TMPDIR)/rdf.facts $(TMPDIR)/ontrdf.facts convert.dl
-	souffle -c convert.dl
+$(TMPDIR)/%-complete-transitive.ofn: $(TMPDIR)/%_term.facts $(TMPDIR)/%_rdf.facts $(TMPDIR)/%_ontrdf.facts convert.dl
+	souffle --fact-dir=$(TMPDIR) --compile convert.dl 
 	sed -e '1s/^/Ontology(<http:\/\/purl.obolibrary.org\/obo\/kidney-extended.owl>\n/' -e '$$s/$$/)/' <ofn.csv >$@ && rm ofn.csv
+.PHONY: $(TMPDIR)/%-complete-transitive.ofn
 
 components/%.owl: $(TMPDIR)/%-complete-transitive.ofn
-	$(ROBOT) merge --input complete-transitive.ofn \
+	$(ROBOT) merge --input $< \
 					 remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
            annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: components/%.owl
+.PHONY: components/%.owl
 
 imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
 	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) \
