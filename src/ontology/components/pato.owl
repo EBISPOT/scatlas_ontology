@@ -1,153 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/components/pato.owl#"
      xml:base="http://purl.obolibrary.org/obo/scatlas/components/pato.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/pato.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/pato.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2022-03-28/components/pato.owl"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002604 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002604"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
     
 
 
@@ -162,40 +23,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+    <!-- http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#decreased_in_magnitude_relative_to">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+    </owl:ObjectProperty>
+    
 
-A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>part_of</oboInOwl:id>
-        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:label>part of</rdfs:label>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-        <rdfs:label>part_of</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
-        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
-        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+
+    <!-- http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pato#increased_in_magnitude_relative_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -211,746 +50,141 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0030000"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">connected anatomical structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">material anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0030000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <rdfs:label>biological entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
-        <obo:IAO_0000115>A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome).</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>cell or subcellular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>cellular component</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>subcellular entity</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>GO:0005575</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
-        <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
-        <rdfs:label>cellular_component</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>subcellular entity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NIF_Subcellular:nlx_subcell_100315</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0005634 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043231"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
-        <obo:IAO_0000115>A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell&apos;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1702920020</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Cell_nucleus</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>cell nucleus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>horsetail nucleus</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0005634</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
-        <rdfs:label>nucleus</rdfs:label>
-        <rdfs:label xml:lang="en">nucleus</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell&apos;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>horsetail nucleus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:al</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:15030757</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043226 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043226">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
-        <obo:IAO_0000115>Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1539965131</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Wikipedia:Organelle</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0043226</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>organelle</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043227 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043227">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
-        <obo:IAO_0000115>Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao414196390</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>membrane-enclosed organelle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0043227</oboInOwl:id>
-        <rdfs:label>membrane-bounded organelle</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043227"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043229 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043229">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
-        <obo:IAO_0000115>Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0043229</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>intracellular organelle</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043231 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043227"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
-        <obo:IAO_0000115>Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>intracellular membrane-enclosed organelle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0043231</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>intracellular membrane-bounded organelle</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043231"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044464 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:label xml:lang="en">cell part</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0110165 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0110165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
-        <oboInOwl:created_by>kmv</oboInOwl:created_by>
-        <oboInOwl:creation_date>2019-08-12T18:01:37Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0110165</oboInOwl:id>
-        <rdfs:label>cellular anatomical entity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:kmv</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
-        <obo:IAO_0000589>quality (PATO)</obo:IAO_0000589>
-        <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000001</oboInOwl:id>
-        <rdfs:label>quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000047</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>biological sex</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGED:MGED</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000068 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000068</oboInOwl:id>
-        <rdfs:comment>TODO: define this or obsolete it and move children somewhere else.</rdfs:comment>
-        <rdfs:label>qualitative</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000169 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000169">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <obo:IAO_0000115>An organismal quality inhering in a bearer or a population by virtue of the bearer&apos;s disposition to survive and develop normally or the number of surviving individuals in a given population.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000169</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#disposition_slim"/>
-        <rdfs:label>viability</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000169"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An organismal quality inhering in a bearer or a population by virtue of the bearer&apos;s disposition to survive and develop normally or the number of surviving individuals in a given population.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000261 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000261">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <obo:IAO_0000115>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000261</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>maturity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality of a single physical entity which is held by a bearer when the latter exhibits a state of growth, differentiation, or development.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merriam-Webster:Merriam-Webster</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000169"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115>A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000383</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>female</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000383"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGED:MGED</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115>A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000384</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>male</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGED:MGED</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000461 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000461">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
-        <obo:IAO_0000115>A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting no deviation from normal or average.</obo:IAO_0000115>
-        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000460"/>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>average</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>PATO:0000461</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#abnormal_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>normal</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality inhering in a bearer by virtue of the bearer&apos;s exhibiting no deviation from normal or average.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000461"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001189 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000261"/>
-        <obo:IAO_0000115>A maturity quality inhering in a bearer by virtue of the bearer&apos;s being between the onset of puberty and maturity.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001189</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>adolescent</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001189"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A maturity quality inhering in a bearer by virtue of the bearer&apos;s being between the onset of puberty and maturity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001189"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0001237</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>PATO:0001238</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>snap:Quality</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>monadic quality of a continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>multiply inhering quality of a physical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of a continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of a single physical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of an object</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>monadic quality of an object</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>monadic quality of continuant</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001241</oboInOwl:id>
-        <rdfs:comment>Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.</rdfs:comment>
-        <rdfs:label>physical object quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality which inheres in a continuant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001340 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001340">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115>A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>intersex</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001340</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>hermaphrodite</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001340"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGED:MGED</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001340"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001374 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001374">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
-        <obo:IAO_0000115>A cellular quality inhering in a bearer by virtue of the bearer&apos;s number of homologous sets of chromosomes in the nucleus or primary chromosome-containing compartment of the cell, each set essentially coding for all the biological traits of the organism.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001374</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>ploidy</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001374"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cellular quality inhering in a bearer by virtue of the bearer&apos;s number of homologous sets of chromosomes in the nucleus or primary chromosome-containing compartment of the cell, each set essentially coding for all the biological traits of the organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Ploidy</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001374"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001375 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001375">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001393"/>
-        <obo:IAO_0000115>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing a single set of homologous chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001375</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>haploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001375"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing a single set of homologous chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Haploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001377 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001377">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001393"/>
-        <obo:IAO_0000115>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing more than two homologous sets of chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001377</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>polyploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001377"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing more than two homologous sets of chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Polyploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001375"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001381 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001381">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001377"/>
-        <obo:IAO_0000115>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing three homologous sets of chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001381</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>triploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001381"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing three homologous sets of chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Triploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001381"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001382 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001382">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001377"/>
-        <obo:IAO_0000115>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing four homologous sets of chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001382</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>tetraploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001382"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing four homologous sets of chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Tetraploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001382"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001384 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001384">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001377"/>
-        <obo:IAO_0000115>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing six homologous sets of chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001384</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>hexaploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A polyploidy quality inhering in a bearer by virtue of the bearer&apos;s containing six homologous sets of chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Hexaploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001384"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001393 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001393">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001374"/>
-        <obo:IAO_0000115>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing an integral multiple of the monoploid number, possibly excluding the sex-determining chromosomes.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001393</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#cell_quality"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>euploid</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001393"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A ploidy quality inhering in a bearer by virtue of the bearer&apos;s containing an integral multiple of the monoploid number, possibly excluding the sex-determining chromosomes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Euploid</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001393"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001396 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001396">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115>A monadic quality of continuant that exists at the cellular level of organisation.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001396</oboInOwl:id>
-        <rdfs:label>cellular quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A monadic quality of continuant that exists at the cellular level of organisation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001396"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001421 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001421">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000169"/>
-        <obo:IAO_0000115>A viability quality inhering in a bearer by virtue of the bearer&apos;s condition before death.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001421</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>alive</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001421"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A viability quality inhering in a bearer by virtue of the bearer&apos;s condition before death.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001421"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001422 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001422">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000169"/>
-        <obo:IAO_0000115>A viability quality inhering in a bearer by virtue of the cessation of the bearer&apos;s life.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001422</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>dead</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001422"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A viability quality inhering in a bearer by virtue of the cessation of the bearer&apos;s life.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
-        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001894</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>phenotypic sex</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001422"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001995</oboInOwl:id>
-        <rdfs:label>organismal quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality that inheres in an entire organism or part of an organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:CJM</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0070044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0070044"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000956 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000956"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001893"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001896"/>
 </rdf:RDF>
 
 

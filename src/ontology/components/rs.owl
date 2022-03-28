@@ -7,8 +7,73 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/rs.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/rs.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2022-03-28/components/rs.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000064"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000713 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000713"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000715"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000749 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000749"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0000759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0000759"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0001101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0001101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RS_0001413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RS_0001413"/>
 </rdf:RDF>
 
 
