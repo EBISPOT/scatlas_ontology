@@ -46,7 +46,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 $(COMPONENTSDIR)/fbbt.owl $(COMPONENTSDIR)/cl.owl 
+OTHER_SRC =                 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo json owl)
@@ -281,23 +281,6 @@ refresh-%:
 .PHONY: no-mirror-refresh-%
 no-mirror-refresh-%:
 	make IMP=true IMP_LARGE=true MIR=false PAT=false $(IMPORTDIR)/$*_import.owl -B
-
-
-# ----------------------------------------
-# Components
-# ----------------------------------------
-# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
-
-COMP=true # Global parameter to bypass component generation
-
-$(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
-	touch $@
-.PRECIOUS: $(COMPONENTSDIR)/%
-
-
-
-
-
 
 
 # ----------------------------------------
@@ -559,7 +542,7 @@ $(ONT)-base.owl: $(SRC) $(OTHER_SRC)
 
 # Full: The full artefacts with imports merged, reasoned
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
-	$(ROBOT) merge --input $< \
+	$(ROBOT) merge --input $^ \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
