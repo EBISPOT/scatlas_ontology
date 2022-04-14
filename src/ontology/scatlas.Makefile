@@ -1,3 +1,5 @@
+RG = relation-graph
+
 .PHONY: update_zooma_seed
 
 update_zooma_seed:
@@ -52,8 +54,11 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input $<  \
+$(TMPDIR)/%_relation_graph.owl: imports/%_import.owl
+	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --mode owl --output-file $@
+
+components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.owl
+	$(ROBOT) merge --input $< -i $(TMPDIR)/$*_relation_graph.owl \
 		reason --reasoner ELK  \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -78,8 +83,8 @@ components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "RS: http://purl.obolibrary.org/obo/RS_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< reason --reasoner ELK relax \
+components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.owl
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/fbbt_relation_graph.owl reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -90,8 +95,8 @@ components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(S
 .PRECIOUS: components/%.owl
 
 
-components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< relax remove --axioms disjoint reason --reasoner ELK \
+components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/omit_relation_graph.owl
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/omit_relation_graph.owl relax remove --axioms disjoint reason --reasoner ELK \
 		remove --axioms equivalent \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
