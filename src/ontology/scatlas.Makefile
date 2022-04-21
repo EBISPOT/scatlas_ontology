@@ -9,7 +9,7 @@ update_zooma_seed:
 ../curation/scatlas_seed.txt: ../curation/scatlas_seed_table.tsv
 	cat $< | cut -f3 -s | sed 's/\r//' | awk '{$$1=$$1};1' | sed '/^\(http\)/!d' | tr \| \\n  | sort | uniq > $@
 
-seed.txt: ../curation/scatlas_seed.txt
+$(TMPDIR)/seed.txt: ../curation/scatlas_seed.txt
 	cp $< $@
 	echo 'http://www.ebi.ac.uk/efo/EFO_0000001' >> $@
 
@@ -32,11 +32,11 @@ prepare_components:
 	touch $(components_seeds)
 
 
-components/%_seed_extract.sparql: seed.txt
-	sh ../scripts/generate_sparql_subclass_query.sh seed.txt $@
+components/%_seed_extract.sparql: $(TMPDIR)/seed.txt
+	sh ../scripts/generate_sparql_subclass_query.sh $(TMPDIR)/seed.txt $@
 
 
-components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql seed.txt $(SCATLAS_KEEPRELATIONS)
+components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS)
 	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
 	cat seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
@@ -54,14 +54,15 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-$(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl seed.txt $(SCRIPTSDIR)/prune_convert.dl
+$(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl $(TMPDIR)/seed.txt $(SCRIPTSDIR)/prune_convert.dl
 	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-file $(TMPDIR)/$*-materialize-direct.nt
-	cp seed.txt $(TMPDIR)/term.tmp.facts
-	sed -e 's/^/</' -e 's/\r/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
+	cp $(TMPDIR)/seed.txt $(TMPDIR)/term.tmp.facts
+	sed -e 's/^/</' -e 's/$$/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
 	sed 's/ /\t/' <$(TMPDIR)/$*-materialize-direct.nt | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/rdf.facts
 	riot --output=ntriples imports/$*_import.owl | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/ontrdf.facts
 	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/prune_convert.dl
 	sed -e '1s/^/Ontology(<http:\/\/purl.obolibrary.org\/obo\/$*-extended.owl>\n/' -e '$$s/$$/)/' <ofn.csv >$@ && rm ofn.csv 
+.PRECIOUS: $(TMPDIR)/%_relation_graph.ofn
 
 components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.ofn
 	$(ROBOT) merge --input $< -i $(TMPDIR)/$*_relation_graph.ofn \
@@ -101,8 +102,8 @@ components/fbbt.owl: imports/fbbt_merged.owl components/fbbt_simple_seed.txt $(S
 .PRECIOUS: components/%.owl
 
 
-components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/omit_relation_graph.ofn
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/omit_relation_graph.ofn relax remove --axioms disjoint reason --reasoner ELK \
+components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< relax remove --axioms disjoint reason --reasoner ELK \
 		remove --axioms equivalent \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
