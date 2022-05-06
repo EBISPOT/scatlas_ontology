@@ -27,6 +27,7 @@ src/ontology/imports/*.obo
 src/ontology/imports/*_terms.txt
 src/ontology/components/*_simple_seed.txt
 src/ontology/imports/fbbt_merged.owl
+src/ontology/imports/anatomy_merged.owl
 src/ontology/imports/fbbt_merge.owl
 docss/*
 src/ontology/tmp/

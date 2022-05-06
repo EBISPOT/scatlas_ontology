@@ -69,22 +69,22 @@ components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KE
 .PRECIOUS: components/%.owl
 
 
-imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
+imports/anatomy_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
 	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) \
 	  remove --axioms disjoint  -o $@; fi
 
-imports/fbbt_import.owl: imports/fbbt_merged.owl imports/fbbt_terms_combined.txt
+imports/anatomy_import.owl: imports/anatomy_merged.owl imports/fbbt_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/fbbt_terms_combined.txt --force true --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: imports/fbbt_import.owl
+.PRECIOUS: imports/anatomy_import.owl
 
 components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "RS: http://purl.obolibrary.org/obo/RS_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-components/fbbt.owl: imports/fbbt_import.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.owl
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/fbbt_relation_graph.owl \
+components/anatomy.owl: imports/anatomy_import.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/anatomy_relation_graph.owl
+	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/anatomy_relation_graph.owl \
     reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
