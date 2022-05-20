@@ -37,8 +37,8 @@ components/%_seed_extract.sparql: $(TMPDIR)/seed.txt
 
 
 components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS)
-	#$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS) | sort | uniq > $@
+	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
+	cat $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@ && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
