@@ -37,8 +37,8 @@ components/%_seed_extract.sparql: $(TMPDIR)/seed.txt
 
 
 components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS)
-	#$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS) | sort | uniq > $@
+	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
+	cat $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@ && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
@@ -58,7 +58,7 @@ $(TMPDIR)/%_relation_graph.owl: imports/%_import.owl $(SCATLAS_KEEPRELATIONS)
 	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --mode owl --output-file $@
 
 components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.owl
-	$(ROBOT) merge --input $< -i $(TMPDIR)/%_relation_graph.owl \
+	$(ROBOT) merge --input $< -i $(TMPDIR)/$*_relation_graph.owl \
 		reason --reasoner ELK  \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -85,12 +85,12 @@ components/subclasses.owl: ../template/subclass_terms.csv
 
 components/fbbt.owl: imports/fbbt_import.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.owl
 	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< -i $(TMPDIR)/fbbt_relation_graph.owl \
+    filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
     reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
     relax \
-    filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
     reduce -r ELK \
     annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: components/%.owl
