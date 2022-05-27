@@ -57,7 +57,7 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 $(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl components/%_simple_seed.txt $(SCRIPTSDIR)/prune_convert.dl
 	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-file $(TMPDIR)/$*-materialize-direct.nt
 	cp components/$*_simple_seed.txt $(TMPDIR)/term.tmp.facts
-	sed -e 's/^/</' -e 's/$$/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
+	sed -e 's/^/</' -e 's/$\\r/>/' -e 's/$$/>/' -e 's/>>/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
 	sed 's/ /\t/' <$(TMPDIR)/$*-materialize-direct.nt | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/rdf.facts
 	riot --output=ntriples imports/$*_import.owl | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/ontrdf.facts
 	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/prune_convert.dl
