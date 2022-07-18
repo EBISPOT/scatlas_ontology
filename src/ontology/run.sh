@@ -37,7 +37,7 @@ WORK_DIR=/work/src/ontology
 if [ -n "$USE_SINGULARITY" ]; then
     export ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS"
     export JAVA_OPTS="$ODK_JAVA_OPTS"
-    singularity exec --bind $VOLUME_BIND -W $WORK_DIR docker://$IMAGE:$TAG $TIMECMD "$@"
+    singularity exec --bind $VOLUME_BIND -W $WORK_DIR docker://obolibrary/$IMAGE:$TAG $TIMECMD "$@"
 else
     docker run -v $VOLUME_BIND -w $WORK_DIR -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" --rm -ti obolibrary/$IMAGE:$TAG $TIMECMD "$@"
 fi
