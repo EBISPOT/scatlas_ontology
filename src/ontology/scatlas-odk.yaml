@@ -14,7 +14,8 @@ import_group:
     - id: cl
       mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
     - id: chebi
-      mirror_from: http://purl.obolibrary.org/obo/chebi.owl.gz
+      is_large: TRUE
+      use_gzipped: TRUE
     - id: go
     - id: peco
       mirror_from: http://purl.obolibrary.org/obo/peco.owl
