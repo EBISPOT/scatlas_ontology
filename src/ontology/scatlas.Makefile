@@ -87,7 +87,7 @@ components/subclasses.owl: ../template/subclass_terms.csv
 
 
 components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl reason --reasoner ELK relax \
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -95,18 +95,18 @@ components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
     filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
     reduce -r ELK \
     annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: components/%.owl
+.PRECIOUS: components/fbbt.owl
 
 
 components/omit.owl: components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input imports/omit_import.owl relax remove --axioms disjoint reason --reasoner ELK \
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/omit_import.owl relax remove --axioms disjoint reason --reasoner ELK \
 		remove --axioms equivalent \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
 		filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: components/%.owl
+.PRECIOUS: components/omit.owl
 
 $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 	$(ROBOT) merge --input $(SRC) -i components/subclasses.owl \
