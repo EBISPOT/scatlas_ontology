@@ -273,6 +273,13 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_c
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+## Module for ontology: ncbitaxon
+
+$(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/ncbitaxon_terms_combined.txt
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/ncbitaxon_terms_combined.txt --force true  --copy-ontology-annotations true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -491,7 +498,8 @@ mirror-uberon-bridge-to-fbbt: | $(TMPDIR)
 .PHONY: mirror-ncbitaxon
 .PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
 mirror-ncbitaxon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ncbitaxon.obo -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/ncbitaxon.owl.gz --create-dirs -o $(MIRRORDIR)/ncbitaxon.owl.gz --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/ncbitaxon.owl.gz -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

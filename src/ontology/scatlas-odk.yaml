@@ -35,7 +35,8 @@ import_group:
     - id: uberon-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
     - id: ncbitaxon
-      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon.obo
+      is_large: TRUE
+      use_gzipped: TRUE
     - id: efo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt
