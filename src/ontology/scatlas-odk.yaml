@@ -29,13 +29,13 @@ import_group:
     - id: rs
     - id: fbdv
     - id: omit
-    - id: ordo
     - id: obi
     - id: ordo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
     - id: uberon-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
     - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon.obo
     - id: efo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt

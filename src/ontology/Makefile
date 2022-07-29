@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit ordo obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
+IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -462,15 +462,6 @@ mirror-omit: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
-## ONTOLOGY: ordo
-.PHONY: mirror-ordo
-.PRECIOUS: $(MIRRORDIR)/ordo.owl
-mirror-ordo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ordo.owl --create-dirs -o $(MIRRORDIR)/ordo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ordo.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
 ## ONTOLOGY: obi
 .PHONY: mirror-obi
 .PRECIOUS: $(MIRRORDIR)/obi.owl
@@ -500,8 +491,7 @@ mirror-uberon-bridge-to-fbbt: | $(TMPDIR)
 .PHONY: mirror-ncbitaxon
 .PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
 mirror-ncbitaxon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ncbitaxon.owl --create-dirs -o $(MIRRORDIR)/ncbitaxon.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ncbitaxon.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ncbitaxon.obo -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
