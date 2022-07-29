@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bto="http://purl.obolibrary.org/obo/bto#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,7 +11,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/imports/bto_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2022-07-27/imports/bto_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,6 +32,28 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/bto#GE -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/bto#GE">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/bto#SCI -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/bto#SCI">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
     
 
 
@@ -785,7 +811,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000269"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The part of the large intestine that extends from the cecum to the rectum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=colon</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=colon</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -808,7 +834,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000282"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The upper or anterior division of the animal body that contains the brain, the chief sense organs, and the mouth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=head</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=head</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -918,7 +944,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000404"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The outer epithelial layer of the external integument of the animal body that is derived from the embryonic epiblast; specifically: the outer nonsensitive and nonvascular layer of the skin of a vertebrate that overlies the dermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=epidermis</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2099,7 +2125,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001090"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The natural opening through which food passes into the body of an animal and which in vertebrates is typically bounded externally by the lips and internally by the pharynx and encloses the tongue, gums, and teeth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=mouth</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=mouth</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2159,7 +2185,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001129"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A firm partly muscular partly glandular body that is situated about the base of the mammalian male urethra and secretes an alkaline viscid fluid which is a major constituent of the ejaculatory fluid.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=prostate+gland</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=prostate+gland</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2430,7 +2456,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001430"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The human breast epithelium is a branching ductal system composed of an inner layer of polarized luminal epithelial cells and an outer layer of myoepithelial cells that terminate in distally located terminal duct lobular units (TDLUs).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:16807805</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16807805</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3045,7 +3071,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human Mammary Epithelial Cells (HMEpC) are derived from normal adult mammary glands.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3169,7 +3195,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002666"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Adult stem cells are undifferentiated cells that reproduce daily to provide certain specialized cells. Until recently it was thought that each of these cells could produce just one particular type of cell. This is called differentiation. However in the past few years, evidence has been gathered of stem cells that can transform into several different forms.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Cells_for_Medical_Treatment:http://hsb.iitm.ac.in/~jm/ARCHIVES/July-Aug05/articles_files/stem.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells_for_Medical_Treatment:http://hsb.iitm.ac.in/~jm/ARCHIVES/July-Aug05/articles_files/stem.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002666"/>
@@ -3371,7 +3397,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0003952"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Fibroblast-like cells that can be isolated from a variety of tissues, such as bone marrow, periosteum, trabecular bone, adipose tissue, synovium, skeletal muscle, dental pulp.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem_and_progenitor_cells:http://www.miltenyibiotec.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Stem_and_progenitor_cells:http://www.miltenyibiotec.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

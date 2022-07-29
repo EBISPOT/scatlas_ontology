@@ -30,13 +30,21 @@ prepare_components:
 	touch $(components_seeds)
 
 
-components/%_seed_extract.sparql: $(TMPDIR)/seed.txt
-	sh ../scripts/generate_sparql_subclass_query.sh $(TMPDIR)/seed.txt $@
+## This is a hack to avoid cycles for the components that are derived from imports
+## The problem is that imports depend on components, and components depend on imports
+## This kind of cyclic dependency cannot exist, and as per ODK rule
+## imports depend on components, not the other way around.
 
+$(TMPDIR)/all_terms_list.txt: ../curation/scatlas_seed.txt
+	cp $< $@
+	echo 'http://www.ebi.ac.uk/efo/EFO_0000001' >> $@
 
-components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.sparql $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) query --input $< --query components/$*_seed_extract.sparql $@.tmp.txt && \
-	cat $(TMPDIR)/seed.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
+components/%_seed_extract.sparql: $(TMPDIR)/all_terms_list.txt
+	sh ../scripts/generate_sparql_subclass_query.sh $< $@
+
+components/%_simple_seed.txt: components/%_seed_extract.sparql $(TMPDIR)/all_terms_list.txt $(SCATLAS_KEEPRELATIONS)
+	$(ROBOT) query --input imports/$*_import.owl --query components/$*_seed_extract.sparql $@.tmp.txt && \
+	cat $(TMPDIR)/all_terms_list.txt $(SCATLAS_KEEPRELATIONS) $@.tmp.txt | sort | uniq > $@  && rm $@.tmp.txt
 	#sed -i '/BFO_0000001/d' $@
 	#sed -i '/BFO_0000002/d' $@
 	#sed -i '/BFO_0000003/d' $@
@@ -52,8 +60,8 @@ components/%_simple_seed.txt: imports/%_import.owl components/%_seed_extract.spa
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input $<  \
+components/%.owl: components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	$(ROBOT) merge --input imports/$*_import.owl \
 		reason --reasoner ELK  \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -78,8 +86,8 @@ components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "RS: http://purl.obolibrary.org/obo/RS_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-components/fbbt.owl: imports/fbbt_import.owl components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< reason --reasoner ELK relax \
+components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
@@ -87,18 +95,18 @@ components/fbbt.owl: imports/fbbt_import.owl components/fbbt_simple_seed.txt $(S
     filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
     reduce -r ELK \
     annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: components/%.owl
+.PRECIOUS: components/fbbt.owl
 
 
-components/omit.owl: imports/omit_import.owl components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(IMP) = true ]; then $(ROBOT) merge --input $< relax remove --axioms disjoint reason --reasoner ELK \
+components/omit.owl: components/omit_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/omit_import.owl relax remove --axioms disjoint reason --reasoner ELK \
 		remove --axioms equivalent \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
 		filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: components/%.owl
+.PRECIOUS: components/omit.owl
 
 $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 	$(ROBOT) merge --input $(SRC) -i components/subclasses.owl \
