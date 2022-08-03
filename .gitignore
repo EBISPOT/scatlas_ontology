@@ -30,3 +30,4 @@ src/ontology/imports/fbbt_merged.owl
 src/ontology/imports/fbbt_merge.owl
 docss/*
 src/ontology/tmp/
+*_terms_combined.txt
