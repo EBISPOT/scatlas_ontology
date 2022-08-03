@@ -14,7 +14,8 @@ import_group:
     - id: cl
       mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
     - id: chebi
-      mirror_from: http://purl.obolibrary.org/obo/chebi.owl.gz
+      is_large: TRUE
+      use_gzipped: TRUE
     - id: go
     - id: peco
       mirror_from: http://purl.obolibrary.org/obo/peco.owl
@@ -28,13 +29,14 @@ import_group:
     - id: rs
     - id: fbdv
     - id: omit
-    - id: ordo
     - id: obi
     - id: ordo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
     - id: uberon-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
     - id: ncbitaxon
+      is_large: TRUE
+      use_gzipped: TRUE
     - id: efo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt
