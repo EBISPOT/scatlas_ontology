@@ -64,14 +64,16 @@ components/%_simple_seed.txt: components/%_seed_extract.sparql $(TMPDIR)/all_ter
 
 $(TMPDIR)/%_relation_graph.owl: imports/%_import.owl $(SCATLAS_KEEPRELATIONS)
 	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --mode owl --output-file $@
+.PRECIOUS: $(TMPDIR)/%_relation_graph.owl
 
 components/%.owl: components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.owl
-	$(ROBOT) merge --input imports/$*_import.owl-i $(TMPDIR)/$*_relation_graph.owl \
+	$(ROBOT) merge --input imports/$*_import.owl -i $(TMPDIR)/$*_relation_graph.owl \
+		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
 		reason --reasoner ELK  \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
-		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
+		
 		reduce -r ELK \
     annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: components/%.owl
