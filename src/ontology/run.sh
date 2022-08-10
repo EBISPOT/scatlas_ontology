@@ -8,9 +8,20 @@
 # The assumption is that you are working in the src/ontology folder;
 # we therefore map the whole repo (../..) to a docker volume.
 #
+# To use singularity instead of docker, please issue 
+# export USE_SINGULARITY=<any-value>
+# before running this script.
+#
 # See README-editors.md for more details.
 
 IMAGE=${IMAGE:-odkfull}
+TAG_IN_IMAGE=$(echo $IMAGE | awk -F':' '{ print $2 }')
+if [ "$TAG_IN_IMAGE" ]; then
+  # Override TAG env var if IMAGE already includes a tag
+  TAG=$TAG_IN_IMAGE
+  IMAGE=$(echo $IMAGE | awk -F':' '{ print $1 }')
+fi
+TAG=${TAG:-latest}
 ODK_JAVA_OPTS=-Xmx10G
 ODK_DEBUG=${ODK_DEBUG:-no}
 
@@ -19,11 +30,20 @@ if [ x$ODK_DEBUG = xyes ]; then
     # If you wish to change the format string, take care of using
     # non-breaking spaces (U+00A0) instead of normal spaces, to
     # prevent the shell from tokenizing the format string.
-    echo "Running ${IMAGE} with ${ODK_JAVA_OPTS} of memory for ROBOT and Java-based pipeline steps."
+    echo "Running ${IMAGE}:${TAG} with ${ODK_JAVA_OPTS} of memory for ROBOT and Java-based pipeline steps."
     TIMECMD="/usr/bin/time -f ### DEBUG STATS ###\nElapsed time: %E\nPeak memory: %M kb"
 fi
 
-docker run -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" --rm -ti obolibrary/$IMAGE $TIMECMD "$@"
+
+VOLUME_BIND=$PWD/../../:/work
+WORK_DIR=/work/src/ontology
+
+if [ -n "$USE_SINGULARITY" ]; then
+    singularity exec --cleanenv --env "ROBOT_JAVA_ARGS=$ODK_JAVA_OPTS,JAVA_OPTS=$ODK_JAVA_OPTS" --bind $VOLUME_BIND -W $WORK_DIR docker://obolibrary/$IMAGE:$TAG $TIMECMD "$@"
+else
+    docker run -v $VOLUME_BIND -w $WORK_DIR -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" --rm -ti obolibrary/$IMAGE:$TAG $TIMECMD "$@"
+fi
+
 
 case "$@" in
 *update_repo*|*release*)
