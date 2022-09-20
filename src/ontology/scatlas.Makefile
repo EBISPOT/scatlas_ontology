@@ -1,3 +1,5 @@
+RG = relation-graph
+
 .PHONY: update_zooma_seed
 
 update_zooma_seed:
@@ -60,17 +62,22 @@ components/%_simple_seed.txt: components/%_seed_extract.sparql $(TMPDIR)/all_ter
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-components/%.owl: components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input imports/$*_import.owl \
+$(TMPDIR)/%_relation_graph.owl: imports/%_import.owl $(SCATLAS_KEEPRELATIONS)
+	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --mode owl --output-file $@
+.PRECIOUS: $(TMPDIR)/%_relation_graph.owl
+
+components/%.owl: components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.owl
+	$(ROBOT) merge --input imports/$*_import.owl -i $(TMPDIR)/$*_relation_graph.owl \
+		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
 		reason --reasoner ELK  \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
-		filter --term-file components/$*_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+		
+		reduce -r ELK \
+    annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: components/%.owl
 
-	#reduce -r ELK \
 
 imports/fbbt_merged.owl: mirror/fbbt.owl mirror/uberon.owl mirror/uberon-bridge-to-fbbt.owl mirror/cl-bridge-to-fbbt.owl mirror/cl.owl
 	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) \
@@ -86,13 +93,14 @@ components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "RS: http://purl.obolibrary.org/obo/RS_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl reason --reasoner ELK relax \
+components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.owl
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl -i $(TMPDIR)/fbbt_relation_graph.owl \
+    filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
+    reason --reasoner ELK relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
     relax \
-    filter --term-file components/fbbt_simple_seed.txt --select "annotations ontology anonymous self" --trim true --signature true \
     reduce -r ELK \
     annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: components/fbbt.owl

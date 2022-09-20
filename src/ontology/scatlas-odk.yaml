@@ -44,8 +44,4 @@ import_group:
 subset_group:
   ids:
     - scatlas_slim
-components:
-  products:
-    - filename: fbbt.owl
-    - filename: cl.owl
 robot_java_args: '-Xmx10G'
