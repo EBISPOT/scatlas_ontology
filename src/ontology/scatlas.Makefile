@@ -1,3 +1,5 @@
+RG = relation-graph
+
 .PHONY: update_zooma_seed
 
 update_zooma_seed:
@@ -60,9 +62,20 @@ components/%_simple_seed.txt: components/%_seed_extract.sparql $(TMPDIR)/all_ter
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-components/%.owl: components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	$(ROBOT) merge --input imports/$*_import.owl \
-		reason --reasoner ELK  \
+$(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl components/%_simple_seed.txt $(SCRIPTSDIR)/prune.dl $(SCRIPTSDIR)/convert_owl.dl $(SCATLAS_KEEPRELATIONS)
+	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-subclasses true --reflexive-subclasses false --output-file $(TMPDIR)/$*-materialize-direct.nt
+	cp components/$*_simple_seed.txt $(TMPDIR)/term.tmp.facts
+	sed -e 's/^/</' -e 's/$\\r/>/' -e 's/$$/>/' -e 's/>>/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
+	sed 's/ /\t/' <$(TMPDIR)/$*-materialize-direct.nt | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/rdf.facts
+	riot --output=ntriples imports/$*_import.owl | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/ontrdf.facts
+	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/prune.dl
+	mv nonredundant.csv tmp/nonredundant.facts
+	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/convert_owl.dl
+	sed -e '1s/^/Ontology(<http:\/\/purl.obolibrary.org\/obo\/$*-extended.owl>\n/' -e '$$s/$$/)/' <ofn.csv >$@ && rm ofn.csv 
+.PRECIOUS: $(TMPDIR)/%_relation_graph.ofn
+
+components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.ofn
+	$(ROBOT) merge --input $< --input $(TMPDIR)/$*_relation_graph.ofn \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
@@ -86,8 +99,9 @@ components/subclasses.owl: ../template/subclass_terms.csv
 	$(ROBOT) -vvv template --template $<  --prefix "EFO: http://www.ebi.ac.uk/efo/EFO_" --prefix "RS: http://purl.obolibrary.org/obo/RS_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "GO: http://purl.obolibrary.org/obo/GO_" --prefix "CARO: http://purl.obolibrary.org/obo/CARO_" --prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" --prefix "FBbt: http://purl.obolibrary.org/obo/FBbt_" --prefix "MONDO: http://purl.obolibrary.org/obo/MONDO_"  --prefix "NCIT: http://purl.obolibrary.org/obo/NCIT_" --prefix "CHEBI: http://purl.obolibrary.org/obo/CHEBI_" --prefix "Orphanet: http://www.orpha.net/ORDO/Orphanet_" --prefix "snap: http://www.ifomis.org/bfo/1.1/snap#" annotate --ontology-iri $(ONTBASE)/$@ -o $@
 
 
-components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS)
-	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl reason --reasoner ELK relax \
+components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.ofn
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl -i $(TMPDIR)/fbbt_relation_graph.ofn \
+    relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \

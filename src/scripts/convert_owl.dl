@@ -1,0 +1,26 @@
+#define RDF_TYPE "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+#define RDFS_SUBCLASS_OF "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+#define OWL_CLASS "<http://www.w3.org/2002/07/owl#Class>"
+#define OWL_TRANSITIVE_PROPERTY "<http://www.w3.org/2002/07/owl#TransitiveProperty>"
+#define RDFS_LABEL "<http://www.w3.org/2000/01/rdf-schema#label>"
+
+.type IRI <: symbol
+.type BlankNode <: symbol
+.type Literal <: symbol
+.type Node = IRI | BlankNode
+.type NodeOrLiteral = Node | Literal
+
+.decl term(s: IRI)
+.decl ontrdf(s: Node, p: IRI, o: NodeOrLiteral)
+.decl nonredundant(s: Node, p: IRI, o: NodeOrLiteral, dot: symbol)
+.decl ofn(text: symbol)
+
+ofn(cat("TransitiveObjectProperty(", p, ")")) :- ontrdf(p, RDF_TYPE, OWL_TRANSITIVE_PROPERTY), term(p).
+ofn(cat("Declaration(Class(", s, "))")) :- ontrdf(s, RDF_TYPE, OWL_CLASS), term(s).
+ofn(cat("SubClassOf(", s, " ", "ObjectSomeValuesFrom(", p, " ", o, "))")) :- nonredundant(s, p, o, "."), p != RDFS_SUBCLASS_OF, p != RDFS_LABEL.
+ofn(cat("SubClassOf(", s, " ", o, ")")) :- nonredundant(s, RDFS_SUBCLASS_OF, o, ".").
+
+.input term
+.input ontrdf
+.input nonredundant
+.output ofn
