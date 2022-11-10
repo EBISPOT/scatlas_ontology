@@ -62,19 +62,20 @@ components/%_simple_seed.txt: components/%_seed_extract.sparql $(TMPDIR)/all_ter
 	#comm -2 -3 $@ ../curation/blacklist.txt > $@
   #cat ../curation/blacklist.txt | sort | uniq >  ../curation/blacklist.txt.tmp && mv ../curation/blacklist.txt.tmp  ../curation/blacklist.txt
 
-$(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl components/%_simple_seed.txt $(SCRIPTSDIR)/prune_convert.dl
-	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-file $(TMPDIR)/$*-materialize-direct.nt
+$(TMPDIR)/%_relation_graph.ofn: imports/%_import.owl components/%_simple_seed.txt $(SCRIPTSDIR)/prune.dl $(SCRIPTSDIR)/convert_owl.dl $(SCATLAS_KEEPRELATIONS)
+	$(RG) --ontology-file $< --properties-file $(SCATLAS_KEEPRELATIONS) --output-subclasses true --reflexive-subclasses false --output-file $(TMPDIR)/$*-materialize-direct.nt
 	cp components/$*_simple_seed.txt $(TMPDIR)/term.tmp.facts
 	sed -e 's/^/</' -e 's/$\\r/>/' -e 's/$$/>/' -e 's/>>/>/' <$(TMPDIR)/term.tmp.facts >$(TMPDIR)/term.facts && rm $(TMPDIR)/term.tmp.facts
 	sed 's/ /\t/' <$(TMPDIR)/$*-materialize-direct.nt | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/rdf.facts
 	riot --output=ntriples imports/$*_import.owl | sed 's/ /\t/' | sed 's/ /\t/' | sed 's/ \.$$//' >$(TMPDIR)/ontrdf.facts
-	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/prune_convert.dl
+	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/prune.dl
+	mv nonredundant.csv tmp/nonredundant.facts
+	souffle --fact-dir=$(TMPDIR) --compile $(SCRIPTSDIR)/convert_owl.dl
 	sed -e '1s/^/Ontology(<http:\/\/purl.obolibrary.org\/obo\/$*-extended.owl>\n/' -e '$$s/$$/)/' <ofn.csv >$@ && rm ofn.csv 
 .PRECIOUS: $(TMPDIR)/%_relation_graph.ofn
 
 components/%.owl: imports/%_import.owl components/%_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/%_relation_graph.ofn
-	$(ROBOT) merge --input $< -i $(TMPDIR)/$*_relation_graph.ofn \
-		reason --reasoner ELK  \
+	$(ROBOT) merge --input $< --input $(TMPDIR)/$*_relation_graph.ofn \
 		remove --axioms disjoint --trim false --preserve-structure false \
 		remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \
 		relax \
@@ -99,7 +100,8 @@ components/subclasses.owl: ../template/subclass_terms.csv
 
 
 components/fbbt.owl: components/fbbt_simple_seed.txt $(SCATLAS_KEEPRELATIONS) $(TMPDIR)/fbbt_relation_graph.ofn
-	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl -i $(TMPDIR)/fbbt_relation_graph.ofn reason --reasoner ELK relax \
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input imports/fbbt_import.owl -i $(TMPDIR)/fbbt_relation_graph.ofn \
+    relax \
     remove --axioms equivalent \
     remove --axioms disjoint \
     remove --term-file $(SCATLAS_KEEPRELATIONS) --select complement --select object-properties --trim true \

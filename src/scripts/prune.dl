@@ -1,5 +1,6 @@
 #define RDF_TYPE "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
 #define RDFS_SUBCLASS_OF "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+#define RDFS_LABEL "<http://www.w3.org/2000/01/rdf-schema#label>"
 #define OWL_CLASS "<http://www.w3.org/2002/07/owl#Class>"
 #define RDFS_SUBPROPERTY_OF "<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>"
 #define OWL_TRANSITIVE_PROPERTY "<http://www.w3.org/2002/07/owl#TransitiveProperty>"	
@@ -13,34 +14,32 @@
 .decl term(s: IRI)
 .decl rdf(s: Node, p: IRI, o: NodeOrLiteral)
 .decl ontrdf(s: Node, p: IRI, o: NodeOrLiteral)
-.decl ofn(text: symbol)
 .decl transitive(prop: Node)
 .decl equivalent(x: Node, y: Node)
 .decl subClassOf(sub: Node, super: Node)
 .decl subPropertyOf(sub: Node, super: Node)
-.decl redundant(s: Node, p: IRI, o: NodeOrLiteral)
-.decl nonredundant(s: Node, p: IRI, o: NodeOrLiteral)
 
-equivalent(x, y) :- rdf(x, RDFS_SUBCLASS_OF, y), x != y, rdf(y, RDFS_SUBCLASS_OF, x), term(x), term(y).
-subClassOf(sub, as(super, Node)) :- rdf(sub, RDFS_SUBCLASS_OF, super), sub != super, !equivalent(sub, super), term(sub), term(super).
+.decl redundant(s: Node, p: IRI, o: NodeOrLiteral)
+.decl nonredundant(s: Node, p: IRI, o: NodeOrLiteral, dot: symbol)
+
+equivalent(x, y) :- rdf(x, RDFS_SUBCLASS_OF, y), x != y, rdf(y, RDFS_SUBCLASS_OF, x).
+subClassOf(sub, as(super, Node)) :- rdf(sub, RDFS_SUBCLASS_OF, super), sub != super, !equivalent(sub, super).
 
 transitive(prop) :- ontrdf(prop, RDF_TYPE, OWL_TRANSITIVE_PROPERTY).
 
 subPropertyOf(sub, as(super, Node)) :- ontrdf(sub, RDFS_SUBPROPERTY_OF, super), sub != super.
 subPropertyOf(sub, as(supersuper, Node)) :- subPropertyOf(sub, super), ontrdf(super, RDFS_SUBPROPERTY_OF, supersuper), super != supersuper, sub != supersuper.
 
-redundant(s, p, o) :- rdf(s, p, other), s != other, !equivalent(s, other), subClassOf(other, o), rdf(s, p, o), term(s), term(o), term(other).
-redundant(s, p, o) :- rdf(s, p, o), subClassOf(s, other), rdf(other, p, o), other != o, !equivalent(other, o).
+redundant(s, p, o) :- rdf(s, p, o), rdf(s, p, other), subClassOf(other, o), s != other, !equivalent(s, other), term(s), term(other), term(o), term(p).
+redundant(s, p, o) :- rdf(s, p, o), subClassOf(s, other), rdf(other, p, o), other != o, !equivalent(other, o), term(s), term(other), term(o), term(p).
 redundant(s, p, o) :- rdf(s, p, o), transitive(p), rdf(s, p, other), other != o, rdf(other, p, o), term(other), term(s), term(o).
 redundant(s, p, o) :- rdf(s, p, o), subPropertyOf(sub, p), rdf(s, sub, o).
+redundant(s, RDFS_SUBCLASS_OF, o) :- rdf(s, RDFS_SUBCLASS_OF, other), o != other, rdf(other, RDFS_SUBCLASS_OF, o), !equivalent(o, other), term(s), term(o), term(other).
 
-nonredundant(s, p, o) :- rdf(s, p, o), !redundant(s, p, o).
-
-ofn(cat("TransitiveObjectProperty(", p, ")")) :- ontrdf(p, RDF_TYPE, OWL_TRANSITIVE_PROPERTY).
-ofn(cat("Declaration(Class(", s, "))")) :- ontrdf(s, RDF_TYPE, OWL_CLASS), term(s).
-ofn(cat("SubClassOf(", s, "ObjectSomeValuesFrom(", p, " ", o, "))")) :- nonredundant(s, p, o), p != RDFS_SUBCLASS_OF, term(s), term(o).
+nonredundant(s, p, o, ".") :- rdf(s, p, o), !redundant(s, p, o), term(s), term(o).
+nonredundant(s, RDFS_LABEL, o, ".") :- ontrdf(s, RDFS_LABEL, o), term(s).
 
 .input term
 .input rdf
 .input ontrdf
-.output ofn
+.output nonredundant
