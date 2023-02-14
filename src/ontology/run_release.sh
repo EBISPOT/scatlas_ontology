@@ -1,5 +1,6 @@
 set -e 
 date
+sh run.sh make update_zooma_seed -B
 sh run.sh make prepare_components -B
 # Refreshing imports is necessary because unlike most other ontologies
 # SCAO components depent on the imports, which is against ODK law
