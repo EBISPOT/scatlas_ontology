@@ -121,6 +121,8 @@
 
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/vfb_drivers.owl" uri="components/vfb_drivers.owl"/>
 
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/mondo.owl" uri="components/mondo.owl"/>
+
 
   <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
