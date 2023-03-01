@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt
+IMPORTS =  bto cl chebi go peco pato fbbt to po wbls ncit uberon rs fbdv omit obi ordo uberon-bridge-to-fbbt ncbitaxon efo cl-bridge-to-fbbt mondo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -517,6 +517,14 @@ mirror-efo: | $(TMPDIR)
 mirror-cl-bridge-to-fbbt: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-fbbt.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: mondo
+.PHONY: mirror-mondo
+.PRECIOUS: $(MIRRORDIR)/mondo.owl
+mirror-mondo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/mondo/mondo-base.owl --create-dirs -o $(MIRRORDIR)/mondo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/mondo.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

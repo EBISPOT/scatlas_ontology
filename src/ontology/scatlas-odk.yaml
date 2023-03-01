@@ -41,6 +41,8 @@ import_group:
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/cl-bridge-to-fbbt.owl
+    - id: mondo
+      use_base: TRUE
 subset_group:
   ids:
     - scatlas_slim
