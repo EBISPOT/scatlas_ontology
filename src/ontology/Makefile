@@ -391,25 +391,24 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 .PHONY: mirror-bto
 .PRECIOUS: $(MIRRORDIR)/bto.owl
 mirror-bto: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bto.owl --create-dirs -o $(MIRRORDIR)/bto.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/bto.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bto/bto-base.owl --create-dirs -o $(MIRRORDIR)/bto.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/bto.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: cl
 .PHONY: mirror-cl
 .PRECIOUS: $(MIRRORDIR)/cl.owl
 mirror-cl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/cl/cl-base.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/cl/cl-base.owl --create-dirs -o $(MIRRORDIR)/cl.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/cl.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: chebi
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/chebi.owl.gz -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/CHEBI --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -417,16 +416,17 @@ mirror-chebi: | $(TMPDIR)
 .PHONY: mirror-go
 .PRECIOUS: $(MIRRORDIR)/go.owl
 mirror-go: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/go.owl --create-dirs -o $(MIRRORDIR)/go.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/go.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/go/go-base.owl --create-dirs -o $(MIRRORDIR)/go.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: peco
 .PHONY: mirror-peco
 .PRECIOUS: $(MIRRORDIR)/peco.owl
 mirror-peco: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/peco.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/peco.owl --create-dirs -o $(MIRRORDIR)/peco.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/peco.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/PECO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -434,18 +434,16 @@ mirror-peco: | $(TMPDIR)
 .PHONY: mirror-pato
 .PRECIOUS: $(MIRRORDIR)/pato.owl
 mirror-pato: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/pato.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/pato/pato-base.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: fbbt
 .PHONY: mirror-fbbt
 .PRECIOUS: $(MIRRORDIR)/fbbt.owl
 mirror-fbbt: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/fbbt.owl --create-dirs -o $(MIRRORDIR)/fbbt.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/fbbt.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/fbbt/fbbt-base.owl --create-dirs -o $(MIRRORDIR)/fbbt.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/fbbt.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: to
@@ -453,7 +451,8 @@ mirror-fbbt: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/to.owl
 mirror-to: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/to.owl --create-dirs -o $(MIRRORDIR)/to.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/to.owl -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/to.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/TO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -462,7 +461,8 @@ mirror-to: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/po.owl
 mirror-po: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/po.owl --create-dirs -o $(MIRRORDIR)/po.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/po.owl -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/po.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/PO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -470,9 +470,8 @@ mirror-po: | $(TMPDIR)
 .PHONY: mirror-wbls
 .PRECIOUS: $(MIRRORDIR)/wbls.owl
 mirror-wbls: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/wbls.owl --create-dirs -o $(MIRRORDIR)/wbls.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/wbls.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/wbls/wbls-base.owl --create-dirs -o $(MIRRORDIR)/wbls.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/wbls.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: ncit
@@ -488,9 +487,8 @@ mirror-ncit: | $(TMPDIR)
 .PHONY: mirror-uberon
 .PRECIOUS: $(MIRRORDIR)/uberon.owl
 mirror-uberon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uberon/uberon-base.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: rs
@@ -498,7 +496,8 @@ mirror-uberon: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/rs.owl
 mirror-rs: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/rs.owl --create-dirs -o $(MIRRORDIR)/rs.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/rs.owl -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/rs.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/RS --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -506,9 +505,8 @@ mirror-rs: | $(TMPDIR)
 .PHONY: mirror-fbdv
 .PRECIOUS: $(MIRRORDIR)/fbdv.owl
 mirror-fbdv: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/fbdv.owl --create-dirs -o $(MIRRORDIR)/fbdv.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/fbdv.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/fbdv/fbdv-base.owl --create-dirs -o $(MIRRORDIR)/fbdv.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/fbdv.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: omit
@@ -516,7 +514,8 @@ mirror-fbdv: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/omit.owl
 mirror-omit: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/omit.owl --create-dirs -o $(MIRRORDIR)/omit.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omit.owl -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/omit.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/OMIT --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -524,9 +523,8 @@ mirror-omit: | $(TMPDIR)
 .PHONY: mirror-obi
 .PRECIOUS: $(MIRRORDIR)/obi.owl
 mirror-obi: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obi/obi-base.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: ordo
@@ -549,8 +547,7 @@ mirror-uberon-bridge-to-fbbt: | $(TMPDIR)
 .PHONY: mirror-ncbitaxon
 .PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
 mirror-ncbitaxon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(OBOBASE)/ncbitaxon.owl.gz --create-dirs -o $(MIRRORDIR)/ncbitaxon.owl.gz --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ncbitaxon.owl.gz -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
