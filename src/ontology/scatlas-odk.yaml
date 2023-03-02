@@ -11,25 +11,43 @@ export_formats:
 import_group:
   products:
     - id: bto
+      use_base: TRUE
     - id: cl
-      mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
+      use_base: TRUE
     - id: chebi
       is_large: TRUE
       use_gzipped: TRUE
+      make_base: TRUE
+      mirror_from: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
     - id: go
+      use_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/GO_
+        - http://purl.obolibrary.org/obo/GOREL_
+        - http://purl.obolibrary.org/obo/GOCHE_
     - id: peco
-      mirror_from: http://purl.obolibrary.org/obo/peco.owl
+      make_base: TRUE
     - id: pato
+      use_base: TRUE
     - id: fbbt
+      use_base: TRUE
     - id: to
+      make_base: TRUE
     - id: po
+      make_base: TRUE
     - id: wbls
+      use_base: TRUE
     - id: ncit
     - id: uberon
+      use_base: TRUE
     - id: rs
+      make_base: TRUE
     - id: fbdv
+      use_base: TRUE
     - id: omit
+      make_base: TRUE
     - id: obi
+      use_base: TRUE
     - id: ordo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/ordo/download
     - id: uberon-bridge-to-fbbt
@@ -37,6 +55,7 @@ import_group:
     - id: ncbitaxon
       is_large: TRUE
       use_gzipped: TRUE
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: efo
       mirror_from: https://www.ebi.ac.uk/ols/ontologies/efo/download
     - id: cl-bridge-to-fbbt
