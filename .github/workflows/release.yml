@@ -1,0 +1,49 @@
+name: Run and deploy release
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "28 7 1 * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.4
+    strategy:
+      max-parallel: 1
+    steps:
+        - name: Checkout main branch
+          uses: actions/checkout@v4
+        - name: work around permission issue
+          run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        - name: Update Zooma seed
+          run: cd src/ontology/ && make update_zooma_seed -B
+        - name: Prepare components
+          run: cd src/ontology/ && make prepare_components -B
+        - name: Refresh imports
+          run: cd src/ontology/ && make refresh-imports -B
+        - name: Refresh components
+          run: cd src/ontology/ && make IMP=false all_components -B
+        - name: Run release
+          run: cd src/ontology/ && make IMP=false prepare_release -B
+        - name: Run diffs
+          run: cd src/ontology/ && make IMP=false all_diffs -B
+        - name: Get current date
+          run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        - name: Commit release
+          run: |
+            git config --global user.name 'Anita Caron'
+            git config --global user.email 'anitacaron@users.noreply.github.com'
+            git add .
+            git commit -m "${{ env.date }} release"
+            git push origin master
+        - name: Create GitHub Release
+          uses: actions/create-release@latest
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            tag_name: v${{ env.date }}
+            release_name: v${{ env.date }} Release
+            commitish: master
+            draft: false
+            prerelease: false
+    
