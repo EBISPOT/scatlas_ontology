@@ -65,8 +65,6 @@ import_group:
       use_base: TRUE
     - id: clo
       make_base: TRUE
-    - id: gaz
-      make_base: TRUE
 subset_group:
   ids:
     - scatlas_slim
