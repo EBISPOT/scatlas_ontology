@@ -70,8 +70,12 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/cl.owl" uri="components/cl.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/cl.obo" uri="components/cl.obo"/>
 
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/clo.owl" uri="components/clo.owl"/>
+
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/chebi.owl" uri="components/chebi.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/chebi.obo" uri="components/chebi.obo"/>
+
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/doid.owl" uri="components/doid.owl"/>
 
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/go.owl" uri="components/go.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/scatlas/components/go.obo" uri="components/go.obo"/>
