@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/components/bto.owl#"
      xml:base="http://purl.obolibrary.org/obo/scatlas/components/bto.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,7 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/bto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/bto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/bto.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto-base.owl"/>
+        <owl:versionInfo>2024-03-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,6 +31,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -125,7 +134,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A structured controlled vocabulary for the source of an enzyme. It comprises terms of tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curators:mgr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>curators:mgr</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -161,7 +170,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Established from a human primary embryonal kidney transformed by adenovirus type 5.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -181,7 +190,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human lung carcinoma established from an explanted lung tumor which was removed from a 58-year-old Caucasian man in 1972; cells were described to induce tumors in athymic mice and to synthesize lecithin.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Deutsche_Sammlung_von_Mikroorganismen_und_Zellkulturen_GmbH:DSMZ</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -236,7 +245,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000155"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A technique by which cells and fluid from bronchioles and lung alveoli are removed for diagnosis of disease or evaluation of treatment. A bronchoscope is wedged into a bronchus and sterile saline is pumped in and then removed along with the fluid and cells to be analyzed.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -258,7 +267,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000176"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell of malignant new growth made up of epithelial cells tending to infiltrate the surrounding tissues and give rise to metastases.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -377,7 +386,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000415"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A neoplasm cell of epithelial origin, ranging from benign (adenoma and papilloma) to malignant (carcinoma).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -396,7 +405,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A polymorphonuclear white blood cell with granule-containingcytoplasm. In humans the granulocytes are also classified as polymorphonuclear leucocytes and are subdivided according to the staining properties of the granules into eosinophils, basophils and neutrophils, some invertebrate blood cells are also referred to, not very helpfully, as granulocytes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=granulocyte</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mondofacto_Dictionary:http://www.mondofacto.com/facts/dictionary?</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Mondofacto_Dictionary:http://www.mondofacto.com/facts/dictionary?</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -451,7 +460,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000594"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Malignant (cancer) cells are found in the tissues of the liver.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Medical_Encyclopedia:http://www.nlm.nih.gov/medlineplus/encyclopedia.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -469,7 +478,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000604"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell of a cancer that begins in cells that line certain internal organs and that have glandular (secretory) properties.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer.gov_Dictionary:http://www.nci.nih.gov/dictionary</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Cancer.gov_Dictionary:http://www.nci.nih.gov/dictionary</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -495,7 +504,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000608"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Primary carcinoma of the liver cells. It ranges from a well-differentiated tumour difficult to distinguish from normal hepatocytes to a poorly differentiated neoplasm. The cells may be uniform or markedly pleomorphic or may form giant cells. Several classification schemes have been suggested. Hepatocellular carcinoma is very rare in the united states and western europe, but it is one of the most common cancers in eastern asia and sub-saharan africa. The cases are preponderantly male and, racially, whites have the lowest rates.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -616,7 +625,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any fully developed granular leukocyte whose nucleus contains multiple lobes joined by filamentous connections, especially a neutrophil.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -634,7 +643,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Mouse, BALB/c, blood, not defined tumor cell line. Recloned from J774.1 original ascites and solid tumour. Produces IL-1.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HyperCLDB:http://www.biotech.ist.unige.it/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HyperCLDB:http://www.biotech.ist.unige.it/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -693,7 +702,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A malignant tumour cell of glandular origin in the prostate. Over 95% are adenocarcinomas.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -710,7 +719,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001202"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme, as ptyalin, that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=saliva</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=saliva</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -766,7 +775,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001436"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>1: The vegetative part of a fungus, consisting of a mass of branching, threadlike hyphae. 2: A similar mass of fibers formed by certain bacteria.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The_American_Heritage_Dictionary_of_the_English_Language:Fourth_Edition._2000.</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>The_American_Heritage_Dictionary_of_the_English_Language:Fourth_Edition._2000.</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -785,7 +794,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001441"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any of the immature blood cells that develop in the bone marrow, such as those involved in hematopoiesis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -867,7 +876,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001490"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Other sources of an enzyme as cell culture or commercial preparation, not related to a specific tissue.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curators:mgr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>curators:mgr</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -897,7 +906,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001825"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A disease in which certain cells of the lymph system (called T-lymphocytes) become cancerous.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer.gov_Dictionary:http://www.nci.nih.gov/dictionary</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Cancer.gov_Dictionary:http://www.nci.nih.gov/dictionary</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -953,7 +962,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001948"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human, blood, leukemia, T cell line, clone E6.1.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HyperCLDB:http://www.biotech.ist.unige.it/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HyperCLDB:http://www.biotech.ist.unige.it/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -970,7 +979,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002064"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Connective tissue cells of an organ found in the loose connective tissue. These are most often associated with the uterine mucosa and the ovary as well as the hematopoietic system and elsewhere.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical_Dictionary_Online:http://www.online-medical-dictionary.org/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Medical_Dictionary_Online:http://www.online-medical-dictionary.org/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -990,7 +999,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human Mammary Epithelial Cells (HMEpC) are derived from normal adult mammary glands.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Cell_Applications_Inc.:http://cellapplications.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1010,7 +1019,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002180"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human mammary gland, breast epithelium cell line; established from normal mammary tissue obtained from a normal reduction mammoplasty. Cells derived from the tissue were exposed to benzo-alpha-pyrene, and a transformed line was established.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1040,7 +1049,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0002279"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Mouse macrophage cell line.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1125,7 +1134,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0003385"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Etiolation: growth habit adopted by germinating seedlings in the dark. Involves rapid extension of shoot and/or hypocotyl and suppression of chlorophyll formation and leaf growth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Online_Medical_Dictionary:http://cancerweb.ncl.ac.uk/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1155,7 +1164,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0003952"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Fibroblast-like cells that can be isolated from a variety of tissues, such as bone marrow, periosteum, trabecular bone, adipose tissue, synovium, skeletal muscle, dental pulp.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem_and_progenitor_cells:http://www.miltenyibiotec.com/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Stem_and_progenitor_cells:http://www.miltenyibiotec.com/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1173,7 +1182,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Human normal colon fibroblast cell line established from a black 2.5-months-old human female.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1204,11 +1213,11 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0004578"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Vascular smooth muscle refers to the particular type of smooth muscle found within, and composing the majority of the wall of blood vessels.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:The_Free_Encyclopedia</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:The_Free_Encyclopedia</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 

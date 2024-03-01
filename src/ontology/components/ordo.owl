@@ -12,7 +12,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/ordo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2020-10-12/components/ordo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/ordo.owl"/>
     </owl:Ontology>
     
 
@@ -115,74 +115,6 @@
     
 
 
-    <!-- http://www.orpha.net/ORDO/Orphanet_100 -->
-
-    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_100">
-        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377788"/>
-        <efo:alternative_term xml:lang="en">Louis-Bar syndrome</efo:alternative_term>
-        <efo:definition xml:lang="en">Ataxia-telangiectasia is the association of severe combined immunodeficiency (affecting mainly the humoral immune response) with progressive cerebellar ataxia. It is characterised by neurological signs, telangiectasias, increased susceptibility to infections and a higher risk of cancer.</efo:definition>
-        <efo:definition_citation xml:lang="en">orphanet</efo:definition_citation>
-        <oboInOwl:hasDbXref>ICD-10:G11.3</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MeSH:D001260</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MedDRA:10003594</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OMIM:208900</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>OMIM:208910</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0004135</oboInOwl:hasDbXref>
-        <rdfs:label xml:lang="en">Ataxia-telangiectasia</rdfs:label>
-        <skos:notation>ORPHA:100</skos:notation>
-    </owl:Class>
-    <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid1">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G11.3</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
-        <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
-    </owl:Annotation>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ICD-10:G11.3</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MeSH:D001260</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MedDRA:10003594</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>OMIM:208900</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>OMIM:208910</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0004135</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
-    
-
-
     <!-- http://www.orpha.net/ORDO/Orphanet_100094 -->
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_100094">
@@ -196,29 +128,28 @@
         <rdfs:label xml:lang="en">Multiple polyglandular tumor</rdfs:label>
         <skos:notation>ORPHA:100094</skos:notation>
     </owl:Class>
-    <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid10">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100094"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
-        <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Annotation>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100094"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0027662</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100094"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
+    </owl:Axiom>
+    <owl:Annotation>
+        <owl:annotatedSource rdf:nodeID="genid2"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
+        <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
+    </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid2">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100094"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_100094"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0027662</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     
@@ -240,18 +171,17 @@
         <skos:notation>ORPHA:101088</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid13">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_101088"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D80.5</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid5"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid5">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_101088"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D80.5</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_101088"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -347,18 +277,17 @@
         <skos:notation>ORPHA:139396</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid22">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_139396"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E71.3</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid14"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid14">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_139396"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E71.3</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_139396"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -393,18 +322,17 @@
         <skos:notation>ORPHA:1451</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid26">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1451"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E85.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid18"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid18">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1451"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E85.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1451"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -511,18 +439,17 @@
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid38">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1572"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D83.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid30"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid30">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D83.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_1572"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -616,6 +543,17 @@
     
 
 
+    <!-- http://www.orpha.net/ORDO/Orphanet_158124 -->
+
+    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_158124">
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377794"/>
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_71859"/>
+        <rdfs:label xml:lang="en">Genetic dementia</rdfs:label>
+        <skos:notation>ORPHA:158124</skos:notation>
+    </owl:Class>
+    
+
+
     <!-- http://www.orpha.net/ORDO/Orphanet_178 -->
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_178">
@@ -638,18 +576,17 @@
         <skos:notation>ORPHA:178</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid56">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_178"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:C76.7</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid48"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid48">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_178"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:C76.7</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_178"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -781,18 +718,17 @@
         <skos:notation>ORPHA:206644</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid66">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206644"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid58"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid58">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206644"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206644"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -817,18 +753,17 @@
         <skos:notation>ORPHA:206647</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid69">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206647"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid61"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid61">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206647"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206647"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -881,18 +816,17 @@
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid77">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206970"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid69"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid69">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206970"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_206970"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -942,18 +876,17 @@
         <skos:notation>ORPHA:267</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid82">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_267"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid74"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid74">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_267"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_267"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -996,18 +929,17 @@
         <skos:notation>ORPHA:268</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid88">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_268"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid80"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid80">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_268"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_268"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1055,31 +987,18 @@
         <rdfs:label xml:lang="en">Facioscapulohumeral dystrophy</rdfs:label>
         <skos:notation>ORPHA:269</skos:notation>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>OMIM:600416</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0238288</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid94">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid86"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid86">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1103,6 +1022,18 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>OMIM:158901</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>OMIM:600416</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_269"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0238288</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     
 
@@ -1141,19 +1072,24 @@
         <rdfs:label xml:lang="en">Steinert myotonic dystrophy</rdfs:label>
         <skos:notation>ORPHA:273</skos:notation>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C2931688</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid103">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid95"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid95">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1172,12 +1108,29 @@
         <owl:annotatedTarget>OMIM:160900</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_273"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C2931688</owl:annotatedTarget>
-        <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
-    </owl:Axiom>
+    
+
+
+    <!-- http://www.orpha.net/ORDO/Orphanet_276058 -->
+
+    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_276058">
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_158124"/>
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_183500"/>
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377794"/>
+        <rdfs:label xml:lang="en">Genetic neurodegenerative disease with dementia</rdfs:label>
+        <skos:notation>ORPHA:276058</skos:notation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.orpha.net/ORDO/Orphanet_276061 -->
+
+    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_276061">
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_276058"/>
+        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/Orphanet_377794"/>
+        <rdfs:label xml:lang="en">Genetic frontotemporal degeneration with dementia</rdfs:label>
+        <skos:notation>ORPHA:276061</skos:notation>
+    </owl:Class>
     
 
 
@@ -1196,18 +1149,17 @@
         <skos:notation>ORPHA:276161</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid109">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_276161"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid101"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid101">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_276161"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D44.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_276161"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1298,18 +1250,17 @@
         <skos:notation>ORPHA:34217</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid118">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34217"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid110">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34217"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34217"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1352,18 +1303,17 @@
         <skos:notation>ORPHA:34515</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid124">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34515"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid116"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid116">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34515"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_34515"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1415,18 +1365,17 @@
         <skos:notation>ORPHA:35689</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid131">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_35689"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G12.2</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid123"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid123">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_35689"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G12.2</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_35689"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1524,18 +1473,17 @@
         <skos:notation>ORPHA:391665</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid138">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_391665"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E78.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid130">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_391665"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E78.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_391665"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1597,18 +1545,17 @@
         <skos:notation>ORPHA:44890</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid145">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_44890"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:C26.9</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid137"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid137">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_44890"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:C26.9</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_44890"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1666,18 +1613,17 @@
         <skos:notation>ORPHA:47</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid153">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_47"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D80.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid145"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid145">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_47"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D80.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_47"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1734,18 +1680,17 @@
         <skos:notation>ORPHA:524</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid161">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_524"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D48.9</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid153"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid153">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_524"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D48.9</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_524"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1841,18 +1786,17 @@
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid175">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_586"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E84.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid167"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid167">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_586"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E84.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_586"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1912,18 +1856,17 @@
         <skos:notation>ORPHA:636</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid183">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_636"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q85.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid175"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid175">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_636"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q85.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_636"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -1999,18 +1942,17 @@
         <skos:notation>ORPHA:647</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid193">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_647"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid185"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid185">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_647"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q87.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_647"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2080,18 +2022,17 @@
         <skos:notation>ORPHA:655</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid202">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_655"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q61.5</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid194"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid194">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_655"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q61.5</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_655"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2189,6 +2130,12 @@
                 <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_183500"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.orpha.net/ORDO/Orphanet_276061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <efo:alternative_term xml:lang="en">PSP syndrome</efo:alternative_term>
         <efo:definition xml:lang="en">Progressive supranuclear palsy (PSP) is a rare late-onset neurodegenerative disease characterized by supranuclear gaze palsy, postural instability, progressive rigidity, and mild dementia.</efo:definition>
         <efo:definition_citation xml:lang="en">orphanet</efo:definition_citation>
@@ -2210,18 +2157,17 @@
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid220">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_683"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G23.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid213"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid213">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_683"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G23.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_683"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2310,16 +2256,6 @@
     
 
 
-    <!-- http://www.orpha.net/ORDO/Orphanet_68388 -->
-
-    <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_68388">
-        <rdfs:subClassOf rdf:resource="http://www.orpha.net/ORDO/ObsoleteClass"/>
-        <efo:reason_for_obsolescence xml:lang="en">use http://www.orpha.net/ORDO/Orphanet_98196 with label: Malformation syndrome with hamartosis</efo:reason_for_obsolescence>
-        <rdfs:label xml:lang="en">OBSOLETE: Neurofibromatosis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.orpha.net/ORDO/Orphanet_685 -->
 
     <owl:Class rdf:about="http://www.orpha.net/ORDO/Orphanet_685">
@@ -2347,18 +2283,17 @@
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid233">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_685"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G11.4</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid226"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid226">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_685"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G11.4</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_685"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2442,18 +2377,17 @@
         <skos:notation>ORPHA:71290</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid242">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_71290"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D69.4</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid235"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid235">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_71290"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D69.4</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_71290"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2510,18 +2444,17 @@
         <skos:notation>ORPHA:733</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid248">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_733"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D12.6</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid241"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid241">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_733"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D12.6</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_733"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2569,18 +2502,17 @@
         <skos:notation>ORPHA:77259</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid255">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77259"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid248"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid248">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77259"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77259"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2618,18 +2550,17 @@
         <skos:notation>ORPHA:77261</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid260">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77261"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid253"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid253">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77261"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:E75.2</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_77261"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2772,18 +2703,17 @@
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid278">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_848"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:D56.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid271"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid271">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_848"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:D56.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_848"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2841,18 +2771,17 @@
         <skos:notation>ORPHA:86814</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid285">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_86814"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G40.3</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid278"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid278">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_86814"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G40.3</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_86814"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -2993,18 +2922,17 @@
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid306">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_881"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q96.9</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid299"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">BTNT (broader term maps to a narrower term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid299">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_881"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q96.9</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_881"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3050,18 +2978,17 @@
         <skos:notation>ORPHA:95</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid312">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_95"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G11.1</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid305"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid305">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_95"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G11.1</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_95"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3124,18 +3051,17 @@
         <skos:notation>ORPHA:974</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid320">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_974"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:Q87.2</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid313"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid313">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_974"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:Q87.2</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_974"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3294,18 +3220,17 @@
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Axiom>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid336">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98473"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid329"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Specific code (The term has its own code in the ICD10)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">E (exact mapping (the terms and the concepts are equivalent))</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid329">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98473"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Specific code (The term has its own code in the ICD10)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98473"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3343,18 +3268,17 @@
         <skos:notation>ORPHA:98759</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid341">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98759"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G11.8</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid334"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid334">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98759"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G11.8</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98759"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3391,18 +3315,17 @@
         <skos:notation>ORPHA:98853</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid346">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98853"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid339"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid339">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98853"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98853"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3454,18 +3377,17 @@
         <skos:notation>ORPHA:98863</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid354">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98863"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid347"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid347">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98863"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98863"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3511,18 +3433,17 @@
         <skos:notation>ORPHA:98895</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid360">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98895"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid353"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid353">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98895"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98895"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3579,18 +3500,17 @@
         <skos:notation>ORPHA:98896</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid368">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98896"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid361"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid361">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98896"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:G71.0</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Inclusion term (The term is included under a ICD10 category and has not its own code)</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_98896"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3639,18 +3559,17 @@
         <skos:notation>ORPHA:99885</skos:notation>
     </owl:Class>
     <owl:Annotation>
-        <owl:annotatedSource>
-            <owl:Axiom rdf:nodeID="genid375">
-                <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_99885"/>
-                <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-                <owl:annotatedTarget>ICD-10:P70.2</owl:annotatedTarget>
-                <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
-            </owl:Axiom>
-        </owl:annotatedSource>
+        <owl:annotatedSource rdf:nodeID="genid368"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/ECO_0000218"/>
         <owl:annotatedTarget xml:lang="en">Attributed</owl:annotatedTarget>
         <obo:ECO_0000218 xml:lang="en">NTBT (narrower term maps to a broader term)</obo:ECO_0000218>
     </owl:Annotation>
+    <owl:Axiom rdf:nodeID="genid368">
+        <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_99885"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ICD-10:P70.2</owl:annotatedTarget>
+        <obo:ECO_0000218 xml:lang="en">Attributed</obo:ECO_0000218>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.orpha.net/ORDO/Orphanet_99885"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -3691,5 +3610,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 

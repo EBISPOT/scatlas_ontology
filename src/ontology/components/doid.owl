@@ -1,0 +1,2539 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/components/doid.owl#"
+     xml:base="http://purl.obolibrary.org/obo/scatlas/components/doid.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/doid.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/doid.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/doid/releases/2024-02-28/doid-base.owl"/>
+        <owl:versionInfo>2024-03-01</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_9991118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_15365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_15365"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16842 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16842"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16899 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16899"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18208"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2676"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27561"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28593"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3387"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53444"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7939 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7939"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8069"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8776 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8776"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9334"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000077"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000084"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000097"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000125"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000128"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000138"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000148"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000151"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000185"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000187"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000192"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000222"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000223"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000351"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000442"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000453"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000499"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000540"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000542"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000586"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000622"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000623"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000646"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000767"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000771 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000771"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000786"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000945 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000945"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002064"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002309"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002321"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002418"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002573"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0008019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0008019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000064"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0014667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0014667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A disease that involving errors in metabolic processes of building or degradation of molecules.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD10CM:E88.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:277.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008659</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C3235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:75934005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0025517</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">metabolic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0014667</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>disease of metabolism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0014667"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease that involving errors in metabolic processes of building or degradation of molecules.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007646"/>
+        <oboInOwl:hasDbXref>url:http://www.ncbi.nlm.nih.gov/books/NBK22259/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_5603"/>
+        <obo:IAO_0000115>A T-cell acute leukemia that results_in abnormal increase of lymphocytes, derives_from T-cells, has_material_basis_in Human T-lymphotropic virus 1 (HTLV-1), which is transmitted_by sexual contact, transmitted_by contaminated needles used by intravenous-drug users, and transmitted_by breast feeding. The infection results_in_formation_of skin lesions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GARD:13103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C91.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9827/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D015459</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C3184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:77430005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0023493</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Adult T-cell leukemia/lymphoma (HTLV-1 positive)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">adult T-cell leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0050523</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_infectious_disease_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>adult T-cell leukemia/lymphoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0050523"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A T-cell acute leukemia that results_in abnormal increase of lymphocytes, derives_from T-cells, has_material_basis_in Human T-lymphotropic virus 1 (HTLV-1), which is transmitted_by sexual contact, transmitted_by contaminated needles used by intravenous-drug users, and transmitted_by breast feeding. The infection results_in_formation_of skin lesions.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007636"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Adult_T-cell_leukemia/lymphoma</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;version=14.10d&amp;code=C3184</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <obo:IAO_0000115>A cancer that is classified based on the organ it starts in.</obo:IAO_0000115>
+        <oboInOwl:created_by>snadendla</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-13T03:28:33Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>MESH:D009371</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0050686</oboInOwl:id>
+        <rdfs:label>organ system cancer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cancer that is classified based on the organ it starts in.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.cancer.gov/types/by-body-location</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <obo:IAO_0000115>A cancer that is classified by the type of cell from which it is derived.</obo:IAO_0000115>
+        <oboInOwl:created_by>snadendla</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-13T03:28:50Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0050687</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_MGI_slim"/>
+        <rdfs:label>cell type cancer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0050687"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cancer that is classified by the type of cell from which it is derived.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Cancer</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0080889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0080889">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_5074"/>
+        <obo:IAO_0000115>A high grade ependymoma that is located within the posterior fossa.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICDO:9391/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0080889</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <rdfs:label xml:lang="en">posterior fossa ependymoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0080889"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A high grade ependymoma that is located within the posterior fossa.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/26351223/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/32502305/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0081254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0081254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0080889"/>
+        <obo:IAO_0000115>A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns, including CpG island hypermethylation, global DNA hypomethylation, reduction of nuclear H3 p.K28me3 (K27me3) expression, and EZHIP overexpression.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICDO:9396/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C186450</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Posterior Fossa Ependymoma, Group A (PFA)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Posterior fossa group A (PFA) ependymoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0081254</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">posterior fossa group A ependymoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0081254"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns, including CpG island hypermethylation, global DNA hypomethylation, reduction of nuclear H3 p.K28me3 (K27me3) expression, and EZHIP overexpression.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/29909548/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0081255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0081255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0080889"/>
+        <obo:IAO_0000115>A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns including retention of nuclear H3 p.K28me3 (K27me3) expression, absence of CpG island hypermethylation, absence of global DNA hypomethylation, and absence of EZHIP overexpression.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICDO:9396/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C186451</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Posterior Fossa Ependymoma, Group B (PFB)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Posterior fossa group B (PFB) ependymoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0081255</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">posterior fossa group B ependymoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0081255"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns including retention of nuclear H3 p.K28me3 (K27me3) expression, absence of CpG island hypermethylation, absence of global DNA hypomethylation, and absence of EZHIP overexpression.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://pubmed.ncbi.nlm.nih.gov/33902636/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1240"/>
+        <obo:IAO_0000115>A leukemia that has_material_basis_in a B-cell or T-cell lineage involving primarily the bone marrow and the peripheral blood.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:10747</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICD10CM:C91</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:204</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9820/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007945</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C7539</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:93170002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0023448</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">lymphoblastic leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">lymphoblastic leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">lymphocytic leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:1037</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>lymphoid leukemia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_1037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A leukemia that has_material_basis_in a B-cell or T-cell lineage involving primarily the bone marrow and the peripheral blood.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007641"/>
+        <oboInOwl:hasDbXref>url:http://www.cancer.gov/dictionary?CdrID=616067</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_2531"/>
+        <obo:IAO_0000115>A cancer that affects the blood or bone marrow characterized by an abnormal proliferation of blood cells.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:9145</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICD10CM:C95.90</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:208</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9800/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007938</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C3161</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:255049003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0023418</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:1240</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>leukemia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_1240"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cancer that affects the blood or bone marrow characterized by an abnormal proliferation of blood cells.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007641"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Leukemia</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.cancer.gov/dictionary?CdrID=45343</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_12603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_12603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_1037"/>
+        <obo:IAO_0000115>A lymphoid leukemia that occurs when a hematopoietic stem cell undergoes malignant transformation into a primitive, undifferentiated cell with abnormal longevity producing large numbers of white blood cells to be produced and enter the blood stream.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:12621</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICD10CM:C95.00</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:208.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9801/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C9300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:308960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:24072005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0085669</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C1378511</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Stem cell Leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Stem cell leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:12603</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>acute leukemia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_12603"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A lymphoid leukemia that occurs when a hematopoietic stem cell undergoes malignant transformation into a primitive, undifferentiated cell with abnormal longevity producing large numbers of white blood cells to be produced and enter the blood stream.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Acute_leukemia</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.bloodjournal.org/content/bloodjournal/128/3/462.full.pdf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.merck.com/mmpe/sec11/ch142/ch142b.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_13372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_13372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_2345"/>
+        <obo:IAO_0000115>A plasma protein metabolism disease that has_material_basis_in defective production of the protease inhibitor alpha 1-antitrypsin (A1AT), leading to decreased A1AT activity in the blood and lungs, and deposition of excessive abnormal A1AT protein in liver cells.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GARD:5784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:E88.01</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:273.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D019896</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C84397</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:613490</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:30188007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0221757</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">AAT deficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:13372</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:comment>OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <rdfs:label>alpha 1-antitrypsin deficiency</rdfs:label>
+        <skos:exactMatch>MESH:D019896</skos:exactMatch>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_13372"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plasma protein metabolism disease that has_material_basis_in defective production of the protease inhibitor alpha 1-antitrypsin (A1AT), leading to decreased A1AT activity in the blood and lungs, and deposition of excessive abnormal A1AT protein in liver cells.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007640"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Alpha_1-antitrypsin_deficiency</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.nlm.nih.gov/medlineplus/ency/article/000120.htm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://alpha1.org/what-is-alpha1/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.genome.gov/Genetic-Disorders/Alpha-1-Antitrypsin-Deficiency</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_14566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_14566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A disease that is characterized by abnormally rapid cell division.</obo:IAO_0000115>
+        <obo:OBI_9991118>neoplasm</obo:OBI_9991118>
+        <oboInOwl:hasAlternativeId>DOID:0000818</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym xml:lang="en">cell process disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:14566</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <rdfs:label>disease of cellular proliferation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_14566"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease that is characterized by abnormally rapid cell division.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/w/index.php?title=Cell_proliferation</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_14566"/>
+        <obo:IAO_0000115>A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD10CM:C80.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8000/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:269513004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0006826</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">primary cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:162</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:comment>Updating out dated UMLS CUI.</rdfs:comment>
+        <rdfs:label>cancer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007643"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/cancer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=cancer</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_2345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_655"/>
+        <obo:IAO_0000115>An inherited metabolic disorder that involves plasma protein metabolism malfunction.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM:273.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:190822009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0029594</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:2345</oboInOwl:id>
+        <rdfs:label>plasma protein metabolism disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_2345"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An inherited metabolic disorder that involves plasma protein metabolism malfunction.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Blood_protein</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_2531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050686"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>An organ system cancer located in the hematological system that is characterized by uncontrolled cellular proliferation in blood, bone marrow and lymph nodes.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:1034</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:2532</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>MESH:D019337</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C27134</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:414388001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0376544</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Hematologic malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Hematologic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Hematological tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">blood cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">hematopoietic and lymphoid system tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">hematopoietic cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">hematopoietic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">hematopoietic tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant hematopoietic neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:2531</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#TopNodes_DOcancerslim"/>
+        <rdfs:label>hematologic cancer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_2531"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An organ system cancer located in the hematological system that is characterized by uncontrolled cellular proliferation in blood, bone marrow and lymph nodes.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007641"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Blood_cancer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.cancer.gov/dictionary/?CdrID=45708</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_3070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050687"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_162"/>
+        <obo:IAO_0000115>A cell type cancer that has_material_basis_in glial cells and is located in brain or located in spine.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:2627</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICDO:9380/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KEGG:05214</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005910</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C3059</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C4822</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:PS137800</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ORDO:182067</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:393564001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:74532006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0017638</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0555198</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Neuroglial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">glial cell tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">glioma, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant Neuroglial tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant glioma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:3070</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#TopNodes_DOcancerslim"/>
+        <rdfs:comment>Xref MGI.
+OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <rdfs:label>high grade glioma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_3070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell type cancer that has_material_basis_in glial cells and is located in brain or located in spine.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Malignant_glioma</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:64572001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0012634</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:4</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041577/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_3070"/>
+        <obo:IAO_0000115>A high grade glioma that is derived from ependymal cells, a type of glial cell, located_in ventricle lining within the central part of the brain.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:0060107</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICDO:9391/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C6770</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C1333407</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Ependymal neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">ependymal tumors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant ependymoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:5074</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>high grade ependymoma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_5074"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A high grade glioma that is derived from ependymal cells, a type of glial cell, located_in ventricle lining within the central part of the brain.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <oboInOwl:hasDbXref>url:http://www.cancer.org/Cancer/BrainCNSTumorsinAdults/DetailedGuide/brain-and-spinal-cord-tumors-in-adults-what-are-brain-spinal-tumors</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_5603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_5603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_9952"/>
+        <obo:IAO_0000115>An acute lymphoblastic leukemia that is characterized by too many T-cell lymphoblasts found in the bone marrow and blood.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:5599</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:715</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICDO:9729/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9837/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D015458</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0023492</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Precursor T Lymphoblastic Leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">T Acute Lymphoblastic Leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">T-cell acute lymphocytic leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>T-cell leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>T-cell lymphoblastic leukemia/lymphoma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>acute T cell leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>precursor T-lymphoblastic lymphoma/leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:5603</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <rdfs:label>T-cell acute lymphoblastic leukemia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_5603"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An acute lymphoblastic leukemia that is characterized by too many T-cell lymphoblasts found in the bone marrow and blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.cancer.gov/publications/dictionaries/cancer-terms/expand/T</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0014667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115>A disease of metabolism that is characterized by enzyme deficiency or accumulation of enzymes or toxins which interfere with normal function due to inherited enzyme abnormality.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MESH:D008661</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C34816</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:86095007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0025521</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Inborn Errors of Metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Metabolic hereditary disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">inborn metabolism disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:655</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_MGI_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label>inherited metabolic disorder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_655"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A disease of metabolism that is characterized by enzyme deficiency or accumulation of enzymes or toxins which interfere with normal function due to inherited enzyme abnormality.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007636"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Inborn_errors_of_metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.ncbi.nlm.nih.gov/mesh/68008659</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_12603"/>
+        <obo:IAO_0000115>A acute leukemia that is characterized by over production of lymphoblasts.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:5600</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>EFO:0000220</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GARD:522</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:C91.00</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:204.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C3167</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C7055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:247640</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OMIM:613065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ORDO:513</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:128822004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0023449</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C1335469</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ALL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">acute lymphoblastic leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">acute lymphocytic leukaemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>precursor lymphoblastic lymphoma/leukemia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:9952</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:comment>Xref MGI.</rdfs:comment>
+        <rdfs:label>acute lymphoblastic leukemia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_9952"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A acute leukemia that is characterized by over production of lymphoblasts.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007641"/>
+        <oboInOwl:hasDbXref>url:http://www.cancer.gov/dictionary?CdrID=46332</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001397"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10245"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1280"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1313"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1392"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1639"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1678143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1678143"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29459 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_29459"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_37296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_37296"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5811"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5833 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5833"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6269"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_632"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_694009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_694009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7165"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_781 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_781"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_784 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_784"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7955"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_83558 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_83558"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_948 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_948"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000074"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000167"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000341"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000344"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000362"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000411"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000458"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000473"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000915"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000916"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000924 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000924"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000926 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000926"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000945 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000947 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000947"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000948 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000948"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000949 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000949"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000955"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000956 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000956"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000964 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000964"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000966 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000966"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000970"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000974 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000974"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000975 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000975"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000977 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000977"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000989 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000989"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000990"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000991"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000992"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000995"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000996"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000997 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000997"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000998 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000998"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001043"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001044"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001103"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001132"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001134"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001153"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001154"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001155"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001156"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001157"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001158"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001160"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001161"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001162"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001166"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001174"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001182"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001235"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001245"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001255"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001264"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001295"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001296"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001301"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001323"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001464"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001601"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001621"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001629"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001637"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001675"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001684"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001707"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001723 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001723"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001728"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001729 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001729"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001733"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001734 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001734"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001736 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001736"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001737 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001737"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001744"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001756 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001756"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001768 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001768"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001769 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001769"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001811"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001817"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001828"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001831"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001846 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001846"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001862 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001862"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001869 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001869"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001871 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001871"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001872 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001872"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001886 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001886"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001893"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001894 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001894"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001898"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001905 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001905"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001981 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001981"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001987"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002021"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002037"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002046"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002067"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002072"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002085"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002094"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002097"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002110"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002134"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002137"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002146"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002165"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002182"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002185"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002186"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002240"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002285"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002298"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002336"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002348"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002349"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002351"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002358"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002360"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002367"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002369"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002370"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002371"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002372"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002385"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002390"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002394"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002405"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002407"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002418"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002495"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003126"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003129"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003216"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003679"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003693"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003704"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003728"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003889"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004720"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004913"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005396"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006562"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006956 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006956"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007329"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007616"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007650"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0008337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008337"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010743"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010996"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0016525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0016525"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022276"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0022277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0022277"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0036263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0036263"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+
