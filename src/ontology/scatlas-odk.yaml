@@ -50,7 +50,7 @@ import_group:
     - id: obi
       use_base: TRUE
     - id: ordo
-      mirror_from: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.4.owl
+      mirror_from: http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
     - id: uberon-bridge-to-fbbt
       mirror_from: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-fbbt.owl
     - id: ncbitaxon
@@ -64,6 +64,8 @@ import_group:
     - id: mondo
       use_base: TRUE
     - id: clo
+      make_base: TRUE
+    - id: doid
       make_base: TRUE
 subset_group:
   ids:
