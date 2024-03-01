@@ -121,13 +121,17 @@ $(ONT)-full.owl: $(SRC) components/subclasses.owl ../curation/blacklist.txt
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 
 
-imports/omit_import.owl:
-	touch $@
-	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
+#imports/omit_import.owl:
+#	touch $@
+#	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
 
-imports/omit_import.obo:
+#imports/omit_import.obo:
+#	touch $@
+#	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
+
+imports/ncit_import.owl:
 	touch $@
-	echo "OMIT is currently broken and should not be regenerated. see also https://github.com/OmniSearch/omit/issues/8"
+	echo "NCIT is too large to be generated at every automatic release"
 
 
 ../curation/retrieved_seed.txt: $(ONT)-full.owl  ../sparql/seed_class.sparql
