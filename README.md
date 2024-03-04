@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/EBISPOT/scatlas_ontology.svg?branch=master)](https://travis-ci.org/EBISPOT/scatlas_ontology)
-[![DOI](https://zenodo.org/badge/13996/EBISPOT/scatlas_ontology.svg)](https://zenodo.org/badge/latestdoi/13996/EBISPOT/scatlas_ontology)
-
+![Build Status](https://github.com/obophenotype/cell-ontology/workflows/CI/badge.svg)
 
 ![alt text](scatlas.jpeg?raw=true)
 
