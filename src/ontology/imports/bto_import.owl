@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/bto_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/imports/bto_import.owl>
+<http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/imports/bto_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto-base.owl>)
-Annotation(owl:versionInfo "2024-03-01")
+Annotation(owl:versionInfo "2024-04-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000001>))
@@ -28,6 +28,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000088>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000149>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000155>))
@@ -105,6 +107,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001129>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001130>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001239>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001244>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001253>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001260>))
@@ -415,6 +418,24 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BTO_0000130> "neutrophil")
 SubClassOf(<http://purl.obolibrary.org/obo/BTO_0000130> <http://purl.obolibrary.org/obo/BTO_0000539>)
 SubClassOf(<http://purl.obolibrary.org/obo/BTO_0000130> <http://purl.obolibrary.org/obo/BTO_0001044>)
+
+# Class: <http://purl.obolibrary.org/obo/BTO_0000131> (blood plasma)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Dorlands_Medical_Dictionary:MerckSource") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BTO_0000131> "The fluid portion of the blood in which the particulate components are suspended.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/BTO_0000131> "BrendaTissueOBO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/BTO_0000131> "plasma")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BTO_0000131> "BTO:0000131")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BTO_0000131> "blood plasma")
+SubClassOf(<http://purl.obolibrary.org/obo/BTO_0000131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BTO_0000089>))
+
+# Class: <http://purl.obolibrary.org/obo/BTO_0000133> (blood serum)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Dorlands_Medical_Dictionary:MerckSource") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BTO_0000133> "The cell-free portion of the blood from which the fibrinogen has been separated in the process of clotting.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/BTO_0000133> "BrendaTissueOBO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BTO_0000133> "BTO:0000133")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BTO_0000133> "blood serum")
+SubClassOf(<http://purl.obolibrary.org/obo/BTO_0000133> <http://purl.obolibrary.org/obo/BTO_0001239>)
+SubClassOf(<http://purl.obolibrary.org/obo/BTO_0000133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BTO_0000131>))
 
 # Class: <http://purl.obolibrary.org/obo/BTO_0000136> (bronchoalveolar system)
 
@@ -1142,6 +1163,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BTO_0001203> "salivary gland")
 SubClassOf(<http://purl.obolibrary.org/obo/BTO_0001203> <http://purl.obolibrary.org/obo/BTO_0000765>)
 SubClassOf(<http://purl.obolibrary.org/obo/BTO_0001203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BTO_0001090>))
+
+# Class: <http://purl.obolibrary.org/obo/BTO_0001239> (serum)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "From_Merriam-Webster's_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&va=serum") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BTO_0001239> "1: The watery portion of an animal fluid remaining after coagulation: a (1): blood serum (2): antiserum b: whey c: a normal or pathological serous fluid (as in a blister). 2: The watery part of a plant fluid.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/BTO_0001239> "BrendaTissueOBO")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BTO_0001239> "BTO:0001239")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BTO_0001239> "serum")
+SubClassOf(<http://purl.obolibrary.org/obo/BTO_0001239> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BTO_0000570>))
 
 # Class: <http://purl.obolibrary.org/obo/BTO_0001244> (urinary tract)
 

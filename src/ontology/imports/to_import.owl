@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/to_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/imports/to_import.owl>
+<http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/imports/to_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl>)
-Annotation(owl:versionInfo "2024-03-01")
+Annotation(owl:versionInfo "2024-04-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -807,6 +807,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007095>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007098>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007103>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007112>))
@@ -1113,6 +1114,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030112>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030123>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TO_0000067>))
@@ -1809,7 +1811,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002131> "over
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/RO_0002323>)
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002160> (only in taxon)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002160> (only_in_taxon)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002160> "x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0002160> "RO:0002160")
@@ -11951,6 +11953,27 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0007101> "Th
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0007101> "LP.09 nine leaves visible stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0007101> <http://purl.obolibrary.org/obo/PO_0007133>)
 
+# Class: <http://purl.obolibrary.org/obo/PO_0007103> (LP.10 ten leaves visible stage)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Gramene:Anuradha_Pujar") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0007103> "The stage at which leaves at ten nodes, other than the cotyledonary node, are visible above ground.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0007103> "GRO:0007014")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0007103> "MaizeGDB:67357")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0007103> "SOY:0000024")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0007103> "TAIR:0000413")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PO_0007103> "plant_structure_development_stage")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "TAIR:0000413") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "10 rosette leaf in Arabidopsis (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "MaizeGDB:67357") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "10-leaf in maize (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GRO:0007014") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "3.02-late whorl stage (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "MaizeGDB:67357") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "9-11 leaves in maize (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "SOY:0000024") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "Stage V9 in soybean (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "MaizeGDB:67357") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "V10 in maize (related)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GRO:0007014") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "maize growth stage-3.2 (related)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0007103> "ten rosette leaves (related)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PO_0007103> "PO:0007103")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0007103> "The leaves can be a single leaf, two, or whorls of leaves at each node.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0007103> "LP.10 ten leaves visible stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0007103> <http://purl.obolibrary.org/obo/PO_0007133>)
+
 # Class: <http://purl.obolibrary.org/obo/PO_0007106> (LP.03 three leaves visible stage)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Gramene:Anuradha_Pujar") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0007106> "The stage at which leaves at three nodes, other than the cotyledonary node, are visible above ground.")
@@ -17062,6 +17085,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PO_0030113> "PO:0030113")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030113> "flower pedicel")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0030113> <http://purl.obolibrary.org/obo/PO_0030112>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0030123> (panicle inflorescence)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NYBG:Brandon_Sinn") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NYBG:Dario_Cavaliere") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO:cooperl") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0030123> "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) or spikelets (PO:0009051) on determinate inflorescence axes (PO:0020122).,")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/PO_0030123> "NYBG:Brandon_Sinn")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PO_0030123> "2017-04-20T13:04:46Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030123> "panicle (exact)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PO_0030123> "plant_anatomy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PO_0030123> "PO:0030123")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0030123> "Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), brome (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rice (Oryza spp.), foxgrass (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae). Panicle inflorescences are most often conical in shape.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030123> "panicle inflorescence")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0030123> <http://purl.obolibrary.org/obo/PO_0009049>)
 
 # Class: <http://purl.obolibrary.org/obo/TO_0000001> (carbon sensitivity)
 

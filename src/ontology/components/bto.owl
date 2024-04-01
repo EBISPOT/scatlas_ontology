@@ -10,9 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/bto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/bto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/components/bto.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto-base.owl"/>
-        <owl:versionInfo>2024-03-01</owl:versionInfo>
+        <owl:versionInfo>2024-04-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -225,6 +225,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A granulocyte that is the chief phagocytic white blood cell of the blood.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=neutrophil</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BTO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001239"/>
+        <obo:IAO_0000115>The cell-free portion of the blood from which the fibrinogen has been separated in the process of clotting.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BTO:0000133</oboInOwl:id>
+        <rdfs:label>blood serum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0000133"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cell-free portion of the blood from which the fibrinogen has been separated in the process of clotting.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Dorlands_Medical_Dictionary:MerckSource</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -720,6 +738,23 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme, as ptyalin, that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=saliva</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BTO_0001239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001239">
+        <obo:IAO_0000115>1: The watery portion of an animal fluid remaining after coagulation: a (1): blood serum (2): antiserum b: whey c: a normal or pathological serous fluid (as in a blister). 2: The watery part of a plant fluid.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>BrendaTissueOBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BTO:0001239</oboInOwl:id>
+        <rdfs:label>serum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BTO_0001239"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>1: The watery portion of an animal fluid remaining after coagulation: a (1): blood serum (2): antiserum b: whey c: a normal or pathological serous fluid (as in a blister). 2: The watery part of a plant fluid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>From_Merriam-Webster&apos;s_Online_Dictionary_at_www.Merriam-Webster.com:http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&amp;va=serum</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

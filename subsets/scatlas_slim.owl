@@ -23,8 +23,8 @@
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/subsets/scatlas_slim.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/subsets/scatlas_slim.owl"/>
-        <owl:versionInfo>2024-03-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/subsets/scatlas_slim.owl"/>
+        <owl:versionInfo>2024-04-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1161,7 +1161,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>located_in</oboInOwl:id>
         <oboInOwl:shorthand>located_in</oboInOwl:shorthand>
-        <rdfs:label>located in</rdfs:label>
         <rdfs:label xml:lang="en">located in</rdfs:label>
         <rdfs:label>located_in</rdfs:label>
     </owl:ObjectProperty>

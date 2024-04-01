@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/clo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/clo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/components/clo.owl"/>
         <owl:versionInfo>2024-02-29</owl:versionInfo>
     </owl:Ontology>
     
@@ -2822,12 +2822,6 @@
     <!-- http://www.ebi.ac.uk/efo/EFO_0001073 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001073"/>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/EFO_0001359 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001359"/>
     
 
 

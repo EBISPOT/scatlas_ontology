@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: scatlas/releases/2024-03-01/subsets/scatlas_slim.owl
+data-version: scatlas/releases/2024-04-01/subsets/scatlas_slim.owl
 subsetdef: common_tool_use ""
 subsetdef: do_not_annotate ""
 subsetdef: SOFA ""
 ontology: scatlas/subsets/scatlas_slim
-property_value: owl:versionInfo "2024-03-01" xsd:string
+property_value: owl:versionInfo "2024-04-01" xsd:string
 
 [Typedef]
 id: VFBext:0000008

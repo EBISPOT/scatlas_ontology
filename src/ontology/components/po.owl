@@ -10,9 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/po.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/po.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/components/po.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/po/releases/2024-02-16/po.owl"/>
-        <owl:versionInfo>2024-03-01</owl:versionInfo>
+        <owl:versionInfo>2024-04-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9710,6 +9710,79 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0007103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007133"/>
+        <obo:IAO_0000115>The stage at which leaves at ten nodes, other than the cotyledonary node, are visible above ground.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GRO:0007014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MaizeGDB:67357</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SOY:0000024</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR:0000413</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>10 rosette leaf in Arabidopsis (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>10-leaf in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>3.02-late whorl stage (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>9-11 leaves in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Stage V9 in soybean (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>V10 in maize (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>maize growth stage-3.2 (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ten rosette leaves (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PO:0007103</oboInOwl:id>
+        <rdfs:comment>The leaves can be a single leaf, two, or whorls of leaves at each node.</rdfs:comment>
+        <rdfs:label>LP.10 ten leaves visible stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The stage at which leaves at ten nodes, other than the cotyledonary node, are visible above ground.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>10 rosette leaf in Arabidopsis (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>TAIR:0000413</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>10-leaf in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MaizeGDB:67357</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>3.02-late whorl stage (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>9-11 leaves in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MaizeGDB:67357</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Stage V9 in soybean (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SOY:0000024</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>V10 in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MaizeGDB:67357</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>maize growth stage-3.2 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0007106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007106">
@@ -9959,6 +10032,30 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>1 seedling in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MaizeGDB:1863</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>BBCH principal growth stage 1 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:3826331524</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>maize growth stage-1.1 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007007</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>sorghum principal growth stage 1 (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The stage at which vegetative structures are being produced by SAM.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Poc:curators</oboInOwl:hasDbXref>
@@ -9998,30 +10095,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>1 main shoot growth in Solanaceae (related)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>SGN:0000011</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>1 seedling in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>MaizeGDB:1863</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>BBCH principal growth stage 1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:3826331524</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>maize growth stage-1.1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007007</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>sorghum principal growth stage 1 (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007126</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -10099,6 +10172,18 @@
         <rdfs:comment>The leaves can be a single leaf, two, or whorls of leaves at each node.</rdfs:comment>
         <rdfs:label>LP.04 four leaves visible stage</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The stage at which leaves at four nodes, other than the cotyledonary node, are visible above ground.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>02-tassel initiation in maize (related)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GRO:0007011</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
@@ -10224,18 +10309,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>tassel initiation in maize (related)</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MaizeGDB:67306</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The stage at which leaves at four nodes, other than the cotyledonary node, are visible above ground.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>Gramene:Anuradha_Pujar</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007115"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>02-tassel initiation in maize (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GRO:0007011</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20261,6 +20334,30 @@ these may not begin or end simultaneously. Not all seeds go through a seed dorma
         <oboInOwl:hasDbXref>NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
+        <obo:IAO_0000115>An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) or spikelets (PO:0009051) on determinate inflorescence axes (PO:0020122).,</obo:IAO_0000115>
+        <oboInOwl:created_by>NYBG:Brandon_Sinn</oboInOwl:created_by>
+        <oboInOwl:creation_date>2017-04-20T13:04:46Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>panicle (exact)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>plant_anatomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0030123</oboInOwl:id>
+        <rdfs:comment>Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), brome (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rice (Oryza spp.), foxgrass (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae). Panicle inflorescences are most often conical in shape.</rdfs:comment>
+        <rdfs:label>panicle inflorescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0030123"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) or spikelets (PO:0009051) on determinate inflorescence axes (PO:0020122).,</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PO:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

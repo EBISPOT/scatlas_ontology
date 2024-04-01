@@ -1,6 +1,7 @@
 http://dbpedia.org/resource/United_Kingdom
 http://purl.obolibrary.org/obo/BTO_0000007
 http://purl.obolibrary.org/obo/BTO_0000018
+http://purl.obolibrary.org/obo/BTO_0000133
 http://purl.obolibrary.org/obo/BTO_0000155
 http://purl.obolibrary.org/obo/BTO_0000214
 http://purl.obolibrary.org/obo/BTO_0000221
@@ -1457,6 +1458,7 @@ http://purl.obolibrary.org/obo/HP_0006554
 http://purl.obolibrary.org/obo/HP_0011010
 http://purl.obolibrary.org/obo/HP_0012115
 http://purl.obolibrary.org/obo/HP_0012219
+http://purl.obolibrary.org/obo/HP_0031295
 http://purl.obolibrary.org/obo/HP_0040187
 http://purl.obolibrary.org/obo/MONDO_0000457
 http://purl.obolibrary.org/obo/MONDO_0000458
@@ -1469,8 +1471,11 @@ http://purl.obolibrary.org/obo/MONDO_0002012
 http://purl.obolibrary.org/obo/MONDO_0002404
 http://purl.obolibrary.org/obo/MONDO_0003878
 http://purl.obolibrary.org/obo/MONDO_0003912
+http://purl.obolibrary.org/obo/MONDO_0005147
 http://purl.obolibrary.org/obo/MONDO_0008840
 http://purl.obolibrary.org/obo/MONDO_0008867
+http://purl.obolibrary.org/obo/MONDO_0009832
+http://purl.obolibrary.org/obo/MONDO_0011308
 http://purl.obolibrary.org/obo/MONDO_0011842
 http://purl.obolibrary.org/obo/MONDO_0017853
 http://purl.obolibrary.org/obo/MONDO_0018163
@@ -1484,7 +1489,9 @@ http://purl.obolibrary.org/obo/MONDO_0022529
 http://purl.obolibrary.org/obo/MONDO_0024292
 http://purl.obolibrary.org/obo/MONDO_0024662
 http://purl.obolibrary.org/obo/MONDO_0025096
+http://purl.obolibrary.org/obo/MONDO_0037747
 http://purl.obolibrary.org/obo/MONDO_0043452
+http://purl.obolibrary.org/obo/MONDO_0044970
 http://purl.obolibrary.org/obo/MONDO_0100096
 http://purl.obolibrary.org/obo/MPATH_579
 http://purl.obolibrary.org/obo/MP_0001914
@@ -1935,6 +1942,7 @@ http://purl.obolibrary.org/obo/PO_0007094
 http://purl.obolibrary.org/obo/PO_0007095
 http://purl.obolibrary.org/obo/PO_0007098
 http://purl.obolibrary.org/obo/PO_0007101
+http://purl.obolibrary.org/obo/PO_0007103
 http://purl.obolibrary.org/obo/PO_0007106
 http://purl.obolibrary.org/obo/PO_0007109
 http://purl.obolibrary.org/obo/PO_0007113
@@ -2077,6 +2085,7 @@ http://purl.obolibrary.org/obo/PO_0025597
 http://purl.obolibrary.org/obo/PO_0025598
 http://purl.obolibrary.org/obo/PO_0025601
 http://purl.obolibrary.org/obo/PO_0025615
+http://purl.obolibrary.org/obo/PO_0028002
 http://purl.obolibrary.org/obo/PO_0030003
 http://purl.obolibrary.org/obo/PO_0030004
 http://purl.obolibrary.org/obo/PO_0030007
@@ -2087,6 +2096,9 @@ http://purl.obolibrary.org/obo/PO_0030046
 http://purl.obolibrary.org/obo/PO_0030106
 http://purl.obolibrary.org/obo/PO_0030108
 http://purl.obolibrary.org/obo/PO_0030113
+http://purl.obolibrary.org/obo/PO_0030123
+http://purl.obolibrary.org/obo/PR_000000164
+http://purl.obolibrary.org/obo/PR_000001135
 http://purl.obolibrary.org/obo/TO_0000067
 http://purl.obolibrary.org/obo/TO_0000259
 http://purl.obolibrary.org/obo/TO_0000276
@@ -2395,6 +2407,7 @@ http://purl.obolibrary.org/obo/UBERON_0001911
 http://purl.obolibrary.org/obo/UBERON_0001926
 http://purl.obolibrary.org/obo/UBERON_0001928
 http://purl.obolibrary.org/obo/UBERON_0001929
+http://purl.obolibrary.org/obo/UBERON_0001930
 http://purl.obolibrary.org/obo/UBERON_0001932
 http://purl.obolibrary.org/obo/UBERON_0001945
 http://purl.obolibrary.org/obo/UBERON_0001946
@@ -2628,6 +2641,7 @@ http://purl.obolibrary.org/obo/UBERON_0003909
 http://purl.obolibrary.org/obo/UBERON_0003917
 http://purl.obolibrary.org/obo/UBERON_0003922
 http://purl.obolibrary.org/obo/UBERON_0003937
+http://purl.obolibrary.org/obo/UBERON_0003982
 http://purl.obolibrary.org/obo/UBERON_0004023
 http://purl.obolibrary.org/obo/UBERON_0004024
 http://purl.obolibrary.org/obo/UBERON_0004025
@@ -2795,6 +2809,7 @@ http://purl.obolibrary.org/obo/UBERON_0011201
 http://purl.obolibrary.org/obo/UBERON_0011602
 http://purl.obolibrary.org/obo/UBERON_0011742
 http://purl.obolibrary.org/obo/UBERON_0011876
+http://purl.obolibrary.org/obo/UBERON_0011878
 http://purl.obolibrary.org/obo/UBERON_0011907
 http://purl.obolibrary.org/obo/UBERON_0012101
 http://purl.obolibrary.org/obo/UBERON_0012168
@@ -3193,6 +3208,7 @@ http://www.ebi.ac.uk/efo/EFO_0000606
 http://www.ebi.ac.uk/efo/EFO_0000612
 http://www.ebi.ac.uk/efo/EFO_0000613
 http://www.ebi.ac.uk/efo/EFO_0000616
+http://www.ebi.ac.uk/efo/EFO_0000618
 http://www.ebi.ac.uk/efo/EFO_0000621
 http://www.ebi.ac.uk/efo/EFO_0000622
 http://www.ebi.ac.uk/efo/EFO_0000625
@@ -3441,6 +3457,7 @@ http://www.ebi.ac.uk/efo/EFO_0001291
 http://www.ebi.ac.uk/efo/EFO_0001292
 http://www.ebi.ac.uk/efo/EFO_0001297
 http://www.ebi.ac.uk/efo/EFO_0001298
+http://www.ebi.ac.uk/efo/EFO_0001302
 http://www.ebi.ac.uk/efo/EFO_0001304
 http://www.ebi.ac.uk/efo/EFO_0001305
 http://www.ebi.ac.uk/efo/EFO_0001312
@@ -3479,7 +3496,6 @@ http://www.ebi.ac.uk/efo/EFO_0001355
 http://www.ebi.ac.uk/efo/EFO_0001356
 http://www.ebi.ac.uk/efo/EFO_0001357
 http://www.ebi.ac.uk/efo/EFO_0001358
-http://www.ebi.ac.uk/efo/EFO_0001359
 http://www.ebi.ac.uk/efo/EFO_0001360
 http://www.ebi.ac.uk/efo/EFO_0001361
 http://www.ebi.ac.uk/efo/EFO_0001372
@@ -4939,6 +4955,7 @@ http://www.ebi.ac.uk/efo/EFO_0009189
 http://www.ebi.ac.uk/efo/EFO_0009319
 http://www.ebi.ac.uk/efo/EFO_0009361
 http://www.ebi.ac.uk/efo/EFO_0009371
+http://www.ebi.ac.uk/efo/EFO_0009373
 http://www.ebi.ac.uk/efo/EFO_0009426
 http://www.ebi.ac.uk/efo/EFO_0009444
 http://www.ebi.ac.uk/efo/EFO_0009462
@@ -4968,6 +4985,16 @@ http://www.ebi.ac.uk/efo/EFO_0010708
 http://www.ebi.ac.uk/efo/EFO_0010709
 http://www.ebi.ac.uk/efo/EFO_0010710
 http://www.ebi.ac.uk/efo/EFO_0010711
+http://www.ebi.ac.uk/efo/EFO_0020093
+http://www.ebi.ac.uk/efo/EFO_0022074
+http://www.ebi.ac.uk/efo/EFO_0022351
+http://www.ebi.ac.uk/efo/EFO_0022387
+http://www.ebi.ac.uk/efo/EFO_0022395
+http://www.ebi.ac.uk/efo/EFO_0022471
+http://www.ebi.ac.uk/efo/EFO_0022480
+http://www.ebi.ac.uk/efo/EFO_0022537
+http://www.ebi.ac.uk/efo/EFO_0022539
+http://www.ebi.ac.uk/efo/EFO_0022582
 http://www.ebi.ac.uk/efo/EFO_0030017
 http://www.ebi.ac.uk/efo/EFO_0030052
 http://www.ebi.ac.uk/efo/EFO_1000003

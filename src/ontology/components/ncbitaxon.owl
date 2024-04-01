@@ -10,8 +10,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-03-01/components/ncbitaxon.owl"/>
-        <owl:versionInfo>2024-03-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/components/ncbitaxon.owl"/>
+        <owl:versionInfo>2024-04-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -161,7 +161,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10088"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>mice</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003003"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10088"/>
@@ -2359,28 +2359,23 @@
         <oboInOwl:hasDbXref>PMID:15143038</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:25403554</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:37409558</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>Firmicutes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>PMID:38376502</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>low G+C Gram-positive bacteria</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>low GC Gram+</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>&quot;Firmicutes&quot; corrig. Gibbons and Murray 1978 (Approved Lists 1980)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Bacillaeota</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Bacillota corrig. Gibbons and Murray 2021</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Bacillus/Clostridium group</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Clostridium group firmicutes</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Firmacutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Firmicuteota</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Low G+C firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>clostridial firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:1239</oboInOwl:id>
         <rdfs:label>Bacillota</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Firmicutes</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name"/>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -2392,12 +2387,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>low GC Gram+</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003003"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>&quot;Firmicutes&quot; corrig. Gibbons and Murray 1978 (Approved Lists 1980)</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
@@ -2426,7 +2415,19 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Firmacutes</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Firmicuteota</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Firmicutes</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -5330,6 +5331,7 @@
         <oboInOwl:hasDbXref>GC_ID:11</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:12089250</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20668542</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:38415640</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Mycobacterium balnei</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Mycobacterium platypoecilus</oboInOwl:hasRelatedSynonym>
@@ -18723,9 +18725,16 @@
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24014900</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Ulocladium</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:5598</oboInOwl:id>
         <rdfs:label>Alternaria</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5598"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Ulocladium</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
     
 
 
@@ -26397,9 +26406,11 @@
         <oboInOwl:hasExactSynonym>dog</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>dogs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Canis borealis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Canis canis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Canis domesticus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Canis familiaris</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Canis lupus borealis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:9615</oboInOwl:id>
         <rdfs:label>Canis lupus familiaris</rdfs:label>
     </owl:Class>
@@ -26418,6 +26429,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9615"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Canis borealis</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9615"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Canis canis</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
@@ -26431,6 +26448,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9615"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Canis familiaris</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9615"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Canis lupus borealis</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     
