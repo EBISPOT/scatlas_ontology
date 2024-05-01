@@ -2,14 +2,12 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/scatlas/subsets/scatlas_slim.owl#"
      xml:base="http://purl.obolibrary.org/obo/scatlas/subsets/scatlas_slim.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:so="http://purl.obolibrary.org/obo/so#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:fbcv="http://purl.obolibrary.org/obo/fbcv#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obo1="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -23,8 +21,8 @@
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/subsets/scatlas_slim.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/subsets/scatlas_slim.owl"/>
-        <owl:versionInfo>2024-04-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/subsets/scatlas_slim.owl"/>
+        <owl:versionInfo>2024-05-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -92,9 +90,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label>definition</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
@@ -560,22 +556,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/fbcv#common_tool_use -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#common_tool_use">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbcv#do_not_annotate -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#do_not_annotate">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/mondo#broadMatch -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#broadMatch"/>
@@ -633,14 +613,6 @@
     <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/so#SOFA -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#SOFA">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
     
 
 
@@ -712,9 +684,7 @@
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>has_license</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -790,21 +760,9 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
     
 
 
@@ -894,9 +852,7 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label>has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     
 
 
@@ -1124,7 +1080,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasOBONamespace>worm_development</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
@@ -1170,18 +1125,9 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008">
-        <obo:IAO_0000115>A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.</obo:IAO_0000115>
-        <oboInOwl:created_by>dos</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:48:55Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">has hemidriver</rdfs:label>
         <rdfs:label>has_hemidriver</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:17088209</oboInOwl:hasDbXref>
-    </owl:Axiom>
 </rdf:RDF>
 
 

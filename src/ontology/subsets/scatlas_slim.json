@@ -4,9 +4,9 @@
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-04-01"
+        "val" : "2024-05-01"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/subsets/scatlas_slim.owl"
+      "version" : "http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/subsets/scatlas_slim.owl"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -95,9 +95,6 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "uberon"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "worm_development"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
           "val" : "part_of"
         }, {
@@ -117,10 +114,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
       "lbl" : "symbol",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "lbl" : "definition",
       "type" : "PROPERTY"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0001025",
@@ -156,27 +149,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008",
       "lbl" : "has_hemidriver",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.",
-          "xrefs" : [ "PMID:17088209" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "dos"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2018-09-26T07:48:55Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.org/dc/terms/license",
-      "lbl" : "has_license",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
-      "lbl" : "has_exact_synonym",
       "type" : "PROPERTY"
     } ],
     "propertyChainAxioms" : [ {

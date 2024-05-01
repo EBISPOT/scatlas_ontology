@@ -1,18 +1,12 @@
 format-version: 1.2
-data-version: scatlas/releases/2024-04-01/subsets/scatlas_slim.owl
-subsetdef: common_tool_use ""
-subsetdef: do_not_annotate ""
-subsetdef: SOFA ""
+data-version: scatlas/releases/2024-05-01/subsets/scatlas_slim.owl
 ontology: scatlas/subsets/scatlas_slim
-property_value: owl:versionInfo "2024-04-01" xsd:string
+property_value: owl:versionInfo "2024-05-01" xsd:string
 
 [Typedef]
 id: VFBext:0000008
 name: has hemidriver
 name: has_hemidriver
-def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
-created_by: dos
-creation_date: 2018-09-26T07:48:55Z
 
 [Typedef]
 id: located_in
@@ -38,7 +32,6 @@ namespace: plant_ontology
 namespace: quality
 namespace: spatial
 namespace: uberon
-namespace: worm_development
 def: "a core relation that holds between a part and its whole" []
 def: "For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)" []
 comment: EFO_0000822

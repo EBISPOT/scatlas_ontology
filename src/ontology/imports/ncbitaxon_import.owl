@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/ncbitaxon_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-04-01/imports/ncbitaxon_import.owl>
-Annotation(owl:versionInfo "2024-04-01")
+<http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/imports/ncbitaxon_import.owl>
+Annotation(owl:versionInfo "2024-05-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10066>))
