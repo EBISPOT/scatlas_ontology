@@ -10,9 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/wbls.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/components/wbls.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/wbls.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/wbls/releases/2024-04-09/wbls-base.owl"/>
-        <owl:versionInfo>2024-05-01</owl:versionInfo>
+        <owl:versionInfo>2024-06-01</owl:versionInfo>
     </owl:Ontology>
     
 

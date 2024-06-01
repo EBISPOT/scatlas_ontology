@@ -4,9 +4,9 @@
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-05-01"
+        "val" : "2024-06-01"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/subsets/scatlas_slim.owl"
+      "version" : "http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/subsets/scatlas_slim.owl"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -112,10 +112,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
-      "lbl" : "symbol",
-      "type" : "PROPERTY"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0001025",
       "lbl" : "located_in",
       "type" : "PROPERTY",
@@ -148,8 +144,14 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008",
-      "lbl" : "has_hemidriver",
-      "type" : "PROPERTY"
+      "lbl" : "has hemidriver",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements.",
+          "xrefs" : [ "PMID:17088209" ]
+        }
+      }
     } ],
     "propertyChainAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0001025",

@@ -10,8 +10,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/ncbitaxon.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/components/ncbitaxon.owl"/>
-        <owl:versionInfo>2024-05-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/ncbitaxon.owl"/>
+        <owl:versionInfo>2024-06-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1200,11 +1200,11 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3049954"/>
         <oboInOwl:hasBroadSynonym>HRSV</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>Human respiratory syncytial virus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Human orthopneumovirus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>human RSV</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCBITaxon:11250</oboInOwl:id>
-        <rdfs:label>Human orthopneumovirus</rdfs:label>
+        <rdfs:label>human respiratory syncytial virus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
@@ -1215,7 +1215,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11250"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Human respiratory syncytial virus</owl:annotatedTarget>
+        <owl:annotatedTarget>Human orthopneumovirus</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2370,6 +2370,7 @@
         <oboInOwl:hasRelatedSynonym>Firmacutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Firmicuteota</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Firmicutes</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Firmicutes corrig. Gibbons and Murray 1978 (Approved Lists 1980)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Low G+C firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>clostridial firmicutes</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>firmicutes</oboInOwl:hasRelatedSynonym>
@@ -2428,6 +2429,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Firmicutes</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1239"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Firmicutes corrig. Gibbons and Murray 1978 (Approved Lists 1980)</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -4422,7 +4429,7 @@
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCBITaxon:162145</oboInOwl:id>
-        <rdfs:label>Human metapneumovirus</rdfs:label>
+        <rdfs:label>human metapneumovirus</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_162145"/>
@@ -8842,6 +8849,22 @@
         <oboInOwl:hasAlternativeId>NCBITaxon:2516348</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>NCBITaxon:2516349</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>NCBITaxon:2516350</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109037</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109038</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109039</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109040</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109041</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109042</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109043</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109044</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109045</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109046</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109047</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109048</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109049</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109050</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109056</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:3109057</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>NCBITaxon:591</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>GC_ID:11</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10319519</oboInOwl:hasDbXref>
@@ -14531,6 +14554,7 @@
         <oboInOwl:hasExactSynonym>potato</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>potatoes</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Solanum aracc-papa</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:4113</oboInOwl:id>
         <rdfs:label>Solanum tuberosum</rdfs:label>
     </owl:Class>
@@ -14545,6 +14569,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>potatoes</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003003"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4113"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Solanum aracc-papa</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     
 
@@ -16860,6 +16890,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4932">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4930"/>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_species"/>
+        <oboInOwl:hasAlternativeId>NCBITaxon:2898199</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>NCBITaxon:41870</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Saccharomyces cerevisiae &apos;var. diastaticus&apos;</oboInOwl:hasExactSynonym>
@@ -17255,12 +17286,20 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_34371"/>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_genus"/>
         <oboInOwl:hasAlternativeId>NCBITaxon:52585</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>NCBITaxon:78867</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Microsphaera</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Uncinula</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:5121</oboInOwl:id>
         <rdfs:label>Erysiphe</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Microsphaera</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5121"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
@@ -17897,6 +17936,18 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5338"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Tulostomatales</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5338"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>anamorphic Agaricales</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5338"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>gill mushrooms</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name"/>
@@ -17925,18 +17976,6 @@
         <owl:annotatedTarget>Nidulariales</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5338"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>Tulostomatales</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5338"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>anamorphic Agaricales</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
-    </owl:Axiom>
     
 
 
@@ -17959,6 +17998,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5346"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Agaricus cinereus</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5346"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Coprinus cinereus</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
@@ -17972,12 +18017,6 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5346"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Hormographiella aspergillata</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5346"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>Agaricus cinereus</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
     
@@ -24920,17 +24959,17 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314145"/>
         <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_order"/>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>whales, hippos, ruminants, pigs, camels etc.</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>even-toed ungulates &amp; whales</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Cetartiodactyla</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>even-toed ungulates</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>even-toed ungulates &amp; whales</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>NCBITaxon:91561</oboInOwl:id>
         <rdfs:label>Artiodactyla</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91561"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>whales, hippos, ruminants, pigs, camels etc.</owl:annotatedTarget>
+        <owl:annotatedTarget>even-toed ungulates &amp; whales</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -24942,7 +24981,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91561"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>even-toed ungulates</owl:annotatedTarget>
+        <owl:annotatedTarget>even-toed ungulates &amp; whales</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#blast_name"/>
     </owl:Axiom>
     

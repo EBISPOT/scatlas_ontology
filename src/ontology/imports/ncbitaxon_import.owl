@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/ncbitaxon_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-05-01/imports/ncbitaxon_import.owl>
-Annotation(owl:versionInfo "2024-05-01")
+<http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/imports/ncbitaxon_import.owl>
+Annotation(owl:versionInfo "2024-06-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10066>))
@@ -1669,15 +1669,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_11244> "Pneumoviridae")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_11244> <http://purl.obolibrary.org/obo/NCBITaxon_11157>)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_11250> (Human orthopneumovirus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_11250> (human respiratory syncytial virus)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/OMO_0003012>) <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "HRSV")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "GC_ID:1")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "Human respiratory syncytial virus")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "Human orthopneumovirus")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "human RSV")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "ncbi_taxonomy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/NCBITaxon_11250> "NCBITaxon:11250")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_11250> "Human orthopneumovirus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_11250> "human respiratory syncytial virus")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_11250> <http://purl.obolibrary.org/obo/NCBITaxon_3049954>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_112509> (Hordeum vulgare subsp. vulgare)
@@ -2197,6 +2197,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "Firmacutes")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "Firmicuteota")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "Firmicutes")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "Firmicutes corrig. Gibbons and Murray 1978 (Approved Lists 1980)")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "Low G+C firmicutes")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "clostridial firmicutes")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#blast_name>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1239> "firmicutes")
@@ -3233,13 +3234,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_161934> "Beta vulgaris")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_161934> <http://purl.obolibrary.org/obo/NCBITaxon_3554>)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_162145> (Human metapneumovirus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_162145> (human metapneumovirus)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/OMO_0003012>) <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_162145> "HMPV")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_162145> "GC_ID:1")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NCBITaxon_162145> "ncbi_taxonomy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/NCBITaxon_162145> "NCBITaxon:162145")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_162145> "Human metapneumovirus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_162145> "human metapneumovirus")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_162145> <http://purl.obolibrary.org/obo/NCBITaxon_3048148>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_162387> (Metapneumovirus)
@@ -5669,6 +5670,22 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternative
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:2516348")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:2516349")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:2516350")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109037")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109038")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109039")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109040")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109041")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109042")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109043")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109044")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109045")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109046")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109047")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109048")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109049")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109050")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109056")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:3109057")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "NCBITaxon:591")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "GC_ID:11")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_28901> "PMID:10319519")
@@ -8416,6 +8433,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_4113> "potato")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/OMO_0003003>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_4113> "potatoes")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NCBITaxon_4113> "ncbi_taxonomy")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_4113> "Solanum aracc-papa")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/NCBITaxon_4113> "NCBITaxon:4113")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_4113> "Solanum tuberosum")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_4113> <http://purl.obolibrary.org/obo/NCBITaxon_4107>)
@@ -9559,6 +9577,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_4930> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_4932> (Saccharomyces cerevisiae)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/ncbitaxon#has_rank> <http://purl.obolibrary.org/obo/NCBITaxon_4932> <http://purl.obolibrary.org/obo/NCBITaxon_species>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_4932> "NCBITaxon:2898199")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_4932> "NCBITaxon:41870")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_4932> "GC_ID:1")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#equivalent_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_4932> "Saccharomyces cerevisiae 'var. diastaticus'")
@@ -9696,8 +9715,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_5120> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/ncbitaxon#has_rank> <http://purl.obolibrary.org/obo/NCBITaxon_5121> <http://purl.obolibrary.org/obo/NCBITaxon_genus>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "NCBITaxon:52585")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "NCBITaxon:78867")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "GC_ID:1")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "ncbi_taxonomy")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "Microsphaera")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "Uncinula")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/NCBITaxon_5121> "NCBITaxon:5121")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_5121> "Erysiphe")
@@ -13183,10 +13204,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_91493> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/ncbitaxon#has_rank> <http://purl.obolibrary.org/obo/NCBITaxon_91561> <http://purl.obolibrary.org/obo/NCBITaxon_order>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "GC_ID:1")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "whales, hippos, ruminants, pigs, camels etc.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "even-toed ungulates & whales")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "ncbi_taxonomy")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#synonym>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "Cetartiodactyla")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#blast_name>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "even-toed ungulates")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/ncbitaxon#blast_name>) <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "even-toed ungulates & whales")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/NCBITaxon_91561> "NCBITaxon:91561")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_91561> "Artiodactyla")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_91561> <http://purl.obolibrary.org/obo/NCBITaxon_314145>)

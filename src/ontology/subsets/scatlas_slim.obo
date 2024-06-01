@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: scatlas/releases/2024-05-01/subsets/scatlas_slim.owl
+data-version: scatlas/releases/2024-06-01/subsets/scatlas_slim.owl
 ontology: scatlas/subsets/scatlas_slim
-property_value: owl:versionInfo "2024-05-01" xsd:string
+property_value: owl:versionInfo "2024-06-01" xsd:string
 
 [Typedef]
 id: VFBext:0000008
 name: has hemidriver
-name: has_hemidriver
+def: "A relationship between an interesctional expression pattern and one of the hemidrivers that contributes to driving its expression.  For example, the split-GAL4 system drives expression using transgenes encoding a pair of interacting proteins, one with a GAL4 DNA binding domain and one with an transcription activation domain.  In cells that co-express these two transgenes, interaction between the two proteins reconsitutes a transcription factor, driving expression from transgenes under the control o f UAS enhancer/promoter elements." [PMID:17088209]
 
 [Typedef]
 id: located_in
