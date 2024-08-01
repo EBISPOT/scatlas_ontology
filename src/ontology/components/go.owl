@@ -10,9 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/go.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/go.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2024-04-24/go.owl"/>
-        <owl:versionInfo>2024-06-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/components/go.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2024-06-17/go.owl"/>
+        <owl:versionInfo>2024-08-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -407,7 +407,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005975">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
         <obo:IAO_0000115>The chemical reactions and pathways involving carbohydrates, any of a group of organic compounds based of the general formula Cx(H2O)y.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/22880</obo:IAO_0000233>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
@@ -851,7 +850,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0015977 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0015977">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
         <obo:IAO_0000115>A metabolic process in which carbon (usually derived from carbon dioxide) is incorporated into organic compounds (usually carbohydrates).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Carbon_fixation</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>autotrophic CO2 fixation</oboInOwl:hasExactSynonym>
@@ -876,7 +875,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005975"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
         <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of carbohydrates, any of a group of organic compounds based of the general formula Cx(H2O)y.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0006093</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>anabolic carbohydrate metabolic process</oboInOwl:hasExactSynonym>
@@ -1021,7 +1020,6 @@
         <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:26820516</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:28096264</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.vivo.colostate.edu/hbooks/cmb/cells/pmemb/junctions_a.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1301,6 +1299,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
         <obo:IAO_0000115>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_metabolite</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>primary metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0044238</oboInOwl:id>
@@ -1316,7 +1315,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.metacyc.org</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1499,31 +1497,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0071704 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071704">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
-        <oboInOwl:created_by>mah</oboInOwl:created_by>
-        <oboInOwl:creation_date>2010-03-08T03:32:18Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>organic molecular entity metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0071704</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>organic substance metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0098762 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098762">
@@ -1584,63 +1557,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:kmv</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_1901576 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901576">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009058"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
-        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of an organic substance, any molecular entity containing carbon.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
-        <oboInOwl:created_by>pr</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-11-05T11:04:40Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>organic molecular entity anabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity biosynthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity biosynthetic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity formation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity synthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance anabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance biosynthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance formation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance synthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:1901576</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>organic substance biosynthetic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of an organic substance, any molecular entity containing carbon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organic molecular entity anabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organic molecular entity biosynthesis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organic molecular entity formation</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901576"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organic molecular entity synthesis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

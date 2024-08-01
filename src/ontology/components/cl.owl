@@ -13,9 +13,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/cl.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/cl.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cl/releases/2024-05-15/cl-base.owl"/>
-        <owl:versionInfo>2024-06-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/components/cl.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cl/releases/2024-07-10/cl-base.owl"/>
+        <owl:versionInfo>2024-08-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1459,12 +1459,28 @@ Covers cells actively being cultured or stored in a quiescent state for future u
     <!-- http://purl.obolibrary.org/obo/CL_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000076"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An endothelial cell that lines the vasculature.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref>ZFA:0009036</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>cuboidal endothelial cell of vascular tree</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>blood vessel endothelial cell</rdfs:label>
@@ -1556,16 +1572,16 @@ Covers cells actively being cultured or stored in a quiescent state for future u
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009040</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000077"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A flattened epithelial cell of mesenchymal origin that lines the serous cavity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0721662544</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000077"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>ZFA:0009040</owl:annotatedTarget>
-        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 
@@ -1648,22 +1664,17 @@ Covers cells actively being cultured or stored in a quiescent state for future u
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000115"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002632"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the lung.</obo:IAO_0000115>
@@ -1695,8 +1706,8 @@ Covers cells actively being cultured or stored in a quiescent state for future u
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2318,8 +2329,8 @@ Covers cells actively being cultured or stored in a quiescent state for future u
     <!-- http://purl.obolibrary.org/obo/CL_0000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000213"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002078"/>
         <obo:IAO_0000115>An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref>BTO:0001176</oboInOwl:hasDbXref>
@@ -4705,9 +4716,12 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0000239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000067"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000075"/>
+        <obo:IAO_0000115>An epithelial cell characterized by the presence of a brush border on its apical surface, which increases the surface area for absorption.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1152/ajpgi.00005.2011"/>
+        <oboInOwl:hasDbXref>PMID:25422372</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009143</oboInOwl:hasDbXref>
+        <rdfs:comment>All brush border cells are columnar-cuboidal.  The formal logical definition of this term asserts this. Brush border epithelial cells are predominantly found lining the small intestine and the proximal tubules of the kidneys.</rdfs:comment>
         <rdfs:label>brush border epithelial cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -5007,15 +5021,17 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0000322 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0010003"/>
         <obo:IAO_0000115>An epithelial cell that lines the peripheral gas exchange region of the lungs of air-breathing vertebrates.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BTO:0000395</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-2168</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:62499</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>alveolar epithelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pneumocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pneumonocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
-        <rdfs:label>pneumocyte</rdfs:label>
+        <rdfs:label>pulmonary alveolar epithelial cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000322"/>
@@ -5023,6 +5039,13 @@ The modern definition of neurosecretion has evolved to include the release of an
         <owl:annotatedTarget>An epithelial cell that lines the peripheral gas exchange region of the lungs of air-breathing vertebrates.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20054144</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29463737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000322"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>pneumocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:32491474</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8062,12 +8085,19 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0000666 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000666">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <obo:IAO_0000115>An endothelial cell that has small pores, or fenestrations, which allow for the efficient exchange of substances between the blood and surrounding tissues.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ZFA:0009286</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>window cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
-        <rdfs:label>fenestrated cell</rdfs:label>
+        <rdfs:label>fenestrated endothelial cell</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000666"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that has small pores, or fenestrations, which allow for the efficient exchange of substances between the blood and surrounding tissues.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>DOI:10.1007/978-3-211-99390-3_133</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000666"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -12294,7 +12324,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
-        <oboInOwl:creation_date>2012-01-12T09:58:38Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-12T09:58:38Z</oboInOwl:creation_date>
         <rdfs:comment>&apos;In vitro&apos;, translating literally to &apos;in glass&apos;, typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. &apos;In vitro&apos; is intended to contrast with &apos;native&apos;,which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.</rdfs:comment>
         <rdfs:label>cell in vitro</rdfs:label>
     </owl:Class>
@@ -12314,7 +12344,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A connective tissue cell found in bone.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <oboInOwl:creation_date>2011-11-16T04:28:16Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-11-16T04:28:16Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>bone cell</rdfs:label>
@@ -12391,7 +12421,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002032"/>
         <obo:IAO_0000115>A hematopoietic oligopotent progenitor cell that has the ability to differentiate into limited cell types but lacks lineage cell markers and self renewal capabilities. Cell lacks hematopoeitic lineage markers.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-06T03:43:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-06T03:43:27Z</oboInOwl:creation_date>
         <rdfs:label>hematopoietic oligopotent progenitor cell, lineage-negative</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -12686,7 +12716,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011026"/>
         <obo:IAO_0000115>A progenitor cell that can give rise to plasmacytoid and myeloid dendritic cells, and to monocytes and macrophages.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-19T02:51:58Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-19T02:51:58Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>MDP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>macrophage dendritic cell progenitor</rdfs:label>
@@ -12707,7 +12737,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000763"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002031"/>
         <obo:IAO_0000115>A lin-negative, MHC-II-negative, CD11c-positive, FLT3-positive cell with intermediate expression of SIRP-alpha.</obo:IAO_0000115>
-        <oboInOwl:creation_date>2010-01-19T03:39:30Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-19T03:39:30Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>pre-conventional dendritic cell</rdfs:label>
     </owl:Class>
@@ -12726,7 +12756,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000556"/>
         <obo:IAO_0000115>A megakaryocyte progenitor cell that is CD34-negative, CD41-positive and CD42-positive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-04-26T03:59:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-26T03:59:22Z</oboInOwl:creation_date>
         <rdfs:comment>Markers are commonly associated with human cells.</rdfs:comment>
         <rdfs:label>CD34-negative, CD41-positive, CD42-positive megakaryocyte cell</rdfs:label>
     </owl:Class>
@@ -12748,7 +12778,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002191"/>
         <obo:IAO_0000115>A cell type that can give rise to basophil and mast cells. This cell is CD34-positive, CD117-positive, CD125-positive, FceRIa-negative, and T1/ST2-negative, and expresses Gata-1, Gata-2, C/EBPa</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-04-27T12:46:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-27T12:46:33Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>BMCP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:comment>There may be an intermediate cell type. These cells also CD13-positive, CD16-positive, CD32-positive, and integrin beta 7-positive. Transcription factors: GATA1-positive, MCP-1-positive, mitf-positive, PU.1-positive, and CEBP/a-low.</rdfs:comment>
@@ -12773,7 +12803,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0008001"/>
         <obo:IAO_0000115>A hematopoietic progenitor cell that is capable of developing into only one lineage of hematopoietic cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-06T03:43:20Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-06T03:43:20Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
         <rdfs:label>hematopoietic lineage restricted progenitor cell</rdfs:label>
     </owl:Class>
@@ -12794,7 +12824,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0008001"/>
         <obo:IAO_0000115>A hematopoietic oligopotent progenitor cell that has the ability to differentiate into limited cell types but lacks lineage cell markers and self renewal capabilities.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-06T03:43:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-06T03:43:27Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
         <rdfs:comment>This cell type is intended to be compatible with any vertebrate hematopoietic oligopotent progenitor cell.  For mammalian hematopoietic oligopotent progenitor cells known to be lineage-negative, please use the term &apos;hematopoietic oligopotent progenitor cell&apos; (CL_0001060).</rdfs:comment>
         <rdfs:label>hematopoietic oligopotent progenitor cell</rdfs:label>
@@ -12816,7 +12846,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001008"/>
         <obo:IAO_0000115>A hematopoietic stem cell capable of rapid replenishment of myeloerythroid progenitors and limited self renewal capability. This cell is Kit-positive, Sca1-positive, CD34-positive, CD150-positive, and is Flt3-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-08T09:19:25Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-08T09:19:25Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>ST stem cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ST-HSC</oboInOwl:hasExactSynonym>
         <rdfs:comment>Markers are associated with mouse cells. These cells are also reportedly CD11b-low and CD90-low.</rdfs:comment>
@@ -12839,7 +12869,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001008"/>
         <obo:IAO_0000115>A hematopoietic stem cell with long term self renewal capability. This cell is Kit-positive, Sca1-positive, CD150-positive, CD90-low, CD34-negative and Flt3-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-08T09:19:28Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-08T09:19:28Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>LT stem cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LT-HSC</oboInOwl:hasExactSynonym>
         <rdfs:comment>Markers are associated with mouse cells.</rdfs:comment>
@@ -12862,7 +12892,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000837"/>
         <obo:IAO_0000115>A hematopoietic progenitor that has restricted self-renewal capability. Cell is Kit-positive, Ly6-positive, CD150-negative and Flt3-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-08T11:16:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-08T11:16:33Z</oboInOwl:creation_date>
         <rdfs:comment>Markers are associated with mouse cells.</rdfs:comment>
         <rdfs:label>Slamf1-negative multipotent progenitor cell</rdfs:label>
     </owl:Class>
@@ -12882,7 +12912,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000837"/>
         <obo:IAO_0000115>A hematopoietic progenitor that has some limited self-renewal capability. Cells are lin-negative, Kit-positive, CD34-positive, and Slamf1-positive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-08T11:16:35Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-08T11:16:35Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>KSL cell</oboInOwl:hasExactSynonym>
         <rdfs:comment>Markers are associated with mouse cells.</rdfs:comment>
         <rdfs:label>Slamf1-positive multipotent progenitor cell</rdfs:label>
@@ -12904,7 +12934,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A CD4-positive, CXCR5-positive, CCR7-negative alpha-beta T cell located in follicles of secondary lymph nodes that is BCL6-high, ICOS-high and PD1-high, and stimulates follicular B cells to undergo class-switching and antibody production.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2009-10-29T04:01:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-29T04:01:27Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>T(FH)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tfh</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>follicular B helper T cell</oboInOwl:hasRelatedSynonym>
@@ -12979,7 +13009,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000837"/>
         <obo:IAO_0000115>A hematopoietic multipotent progenitor cell that is CD34-positive, CD38-negative, CD45RA-negative, and CD90-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-01-12T11:14:15Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-12T11:14:15Z</oboInOwl:creation_date>
         <rdfs:comment>Cell markers are associated with human hematopoietic multipotent progenitor cells.</rdfs:comment>
         <rdfs:label>CD34-positive, CD38-negative multipotent progenitor cell</rdfs:label>
     </owl:Class>
@@ -13000,7 +13030,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000817"/>
         <obo:IAO_0000115>A pre-B cell precursor is CD19-low, CD22-positive , CD34-positive, CD38-positive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-04-28T12:06:06Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-28T12:06:06Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:comment>Late pro-B cells are also reportedly CD10-positive, CD20-negative, CD21-negative, and TdT-positive. Transcription factors: PU.1-positive, Ikaros-positive, E2A-positive, and PAX5-positive.</rdfs:comment>
         <rdfs:label>late pro-B cell</rdfs:label>
@@ -13023,7 +13053,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
         <obo:IAO_0000115>A classical monocyte that is CD14-positive, CD16-negative, CD64-positive, CD163-positive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-05T08:25:41Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-05T08:25:41Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>CD16- monocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-negative monocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -13054,14 +13084,12 @@ The modern definition of neurosecretion has evolved to include the release of an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000322"/>
-        <obo:IAO_0000115>A type I pneumocyte is a flattened, branched pneumocyte that covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.</obo:IAO_0000115>
+        <obo:IAO_0000115>A squamous pulmonary alveolar epithelial cell that is flattened and branched. A pulmonary alveolar type 1 cell covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-23T04:37:54Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-23T04:37:54Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000780</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:62500</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>AT1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ATI</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>lung type 1 cells</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>membranous pneumocytes</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pulmonary alveolar type I cell</oboInOwl:hasExactSynonym>
@@ -13072,17 +13100,40 @@ The modern definition of neurosecretion has evolved to include the release of an
         <oboInOwl:hasExactSynonym>type 1 pneumocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>type I alveolar cells</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>type I alveolar epithelial cells</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type I pneumocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AT1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ATI</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
-        <rdfs:label>type I pneumocyte</rdfs:label>
+        <rdfs:label>pulmonary alveolar type 1 cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002062"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A type I pneumocyte is a flattened, branched pneumocyte that covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.</owl:annotatedTarget>
+        <owl:annotatedTarget>A squamous pulmonary alveolar epithelial cell that is flattened and branched. A pulmonary alveolar type 1 cell covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20054144</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29463737</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.copewithcytokines.de</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>type 1 pneumocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:32491474</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>AT1</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:29463737</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ATI</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
     
 
@@ -13090,19 +13141,15 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0002063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000157"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000322"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000272"/>
-        <obo:IAO_0000115>A type II pneumocyte is a pneumocyte that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a type I pneumocyte. Thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli.</obo:IAO_0000115>
+        <obo:IAO_0000115>A pulmonary alveolar epithelial cell that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a pulmonary alveolar type 1 cell. This cuboidal cell is thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-24T12:04:13Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-24T12:04:13Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000538</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:62501</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>AT2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ATII</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>TII</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cuboidal type II cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>granular pneumocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>great alveolar cell</oboInOwl:hasExactSynonym>
@@ -13113,19 +13160,43 @@ The modern definition of neurosecretion has evolved to include the release of an
         <oboInOwl:hasExactSynonym>type II alveolar cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>type II alveolar epithelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>type II alveolocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>type II pneumocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>AT2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ATII</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>TII</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>lung type II cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
-        <rdfs:label>type II pneumocyte</rdfs:label>
+        <rdfs:label>pulmonary alveolar type 2 cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002063"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A type II pneumocyte is a pneumocyte that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a type I pneumocyte. Thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli.</owl:annotatedTarget>
+        <owl:annotatedTarget>A pulmonary alveolar epithelial cell that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a pulmonary alveolar type 1 cell. This cuboidal cell is thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0412046911</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:36138472</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:8540632</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://www.copewithcytokines.de</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002063"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>type II pneumocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:32491474</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002063"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>AT2</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:36138472</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002063"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ATII</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
     
 
@@ -13155,7 +13226,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A secretory cell found in pancreatic acini that secretes digestive enzymes and mucins. This cell is a typical zymogenic cell, have a basal nucleus and basophilic cytoplasm consisting of regular arrays of granular endoplasmic reticulum with mitochondria and dense secretory granules.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-24T03:16:29Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-24T03:16:29Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000028</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0737</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:63032</oboInOwl:hasDbXref>
@@ -13190,7 +13261,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000170"/>
         <obo:IAO_0000115>An enteroendocrine cell that produces glucagon.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-10T10:48:54Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-10T10:48:54Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62939</oboInOwl:hasDbXref>
         <rdfs:label>type A enteroendocrine cell</rdfs:label>
     </owl:Class>
@@ -13212,7 +13283,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>Columnar cell which populate the epithelium of large intestine and absorb water. This cell is the most numerous of the epithelial cell types in the large intestine; bear apical microvilli, contain secretory granules in their apical cytoplasm; secretion appears to be largely mucins, but is also rich in antibodies of the IgA type.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-29T11:07:25Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-29T11:07:25Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>columnar cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>BTO:0002484</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:63638</oboInOwl:hasDbXref>
@@ -13240,7 +13311,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
         <obo:IAO_0000115>An epithelial cell derived from endoderm.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-29T03:38:14Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-29T03:38:14Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:69075</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009383</oboInOwl:hasDbXref>
         <rdfs:label>endo-epithelial cell</rdfs:label>
@@ -13268,7 +13339,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
         <obo:IAO_0000115>An epithelial cell derived from ectoderm.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-29T03:38:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-29T03:38:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:69074</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009385</oboInOwl:hasDbXref>
         <rdfs:label>ecto-epithelial cell</rdfs:label>
@@ -13296,7 +13367,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
         <obo:IAO_0000115>Epithelial cell derived from mesoderm or mesenchyme.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-29T03:49:14Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-29T03:49:14Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:69076</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009388</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>epithelial mesenchymal cell</oboInOwl:hasExactSynonym>
@@ -13326,7 +13397,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>Epithelial cell found in the ducts of the pancreas. This cell type contributes to the high luminal pH.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-06-30T08:49:43Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-30T08:49:43Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:63099</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009380</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -13356,7 +13427,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000738"/>
         <obo:IAO_0000115>A leukocyte that lacks granules.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-07-22T11:30:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-22T11:30:33Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62855</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>agranular leukocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
@@ -13394,7 +13465,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell found in the bone marrow. This can include fibroblasts, macrophages, adipocytes, osteoblasts, osteoclasts, endothelial cells and hematopoietic cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-07-22T04:48:15Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-22T04:48:15Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004850</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:83621</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D001854</oboInOwl:hasDbXref>
@@ -13441,6 +13512,18 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0002138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002138">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -13451,7 +13534,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A endothelial cell of a lymphatic vessel. The border of the oak leaf-shaped endothelial cell of initial lymphatics are joined by specialized buttons. The discontinuous feature of buttons distinguishes them from zippers in collecting lymphatics, but both types of junctions are composed of proteins typical of adherens junctions and tight junctions found in the endothelium of blood vessels. Buttons seal the sides of flaps of the oak leaf-shaped endothelial cell, leaving open the tips of flaps as routes for fluid entry without disassembly and reformation of intercellular junctions.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-24T02:05:28Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-24T02:05:28Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004167</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:68458</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>LEC</oboInOwl:hasExactSynonym>
@@ -13476,7 +13559,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <obo:IAO_0000115>An endothelial cell of the vascular tree, which includes blood vessels and lymphatic vessels.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-24T02:06:40Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-24T02:06:40Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001854</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-1106</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:67755</oboInOwl:hasDbXref>
@@ -13501,11 +13584,12 @@ The modern definition of neurosecretion has evolved to include the release of an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002653"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_2000008"/>
         <obo:IAO_0000115>An endothelial cell found in capillaries.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-24T10:15:00Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-24T10:15:00Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004956</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0112</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:67756</oboInOwl:hasDbXref>
@@ -13531,7 +13615,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A ciliated columnar cell found in the trachea and bronchus. Vary from low to tall columnar; possesses up to 300 cilia at its surface, interspersed with long irregular microvilli with the cilia varying in length from about 6um in the trachea to about 4um in the terminal bronchioles; driving force of the ciliary current in the bronchial tree.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-24T03:38:29Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-24T03:38:29Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:70542</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -13553,7 +13637,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002077"/>
         <obo:IAO_0000115>Epithelial cells derived from general body ectoderm and ectoderm placodes.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T08:31:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T08:31:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:70556</oboInOwl:hasDbXref>
         <rdfs:label>general ecto-epithelial cell</rdfs:label>
     </owl:Class>
@@ -13574,7 +13658,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000710"/>
         <obo:IAO_0000115>A specialized cell involved in sensory perception of smell.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T01:47:13Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T01:47:13Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:67870</oboInOwl:hasDbXref>
         <rdfs:label>olfactory epithelial cell</rdfs:label>
     </owl:Class>
@@ -13604,6 +13688,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002167"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002319"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002631"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -13612,7 +13697,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell located on the basal lamina of the olfactory epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T01:58:54Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T01:58:54Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>horizontal basal cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>FMA:62303</oboInOwl:hasDbXref>
         <rdfs:label>basal cell of olfactory epithelium</rdfs:label>
@@ -13633,7 +13718,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002169"/>
         <obo:IAO_0000115>A rounded or elliptical epithelial cell, with pale-staining open face nucleus and pale cytoplasm rich in free ribosomes and clusters of centrioles; form a distinct basal zone spaced slightly from the basal surface of the epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T01:59:18Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T01:59:18Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:67874</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>blastema cell of olfactory epithelium</oboInOwl:hasExactSynonym>
         <rdfs:label>globose cell of olfactory epithelium</rdfs:label>
@@ -13656,7 +13741,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A cell within the follicle of an ovary.</obo:IAO_0000115>
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_50557"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-25T03:01:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-25T03:01:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>EMAPA:31247</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:70589</oboInOwl:hasDbXref>
         <rdfs:label>follicular cell of ovary</rdfs:label>
@@ -13700,7 +13785,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell found in the lining of the stomach.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-25T03:22:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-25T03:22:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62948</oboInOwl:hasDbXref>
         <rdfs:label>epithelial cell of stomach</rdfs:label>
     </owl:Class>
@@ -13720,7 +13805,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002659"/>
         <obo:IAO_0000115>A mucous cell in the epithelium of the stomach.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-25T03:38:51Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-25T03:38:51Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:63464</oboInOwl:hasDbXref>
         <rdfs:label>mucous cell of stomach</rdfs:label>
     </owl:Class>
@@ -13741,7 +13826,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002180"/>
         <obo:IAO_0000115>A stomach epithelial cell that is olumnar in form with a few short apical microvilli; relatively undifferentiated mitotic cell from which other types of gland are derived; few in number, situated in the isthmus region of the gland and base of the gastric pit.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-25T03:57:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-25T03:57:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62953</oboInOwl:hasDbXref>
         <rdfs:label>stem cell of gastric gland</rdfs:label>
     </owl:Class>
@@ -13761,7 +13846,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002169"/>
         <obo:IAO_0000115>A flat or angular epithelial cell with condensed nuclei and darkly staining cytoplasm containing numerous intermediate filaments inserted into desmosomes contacting surrounding supporting cells; lie in contact with the basal lamina of olfactory epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T01:59:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T01:59:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62304</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>horizontal basal cells</oboInOwl:hasExactSynonym>
         <rdfs:label>basal proper cell of olfactory epithelium</rdfs:label>
@@ -13803,7 +13888,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A basally situated, mitotically active, columnar-shaped keratinocyte attached to the basement membrane.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T03:12:49Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T03:12:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:70571</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>basal cell of epidermis</rdfs:label>
@@ -13834,7 +13919,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000666"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000746"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002681"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -13843,7 +13928,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An endothelial cell found in the glomerulus of the kidney. This cell is flattened, highly fenestrated, and plays a vital role in the formation of glomerular ultrafiltrate.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-26T10:59:44Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-26T10:59:44Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004632</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:70970</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -13866,7 +13951,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000839"/>
         <obo:IAO_0000115>A cell involved in the formation of a granulocyte.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-30T12:54:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-30T12:54:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:83519</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>granulocytopoietic cell</rdfs:label>
@@ -13887,7 +13972,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002191"/>
         <obo:IAO_0000115>A eosinophil precursor in the granulocytic series, being a cell intermediate in development between a myelocyte and a band form cell. The nucleus becomes indented where the indentation is smaller than half the distance to the farthest nuclear margin; chromatin becomes coarse and clumped; specific granules predominate while primary granules are rare.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-30T01:08:15Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-30T01:08:15Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:83541</oboInOwl:hasDbXref>
         <rdfs:label>metamyelocyte</rdfs:label>
     </owl:Class>
@@ -13910,7 +13995,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A cell type that is the first of the maturation stages of the granulocytic leukocytes normally found in the bone marrow. Granules are seen in the cytoplasm. The nuclear material of the myelocyte is denser than that of the myeloblast but lacks a definable membrane. The cell is flat and contains increasing numbers of granules as maturation progresses.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-30T01:08:19Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-30T01:08:19Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000734</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:83525</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -13934,7 +14019,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000839"/>
         <obo:IAO_0000115>A cell involved in the formation of a monocyte (monopoiesis).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-08-30T01:27:48Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-30T01:27:48Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:83552</oboInOwl:hasDbXref>
         <rdfs:label>monopoietic cell</rdfs:label>
     </owl:Class>
@@ -13954,7 +14039,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A renal intercalated cell that secretes base and reabsorbs acid in the distal segments of the kidney tubule to maintain acid/base balance.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-02T01:43:55Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-02T01:43:55Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>type B intercalated cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>type B-IC</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -13991,7 +14076,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002632"/>
         <obo:IAO_0000115>An epithelial cell of the tracheobronchial tree.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-02T02:09:14Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-02T02:09:14Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:66816</oboInOwl:hasDbXref>
         <rdfs:label>epithelial cell of tracheobronchial tree</rdfs:label>
     </owl:Class>
@@ -14029,7 +14114,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>Brush cell found in the epithelial layer of the colon.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-02T02:20:50Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-02T02:20:50Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:263222</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>brush cell of large intestine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tuft cell of epithelium of large intestine</oboInOwl:hasExactSynonym>
@@ -14071,7 +14156,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
         <obo:IAO_0000115>A cell type found in the gastrointestinal and respiratory tracts that is characterized by the presence of a tuft of blunt, squat microvilli (120-140 per cell). Function of this cell type is not known.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-02T02:28:53Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-02T02:28:53Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:67978</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>caveolated cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>fibrillovesicular cell</oboInOwl:hasExactSynonym>
@@ -14114,7 +14199,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the prostate.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-07T01:49:29Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-07T01:49:29Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:256163</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:66817</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>prostate epithelial cell</oboInOwl:hasExactSynonym>
@@ -14136,7 +14221,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>A cell containing at least one nucleus.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-07T03:32:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-07T03:32:33Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:67513</oboInOwl:hasDbXref>
         <rdfs:label>nucleate cell</rdfs:label>
     </owl:Class>
@@ -14173,7 +14258,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A hematopoeitic stem cell found in the blood. Normally found in very limited numbers in the peripheral circulation (less than 0.1% of all nucleated cells).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-07T03:57:09Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-07T03:57:09Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0002669</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:86711</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D000072916</oboInOwl:hasDbXref>
@@ -14195,7 +14280,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000723"/>
         <obo:IAO_0000115>A pluripotent stem cell has the ability to form cells from all three germ layers (ectoderm, mesoderm, and endoderm). However, unlike totipotent stem cells, they cell can not generate all the cells of the whole organism such as placenta.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-07T04:26:06Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-07T04:26:06Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:70570</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D039904</oboInOwl:hasDbXref>
         <rdfs:label>pluripotent stem cell</rdfs:label>
@@ -14235,7 +14320,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell that is found in a zone occupying the bottom region of the crypt; provide the source of most of the cell types of the intestinal epithelium; proliferate by mitotic division; differentiates into columnar or goblet cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:21:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:21:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:63379</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>stem cell of intestinal crypt of Lieberkuhn</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -14258,7 +14343,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
         <obo:IAO_0000115>An epithelial cell of the musculomembranous digestive tube extending from the mouth to the anus.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:26:53Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:26:53Z</oboInOwl:creation_date>
         <rdfs:label>epithelial cell of alimentary canal</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -14295,7 +14380,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the esophagus.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:28:20Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:28:20Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:63071</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009400</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -14339,7 +14424,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the large intestine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:28:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:28:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004297</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:256157</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym>epithelial cell of colon</oboInOwl:hasRelatedSynonym>
@@ -14378,7 +14463,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the small intestine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:41:46Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:41:46Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:256159</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>epithelial cell of small intestine</rdfs:label>
@@ -14416,7 +14501,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A stromal cell of the endometrium that is fibroblastic in appearance. During decidualization this cell may differentiate into a decidual stromal cell.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T09:50:04Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T09:50:04Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-1266</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:86490</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>endometrial stromal cell</oboInOwl:hasExactSynonym>
@@ -14467,7 +14552,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of thyroid gland.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T01:46:51Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T01:46:51Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:256167</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D000072637</oboInOwl:hasDbXref>
         <rdfs:label>epithelial cell of thyroid gland</rdfs:label>
@@ -14487,7 +14572,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002257"/>
         <obo:IAO_0000115>A cell type that varies from squamous to columnar, depending on their activity with microvillus directed luminally. This cell produces and secretes thyroid hormones.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-08T01:50:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-08T01:50:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0003736</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-1285</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:68782</oboInOwl:hasDbXref>
@@ -14521,6 +14606,7 @@ The modern definition of neurosecretion has evolved to include the release of an
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14531,7 +14617,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An endothelial cell that lines any of the venous cavities through which blood passes in various glands and organs such as the spleen and liver.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-14T10:57:26Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-14T10:57:26Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:63134</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -14553,7 +14639,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000457"/>
         <obo:IAO_0000115>A cell type that secretes histamine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-10T03:04:42Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-10T03:04:42Z</oboInOwl:creation_date>
         <rdfs:label>histamine secreting cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -14600,7 +14686,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A PP cell located in the islets of the pancreas.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-10T03:30:31Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-10T03:30:31Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000805</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:70588</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D050418</oboInOwl:hasDbXref>
@@ -14651,7 +14737,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the thymus. Epithelial reticular cells are pleomorphic, stellate, non-phagocytic cells which seem to be supportive in function and are held together by desmosomes. They replace the fibroblastoid reticular cells found in other lymphoid organs. Other epithelial cells in the medulla have the ultrastructure of secretory cells. Although different epithelial cells throughout the thymus appear alike by light microscopy their ultrastructure and function varies.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-13T02:34:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-13T02:34:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-1040</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:72208</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>epithelial cell of thymus gland</oboInOwl:hasExactSynonym>
@@ -14677,7 +14763,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002365"/>
         <obo:IAO_0000115>A thymic epithelial cell that has an eccentric, round, or irregularly shaped hetero or euchromatic nucleus. The hallmark of this cell type is the presence of vacuoles, which are clustered in one area of the cytoplasm in the vicinity of the nucleus. The vacuoles are small and acquire a grape-like form, occasionally showing delicate internal microvillous projections.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-13T02:37:26Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-13T02:37:26Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:72214</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cystic thymic epithelial cells</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>large mTEC</oboInOwl:hasExactSynonym>
@@ -14751,7 +14837,6 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000239"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002078"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000494"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000615"/>
@@ -14769,6 +14854,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#kidney_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <rdfs:comment>The vast majority of proximal tubule epithelial cells have a brush border, but there are rare exceptions.</rdfs:comment>
         <rdfs:label>epithelial cell of proximal tubule</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -14788,7 +14874,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000639"/>
         <obo:IAO_0000115>A basophil chromphil cell of the anterior pitiutary gland that produce adrenocorticotropic hormone, melanocyte-stimulating hormone and lipotropin. This cell type is irregular in shape and has short dendritic processes which are inserted among other neighboring cells;</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-14T02:08:23Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-14T02:08:23Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0002509</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:83098</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D052680</oboInOwl:hasDbXref>
@@ -14811,7 +14897,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000638"/>
         <obo:IAO_0000115>An acidophilic cell of the anterior pituitary that produces growth hormone, somatotropin.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-14T02:33:09Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-14T02:33:09Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:83095</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D052683</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>somatotrope</oboInOwl:hasExactSynonym>
@@ -14851,7 +14937,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell that is part of the nervous system.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-15T01:34:57Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-15T01:34:57Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-2040</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:70333</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -14890,7 +14976,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell of the supporting or framework tissue of the body, arising chiefly from the embryonic mesoderm and including adipose tissue, cartilage, and bone.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-15T03:01:54Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-15T03:01:54Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-2096</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:63875</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D003239</oboInOwl:hasDbXref>
@@ -14920,7 +15006,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>A cell of the embryo.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-15T03:39:21Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-15T03:39:21Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-0263</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:82840</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0007028</oboInOwl:hasDbXref>
@@ -14949,7 +15035,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002321"/>
         <obo:IAO_0000115>A stem cell of embryonic origin.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-15T03:44:35Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-15T03:44:35Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001086</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0263</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:82841</oboInOwl:hasDbXref>
@@ -14994,7 +15080,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell of a fetus which is suspended in the amniotic fluid. Amniocytes are considered to arise from several tissues including fetal skin, the fetal urinary tract, umbilical cord, and the inner amniotic surface.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T10:13:37Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T10:13:37Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000066</oboInOwl:hasDbXref>
         <rdfs:label>amniocyte</rdfs:label>
     </owl:Class>
@@ -15035,7 +15121,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6677-8489"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4969-670X"/>
-        <oboInOwl:creation_date>2010-09-20T11:42:14Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T11:42:14Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>basal myoepithelial cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>basal-myoepithelial cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>CALOHA:TS-2378</oboInOwl:hasDbXref>
@@ -15120,7 +15206,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002327"/>
         <obo:IAO_0000115>A mammary epithelial cell that occurs in the lumen of the ductal and alveoli structure in the breast.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T01:37:53Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T01:37:53Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>mature luminal cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>FMA:73280</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15165,7 +15251,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the mammary gland.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T01:49:37Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T01:49:37Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004300</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>breast epithelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mammary epithelial cell</oboInOwl:hasExactSynonym>
@@ -15212,7 +15298,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the bronchus.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T02:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T02:00:00Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0002922</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>bronchial epithelial cell</rdfs:label>
@@ -15232,7 +15318,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
         <obo:IAO_0000115>An undifferentiated fibroblast that can be stimulated to form a fat cell.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T02:31:53Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T02:31:53Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001107</oboInOwl:hasDbXref>
         <rdfs:label>preadipocyte</rdfs:label>
     </owl:Class>
@@ -15252,7 +15338,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002334"/>
         <obo:IAO_0000115>A preadipocyte that is capable of differentiating into a brown adipocyte. This cell type expresses uncoupling protein-1, PPAR-gamma, PR-domain-containing 16; and PGC-1alpha (peroxisome proliferator-activated receptor-gamma (PPARgamma) coactivator-1alpha).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T02:38:38Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T02:38:38Z</oboInOwl:creation_date>
         <rdfs:label>brown preadipocyte</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15274,7 +15360,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A stem cell located in the bulge of the hair follicle that can give rise to regenerate the new follicle with each hair cycle and to reepithelialize the epidermis during wound repair.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T03:07:03Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T03:07:03Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>bulge keratinocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -15296,7 +15382,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>The exocrine cell of the prostate, this epithelial cell secretes prostatic acid phosphotase and PSA, and is dependent on androgen hormones for survival.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T03:34:05Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T03:34:05Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>luminal cell of prostate epithelium</rdfs:label>
@@ -15317,7 +15403,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An undifferentiated cell of the prostate epithelium that lacks secretory activity.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T03:34:10Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T03:34:10Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>basal cell of prostate epithelium</rdfs:label>
@@ -15338,7 +15424,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <obo:IAO_0000115>A circulating endothelial cell of the phenotype CD146-positive, CD105-positive, CD45-negative. This cell type is indicative of recent vascular damage.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T03:49:58Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T03:49:58Z</oboInOwl:creation_date>
         <rdfs:label>circulating endothelial cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15358,7 +15444,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A natural killer cell subset that is found in the decidual of the uterus and is CD56-high, Galectin-1-positive and CD16-negative. This cell type represents the most abundant immune cell type in the decidual during the first trimester of pregnancy.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-20T04:00:02Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T04:00:02Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>dNK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>decidual NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15381,7 +15467,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000824"/>
         <obo:IAO_0000115>A mature natural killer cell that is CD27-high and CD11b-high. This cell type is capable of interferon-gamma secretion.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-21T10:19:49Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T10:19:49Z</oboInOwl:creation_date>
         <rdfs:label>CD27-high, CD11b-high natural killer cell, mouse</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15400,7 +15486,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000824"/>
         <obo:IAO_0000115>A CD27-low, CD11b-high natural killer cell that has a higher threshold of activation due to higher expression of inhibitory receptors.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-21T10:19:54Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T10:19:54Z</oboInOwl:creation_date>
         <rdfs:label>CD27-low, CD11b-high natural killer cell, mouse</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15419,7 +15505,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000824"/>
         <obo:IAO_0000115>A natural killer cell that is CD27-high and CD11b-low.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-21T10:20:00Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T10:20:00Z</oboInOwl:creation_date>
         <rdfs:label>CD27-high, CD11b-low natural killer cell, mouse</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15457,7 +15543,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-21T04:33:05Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T04:33:05Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:75621</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>endocardial endothelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>endothelial cell of endocardium</oboInOwl:hasExactSynonym>
@@ -15487,7 +15573,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011026"/>
         <obo:IAO_0000115>A progenitor cell that is able to differentiate into the pancreas alpha, beta and delta endocrine cells. This cell type expresses neurogenin-3 and Isl-1.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-21T04:41:06Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T04:41:06Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>pancreatic endocrine progenitor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pancreatic islet progenitor cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15528,7 +15614,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A hematopoietic stem cell that exists during embryogenesis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-22T09:05:13Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-22T09:05:13Z</oboInOwl:creation_date>
         <rdfs:label>gestational hematopoietic stem cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15553,7 +15639,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A hematopoietic stem cell that resides in the fetal liver. In mice, this cell type is first observed at E10.5. This cell type is MHC-positive, HSA-positive, AA4.1-positive, CD45-positive, Sca-1 positive, CD150-positive, CD48-negative and CD244-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-22T09:08:32Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-22T09:08:32Z</oboInOwl:creation_date>
         <rdfs:label>fetal liver hematopoietic progenitor cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -15573,7 +15659,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002417"/>
         <obo:IAO_0000115>A progenitor cell that is capable of forming colonies of primitive erythrocytes in the blood island of the yolk sac. First arrive at E7.5 in mouse and expresses CD41.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-22T10:47:28Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-22T10:47:28Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>EryP-CFC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>inner blood island hemangioblast</oboInOwl:hasExactSynonym>
         <rdfs:label>primitive erythroid progenitor</rdfs:label>
@@ -15614,7 +15700,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A keratocyte is a specialized fibroblast residing in the cornea stroma that has a flattened, dendritic morphology; located between the lamellae with a large flattened nucleus, and lengthy processes which communicate with neighboring cells. This corneal layer, representing about 85-90% of corneal thickness, is built up from highly regular collagenous lamellae and extracellular matrix components. Keratocytes play the major role in keeping it transparent, healing its wounds, and synthesizing its components. This cell type secretes collagen I, V, VI, and keratan sulfate.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-22T01:57:40Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-22T01:57:40Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>corneal fibroblast</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>corneal keratocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15640,7 +15726,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An epithelial cell of the cortical portion of the thymus. Epithelial cells in this region are required for positive selection of CD8-positive T cells.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-23T03:17:12Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-23T03:17:12Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004562</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cTEC</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15681,7 +15767,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the medullary thymus. This cell type expresses a diverse range of tissue-specific antigens. This promiscuous gene expression is a cell-autonomous property of medullary epithelial cells and is maintained during the entire period of thymic T cell output.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-23T03:17:14Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-23T03:17:14Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004563</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>mTEC</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15721,7 +15807,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A smooth muscle cell of the myometrium that enlarges and stretches during pregnancy, and contracts in response to oxytocin.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-23T03:46:34Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-23T03:46:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004519</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>myometrium smooth muscle cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15743,24 +15829,25 @@ The modern definition of neurosecretion has evolved to include the release of an
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002076"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004802"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004802"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An endo-epithelial cell of the respiratory tract.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-23T04:38:49Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-23T04:38:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004533</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>airway epithelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -15781,7 +15868,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
         <obo:IAO_0000115>A differentiated form of a fungus produced during or as a result of an asexual or sexual reproductive process; usually a cell with a thick cell wall that stores and protects one or more nuclei. Spores may be produced in response to, and are characteristically resistant to, adverse environmental conditions.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-01T09:02:42Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-01T09:02:42Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MESH:D013172</oboInOwl:hasDbXref>
         <rdfs:label>fungal spore</rdfs:label>
     </owl:Class>
@@ -15804,18 +15891,13 @@ The modern definition of neurosecretion has evolved to include the release of an
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000160"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004802"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000160"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -15824,7 +15906,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A simple columnar epithelial cell that secretes mucin. Rough endoplasmic reticulum, mitochondria, the nucleus, and other organelles are concentrated in the basal portion. The apical plasma membrane projects microvilli to increase surface area for secretion.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-23T04:42:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-23T04:42:27Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>respiratory mucosa goblet cells</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>respiratory goblet cell</rdfs:label>
@@ -15852,7 +15934,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000233 rdf:resource="https://github.com/obophenotype/cell-ontology/issues/1150"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-24T09:44:42Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-24T09:44:42Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001268</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:72300</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0008378</oboInOwl:hasDbXref>
@@ -15878,7 +15960,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000737"/>
         <obo:IAO_0000115>A transversely striated, synctial muscle cell, formed by the fusion of myoblasts.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-09-24T01:13:01Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-24T01:13:01Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FBbt:00005812</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>myotubule</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>single cell sarcomere</oboInOwl:hasExactSynonym>
@@ -15909,7 +15991,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001022"/>
         <obo:IAO_0000115>A resident monocyte that is Gr-1 high, CD43-negative, CX3CR1-negative, CD115-positive, and B220-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-04T11:26:18Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T11:26:18Z</oboInOwl:creation_date>
         <rdfs:comment>Markers are associated with mice. The Gr epitope is used to describe this cell type is found on both Ly6c and Ly6g. However, its the Ly6c that is considered the specific marker, and thus used in the cross-product.</rdfs:comment>
         <rdfs:label>Gr1-high classical monocyte</rdfs:label>
     </owl:Class>
@@ -15931,7 +16013,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
         <obo:IAO_0000115>A CD14-positive monocyte that is also CD16-positive and CCR2-negative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-04T12:49:47Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T12:49:47Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>CD16+ monocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16+ monocyte&apos;. Markers are associated with human cells. Note that this cell type encompasses both human intermediate monocytes (CD14+, CD16-low), and human non-classical monocytes (CD14-low, CD16+).</rdfs:comment>
@@ -15962,7 +16044,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002489"/>
         <obo:IAO_0000115>A post-natal thymocyte expressing components of the gamma-delta T cell receptor. This cell type is always double-negative (i.e. CD4-negative, CD8-negative).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-07T02:33:39Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-07T02:33:39Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>gammadelta thymocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>gd thymocyte</oboInOwl:hasExactSynonym>
         <rdfs:label>gamma-delta thymocyte</rdfs:label>
@@ -15990,7 +16072,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A cell that is found in the periacinar space of the exocrine pancreas and in perivascular and periductal regions of the pancreas, and has long cytoplasmic processes that encircle the base of the acinus. Expresses several intermediate filament proteins including vimentin and nestin. Shares many of the characteristics of hepatatic stellate cells, but not stellate cells of the central nervous system. Upon activation, this cell type undergoes morphological and gene expression changes that make the cell suggestive of being a type of myofibroblast.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-10T09:40:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-10T09:40:33Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MESH:D058954</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>PaSC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pancreas stellate cell</oboInOwl:hasExactSynonym>
@@ -16015,7 +16097,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000764"/>
         <obo:IAO_0000115>An immature or mature cell of the first erythroid lineage to arise during embryonic development.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-12T11:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-12T11:22:41Z</oboInOwl:creation_date>
         <rdfs:label>primitive erythroid lineage cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16034,7 +16116,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
         <obo:IAO_0000115>A pluripotent cell in the yolk sac that can give rise to mesenchymal cells including erythrocytes and endothelial cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-12T12:21:16Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-12T12:21:16Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MESH:D055018</oboInOwl:hasDbXref>
         <rdfs:label>hemangioblast</rdfs:label>
     </owl:Class>
@@ -16055,7 +16137,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <obo:IAO_0000115>A T cell that expresses a T cell receptor complex and has completed T cell selection.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-12T01:56:15Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-12T01:56:15Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>CD3e-positive T cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mature T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CD3epsilon T cell</oboInOwl:hasRelatedSynonym>
@@ -16077,7 +16159,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <obo:IAO_0000115>A T cell that has not completed T cell selection.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-12T01:56:17Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-12T01:56:17Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001372</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-1042</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>immature T-cell</oboInOwl:hasExactSynonym>
@@ -16100,7 +16182,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000806"/>
         <obo:IAO_0000115>A DN2 thymocyte that is Kit-hi.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-21T10:12:05Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-21T10:12:05Z</oboInOwl:creation_date>
         <rdfs:comment>Observed in mice. There is growing evidence that molecular markers characterizing double negative thymocytes are different across species, especially in mouse versus human thymus. If in doubt, please consider using CL:0002489 &apos;double negative thymocyte&apos;.</rdfs:comment>
         <rdfs:label>DN2a thymocyte</rdfs:label>
     </owl:Class>
@@ -16120,7 +16202,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000806"/>
         <obo:IAO_0000115>A DN2 thymocyte that is Kit-low.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-21T10:12:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-21T10:12:08Z</oboInOwl:creation_date>
         <rdfs:comment>Observed in mice. There is growing evidence that molecular markers characterizing double negative thymocytes are different across species, especially in mouse versus human thymus. If in doubt, please consider using CL:0002489 &apos;double negative thymocyte&apos;.</rdfs:comment>
         <rdfs:label>DN2b thymocyte</rdfs:label>
     </owl:Class>
@@ -16141,7 +16223,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A mature CD8-positive, CD4-negative alpha-beta T cell found in the thymus that is CD24-low and has high expression of the T cell receptor.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-10-21T03:51:50Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-21T03:51:50Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>T.8SP24-.Th</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>mature CD8 single-positive thymocyte</rdfs:label>
@@ -16162,7 +16244,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000048"/>
         <obo:IAO_0000115>A multi-fate stem cell that is the source of cells for growth of the mammary gland during puberty and gestation. This cell type gives rise to both the luminal and myoepithelial cell types of the gland, and have been shown to have the ability to regenerate the entire organ in mice. This cell type also plays an important role in carcinogenesis of the breast. This cell type is Lin-, CD24-positive, CD29-hi.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-10T01:46:51Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-10T01:46:51Z</oboInOwl:creation_date>
         <rdfs:label>mammary stem cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16187,7 +16269,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A progenitor cell of the central nervous system that can differentiate into oligodendrocytes or type-2 astrocytes. This cell originates from multiple structures within the developing brain including the medial ganglion eminence and the lateral ganglionic eminence. These cells migrate throughout the central nervous system and persist into adulthood where they play an important role in remyelination of injured neurons.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-10T02:51:34Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-10T02:51:34Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>oligodendrocyte-type 2 astrocyte (O-2A) progenitor cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>oligodendrocyte/type-2 astrocyte progenitor cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>MESH:D000073637</oboInOwl:hasDbXref>
@@ -16254,7 +16336,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000990"/>
         <obo:IAO_0000115>A conventional dendritic cell that expresses CD11b (ITGAM).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-23T01:50:05Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-23T01:50:05Z</oboInOwl:creation_date>
         <rdfs:label>CD11b-positive dendritic cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16273,7 +16355,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002395"/>
         <obo:IAO_0000115>Gr1-high monocyte that has a MHC-II receptor complex.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-23T03:30:21Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-23T03:30:21Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>Mo.6c+II</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>MHC-II-positive classical monocyte</rdfs:label>
@@ -16295,7 +16377,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0010004"/>
         <obo:IAO_0000115>A tissue-resident macrophage located in the bone marrow. This cell type is B220-negative, CD3e-negative, Ly-6C-negative, CD115-positive, F4/80-positive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-11-23T04:19:25Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-23T04:19:25Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004732</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym>MF.BM</oboInOwl:hasRelatedSynonym>
         <rdfs:label>bone marrow macrophage</rdfs:label>
@@ -16332,6 +16414,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000160"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002370"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002631"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -16346,7 +16429,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A goblet cell located in the nasal epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-12-03T03:03:02Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-03T03:03:02Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MP:0002262</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>nasal mucosa goblet cell</rdfs:label>
@@ -16367,7 +16450,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000893"/>
         <obo:IAO_0000115>A thymocyte that lacks expression of CD4 and CD8.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-12-06T03:03:38Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-06T03:03:38Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>CD4-CD8- T cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>double negative T cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -16396,7 +16479,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <obo:IAO_0000115>A cell located in the heart, including both muscle and non muscle cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-12-07T09:37:22Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-07T09:37:22Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001539</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0115</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:83808</oboInOwl:hasDbXref>
@@ -16426,7 +16509,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A T cell that is located in the intestinal epithelium and is capable of a mucosal immune response.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2010-12-07T09:54:50Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-07T09:54:50Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>MESH:D000075942</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>IEL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>intraepithelial T cell</oboInOwl:hasExactSynonym>
@@ -16467,7 +16550,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A smooth muscle cell of the intestine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-01-17T03:39:38Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-17T03:39:38Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>intestinal smooth muscle cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>enteric smooth muscle cell</rdfs:label>
@@ -16505,7 +16588,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the kidney.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-08T10:46:34Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-08T10:46:34Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>KUPO:0001019</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0009374</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -16539,7 +16622,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A renal filtration cell is a specialized cell of the renal system that filter fluids by charge, size or both.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-08T01:37:59Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-08T01:37:59Z</oboInOwl:creation_date>
         <rdfs:label>renal filtration cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16575,7 +16658,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mesenchymal stem cell that is part of the bone marrow.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T01:47:47Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T01:47:47Z</oboInOwl:creation_date>
         <rdfs:label>mesenchymal stem cell of the bone marrow</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16594,7 +16677,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An endothelial cell that is part of the vein.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T03:48:11Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T03:48:11Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:62104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>KUPO:0001099</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>endothelial cell of vein</oboInOwl:hasExactSynonym>
@@ -16618,7 +16701,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
         <obo:IAO_0000115>An arterial endothelial cell that is part of the aorta endothelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T03:54:42Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T03:54:42Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0003245</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0047</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -16657,7 +16740,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A fibroblast that is part of the heart.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T04:57:44Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T04:57:44Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>cardiac fibroblast</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>fibroblast of cardiac tissue</rdfs:label>
@@ -16694,7 +16777,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any skin fibroblast that is part of some dermis.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T05:05:33Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T05:05:33Z</oboInOwl:creation_date>
         <rdfs:label>fibroblast of dermis</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16729,7 +16812,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A fibroblast that is part of lung.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-02-28T05:11:03Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T05:11:03Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0000764</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0575</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -16767,7 +16850,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An animal cell that is part of a hair follicle.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-01T04:11:01Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-01T04:11:01Z</oboInOwl:creation_date>
         <rdfs:label>hair follicle cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -16786,7 +16869,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002559"/>
         <obo:IAO_0000115>An epidermal cell that is part of the germinal matrix.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-01T04:31:06Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-01T04:31:06Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>trichocyte</oboInOwl:hasExactSynonym>
         <rdfs:label>hair germinal matrix cell</rdfs:label>
     </owl:Class>
@@ -16829,7 +16912,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An epithelial cell of the intestine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-01T05:18:31Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-01T05:18:31Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>ZFA:0009399</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>intestinal epithelial cell</rdfs:label>
@@ -16872,7 +16955,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mesenchymal stem cell of adipose tissue.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-01T09:57:17Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-01T09:57:17Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>mesenchymal stem cell of adipose</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>mesenchymal stem cell of adipose tissue</rdfs:label>
@@ -16899,7 +16982,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A glial cell that myelinates or ensheathes axons in the peripheral nervous system.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-02T01:19:27Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-02T01:19:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001220</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0898</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D012583</oboInOwl:hasDbXref>
@@ -16948,49 +17031,13 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A pericyte of the central nervous system.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-02T02:54:18Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-02T02:54:18Z</oboInOwl:creation_date>
         <rdfs:label>central nervous system pericyte</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002575"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A pericyte of the central nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_0002577 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002577">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001987"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000349"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001987"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An epithelial cell of the placenta.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-02T03:21:30Z</oboInOwl:creation_date>
-        <rdfs:label>placental epithelial cell</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002577"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An epithelial cell of the placenta.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -17057,7 +17104,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An epithelial cell of the retinal pigmented epithelium.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T03:37:09Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T03:37:09Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004910</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:75802</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -17100,7 +17147,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A smooth muscle cell of the coronary artery.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T05:01:34Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T05:01:34Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>smooth muscle cell of the coronary artery</rdfs:label>
     </owl:Class>
@@ -17138,7 +17185,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>Any smooth muscle cell that is part of some bronchus.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T05:46:39Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T05:46:39Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004402</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -17176,7 +17223,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A smooth muscle cell of the uterus.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T05:53:28Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T05:53:28Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>uterine smooth muscle cell</rdfs:label>
     </owl:Class>
@@ -17215,7 +17262,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>An astrocyte of the cerebral cortex.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T06:57:36Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T06:57:36Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:label>astrocyte of the cerebral cortex</rdfs:label>
@@ -17236,7 +17283,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000227"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_0010012"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-06T07:37:08Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T07:37:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004102</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:84104</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cortical neuron</oboInOwl:hasExactSynonym>
@@ -17276,7 +17323,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>An endothelial cell of the umbilical vein.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-14T11:36:51Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-14T11:36:51Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0004296</oboInOwl:hasDbXref>
         <rdfs:label>endothelial cell of umbilical vein</rdfs:label>
     </owl:Class>
@@ -17313,7 +17360,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <obo:IAO_0000115>A fibroblast of skin.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-14T12:31:49Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-14T12:31:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0001255</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0935</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -17352,7 +17399,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A stromal cell of the prostate.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-14T02:11:10Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-14T02:11:10Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0003972</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>prostate stromal cell</rdfs:label>
@@ -17374,7 +17421,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000077"/>
         <obo:IAO_0000115>A cell of the seminiferous tubule epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-03-15T11:59:23Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-15T11:59:23Z</oboInOwl:creation_date>
         <rdfs:label>seminiferous tubule epithelial cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -17386,20 +17433,40 @@ The modern definition of neurosecretion has evolved to include the release of an
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <obo:IAO_0000115>Any epithelial cell that is part of some upper respiratory tract epithelium.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-06-21T12:28:55Z</oboInOwl:creation_date>
+        <rdfs:label>epithelial cell of upper respiratory tract</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002631"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any epithelial cell that is part of some upper respiratory tract epithelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002632 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
-        <obo:IAO_0000115>Any respiratory epithelial cell that is part of some lower respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any epithelial cell that is part of some lower respiratory tract epithelium.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-06-21T12:29:31Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-06-21T12:29:31Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>epithelial cell of lower respiratory tract</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002632"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any respiratory epithelial cell that is part of some lower respiratory tract.</owl:annotatedTarget>
+        <owl:annotatedTarget>Any epithelial cell that is part of some lower respiratory tract epithelium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:Autogenerated</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -17408,11 +17475,27 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0002633 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002633">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000646"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004802"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000646"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004802"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A basal cell in the respiratory tract.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-06-21T03:11:10Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-06-21T03:11:10Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>airway basal cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>airway basal stem cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -17424,6 +17507,24 @@ The modern definition of neurosecretion has evolved to include the release of an
         <owl:annotatedTarget>A basal cell in the respiratory tract.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20699479</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <obo:IAO_0000115>A squamous shaped endothelial cell.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-08T03:31:25Z</oboInOwl:creation_date>
+        <rdfs:label>squamous endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002653"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A squamous shaped endothelial cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17452,7 +17553,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A glandular epithelial cell of the large intestine.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-07-08T04:03:01Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-08T04:03:01Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>FMA:87194</oboInOwl:hasDbXref>
         <rdfs:label>glandular cell of the large intestine</rdfs:label>
     </owl:Class>
@@ -17489,7 +17590,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A glandular epithelial cell that is part of the stomach.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-07-11T01:20:35Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-11T01:20:35Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>CALOHA:TS-1284</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:86554</oboInOwl:hasDbXref>
         <rdfs:label>glandular cell of stomach</rdfs:label>
@@ -17509,7 +17610,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
         <obo:IAO_0000115>An endothelial stalk cell is a specialized endothelial cell that follows behind the tip cell of an angiogenic sprout.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
-        <oboInOwl:creation_date>2011-08-16T01:49:32Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-08-16T01:49:32Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>endothelial stalk cell</rdfs:label>
     </owl:Class>
@@ -17546,7 +17647,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell that is part of a cortex of kidney.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0956-8634"/>
-        <oboInOwl:creation_date>2011-10-25T03:49:41Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-25T03:49:41Z</oboInOwl:creation_date>
         <rdfs:label>kidney cortical cell</rdfs:label>
     </owl:Class>
     
@@ -17776,7 +17877,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
         <obo:IAO_0000115>Mesodermal cell that is axially located and gives rise to the cells of the notochord.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
-        <oboInOwl:creation_date>2012-06-27T08:52:41Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-06-27T08:52:41Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>axial mesodermal cell</oboInOwl:hasExactSynonym>
         <rdfs:label>chordamesodermal cell</rdfs:label>
     </owl:Class>
@@ -17798,7 +17899,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011026"/>
         <obo:IAO_0000115>Skeletogenic cell that has the potential to transform into an osteoblast, and develops from neural crest or mesodermal cells.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
-        <oboInOwl:creation_date>2012-06-27T10:57:21Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-06-27T10:57:21Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>osteoprogenitor cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>preosteoblast</rdfs:label>
@@ -18995,6 +19096,7 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -19099,7 +19201,6 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002577"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -19140,6 +19241,7 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -19220,7 +19322,6 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -19523,15 +19624,15 @@ The modern definition of neurosecretion has evolved to include the release of an
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <obo:IAO_0000115>A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
         <oboInOwl:hasDbXref>BTO:0002771</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons.</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>OEC</oboInOwl:hasExactSynonym>
         <rdfs:label>olfactory ensheathing cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011028"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:22456085</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -19709,8 +19810,25 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/CL_0017000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0017000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0005006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0005006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An ionocyte that is part of the lung epithelium. The cells from this type are major sources of the CFTR protein in human and mice.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-2473-2313"/>
@@ -19963,7 +20081,6 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000006"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000098"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000165"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000206"/>
@@ -20382,6 +20499,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A columnar cell of the colon that is part of the colonic epithelium.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FMA:263114</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>colonocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>vacuolar absorptive cell of epithelium of colon</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>enterocyte of colon</rdfs:label>
@@ -20391,6 +20509,12 @@ The modern definition of neurosecretion has evolved to include the release of an
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A columnar cell of the colon that is part of the colonic epithelium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000347"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>colonocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:34497389</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20452,6 +20576,7 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000666"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002262"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -21339,7 +21464,6 @@ The modern definition of neurosecretion has evolved to include the release of an
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000854">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002584"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000504"/>
         <obo:IAO_0000115>A blood vessel cell that is part of a kidney.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>KUPO:0001014</oboInOwl:hasDbXref>
@@ -21741,7 +21865,6 @@ The modern definition of neurosecretion has evolved to include the release of an
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22204,8 +22327,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A leukocyte with a single non-segmented nucleus in the mature form found in the circulatory pool of blood.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-02-11T17:29:04Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-11T17:29:04Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>peripheral blood mononuclear cell</rdfs:label>
@@ -22225,7 +22348,7 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000349"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
         <obo:IAO_0000115>A specialized, enlarged, connective tissue cell of the decidua with enlarged nucleus, dense membrane‐bound secretory granules and cytoplasmic accumulation of glycogen and lipid droplets. These cells develop by the transformation of endometrial stromal cells during decidualization.</obo:IAO_0000115>
-        <oboInOwl:creation_date>2014-02-20T23:06:41Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-20T23:06:41Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0002770</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0005756</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIT:C32429</oboInOwl:hasDbXref>
@@ -22286,8 +22409,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any cell that is part of a pituitary gland.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-03-26T22:14:56Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-26T22:14:56Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000004</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>pituitary gland cell</rdfs:label>
@@ -22323,8 +22446,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any macroglial cell that is part of a brain.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-03-28T21:35:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-28T21:35:27Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000005</oboInOwl:id>
         <rdfs:label>brain macroglial cell</rdfs:label>
     </owl:Class>
@@ -22342,8 +22465,8 @@ The modern definition of neurosecretion has evolved to include the release of an
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
         <obo:IAO_0000115>Any blood vessel endothelial cell that is part of a microvascular endothelium.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-06-04T15:07:42Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-04T15:07:42Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000008</oboInOwl:id>
         <rdfs:label>microvascular endothelial cell</rdfs:label>
     </owl:Class>
@@ -22362,8 +22485,8 @@ The modern definition of neurosecretion has evolved to include the release of an
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001567"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_2000008"/>
         <obo:IAO_0000115>Any lung endothelial cell that is part of a microvascular endothelium.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-06-04T16:00:56Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-04T16:00:56Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000016</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>lung microvascular endothelial cell</rdfs:label>
@@ -22400,8 +22523,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any endothelial cell of artery that is part of a coronary artery.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-06-04T17:08:47Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-04T17:08:47Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000018</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>endothelial cell of coronary artery</rdfs:label>
@@ -22437,8 +22560,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any native cell that is part of a inner cell mass.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-06-24T23:16:53Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-24T23:16:53Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000020</oboInOwl:id>
         <rdfs:label>inner cell mass cell</rdfs:label>
     </owl:Class>
@@ -22456,8 +22579,8 @@ The modern definition of neurosecretion has evolved to include the release of an
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <obo:IAO_0000115>Any neuron that is part of a central nervous system.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-06-25T01:17:43Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-25T01:17:43Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000029</oboInOwl:id>
         <rdfs:label>central nervous system neuron</rdfs:label>
     </owl:Class>
@@ -22493,8 +22616,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any pericyte cell that is part of a brain.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-07-09T00:18:22Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-09T00:18:22Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000043</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>brain pericyte</rdfs:label>
@@ -22531,8 +22654,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any microvascular endothelial cell that is part of a brain.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-07-09T00:24:53Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-07-09T00:24:53Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000044</oboInOwl:id>
         <rdfs:label>brain microvascular endothelial cell</rdfs:label>
     </owl:Class>
@@ -22568,8 +22691,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any endothelial cell of artery that is part of a umbilical cord.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-10-06T19:01:48Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-06T19:01:48Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000052</oboInOwl:id>
         <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=8010</rdfs:comment>
         <rdfs:label>umbilical artery endothelial cell</rdfs:label>
@@ -22605,8 +22728,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any osteoblast that is part of a skull.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-10-06T19:48:30Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-06T19:48:30Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000058</oboInOwl:id>
         <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=4600</rdfs:comment>
         <rdfs:label>calvarial osteoblast</rdfs:label>
@@ -22625,8 +22748,8 @@ The modern definition of neurosecretion has evolved to include the release of an
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000351"/>
         <obo:IAO_0000115>A trophoblast of placental villi.  These cells fuse to form synctial  trophoplast - the placental side of the interface between the placenta and maternal blood sinusoids in the decidua.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-10-07T17:48:27Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-07T17:48:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref>BTO:0006119</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BTO:0006208</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>vCTB</oboInOwl:hasExactSynonym>
@@ -22674,8 +22797,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any epithelial cell that is part of a female gonad.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-10-07T17:59:13Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-07T17:59:13Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000064</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=7310</rdfs:comment>
@@ -22712,8 +22835,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any leukocyte that is part of a spleen.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2014-11-05T01:26:50Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-05T01:26:50Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000074</oboInOwl:id>
         <rdfs:comment>Splenocytes is a vague term that refers to any one of the different white blood cell types in the spleen. This name is seen many references as such and is not explained further, necessitating a need for this terminology.</rdfs:comment>
         <rdfs:label>splenocyte</rdfs:label>
@@ -22741,6 +22864,7 @@ The modern definition of neurosecretion has evolved to include the release of an
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002631"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000441"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22749,8 +22873,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any epithelial cell of viscerocranial mucosa that is part of a nasal cavity respiratory epithelium.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2015-03-31T22:25:17Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-31T22:25:17Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000094</oboInOwl:id>
         <rdfs:label>nasal cavity respiratory epithelium epithelial cell of viscerocranial mucosa</rdfs:label>
     </owl:Class>
@@ -22787,8 +22911,8 @@ The modern definition of neurosecretion has evolved to include the release of an
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any hematopoietic stem cell that is part of a umbilical cord blood.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q35563349"/>
-        <oboInOwl:creation_date>2015-05-26T18:58:34Z</oboInOwl:creation_date>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q35563349"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-26T18:58:34Z</oboInOwl:creation_date>
         <oboInOwl:id>CL:2000095</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <rdfs:label>cord blood hematopoietic stem cell</rdfs:label>
@@ -22814,9 +22938,9 @@ The modern definition of neurosecretion has evolved to include the release of an
         </rdfs:subClassOf>
         <obo:IAO_0000115>A tissue-resident macrophage that is part of the placenta. A Hofbauer cell expresses high levels of growth factors and metalloproteinases that support vasculogenesis, angiogenesis, branching morphogenesis and tissue remodeling. A Hofbauer cell has a fetal origin and is present throughout pregnancy.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:contributor rdf:resource="http://www.wikidata.org/entity/Q97529981"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6677-8489"/>
-        <terms:contributor rdf:resource="https://www.wikidata.org/entity/Q97529981"/>
-        <oboInOwl:creation_date>2019-02-18T19:41:20Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T19:41:20Z</oboInOwl:creation_date>
         <oboInOwl:hasRelatedSynonym>HBC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CL:3000001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -23331,12 +23455,6 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000065"/>
     
 
 
@@ -24213,6 +24331,12 @@ The modern definition of neurosecretion has evolved to include the release of an
     <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002051"/>
     
 
 

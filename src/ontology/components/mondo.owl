@@ -12,7 +12,7 @@
      xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/mondo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/mondo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/components/mondo.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/mondo/releases/2023-02-06/mondo-base.owl"/>
         <owl:versionInfo>2023-02-28</owl:versionInfo>
     </owl:Ontology>

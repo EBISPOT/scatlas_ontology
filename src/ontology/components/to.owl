@@ -12,9 +12,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/to.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/to.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/components/to.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl"/>
-        <owl:versionInfo>2024-06-01</owl:versionInfo>
+        <owl:versionInfo>2024-08-01</owl:versionInfo>
     </owl:Ontology>
     
 

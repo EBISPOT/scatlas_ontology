@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/go_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/imports/go_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/go/releases/2024-04-24/go.owl>)
-Annotation(owl:versionInfo "2024-06-01")
+<http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/imports/go_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/go/releases/2024-06-17/go.owl>)
+Annotation(owl:versionInfo "2024-08-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000279>))
@@ -110,7 +110,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0062247>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0065010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0070013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0070062>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071704>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071840>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071944>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097060>))
@@ -126,7 +125,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0099738>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0110165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0140013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0140513>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_1901576>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_1903046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_1903561>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
@@ -666,7 +664,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0005975> <http://purl.obolibrary.org/obo/go#goslim_yeast>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0005975> "carbohydrate metabolic process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0005975> <http://purl.obolibrary.org/obo/GO_0044238>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0005975> <http://purl.obolibrary.org/obo/GO_0071704>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0006950> (response to stress)
 
@@ -1052,7 +1049,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynon
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0015977> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0015977> "GO:0015977")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015977> "carbon fixation")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0015977> <http://purl.obolibrary.org/obo/GO_0071704>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015977> <http://purl.obolibrary.org/obo/GO_0008152>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0015979> (photosynthesis)
 
@@ -1136,7 +1133,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0016051> "GO:0016051")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0016051> "carbohydrate biosynthetic process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0016051> <http://purl.obolibrary.org/obo/GO_0005975>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0016051> <http://purl.obolibrary.org/obo/GO_1901576>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0016051> <http://purl.obolibrary.org/obo/GO_0009058>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0019253> (reductive pentose-phosphate cycle)
 
@@ -1218,7 +1215,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GO_0022414> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/GO_0030054> (cell junction)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:aruk") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:bc") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26820516") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:28096264") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.vivo.colostate.edu/hbooks/cmb/cells/pmemb/junctions_a.html") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0030054> "A cellular component that forms a specialized region of connection between two or more cells, or between a cell and the extracellular matrix, or between two membrane-bound components of a cell, such as flagella.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:aruk") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:bc") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26820516") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:28096264") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0030054> "A cellular component that forms a specialized region of connection between two or more cells, or between a cell and the extracellular matrix, or between two membrane-bound components of a cell, such as flagella.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002161> <http://purl.obolibrary.org/obo/GO_0030054> <http://purl.obolibrary.org/obo/NCBITaxon_4751>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0030054> "Wikipedia:Cell_junction")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0030054> "cellular_component")
@@ -1557,8 +1554,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0044237> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0044238> (primary metabolic process)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.metacyc.org") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044238> "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044238> "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0044238> "https://github.com/geneontology/go-ontology/issues/26424"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0044238> "Wikipedia:Primary_metabolite")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0044238> "primary metabolism")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0044238> "biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0044238> "GO:0044238")
@@ -1730,21 +1728,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0070062> "extracellular exosome")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0070062> <http://purl.obolibrary.org/obo/GO_1903561>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0070062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0005615>))
-
-# Class: <http://purl.obolibrary.org/obo/GO_0071704> (organic substance metabolic process)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mah") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0071704> "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0071704> "https://github.com/geneontology/go-ontology/issues/26424"^^xsd:anyURI)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0071704> "mah")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0071704> "2010-03-08T03:32:18Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0071704> "organic molecular entity metabolic process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0071704> "organic molecular entity metabolism")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0071704> "organic substance metabolism")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0071704> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0071704> "GO:0071704")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0071704> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0071704> "organic substance metabolic process")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0071704> <http://purl.obolibrary.org/obo/GO_0008152>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0071840> (cellular component organization or biogenesis)
 
@@ -1937,28 +1920,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0140513> "nucl
 EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0140513> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0032991> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0005634>)))
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0140513> <http://purl.obolibrary.org/obo/GO_0032991>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0140513> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0005634>))
-
-# Class: <http://purl.obolibrary.org/obo/GO_1901576> (organic substance biosynthetic process)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:TermGenie") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_1901576> "The chemical reactions and pathways resulting in the formation of an organic substance, any molecular entity containing carbon.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_1901576> "https://github.com/geneontology/go-ontology/issues/26424"^^xsd:anyURI)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_1901576> "pr")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_1901576> "2012-11-05T11:04:40Z")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:TermGenie") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic molecular entity anabolism")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:TermGenie") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic molecular entity biosynthesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic molecular entity biosynthetic process")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:TermGenie") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic molecular entity formation")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:TermGenie") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic molecular entity synthesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic substance anabolism")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic substance biosynthesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic substance formation")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_1901576> "organic substance synthesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_1901576> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_1901576> "GO:1901576")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_1901576> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_1901576> "organic substance biosynthetic process")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_1901576> <http://purl.obolibrary.org/obo/GO_0009058>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_1901576> <http://purl.obolibrary.org/obo/GO_0071704>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_1903046> (meiotic cell cycle process)
 

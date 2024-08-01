@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: scatlas/releases/2024-06-01/scatlas-base.owl
+data-version: scatlas/releases/2024-08-01/scatlas-base.owl
 ontology: scatlas/scatlas-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Single Cell Atlas" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license "Unspecified" xsd:string
-property_value: owl:versionInfo "2024-06-01" xsd:string
+property_value: owl:versionInfo "2024-08-01" xsd:string
 
 [Term]
 id: CL:0000000
@@ -524,10 +524,12 @@ name: blood vessel endothelial cell
 def: "An endothelial cell that lines the vasculature." [GOC:tfm]
 subset: cellxgene_subset
 subset: human_reference_atlas
-synonym: "cuboidal endothelial cell of vascular tree" EXACT []
 xref: ZFA:0009036 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/UnspecifiedMatching"}
-is_a: CL:0000076 ! squamous epithelial cell
+is_a: CL:0000115 ! endothelial cell
 is_a: CL:0002139 ! endothelial cell of vascular tree
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0001981 ! blood vessel
+relationship: BFO:0000050 UBERON:0001981 ! blood vessel
 relationship: BFO:0000050 UBERON:0004638 ! blood vessel endothelium
 property_value: RO:0002175 NCBITaxon:9606
 
@@ -604,10 +606,10 @@ subset: cellxgene_subset
 synonym: "lung epithelial cell" EXACT []
 xref: BTO:0004299
 is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002632 ! epithelial cell of lower respiratory tract
 intersection_of: CL:0000066 ! epithelial cell
-intersection_of: BFO:0000050 UBERON:0002048 ! lung
+intersection_of: BFO:0000050 UBERON:0000115 ! lung epithelium
 relationship: BFO:0000050 UBERON:0000115 ! lung epithelium
-relationship: BFO:0000050 UBERON:0002048 ! lung
 
 [Term]
 id: CL:0000083
@@ -617,8 +619,8 @@ synonym: "pancreas epithelial cell" EXACT []
 synonym: "pancreatic epithelial cell" EXACT []
 xref: BTO:0000028
 xref: ZFA:0009045 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/UnspecifiedMatching"}
-is_a: BFO:0000002
 is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002076 ! endo-epithelial cell
 intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0001264 ! pancreas
 relationship: BFO:0000050 UBERON:0001264 ! pancreas
@@ -871,8 +873,8 @@ xref: BTO:0001176
 xref: CALOHA:TS-0278
 xref: FMA:66772
 xref: ZFA:0009065 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/UnspecifiedMatching"}
+is_a: BFO:0000002
 is_a: CL:0000213 ! lining cell
-is_a: CL:0002078 ! meso-epithelial cell
 property_value: RO:0002175 NCBITaxon:9606
 
 [Term]
@@ -1812,8 +1814,11 @@ is_a: CL:0002077 ! ecto-epithelial cell
 [Term]
 id: CL:0000239
 name: brush border epithelial cell
+def: "An epithelial cell characterized by the presence of a brush border on its apical surface, which increases the surface area for absorption." []
+comment: All brush border cells are columnar-cuboidal.  The formal logical definition of this term asserts this. Brush border epithelial cells are predominantly found lining the small intestine and the proximal tubules of the kidneys.
+xref: https://doi.org/10.1152/ajpgi.00005.2011
+xref: PMID:25422372
 xref: ZFA:0009143 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/UnspecifiedMatching"}
-is_a: CL:0000067 ! ciliated epithelial cell
 is_a: CL:0000075 ! columnar/cuboidal epithelial cell
 
 [Term]
@@ -1925,14 +1930,16 @@ is_a: CL:0000159 ! seromucus secreting cell
 
 [Term]
 id: CL:0000322
-name: pneumocyte
-def: "An epithelial cell that lines the peripheral gas exchange region of the lungs of air-breathing vertebrates." [GOC:tfm, PMID:20054144]
+name: pulmonary alveolar epithelial cell
+def: "An epithelial cell that lines the peripheral gas exchange region of the lungs of air-breathing vertebrates." [GOC:tfm, PMID:20054144, PMID:29463737]
 subset: cellxgene_subset
 synonym: "alveolar epithelial cell" EXACT []
+synonym: "pneumocyte" EXACT [PMID:32491474]
 synonym: "pneumonocyte" EXACT []
 xref: BTO:0000395
 xref: CALOHA:TS-2168
 xref: FMA:62499
+is_a: CL:0000082 ! epithelial cell of lung
 is_a: CL:0010003 ! epithelial cell of alveolus of lung
 
 [Term]
@@ -3151,11 +3158,12 @@ property_value: seeAlso "https://github.com/obophenotype/cell-ontology/issues/14
 
 [Term]
 id: CL:0000666
-name: fenestrated cell
+name: fenestrated endothelial cell
+def: "An endothelial cell that has small pores, or fenestrations, which allow for the efficient exchange of substances between the blood and surrounding tissues." [DOI:10.1007/978-3-211-99390-3_133]
 subset: cellxgene_subset
 synonym: "window cell" EXACT []
 xref: ZFA:0009286 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/UnspecifiedMatching"}
-is_a: CL:0000066 ! epithelial cell
+is_a: CL:0000115 ! endothelial cell
 
 [Term]
 id: CL:0000667
@@ -5286,12 +5294,12 @@ creation_date: 2010-06-05T08:25:41Z
 
 [Term]
 id: CL:0002062
-name: type I pneumocyte
-def: "A type I pneumocyte is a flattened, branched pneumocyte that covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange." [GOC:tfm, http://www.copewithcytokines.de, PMID:20054144]
+name: pulmonary alveolar type 1 cell
+def: "A squamous pulmonary alveolar epithelial cell that is flattened and branched. A pulmonary alveolar type 1 cell covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange." [GOC:tfm, http://www.copewithcytokines.de, PMID:20054144, PMID:29463737]
 subset: cellxgene_subset
 subset: human_reference_atlas
-synonym: "AT1" EXACT []
-synonym: "ATI" EXACT []
+synonym: "AT1" RELATED OMO:0003000 [PMID:29463737]
+synonym: "ATI" RELATED OMO:0003000 []
 synonym: "lung type 1 cells" EXACT []
 synonym: "membranous pneumocytes" EXACT []
 synonym: "pulmonary alveolar type I cell" EXACT []
@@ -5299,41 +5307,42 @@ synonym: "small alveolar cells" EXACT []
 synonym: "squamous alveolar cell" EXACT []
 synonym: "squamous alveolar lining cell" EXACT []
 synonym: "type 1 alveolar epithelial cells" EXACT []
-synonym: "type 1 pneumocyte" EXACT []
+synonym: "type 1 pneumocyte" EXACT [PMID:32491474]
 synonym: "type I alveolar cells" EXACT []
 synonym: "type I alveolar epithelial cells" EXACT []
+synonym: "type I pneumocyte" EXACT []
 xref: BTO:0000780
 xref: FMA:62500
-is_a: CL:0000322 ! pneumocyte
+is_a: CL:0000322 ! pulmonary alveolar epithelial cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 property_value: RO:0002175 NCBITaxon:9606
 creation_date: 2010-06-23T04:37:54Z
 
 [Term]
 id: CL:0002063
-name: type II pneumocyte
-def: "A type II pneumocyte is a pneumocyte that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a type I pneumocyte. Thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli." [GOC:tfm, http://www.copewithcytokines.de, ISBN:0412046911, PMID:8540632]
+name: pulmonary alveolar type 2 cell
+def: "A pulmonary alveolar epithelial cell that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants. This cell type also contributes to tissue repair and can differentiate after injury into a pulmonary alveolar type 1 cell. This cuboidal cell is thicker than squamous alveolar cells, have a rounded apical surface that projects above the level of surrounding epithelium. The free surface is covered by short microvilli." [GOC:tfm, http://www.copewithcytokines.de, ISBN:0412046911, PMID:36138472, PMID:8540632]
 subset: cellxgene_subset
 subset: human_reference_atlas
-synonym: "AT2" EXACT []
-synonym: "ATII" EXACT []
+synonym: "AT2" RELATED OMO:0003000 [PMID:36138472]
+synonym: "ATII" RELATED OMO:0003000 []
 synonym: "cuboidal type II cell" EXACT []
 synonym: "granular pneumocyte" EXACT []
 synonym: "great alveolar cell" EXACT []
 synonym: "lung type 2 cell" EXACT []
 synonym: "lung type II cell" RELATED []
-synonym: "TII" EXACT []
+synonym: "TII" RELATED []
 synonym: "type 2 alveolar epithelial cell" EXACT []
 synonym: "type 2 alveolocyte" EXACT []
 synonym: "type 2 pneumocyte" EXACT []
 synonym: "type II alveolar cell" EXACT []
 synonym: "type II alveolar epithelial cell" EXACT []
 synonym: "type II alveolocyte" EXACT []
+synonym: "type II pneumocyte" EXACT [PMID:32491474]
 xref: BTO:0000538
 xref: FMA:62501
-is_a: BFO:0000002
 is_a: CL:0000157 ! surfactant secreting cell
-is_a: CL:0000322 ! pneumocyte
+is_a: CL:0000322 ! pulmonary alveolar epithelial cell
 is_a: CL:1000272 ! lung secretory cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 property_value: RO:0002175 NCBITaxon:9606
@@ -5486,7 +5495,10 @@ synonym: "LEC" EXACT []
 synonym: "lymphatic endothelial cell" EXACT []
 xref: BTO:0004167
 xref: FMA:68458
+is_a: CL:0000115 ! endothelial cell
 is_a: CL:0002139 ! endothelial cell of vascular tree
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0001473 ! lymphatic vessel
 relationship: BFO:0000050 UBERON:0001473 ! lymphatic vessel
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 property_value: RO:0002175 NCBITaxon:9606
@@ -5517,6 +5529,7 @@ xref: BTO:0004956
 xref: CALOHA:TS-0112
 xref: FMA:67756
 is_a: CL:0000071 ! blood vessel endothelial cell
+is_a: CL:0002653 ! squamous endothelial cell
 is_a: CL:2000008 ! microvascular endothelial cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 property_value: RO:0002175 NCBITaxon:9606
@@ -5564,6 +5577,7 @@ synonym: "horizontal basal cell" BROAD []
 xref: FMA:62303
 is_a: CL:0002167 ! olfactory epithelial cell
 is_a: CL:0002319 ! neural cell
+is_a: CL:0002631 ! epithelial cell of upper respiratory tract
 intersection_of: CL:0002167 ! olfactory epithelial cell
 intersection_of: BFO:0000050 UBERON:0001997 ! olfactory epithelium
 relationship: BFO:0000050 UBERON:0001997 ! olfactory epithelium
@@ -5662,8 +5676,8 @@ subset: kidney_upper_slim
 xref: BTO:0004632
 xref: FMA:70970
 is_a: CL:0000115 ! endothelial cell
-is_a: CL:0000666 ! fenestrated cell
-is_a: CL:1000746 ! glomerular cell
+is_a: CL:0000666 ! fenestrated endothelial cell
+is_a: CL:0002681 ! kidney cortical cell
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0000074 ! renal glomerulus
 relationship: BFO:0000050 UBERON:0000074 ! renal glomerulus
@@ -5733,6 +5747,7 @@ def: "An epithelial cell of the tracheobronchial tree." [GOC:tfm]
 xref: FMA:66816
 is_a: CL:0000066 ! epithelial cell
 is_a: CL:0002632 ! epithelial cell of lower respiratory tract
+relationship: BFO:0000050 UBERON:0008397 ! tracheobronchial epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 creation_date: 2010-09-02T02:09:14Z
 
@@ -5940,6 +5955,7 @@ def: "An endothelial cell that lines any of the venous cavities through which bl
 subset: cellxgene_subset
 subset: human_reference_atlas
 xref: FMA:63134
+is_a: CL:0000071 ! blood vessel endothelial cell
 is_a: CL:0000115 ! endothelial cell
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0003909 ! sinusoid
@@ -6031,6 +6047,7 @@ relationship: BFO:0000050 UBERON:0004135 ! distal tubule
 id: CL:0002306
 name: epithelial cell of proximal tubule
 def: "An epithelial cell of the proximal tubule of the kidney." [GOC:tfm, ISBN:1-4160-2328-3]
+comment: The vast majority of proximal tubule epithelial cells have a brush border, but there are rare exceptions.
 subset: cellxgene_subset
 subset: human_reference_atlas
 subset: kidney_upper_slim
@@ -6038,7 +6055,6 @@ synonym: "kidney proximal tubule epithelial cell" EXACT []
 xref: FMA:70973
 xref: KUPO:0001044
 is_a: CL:0000066 ! epithelial cell
-is_a: CL:0000239 ! brush border epithelial cell
 is_a: CL:0002078 ! meso-epithelial cell
 is_a: CL:1000494 ! nephron tubule epithelial cell
 is_a: CL:1000615 ! kidney cortex tubule cell
@@ -6438,10 +6454,11 @@ def: "An endo-epithelial cell of the respiratory tract." [GOC:tfm]
 subset: cellxgene_subset
 synonym: "airway epithelial cell" EXACT []
 xref: BTO:0004533
+is_a: CL:0000066 ! epithelial cell
 is_a: CL:0002076 ! endo-epithelial cell
-intersection_of: CL:0002076 ! endo-epithelial cell
-intersection_of: BFO:0000050 UBERON:0000065 ! respiratory tract
-relationship: BFO:0000050 UBERON:0000065 ! respiratory tract
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
+relationship: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 creation_date: 2010-09-23T04:38:49Z
 
@@ -6461,9 +6478,9 @@ def: "A simple columnar epithelial cell that secretes mucin. Rough endoplasmic r
 subset: cellxgene_subset
 synonym: "respiratory mucosa goblet cells" EXACT [MP:0010863]
 is_a: CL:0000160 ! goblet cell
+is_a: CL:0002368 ! respiratory epithelial cell
 intersection_of: CL:0000160 ! goblet cell
-intersection_of: BFO:0000050 UBERON:0000065 ! respiratory tract
-relationship: BFO:0000050 UBERON:0000065 ! respiratory tract
+intersection_of: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
 relationship: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 creation_date: 2010-09-23T04:42:27Z
@@ -6678,6 +6695,7 @@ subset: cellxgene_subset
 xref: MP:0002262
 is_a: CL:0000160 ! goblet cell
 is_a: CL:0002370 ! respiratory goblet cell
+is_a: CL:0002631 ! epithelial cell of upper respiratory tract
 intersection_of: CL:0000160 ! goblet cell
 intersection_of: BFO:0000050 UBERON:0001826 ! nasal cavity mucosa
 relationship: BFO:0000050 UBERON:0001826 ! nasal cavity mucosa
@@ -6919,18 +6937,6 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003
 creation_date: 2011-03-02T02:54:18Z
 
 [Term]
-id: CL:0002577
-name: placental epithelial cell
-def: "An epithelial cell of the placenta." [GOC:tfm]
-is_a: CL:0000066 ! epithelial cell
-is_a: CL:0000349 ! extraembryonic cell
-intersection_of: CL:0000066 ! epithelial cell
-intersection_of: BFO:0000050 UBERON:0001987 ! placenta
-relationship: BFO:0000050 UBERON:0001987 ! placenta
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
-creation_date: 2011-03-02T03:21:30Z
-
-[Term]
 id: CL:0002584
 name: renal cortical epithelial cell
 def: "An epithelial cell of the kidney cortex." [GOC:tfm]
@@ -7072,11 +7078,23 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003
 creation_date: 2011-03-15T11:59:23Z
 
 [Term]
+id: CL:0002631
+name: epithelial cell of upper respiratory tract
+def: "Any epithelial cell that is part of some upper respiratory tract epithelium." [FBC:Autogenerated]
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002368 ! respiratory epithelial cell
+relationship: BFO:0000050 UBERON:0004814 ! upper respiratory tract epithelium
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
+creation_date: 2011-06-21T12:28:55Z
+
+[Term]
 id: CL:0002632
 name: epithelial cell of lower respiratory tract
-def: "Any respiratory epithelial cell that is part of some lower respiratory tract." [FBC:Autogenerated]
+def: "Any epithelial cell that is part of some lower respiratory tract epithelium." [FBC:Autogenerated]
 subset: cellxgene_subset
+is_a: CL:0000066 ! epithelial cell
 is_a: CL:0002368 ! respiratory epithelial cell
+relationship: BFO:0000050 UBERON:0004815 ! lower respiratory tract epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 creation_date: 2011-06-21T12:29:31Z
 
@@ -7088,9 +7106,19 @@ subset: cellxgene_subset
 synonym: "airway basal cell" EXACT []
 synonym: "airway basal stem cell" EXACT []
 is_a: CL:0000646 ! basal cell
-is_a: CL:0002368 ! respiratory epithelial cell
+intersection_of: CL:0000646 ! basal cell
+intersection_of: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
+relationship: BFO:0000050 UBERON:0004802 ! respiratory tract epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
 creation_date: 2011-06-21T03:11:10Z
+
+[Term]
+id: CL:0002653
+name: squamous endothelial cell
+def: "A squamous shaped endothelial cell." [GOC:dos]
+is_a: CL:0000115 ! endothelial cell
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1980-3228
+creation_date: 2011-07-08T03:31:25Z
 
 [Term]
 id: CL:0002658
@@ -7744,6 +7772,7 @@ subset: human_reference_atlas
 subset: location_grouping
 xref: EFO:0010667
 is_a: CL:0000115 ! endothelial cell
+is_a: CL:0002138 ! endothelial cell of lymphatic vessel
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0003456 ! respiratory system lymphatic vessel
 relationship: BFO:0000050 UBERON:0003456 ! respiratory system lymphatic vessel
@@ -7788,7 +7817,6 @@ subset: location_grouping
 synonym: "placental endothelial cell" EXACT []
 xref: EFO:0010708
 is_a: CL:0000115 ! endothelial cell
-is_a: CL:0002577 ! placental epithelial cell
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0001987 ! placenta
 relationship: BFO:0000050 UBERON:0001987 ! placenta
@@ -7803,6 +7831,7 @@ subset: location_grouping
 synonym: "portal endothelial cell" BROAD []
 xref: EFO:0010704
 is_a: CL:0000115 ! endothelial cell
+is_a: CL:0002543 ! vein endothelial cell
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0001639 ! hepatic portal vein
 relationship: BFO:0000050 UBERON:0001639 ! hepatic portal vein
@@ -7833,7 +7862,6 @@ subset: cellxgene_subset
 synonym: "alveolus of lung epithelial cell" EXACT []
 xref: MESH:D056809
 is_a: CL:0000066 ! epithelial cell
-is_a: CL:0000082 ! epithelial cell of lung
 intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0002299 ! alveolus of lung
 relationship: BFO:0000050 UBERON:0002299 ! alveolus of lung
@@ -7964,7 +7992,7 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001
 [Term]
 id: CL:0011028
 name: olfactory ensheathing cell
-synonym: "A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons." EXACT [PMID:22456085]
+def: "A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons." [PMID:22456085]
 synonym: "OEC" EXACT []
 xref: BTO:0002771
 is_a: CL:0000125 ! glial cell
@@ -8059,6 +8087,9 @@ subset: cellxgene_subset
 subset: human_reference_atlas
 is_a: CL:0000082 ! epithelial cell of lung
 is_a: CL:0005006 ! ionocyte
+intersection_of: CL:0005006 ! ionocyte
+intersection_of: BFO:0000050 UBERON:0000115 ! lung epithelium
+relationship: BFO:0000050 UBERON:0000115 ! lung epithelium
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-2473-2313
 property_value: RO:0002175 NCBITaxon:9606
 
@@ -8152,7 +8183,6 @@ subset: human_reference_atlas
 synonym: "PNEC" RELATED OMO:0003000 [PMID:33355253]
 synonym: "pulmonary neuroendocrine cell" EXACT [PMID:33355253]
 is_a: CL:0000006 ! neuronal receptor cell
-is_a: CL:0000082 ! epithelial cell of lung
 is_a: CL:0000098 ! sensory epithelial cell
 is_a: CL:0000165 ! neuroendocrine cell
 is_a: CL:0000206 ! chemoreceptor cell
@@ -8280,6 +8310,7 @@ id: CL:1000347
 name: enterocyte of colon
 def: "A columnar cell of the colon that is part of the colonic epithelium." [GOC:tfm]
 subset: cellxgene_subset
+synonym: "colonocyte" EXACT [PMID:34497389]
 synonym: "vacuolar absorptive cell of epithelium of colon" NARROW []
 xref: FMA:263114
 is_a: CL:0002071 ! enterocyte of epithelium of large intestine
@@ -8313,6 +8344,7 @@ synonym: "LSEC" EXACT [PMID:30348985]
 xref: BTO:000125
 xref: FMA:62911
 is_a: CL:0000115 ! endothelial cell
+is_a: CL:0000666 ! fenestrated endothelial cell
 is_a: CL:0002262 ! endothelial cell of sinusoid
 intersection_of: CL:0000115 ! endothelial cell
 intersection_of: BFO:0000050 UBERON:0001281 ! hepatic sinusoid
@@ -8635,7 +8667,6 @@ def: "A blood vessel cell that is part of a kidney." [PMID:34843404]
 xref: KUPO:0001014
 is_a: BFO:0000002
 is_a: CL:0000000 ! cell
-is_a: CL:0002584 ! renal cortical epithelial cell
 is_a: CL:1000504 ! kidney medulla cell
 relationship: BFO:0000050 UBERON:0003517 ! kidney blood vessel
 
@@ -8798,7 +8829,6 @@ name: lung endothelial cell
 def: "Any endothelial cell of vascular tree that is part of some lung." [FBC:Autogenerated]
 synonym: "endothelial cell of lung" RELATED []
 synonym: "pulmonary vessel endothelial cell" RELATED []
-is_a: CL:0000082 ! epithelial cell of lung
 is_a: CL:0002139 ! endothelial cell of vascular tree
 intersection_of: CL:0002139 ! endothelial cell of vascular tree
 intersection_of: BFO:0000050 UBERON:0002048 ! lung
@@ -8932,7 +8962,7 @@ is_a: CL:0000842 ! mononuclear cell
 intersection_of: CL:0000842 ! mononuclear cell
 intersection_of: BFO:0000050 UBERON:0000178 ! blood
 relationship: BFO:0000050 UBERON:0000178 ! blood
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-02-11T17:29:04Z
 
 [Term]
@@ -8959,7 +8989,7 @@ is_a: CL:0002319 ! neural cell
 intersection_of: CL:0000000 ! cell
 intersection_of: BFO:0000050 UBERON:0000007 ! pituitary gland
 relationship: BFO:0000050 UBERON:0000007 ! pituitary gland
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-03-26T22:14:56Z
 
 [Term]
@@ -8970,7 +9000,7 @@ is_a: CL:0000126 ! macroglial cell
 intersection_of: CL:0000126 ! macroglial cell
 intersection_of: BFO:0000050 UBERON:0000955 ! brain
 relationship: BFO:0000050 UBERON:0000955 ! brain
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-03-28T21:35:27Z
 
 [Term]
@@ -8978,7 +9008,7 @@ id: CL:2000008
 name: microvascular endothelial cell
 def: "Any blood vessel endothelial cell that is part of a microvascular endothelium." [GOC:TermGenie]
 is_a: CL:0000071 ! blood vessel endothelial cell
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-06-04T15:07:42Z
 
 [Term]
@@ -8988,7 +9018,7 @@ def: "Any lung endothelial cell that is part of a microvascular endothelium." [G
 subset: cellxgene_subset
 is_a: CL:1001567 ! lung endothelial cell
 is_a: CL:2000008 ! microvascular endothelial cell
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-06-04T16:00:56Z
 
 [Term]
@@ -9001,7 +9031,7 @@ is_a: CL:1000413 ! endothelial cell of artery
 intersection_of: CL:1000413 ! endothelial cell of artery
 intersection_of: BFO:0000050 UBERON:0001621 ! coronary artery
 relationship: BFO:0000050 UBERON:0001621 ! coronary artery
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-06-04T17:08:47Z
 
 [Term]
@@ -9012,7 +9042,7 @@ is_a: CL:0000000 ! cell
 intersection_of: CL:0000000 ! cell
 intersection_of: BFO:0000050 UBERON:0000087 ! inner cell mass
 relationship: BFO:0000050 UBERON:0000087 ! inner cell mass
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-06-24T23:16:53Z
 
 [Term]
@@ -9020,7 +9050,7 @@ id: CL:2000029
 name: central nervous system neuron
 def: "Any neuron that is part of a central nervous system." [GOC:TermGenie]
 is_a: CL:0000540 ! neuron
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-06-25T01:17:43Z
 
 [Term]
@@ -9037,7 +9067,7 @@ is_a: CL:0002575 ! central nervous system pericyte
 intersection_of: CL:0000669 ! pericyte
 intersection_of: BFO:0000050 UBERON:0000955 ! brain
 relationship: BFO:0000050 UBERON:0000955 ! brain
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-07-09T00:18:22Z
 
 [Term]
@@ -9049,7 +9079,7 @@ is_a: CL:2000008 ! microvascular endothelial cell
 intersection_of: CL:2000008 ! microvascular endothelial cell
 intersection_of: BFO:0000050 UBERON:0000955 ! brain
 relationship: BFO:0000050 UBERON:0000955 ! brain
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-07-09T00:24:53Z
 
 [Term]
@@ -9062,7 +9092,7 @@ is_a: CL:1000413 ! endothelial cell of artery
 intersection_of: CL:1000413 ! endothelial cell of artery
 intersection_of: BFO:0000050 UBERON:0002331 ! umbilical cord
 relationship: BFO:0000050 UBERON:0002331 ! umbilical cord
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-10-06T19:01:48Z
 
 [Term]
@@ -9074,7 +9104,7 @@ is_a: CL:0000062 ! osteoblast
 intersection_of: CL:0000062 ! osteoblast
 intersection_of: BFO:0000050 UBERON:0003129 ! skull
 relationship: BFO:0000050 UBERON:0003129 ! skull
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-10-06T19:48:30Z
 
 [Term]
@@ -9088,7 +9118,7 @@ synonym: "villous cytotrophoblast" EXACT []
 xref: BTO:0006119
 xref: BTO:0006208
 is_a: CL:0000351 ! trophoblast cell
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 property_value: seeAlso "http://www.sciencellonline.com/site/productInformation.php?keyword=7120" xsd:string
 creation_date: 2014-10-07T17:48:27Z
 
@@ -9102,7 +9132,7 @@ is_a: CL:0000066 ! epithelial cell
 intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0000992 ! ovary
 relationship: BFO:0000050 UBERON:0000992 ! ovary
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-10-07T17:59:13Z
 
 [Term]
@@ -9114,18 +9144,19 @@ is_a: CL:0000738 ! leukocyte
 intersection_of: CL:0000738 ! leukocyte
 intersection_of: BFO:0000050 UBERON:0002106 ! spleen
 relationship: BFO:0000050 UBERON:0002106 ! spleen
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2014-11-05T01:26:50Z
 
 [Term]
 id: CL:2000094
 name: nasal cavity respiratory epithelium epithelial cell of viscerocranial mucosa
 def: "Any epithelial cell of viscerocranial mucosa that is part of a nasal cavity respiratory epithelium." [GOC:TermGenie]
+is_a: CL:0002631 ! epithelial cell of upper respiratory tract
 is_a: CL:1000441 ! epithelial cell of viscerocranial mucosa
 intersection_of: CL:1000441 ! epithelial cell of viscerocranial mucosa
 intersection_of: BFO:0000050 UBERON:0005385 ! nasal cavity respiratory epithelium
 relationship: BFO:0000050 UBERON:0005385 ! nasal cavity respiratory epithelium
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2015-03-31T22:25:17Z
 
 [Term]
@@ -9139,7 +9170,7 @@ is_a: CL:0002352 ! gestational hematopoietic stem cell
 intersection_of: CL:0000037 ! hematopoietic stem cell
 intersection_of: BFO:0000050 UBERON:0012168 ! umbilical cord blood
 relationship: BFO:0000050 UBERON:0012168 ! umbilical cord blood
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q35563349
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q35563349
 creation_date: 2015-05-26T18:58:34Z
 
 [Term]
@@ -9152,8 +9183,8 @@ subset: human_reference_atlas
 synonym: "HBC" RELATED OMO:0003000 []
 is_a: CL:0000864 ! tissue-resident macrophage
 relationship: BFO:0000050 UBERON:0001987 ! placenta
+property_value: http://purl.org/dc/terms/contributor http://www.wikidata.org/entity/Q97529981
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-6677-8489
-property_value: http://purl.org/dc/terms/contributor https://www.wikidata.org/entity/Q97529981
 property_value: RO:0002175 NCBITaxon:9606
 creation_date: 2019-02-18T19:41:20Z
 
@@ -9303,6 +9334,7 @@ namespace: fly_anatomy.ontology
 def: "Any anatomical entity (FBbt:10000000) that develops from some germ layer (FBbt:00000110)." [FlyBase:FBrf0043441, FlyBase:FBrf0053832]
 subset: cur
 subset: EmbDevSlim
+is_a: BFO:0000002
 is_a: FBbt:10000000 ! anatomical entity
 
 [Term]
@@ -9472,6 +9504,7 @@ subset: cur
 synonym: "embryonic/larval imaginal precursor" EXACT []
 synonym: "larval imaginal precursor" EXACT []
 xref: UBERON:6001760
+is_a: BFO:0000002
 is_a: FBbt:00047552 ! imaginal tissue
 relationship: BFO:0000050 UBERON:0003142 ! prepupa
 relationship: BFO:0000050 UBERON:0003143 ! pupa
@@ -9557,6 +9590,7 @@ def: "The middle region of the adult alimentary canal, the epithelium of which i
 subset: cur
 synonym: "adult ventriculus" EXACT [FlyBase:FBrf0007735]
 synonym: "mesenteron" RELATED []
+is_a: BFO:0000002
 is_a: FBbt:00005383 ! midgut
 
 [Term]
@@ -9811,7 +9845,7 @@ def: "Muscle cell of a muscle that is part of the adult testis sheath." [https:/
 subset: cur
 subset: FlyTed
 is_a: FBbt:00003556 ! gonadal sheath muscle cell
-is_a: FBbt:00048490 ! male-specific anatomical entity
+is_a: FBbt:00006031 ! somatic cell of testis
 
 [Term]
 id: FBbt:00003660
@@ -9860,7 +9894,6 @@ synonym: "MB neuron" RELATED [FlyBase:FBrf0111409]
 synonym: "mushroom body neuron" RELATED [FlyBase:FBrf0111409]
 xref: CL:0000673
 xref: VFB:FBbt_00003686
-is_a: BFO:0000002
 is_a: FBbt:00007484 ! mushroom body intrinsic neuron
 is_a: FBbt:00025991 ! anterior ectoderm derivative
 is_a: UBERON:0004121 ! ectoderm-derived structure
@@ -10084,7 +10117,7 @@ property_value: IAO:0000028 "T5" xsd:string {xref="FlyBase:FBrf0247762"}
 id: FBbt:00003741
 name: lamina wide-field 1 neuron
 namespace: fly_anatomy.ontology
-def: "An intrinsic columnar neuron of the visual system whose cell body is located in the medulla cortex and that has a main projection that ascends via the first optic chiasm into the lamina where it is restricted to a single column for most of its length before making wide-field arborizations in the distal lamina. These neurons also arborize on the distal surface of the medulla in a circular field of about 20 columns. Several linking fibers from this arborization descend into M4 where they form a wide arborization field covering about 30-40 columns (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In the lamina, it forms numerous presynaptic connections to lamina monopolar neuron L3 and lamina intrinsic (amacrine) neuron (Rivera-Alba et al., 2011). These neurons along with the lamina wide-field 2 neurons express the transcription factor Fer2 (Ozel et al., 2021). They are cholinergic (Davis et al., 2020)." [FlyBase:FBrf0049410, FlyBase:FBrf0204652, FlyBase:FBrf0216925, FlyBase:FBrf0244935, FlyBase:FBrf0247762]
+def: "A lamina wide-field neuron that has a main projection that ascends via the first optic chiasm into the lamina where it is restricted to a single column for most of its length before making wide-field arborizations in the distal lamina. These neurons also arborize on the distal surface of the medulla in a circular field of about 20 columns. Several linking fibers from this arborization descend into M4 where they form a wide arborization field covering about 30-40 columns (Fischbach and Dittrich, 1989; Morante and Desplan, 2008). In the lamina, it forms numerous presynaptic connections to lamina monopolar neuron L3 and lamina intrinsic (amacrine) neuron (Rivera-Alba et al., 2011)." [FlyBase:FBrf0049410, FlyBase:FBrf0204652, FlyBase:FBrf0216925]
 comment: Pre-synaptic terminals were assessed by labelling with a UAS-Synaptotagmin reporter (P\{UAS-HA-syt\} - FBtp0015803). The identification of dendrites and axons was done using a UAS-Dscam (P\{UAS-Dscam.exon17.1.GFP\} - FBtp0021447) or a UAS-tau (P\{UAS-tau-lacZ.O\} - FBtp0010033) reporter, respectively (Morante and Desplan, 2008). Cell connectivity in the lamina was determined by analysis of semi-automated EM reconstruction of 749 serial sections of 21 complete lamina cartridges. The number of synaptic connections for Lawf (presynaptic/postsynaptic) in a single lamina cartridge with each cell type was the following: R1 (1/1), R2 (3/-), R3 (1/-), R6 (1/-), L1 (1/-), L2 (7/-), L3 (17/-), L5 (1/-), Lai (24/-), T1 (1/-), C2 (3/-), C3 (2/-), Lawf collaterals (5) and epithelial glia (6/-) (Rivera-Alba et al., 2011).
 subset: cur
 synonym: "Lawf" EXACT [FlyBrain_NDB:10094]
@@ -10092,9 +10125,7 @@ synonym: "LaWF1" EXACT [FlyBase:FBrf0222324]
 synonym: "Lawf1" EXACT VFB_SYMBOL [FlyBase:FBrf0247762]
 xref: FlyBrain_NDB:10094
 xref: VFB:FBbt_00003741
-is_a: FBbt:00007578 ! optic lobe intrinsic columnar neuron
-is_a: FBbt:00058205 ! adult cholinergic neuron
-is_a: FBbt:00110137 ! optic lobe wide-field columnar neuron
+is_a: FBbt:00059323 ! lamina wide-field neuron
 property_value: IAO:0000028 "Lawf1" xsd:string {xref="FlyBase:FBrf0247762"}
 
 [Term]
@@ -10655,6 +10686,7 @@ synonym: "receptor cell R7" RELATED []
 xref: CL:0000707
 xref: FlyBrain_NDB:10112
 xref: VFB:FBbt_00004225
+is_a: BFO:0000002
 is_a: FBbt:00006008 ! inner photoreceptor cell
 property_value: IAO:0000028 "R7" xsd:string {xref="FlyBase:FBrf0247762"}
 property_value: IAO:0000589 "R7 photoreceptor cell (drosophila)" xsd:string
@@ -10674,6 +10706,7 @@ xref: CL:0000709
 xref: FlyBrain_NDB:10113
 xref: FlyBrain_NDB:10114
 xref: VFB:FBbt_00004227
+is_a: BFO:0000002
 is_a: FBbt:00006008 ! inner photoreceptor cell
 is_a: FBbt:00058205 ! adult cholinergic neuron
 property_value: IAO:0000028 "R8" xsd:string {xref="FlyBase:FBrf0247762"}
@@ -10689,6 +10722,7 @@ synonym: "ocellar photoreceptor cell" EXACT [FlyBase:FBrf0255165]
 synonym: "ocellus photoreceptor" EXACT []
 synonym: "ocellus retinula cell" EXACT []
 xref: VFB:FBbt_00004242
+is_a: BFO:0000002
 is_a: FBbt:00005163 ! sensory organ cell
 is_a: FBbt:00007251 ! rhabdomeric photoreceptor cell
 is_a: FBbt:00058244 ! adult sensory neuron
@@ -10701,6 +10735,8 @@ def: "Second segment of the antenna located ventrolaterally to the first segment
 subset: cur
 synonym: "antennal segment 2" EXACT []
 synonym: "pedicel" EXACT [FlyBase:FBrf0007734]
+xref: https://www.ento.csiro.au/biology/drosophila/melanogaster.html?pedicel
+is_a: BFO:0000002
 is_a: FBbt:00007149 ! segment of antenna
 
 [Term]
@@ -10712,6 +10748,7 @@ subset: cur
 subset: FB_gloss
 synonym: "maxillary palpus" EXACT []
 synonym: "palpus" EXACT [FlyBase:FBrf0031004]
+is_a: BFO:0000002
 is_a: FBbt:00007000 ! appendage
 
 [Term]
@@ -10720,6 +10757,7 @@ name: capitellum
 namespace: fly_anatomy.ontology
 def: "Bulbous, distal-most segment of the haltere." [FlyBase:FBrf0007734]
 subset: cur
+is_a: BFO:0000002
 is_a: FBbt:00007018 ! appendage segment
 
 [Term]
@@ -10853,6 +10891,7 @@ synonym: "FSC" EXACT [FlyBase:FBrf0207075]
 synonym: "somatic stem cell" BROAD [FlyBase:FBrf0202474]
 synonym: "SSC" BROAD []
 xref: CL:0000441
+is_a: BFO:0000002
 is_a: CL:0000036 ! epithelial fate stem cell
 is_a: CL:0000255 ! eukaryotic cell
 is_a: FBbt:00006010 ! gonadal somatic stem cell
@@ -10936,6 +10975,7 @@ def: "One of a pair of somatic cells that envelope each cyst of developing male 
 subset: cur
 subset: FlyTed
 synonym: "cyst cell" BROAD []
+is_a: BFO:0000002
 is_a: FBbt:00006031 ! somatic cell of testis
 
 [Term]
@@ -10963,6 +11003,7 @@ subset: FlyTed
 synonym: "gonialblast" EXACT []
 synonym: "primary spermatogonial cell" EXACT [FlyBase:FBrf0064778]
 xref: CL:0000020
+is_a: BFO:0000002
 is_a: CL:0000020 ! spermatogonium
 is_a: FBbt:00057011 ! male germline cell
 property_value: IAO:0000589 "spermatogonium (drosophila)" xsd:string
@@ -10975,6 +11016,7 @@ def: "Male germline cell found in the spermatogonial cyst. It specifically expre
 subset: cur
 subset: FlyTed
 xref: CL:0000020
+is_a: BFO:0000002
 is_a: CL:0000020 ! spermatogonium
 is_a: FBbt:00057011 ! male germline cell
 property_value: IAO:0000589 "spermatogonium (drosophila)" xsd:string
@@ -11031,6 +11073,7 @@ def: "Bilaterally symmetric structure with two anterior and two posterior latera
 subset: cur
 subset: FlyTed
 synonym: "sperm pump" EXACT []
+is_a: BFO:0000002
 is_a: FBbt:00048490 ! male-specific anatomical entity
 is_a: FBbt:00100313 ! multicellular structure
 
@@ -11089,6 +11132,7 @@ comment: Present at all developmental stages.
 subset: cur
 synonym: "tracheal end cell" EXACT [FlyBase:FBrf0064787]
 synonym: "tracheoblast" EXACT [FlyBase:FBrf0064787]
+is_a: BFO:0000002
 is_a: FBbt:00005038 ! tracheocyte
 
 [Term]
@@ -11186,12 +11230,13 @@ property_value: IAO:0000589 "myoblast (drosophila)" xsd:string
 id: FBbt:00005090
 name: tendon cell
 namespace: fly_anatomy.ontology
-def: "Muscle cell of epidermal origin that is attached to the end of muscles and connects them to the exoskeleton. The attachment between the muscle and tendon cell is done via interdigitating desmosomes. The attachment of the tendon cell to the cuticle relies on interdigitating hemidesmosomes in this cell that are closely associated with tonofibrils embedded in the cuticle." [FlyBase:FBrf0007735, FlyBase:FBrf0064665, FlyBase:FBrf0064793]
+def: "Epidermal cell that forms part of one end a muscle and connects it to an attachment site (Schweitzer et al., 2010). It attaches to a muscle cell via a myotendinous junction composed of hemiadherens junctions and extracellular matrix (Schweitzer et al., 2010). The attachment of the tendon cell to the cuticle relies on interdigitating hemidesmosomes in this cell that are closely associated with tonofibrils embedded in the cuticle." [FlyBase:FBrf0007735, FlyBase:FBrf0064665, FlyBase:FBrf0064793, FlyBase:FBrf0112069, FlyBase:FBrf0211520]
 subset: cur
 subset: scrnaseq_slim
 synonym: "EMA cell" EXACT [FlyBase:FBrf0094132]
 synonym: "epidermal muscle attachment cell" EXACT [FlyBase:FBrf0094132]
-is_a: FBbt:00100318 ! somatic cell
+synonym: "tenocyte" EXACT [FlyBase:FBrf0211520]
+is_a: FBbt:00007325 ! epidermal cell
 
 [Term]
 id: FBbt:00005097
@@ -11379,6 +11424,7 @@ synonym: "perineural cell" RELATED []
 synonym: "perineurial glia" RELATED []
 synonym: "perineurial sheath cell" EXACT []
 synonym: "perineurial sheath glial cell" EXACT []
+synonym: "PNG" EXACT [FlyBase:FBrf0243081]
 xref: VFB:FBbt_00005153
 is_a: FBbt:00005152 ! surface glial cell
 relationship: BFO:0000050 FBbt:00007089 ! perineurial glial sheath
@@ -11565,6 +11611,7 @@ synonym: "md neuron" EXACT []
 synonym: "type II neuron" EXACT []
 synonym: "type II-SN" EXACT [FlyBase:FBrf0253566]
 xref: VFB:FBbt_00005209
+is_a: BFO:0000002
 is_a: FBbt:00005124 ! sensory neuron
 is_a: FBbt:00059272 ! PNS neuron
 relationship: BFO:0000050 FBbt:00005098 ! peripheral nervous system
@@ -11580,6 +11627,7 @@ synonym: "ch neuron" EXACT []
 synonym: "scolopidial neuron" EXACT []
 synonym: "Type II neuron" RELATED []
 xref: VFB:FBbt_00005222
+is_a: BFO:0000002
 is_a: FBbt:00005163 ! sensory organ cell
 is_a: FBbt:00005919 ! mechanosensory neuron
 is_a: FBbt:00059272 ! PNS neuron
@@ -11657,6 +11705,7 @@ comment: Adult and larval hindguts express the transcription factor brachyentero
 subset: cur
 subset: FB_gloss
 xref: UBERON:0001046
+is_a: BFO:0000002
 is_a: FBbt:00007010 ! multi-tissue structure
 is_a: FBbt:00100315 ! gut section
 is_a: UBERON:0001046 ! hindgut
@@ -11756,6 +11805,7 @@ subset: cur
 synonym: "adult Malpighian tubule primary cell" EXACT [FlyBase:FBrf0202697]
 synonym: "adult Malpighian tubule Type I cell" EXACT [FlyBase:FBrf0202697]
 synonym: "adult PC" EXACT [FlyBase:FBrf0245230]
+is_a: BFO:0000002
 is_a: FBbt:00005733 ! adult specialized Malpighian tubule cell
 is_a: FBbt:00005796 ! Malpighian tubule Type I cell
 
@@ -11993,7 +12043,7 @@ is_a: FBbt:00100318 ! somatic cell
 id: FBbt:00006031
 name: somatic cell of testis
 namespace: fly_anatomy.ontology
-def: "." [https://orcid.org/0000-0002-7073-9172]
+def: "A(n) somatic cell that is part of a(n) testis." [FBC:Autogenerated]
 subset: cur
 is_a: FBbt:00048490 ! male-specific anatomical entity
 is_a: FBbt:00100318 ! somatic cell
@@ -12011,6 +12061,7 @@ synonym: "IGS" EXACT []
 synonym: "inner germarial sheath cell" EXACT [FlyBase:FBrf0247148]
 synonym: "inner germarium sheath cell" EXACT [FlyBase:FBrf0190200]
 synonym: "inner sheath cell" EXACT []
+is_a: BFO:0000002
 is_a: FBbt:00006030 ! somatic cell of ovariole
 
 [Term]
@@ -12191,6 +12242,7 @@ def: "Wedge shaped diploid cell found in scattered clusters in the midgut epithe
 comment: Can be identified by expression of Delta (and escargot) (Zeng and Hou, 2015).
 subset: cur
 synonym: "ISC" EXACT [FlyBase:FBrf0191251]
+is_a: BFO:0000002
 is_a: FBbt:00007344 ! somatic stem cell
 
 [Term]
@@ -12223,10 +12275,23 @@ xref: VFB:FBbt_00007089
 is_a: FBbt:00007003 ! portion of tissue
 
 [Term]
+id: FBbt:00007108
+name: imaginal disc epithelial cell
+namespace: fly_anatomy.ontology
+def: "A columnar epithelial cell with distinct apical-basal polarity. The apical surface has microvilli with dense plaques at their tips. A cortical network (ring) of actin filaments underlies the apical surface, extends into the microvilli and is associated with a zonula adherens which encircles each cell. Below this is a broad region of pleated sheet type septate junctions connecting all lateral surfaces to adjacent cells. Plaque-like gap junctions occur mainly interspersed among septate junctions and, at a lower frequency, below them. Small, sparsely distributed hemidesmosomes attach these cells to the underlying basal lamina." [FlyBase:FBrf0064790]
+xref: CL:0000429
+is_a: CL:0000075 ! columnar/cuboidal epithelial cell
+is_a: CL:0000255 ! eukaryotic cell
+is_a: FBbt:00058239 ! embryonic/larval epithelial cell
+relationship: BFO:0000050 UBERON:0000939 ! imaginal disc
+property_value: IAO:0000589 "imaginal disc cell (drosophila)" xsd:string
+
+[Term]
 id: FBbt:00007137
 name: female germline cyst
 namespace: fly_anatomy.ontology
 def: "A cyst of female germ cells interconnected by ring canals. Each cyst originates from a single cystoblast which divides to form 16 cyst cells. These become enveloped in a follicle cell epithelium as they pass through region 2 of the germarium. Cysts that have left the germarium are termed egg chambers." [FlyBase:FBrf0064777]
+is_a: BFO:0000002
 is_a: FBbt:00004875 ! germline cyst
 is_a: FBbt:00048491 ! female-specific anatomical entity
 
@@ -12322,6 +12387,7 @@ def: "Sensillum which is embedded in the body wall and has a specific cuticular 
 comment: This is a parent term for the mechanosensory bristles referred to as external sensilla (es) in some references e.g. Tsubouchi et al., 2017 (FBrf0237124), but also includes other modalities.
 xref: UBERON:6007231
 xref: VFB:FBbt_00007231
+is_a: BFO:0000002
 is_a: FBbt:00005168 ! external sensory organ
 is_a: FBbt:00007152 ! sensillum
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-7073-9172
@@ -12411,6 +12477,7 @@ name: cardial cell
 namespace: fly_anatomy.ontology
 def: "Cell that forms the wall of the dorsal vessel. They are arranged in two contralateral rows connected by ventral and dorsal adhesion zones, leaving a central lumen (Medioni et al., 2008)." [FlyBase:FBrf0031012, FlyBase:FBrf0089570, FlyBase:FBrf0205728]
 synonym: "cardiomyocyte" EXACT [FlyBase:FBrf0151925]
+is_a: BFO:0000002
 is_a: FBbt:00100318 ! somatic cell
 relationship: BFO:0000050 FBbt:00058291 ! dorsal vessel
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-7073-9172
@@ -12727,6 +12794,7 @@ def: "Any neuron (FBbt:00005106) that expresses fru (FBgn0004652)." [FBC:Autogen
 subset: cur
 synonym: "fru neuron" EXACT []
 xref: VFB:FBbt_00016687
+is_a: BFO:0000002
 is_a: FBbt:00005106 ! neuron
 
 [Term]
@@ -12815,6 +12883,7 @@ subset: scrnaseq_slim
 synonym: "adipocyte" EXACT []
 synonym: "adipose cell" EXACT [FlyBase:FBrf0017184]
 synonym: "fat body cell" EXACT []
+is_a: BFO:0000002
 is_a: FBbt:00100318 ! somatic cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-09-05T16:19:14Z" xsd:dateTime
@@ -12918,6 +12987,7 @@ def: "Specialized epithelial cell of the midgut. A large, polyploid, cuboidal or
 comment: Can be identified in adults and larvae based on expression of nubbin, Myosin31DF (Sawyer et al., 2017) and mex1 (Phillips and Thomas, 2006 - FBrf0190960; Chen et al., 2014 - FBrf0226781).
 synonym: "absorptive cell" RELATED [FlyBase:FBrf0206835]
 synonym: "midgut EC" EXACT [FlyBase:FBrf0191251]
+is_a: BFO:0000002
 is_a: FBbt:00007042 ! enterocyte
 relationship: BFO:0000050 FBbt:00005383 ! midgut
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
@@ -12949,6 +13019,7 @@ synonym: "anterior spindle cell zone" RELATED [FlyBase:FBrf0205829]
 synonym: "hindgut proliferation zone" RELATED [FlyBase:FBrf0205829]
 synonym: "HPZ" RELATED []
 synonym: "midgut/hindgut imaginal ring" RELATED [FlyBase:FBrf0237229]
+is_a: BFO:0000002
 is_a: FBbt:00100315 ! gut section
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2018-05-30T10:43:44Z" xsd:dateTime
@@ -12998,6 +13069,7 @@ comment: Can be identified by expression of zfh1 and distinguishable from follic
 synonym: "pFC" EXACT [FlyBase:FBrf0234236]
 synonym: "pre-follicle cell" EXACT []
 synonym: "prefollicular cell" EXACT []
+is_a: BFO:0000002
 is_a: FBbt:00006030 ! somatic cell of ovariole
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2018-10-16T14:40:00Z" xsd:dateTime
@@ -13309,6 +13381,7 @@ name: adult differentiating enterocyte
 namespace: fly_anatomy.ontology
 def: "Cell of the adult midgut epithelium that is in an intermediate state of differentiation between enteroblast and enterocyte (Hung et al., 2020)." [FlyBase:FBrf0244662]
 synonym: "dEC" EXACT [FlyBase:FBrf0244662]
+is_a: BFO:0000002
 is_a: FBbt:00007008 ! somatic precursor cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2020-04-17T15:27:42Z" xsd:dateTime
@@ -13323,6 +13396,7 @@ synonym: "adult cardia EC" RELATED [FlyBase:FBrf0244662]
 synonym: "adult cardia secretory cell" RELATED [FlyBase:FBrf0244662]
 synonym: "adult midgut cell of cardia" EXACT []
 synonym: "adult proventriculus secretory cell" RELATED []
+is_a: BFO:0000002
 is_a: FBbt:00100318 ! somatic cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2020-04-20T08:48:48Z" xsd:dateTime
@@ -13853,6 +13927,7 @@ namespace: fly_anatomy.ontology
 def: "Any neuron (FBbt:00005106) that has sensory dendrite in some external sensory organ (FBbt:00005168)." [FBC:Autogenerated]
 synonym: "es neuron" EXACT []
 xref: VFB:FBbt_00052560
+is_a: BFO:0000002
 is_a: FBbt:00005124 ! sensory neuron
 is_a: FBbt:00005163 ! sensory organ cell
 is_a: FBbt:00059272 ! PNS neuron
@@ -13992,6 +14067,7 @@ namespace: fly_anatomy.ontology
 def: "Epithelial cell of the terminal epithelium of the testis. These cells engulf the head cyst cell of a spermatid cyst during coiling, so anchoring the head of the coiling spermatid. These cells also phagocytose the waste bags and cyst cells left over at the end of spermatogenesis." [FlyBase:FBrf0024468, FlyBase:FBrf0064778]
 subset: cur
 subset: FlyTed
+is_a: BFO:0000002
 is_a: FBbt:00058261 ! testis sheath epithelial cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-7073-9172
 property_value: http://purl.org/dc/terms/date "2008-06-16T01:59:36Z" xsd:dateTime
@@ -14026,6 +14102,16 @@ subset: cur
 is_a: FBbt:00005063 ! hemocyte
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2021-05-26T15:18:53Z" xsd:dateTime
+
+[Term]
+id: FBbt:00058173
+name: epithelial cell of wing disc
+namespace: fly_anatomy.ontology
+def: "Any epithelial cell (FBbt:00000124) that is part of some wing disc epithelium proper (FBbt:00058161)." [FBC:Autogenerated]
+subset: cur
+is_a: FBbt:00007108 ! imaginal disc epithelial cell
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2021-06-03T18:57:00Z" xsd:dateTime
 
 [Term]
 id: FBbt:00058198
@@ -14176,6 +14262,16 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2021-09-27T11:38:48Z" xsd:dateTime
 
 [Term]
+id: FBbt:00058239
+name: embryonic/larval epithelial cell
+namespace: fly_anatomy.ontology
+def: "Any epithelial cell (FBbt:00000124) that is part of some larva (FBbt:00001727)." [FBC:Autogenerated]
+subset: cur
+is_a: FBbt:00000124 ! epithelial cell
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2021-09-27T11:40:51Z" xsd:dateTime
+
+[Term]
 id: FBbt:00058244
 name: adult sensory neuron
 namespace: fly_anatomy.ontology
@@ -14256,7 +14352,7 @@ name: testis sheath epithelial cell
 namespace: fly_anatomy.ontology
 def: "Any epithelial cell (FBbt:00000124) that is part of some testis sheath (FBbt:00004955)." [FBC:Autogenerated]
 subset: cur
-is_a: FBbt:00048490 ! male-specific anatomical entity
+is_a: FBbt:00006031 ! somatic cell of testis
 is_a: FBbt:00058238 ! adult epithelial cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2021-09-28T16:52:06Z" xsd:dateTime
@@ -14408,6 +14504,7 @@ name: adult salivary gland secretory cell
 namespace: fly_anatomy.ontology
 def: "Columnar epithelial cell of the adult salivary gland responsible for producing and secreting the saliva (Andrew et al., 2000). It expresses the salivary gland-specific transcription factor sage (Fox et al., 2013)." [FlyBase:FBrf0126988, FlyBase:FBrf0221452]
 subset: cur
+is_a: BFO:0000002
 is_a: CL:0000152 ! exocrine cell
 is_a: FBbt:00059269 ! adult salivary gland epithelial cell
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
@@ -14544,6 +14641,20 @@ xref: VFB:FBbt_00059289
 is_a: FBbt:00059274 ! adult CNS neuron
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2024-04-12T15:31:58Z" xsd:dateTime
+
+[Term]
+id: FBbt:00059323
+name: lamina wide-field neuron
+namespace: fly_anatomy.ontology
+def: "An intrinsic columnar neuron of the visual system whose cell body is located in the medulla cortex and that has a main projection making wide-field arborizations in the lamina. It expresses the transcription factor Fer2 (Ozel et al., 2021) and is cholinergic (Davis et al., 2020)." [FlyBase:FBrf0244935, FlyBase:FBrf0247762]
+subset: cur
+synonym: "Lawf1-2" EXACT [FlyBase:FBrf0253187]
+xref: VFB:FBbt_00059323
+is_a: FBbt:00007578 ! optic lobe intrinsic columnar neuron
+is_a: FBbt:00058205 ! adult cholinergic neuron
+is_a: FBbt:00110137 ! optic lobe wide-field columnar neuron
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-11T16:41:19Z" xsd:dateTime
 
 [Term]
 id: FBbt:00067010
@@ -15154,13 +15265,12 @@ property_value: http://purl.org/dc/terms/date "2011-11-03T01:56:34Z" xsd:dateTim
 id: FBbt:00110065
 name: lamina wide-field 2 neuron
 namespace: fly_anatomy.ontology
-def: "An intrinsic columnar neuron of the visual system whose cell body is located in the medulla cortex and that has a main projection into the lamina making wide-field arborizations in the distal lamina, innervating 28 cartridges. These neurons also arborize in the medulla (Hasegawa et al., 2011). In the M1 layer, the branches are large and overlapping, encompassing around 120 cartridges. In medulla layers M8 to M10 the branches are smaller, encompassing around 17 cartridges and show less overlap. Putative cholinergic presynaptic sites are observed in the lamina. These neurons along with the lamina wide-field 1 neurons express the transcription factor Fer2." [FlyBase:FBrf0213020, FlyBase:FBrf0225131, FlyBase:FBrf0247762]
+def: "A lamina wide-field neuron that has a main projection into the lamina making wide-field arborizations in the distal lamina, innervating 28 cartridges. These neurons also arborize in the medulla (Hasegawa et al., 2011). In the M1 layer, the branches are large and overlapping, encompassing around 120 cartridges. In medulla layers M8 to M10 the branches are smaller, encompassing around 17 cartridges and show less overlap. Putative cholinergic presynaptic sites are observed in the lamina." [FlyBase:FBrf0213020, FlyBase:FBrf0225131, FlyBase:FBrf0247762]
 subset: cur
 synonym: "Lawf2" EXACT VFB_SYMBOL [FlyBase:FBrf0225131, FlyBase:FBrf0247762]
 synonym: "Lawfl2" EXACT [FlyBase:FBrf0213020]
 xref: VFB:FBbt_00110065
-is_a: FBbt:00007578 ! optic lobe intrinsic columnar neuron
-is_a: FBbt:00058205 ! adult cholinergic neuron
+is_a: FBbt:00059323 ! lamina wide-field neuron
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2011-12-13T11:05:21Z" xsd:dateTime
 property_value: IAO:0000028 "Lawf2" xsd:string {xref="FlyBase:FBrf0225131", xref="FlyBase:FBrf0247762"}
@@ -15253,7 +15363,7 @@ property_value: http://purl.org/dc/terms/date "2013-01-10T05:10:14Z" xsd:dateTim
 id: FBbt:00110577
 name: adult MBp lineage neuron
 namespace: fly_anatomy.ontology
-def: "Any neuron (FBbt:00005106) that is part of some adult (FBbt:00003004) and develops from some mushroom body neuroblast (FBbt:00007113)." [FlyBase:FBrf0221412, FlyBase:FBrf0221438]
+def: "Any neuron (FBbt:00005106) that is part of some adult (FBbt:00003004) and develops from some neuroblast MBp (FBbt:00007113)." [FlyBase:FBrf0221412, FlyBase:FBrf0221438]
 comment: There are four similar neuron lineages of this type, MBp1-p4, which each develop from one of four neuroblasts (Ito et al., 2013; Yu et al., 2013).
 subset: TL_lineage_clone
 synonym: "adult MB lineage neuron" EXACT []
@@ -15286,6 +15396,7 @@ subset: cur
 synonym: "adult Malpighian tubule tiny cell" EXACT [FlyBase:FBrf0202697]
 synonym: "adult RNSC" EXACT [FlyBase:FBrf0202697]
 synonym: "adult RSC" EXACT [FlyBase:FBrf0245230]
+is_a: BFO:0000002
 is_a: FBbt:00005733 ! adult specialized Malpighian tubule cell
 is_a: FBbt:00007344 ! somatic stem cell
 is_a: FBbt:00110861 ! Malpighian tubule tiny cell
@@ -22025,7 +22136,7 @@ property_value: UBPROP:0000003 "Hagfish and lampreys may have one or more endocr
 
 [Term]
 id: UBERON:0001072
-name: posterior vena cava
+name: inferior vena cava
 namespace: uberon
 def: "A vein that carries deoxygenated blood from the lower half of the body into the right atrium of the heart." [http://orcid.org/0000-0002-6601-2165, Wikipedia:Inferior_vena_cava]
 subset: human_reference_atlas
@@ -22033,9 +22144,8 @@ subset: pheno_slim
 subset: uberon_slim
 synonym: "caudal vena cava" RELATED [VHOG:0001194]
 synonym: "inferior caval vein" EXACT [http://orcid.org/0000-0002-6601-2165]
-synonym: "inferior vena cava" EXACT [Wikipedia:Venae_cavae]
 synonym: "postcava" RELATED []
-synonym: "posterior vena cava" EXACT [Wikipedia:Venae_cavae]
+synonym: "posterior vena cava" EXACT [PMID:21154280]
 synonym: "vena cava inferior" RELATED OMO:0003011 [BTO:0002682, Wikipedia:Inferior_vena_cava]
 xref: AAO:0011083
 xref: BTO:0002682
@@ -33864,7 +33974,6 @@ name: tonsil
 namespace: uberon
 def: "Either of the two small almond-shaped masses of lymph tissue found on either side of the oropharynx." [MGI:cwg, MP:0002380]
 subset: efo_slim
-subset: human_reference_atlas
 subset: pheno_slim
 subset: uberon_slim
 synonym: "Mandel" RELATED [BTO:0001387]
@@ -33887,7 +33996,6 @@ xref: Wikipedia:Tonsil
 is_a: UBERON:0001962 ! gut-associated lymphoid tissue
 relationship: RO:0001025 UBERON:0000167 ! oral cavity
 property_value: IAO:0000232 "the term 'tonsil' can be ambiguous, sometimes refering specifically to the palatine tonsil, sometimes generically to include the cecal tonsils of avians. This class represents lymphoid tissue that is part of the tonsillar ring, in the mouth/throat region" xsd:string
-property_value: RO:0002175 NCBITaxon:9606
 
 [Term]
 id: UBERON:0002373
@@ -33895,6 +34003,7 @@ name: palatine tonsil
 namespace: uberon
 def: "Tonsils on the left and right sides at the back of the throat. one of the mucosa-associated lymphoid tissues (MALT), located at the entrance to the upper respiratory and gastrointestinal tracts to protect the body from the entry of exogenous material through mucosal sites[WP]." [Wikipedia:Palatine_tonsil]
 subset: efo_slim
+subset: human_reference_atlas
 subset: uberon_slim
 synonym: "faucial tonsil" EXACT []
 synonym: "tonsil" BROAD []
@@ -33917,6 +34026,7 @@ is_a: UBERON:0002372 ! tonsil
 is_a: UBERON:0004119 ! endoderm-derived structure
 property_value: http://xmlns.com/foaf/0.1/depiction "https://upload.wikimedia.org/wikipedia/commons/f/f6/Illu_mouth.jpg" xsd:anyURI
 property_value: RO:0002174 NCBITaxon:9989 {source="PMID:20144910"}
+property_value: RO:0002175 NCBITaxon:9606
 property_value: UBPROP:0000011 "tonsillar fossa develops from dorsal portion of pouch 2. Note that pharyngeal and lingual tonsils do not develop from pharyngeal pouches" xsd:string {source="ISBN:1607950324"}
 
 [Term]
@@ -37392,8 +37502,8 @@ name: hindlimb skin
 namespace: uberon
 def: "A zone of skin that is part of a hindlimb [Automatically generated definition]." [OBOL:automatic]
 synonym: "hind limb skin" EXACT [OBOL:automatic]
-synonym: "lower limb skin" EXACT [FMA:23102]
 synonym: "lower limb skin" EXACT [https://orcid.org/0000-0002-0819-0473]
+synonym: "lower limb skin" EXACT [FMA:23102]
 synonym: "skin of hind limb" EXACT [OBOL:automatic]
 synonym: "skin of hindlimb" EXACT [OBOL:automatic]
 synonym: "skin of lower extremity" EXACT [OBOL:automatic]
@@ -44356,12 +44466,14 @@ name: epibranchial ganglion
 namespace: uberon
 def: "Cranial ganglion which develops from an epibranchial placode." [PMID:20133851, ZFIN:curator]
 comment: Epibranchial ganglia orchestrate the development of the cranial neurogenic crest
+subset: human_reference_atlas
 synonym: "epibranchial ganglia" EXACT OMO:0003004 [ZFA:0001555]
 xref: BTO:0006250 {https://w3id.org/sssom/mapping_justification="https://w3id.org/semapv/vocab/ManualMappingCuration", https://w3id.org/sssom/author_id="https://orcid.org/0000-0003-4423-4370", https://w3id.org/sssom/mapping_provider="https://github.com/biopragmatics/biomappings"}
 xref: TAO:0001555
 xref: ZFA:0001555
 is_a: UBERON:0001714 ! cranial ganglion
 is_a: UBERON:0004121 ! ectoderm-derived structure
+property_value: RO:0002175 NCBITaxon:9606
 
 [Term]
 id: UBERON:0009202

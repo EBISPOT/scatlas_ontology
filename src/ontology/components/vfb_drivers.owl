@@ -11,13 +11,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/components/vfb_drivers.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/components/vfb_drivers.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/components/vfb_drivers.owl"/>
         <dc:description>An ontology of Drosophila melanogaster drivers and expression patterns. All genetic objects are created using data taken directly from FlyBase.</dc:description>
         <dc:title>VFB Driver Ontology</dc:title>
         <terms:contributor>http://orcid.org/0000-0002-1373-1705</terms:contributor>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>27:05:2024 01:15</oboInOwl:date>
-        <owl:versionInfo>2024-05-27</owl:versionInfo>
+        <oboInOwl:date>15:07:2024 01:20</oboInOwl:date>
+        <owl:versionInfo>2024-07-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3540,6 +3540,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0328340 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R12D12.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R12D12]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0328343 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0328343">
@@ -3701,6 +3712,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.R14C07.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.R14C07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0328376 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R14D05.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R14D05]</rdfs:label>
     </owl:Class>
     
 
@@ -4959,6 +4981,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0328671 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R29B04.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R29B04]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0328674 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0328674">
@@ -5307,6 +5340,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.R35A10.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.R35A10]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0328759 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R35C12.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R35C12]</rdfs:label>
     </owl:Class>
     
 
@@ -5806,6 +5850,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0328899 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R45F09.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R45F09]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0328904 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0328904">
@@ -6199,6 +6254,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.R50H07.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.R50H07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0328992 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0328992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R51D07.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R51D07]</rdfs:label>
     </owl:Class>
     
 
@@ -6738,17 +6804,6 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.R61G12.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.R61G12]</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://flybase.org/reports/FBal0329118 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBal0329118">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
-        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>HsapRELA[AD.R61H01.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
-        <rdfs:label>HsapRELA[AD.R61H01]</rdfs:label>
     </owl:Class>
     
 
@@ -7733,6 +7788,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0329349 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R83H09.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R83H09]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0329351 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0329351">
@@ -7872,6 +7938,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.R89A01.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.R89A01]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0329395 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.R89B06.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.R89B06]</rdfs:label>
     </owl:Class>
     
 
@@ -8162,6 +8239,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0329491 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT000877.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT000877]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0329500 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0329500">
@@ -8312,6 +8400,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT002851.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT002851]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0329548 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT002857.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT002857]</rdfs:label>
     </owl:Class>
     
 
@@ -8635,6 +8734,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0329724 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329724">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT008660.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT008660]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0329735 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0329735">
@@ -8756,6 +8866,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0329813 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT012596.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT012596]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0329816 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0329816">
@@ -8796,6 +8917,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT013121.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT013121]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0329833 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT013344.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT013344]</rdfs:label>
     </owl:Class>
     
 
@@ -9031,6 +9163,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0329988 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0329988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT017413.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT017413]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0329989 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0329989">
@@ -9137,6 +9280,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT019307.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT019307]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0330046 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT019330.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT019330]</rdfs:label>
     </owl:Class>
     
 
@@ -9790,6 +9944,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0330296 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT027104.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT027104]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0330297 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0330297">
@@ -9819,6 +9984,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT027175.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT027175]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0330300 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT027273.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT027273]</rdfs:label>
     </owl:Class>
     
 
@@ -9885,6 +10061,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT028551.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT028551]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0330338 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT028555.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT028555]</rdfs:label>
     </owl:Class>
     
 
@@ -10303,6 +10490,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT039458.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT039458]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0330544 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT039470.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT039470]</rdfs:label>
     </owl:Class>
     
 
@@ -11063,6 +11261,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HsapRELA[AD.VT049125.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
         <rdfs:label>HsapRELA[AD.VT049125]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0330907 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0330907">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>HsapRELA[AD.VT049245.T:ZzzzZip+]</oboInOwl:hasExactSynonym>
+        <rdfs:label>HsapRELA[AD.VT049245]</rdfs:label>
     </owl:Class>
     
 
@@ -11958,6 +12167,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0331242 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0331242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R11D02.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R11D02]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0331245 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0331245">
@@ -12405,6 +12625,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R17A04.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R17A04]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0331360 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0331360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R17A10.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R17A10]</rdfs:label>
     </owl:Class>
     
 
@@ -13037,6 +13268,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0331509 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0331509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R23E07.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R23E07]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0331510 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0331510">
@@ -13363,6 +13605,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R27A11.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R27A11]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0331609 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0331609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R27H01.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R27H01]</rdfs:label>
     </owl:Class>
     
 
@@ -14698,6 +14951,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0331983 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0331983">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R49A06.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R49A06]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0331991 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0331991">
@@ -15348,6 +15612,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332180 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R60F09.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R60F09]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332182 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332182">
@@ -15535,6 +15810,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332237 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R65F12.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R65F12]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332239 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332239">
@@ -15667,6 +15953,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332263 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R68A08.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R68A08]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332264 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332264">
@@ -15784,6 +16081,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R70C11.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R70C11]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0332296 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R70E08.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R70E08]</rdfs:label>
     </owl:Class>
     
 
@@ -16239,6 +16547,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332406 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R77F03.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R77F03]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332407 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332407">
@@ -16532,6 +16851,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R82E08.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R82E08]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0332482 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.R82F01.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R82F01]</rdfs:label>
     </owl:Class>
     
 
@@ -17284,6 +17614,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332765 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT002057.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT002057]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332768 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332768">
@@ -17335,6 +17676,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT002215.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT002215]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0332780 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT002223.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT002223]</rdfs:label>
     </owl:Class>
     
 
@@ -17647,6 +17999,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0332990 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0332990">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT007780.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT007780]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0332995 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0332995">
@@ -17797,6 +18160,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT008659.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT008659]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0333062 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0333062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT008660.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT008660]</rdfs:label>
     </owl:Class>
     
 
@@ -18439,6 +18813,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0333364 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0333364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT016254.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT016254]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0333365 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0333365">
@@ -18600,6 +18985,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT017682.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT017682]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0333462 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0333462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT017683.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT017683]</rdfs:label>
     </owl:Class>
     
 
@@ -18978,6 +19374,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0333613 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0333613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT020732.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT020732]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0333617 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0333617">
@@ -19139,6 +19546,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT022244.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT022244]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0333687 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0333687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT022246.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT022246]</rdfs:label>
     </owl:Class>
     
 
@@ -20067,6 +20485,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0334127 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0334127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT033614.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT033614]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0334134 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0334134">
@@ -20646,6 +21075,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT041658.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT041658]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0334448 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0334448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT041692.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT041692]</rdfs:label>
     </owl:Class>
     
 
@@ -21361,6 +21801,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT046808.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT046808]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0334770 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0334770">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT046831.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT046831]</rdfs:label>
     </owl:Class>
     
 
@@ -22267,6 +22718,17 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0335270 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0335270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT062645.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT062645]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0335291 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0335291">
@@ -22417,6 +22879,17 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT064565.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT064565]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0335348 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0335348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ScerGAL4[DBD.VT064568.T:ZzzzZip-]</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT064568]</rdfs:label>
     </owl:Class>
     
 
@@ -24019,12 +24492,82 @@
     
 
 
+    <!-- http://flybase.org/reports/FBal0390255 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.VT014340]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0390256 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.VT050106]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0390257 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.VT037550]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0390258 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.VT026839]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0390259 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.R78E09]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0390370 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0390370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005054"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>ScerGAL4[DBD.VT048933]</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://flybase.org/reports/FBal0391079 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBal0391079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <rdfs:label>HsapRELA[AD.VT016795]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBal0399949 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBal0399949">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0005055"/>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>HsapRELA[AD.R61H01.DSCP]</rdfs:label>
     </owl:Class>
     
 
@@ -26761,6 +27304,7 @@
         <oboInOwl:hasExactSynonym>LH2447</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MB077B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MB077C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MB077b</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R19F09]∩HsapRELA[AD.R25D01]</rdfs:label>
     </owl:Class>
     
@@ -42245,30 +42789,6 @@
     
 
 
-    <!-- http://flybase.org/reports/FBco0000758 -->
-
-    <owl:Class rdf:about="http://flybase.org/reports/FBco0000758">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304481"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329118"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000028>SS02394</obo:IAO_0000028>
-        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>SS02394</oboInOwl:hasExactSynonym>
-        <rdfs:label>ScerGAL4[DBD.R82C10]∩HsapRELA[AD.R61H01]</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://flybase.org/reports/FBco0000759 -->
 
     <owl:Class rdf:about="http://flybase.org/reports/FBco0000759">
@@ -51875,6 +52395,7 @@
         <obo:IAO_0000028>SS53459</obo:IAO_0000028>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>SS53459</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pC2l-SS</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R20G10]∩HsapRELA[AD.VT029750]</rdfs:label>
     </owl:Class>
     
@@ -52259,6 +52780,7 @@
         <obo:IAO_0000028>SS45512</obo:IAO_0000028>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>SS45512</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ppk-SS</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT036267]∩HsapRELA[AD.VT043658]</rdfs:label>
     </owl:Class>
     
@@ -57974,6 +58496,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000028>SS61089</obo:IAO_0000028>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>DNp13-SS1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SS61089</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R20C08]∩HsapRELA[AD.VT038159]</rdfs:label>
     </owl:Class>
@@ -59078,6 +59601,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000028>SS61090</obo:IAO_0000028>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>DNp13-SS2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SS61090</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.VT029317]∩HsapRELA[AD.VT038159]</rdfs:label>
     </owl:Class>
@@ -63836,6 +64360,7 @@
         <obo:IAO_0000028>SS60797</obo:IAO_0000028>
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>SS60797</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Tdc2-SS</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[dsx-GAL4(DBD)::Zip-]∩HsapRELA[AD.Tdc2]</rdfs:label>
     </owl:Class>
     
@@ -77318,6 +77843,1269 @@
         <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>MB586B</oboInOwl:hasExactSynonym>
         <rdfs:label>ScerGAL4[DBD.R72G06]∩HsapRELA[AD.ple]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002241 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304481"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0399949"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS02394</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS02394</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R82C10]∩HsapRELA[AD.R61H01.DSCP]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002242 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304445"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326965"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>ScerGAL4[DBD.R26E07]∩HsapRELA[AD.R13F02]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002243 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326435"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326443"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>ScerGAL4[DBD.R35B06]∩HsapRELA[AD.R50C03]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002244 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304456"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326965"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>ScerGAL4[DBD.R39A11]∩HsapRELA[AD.R13F02]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002245 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304508"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <rdfs:label>ScerGAL4[DBD.R85D07]∩HsapRELA[AD.R26E07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002246 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0319144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326435"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS32768</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS32768</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R71G01]∩HsapRELA[AD.R50C03]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002247 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329833"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS45245</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS45245</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT048933]∩HsapRELA[AD.VT013344]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002248 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS45222</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS45222</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT048933]∩HsapRELA[AD.VT018689]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002249 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328340"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331242"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS46613</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS46613</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R11D02]∩HsapRELA[AD.R12D12]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002250 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331360"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS28308</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS28308</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R17A10]∩HsapRELA[AD.R35C12]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002251 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328739"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS28305</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS28305</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R26B04]∩HsapRELA[AD.R33G04]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002252 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328611"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331609"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS31827</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS31827</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R27H01]∩HsapRELA[AD.R25G10]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002253 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331902"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS21208</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS21208</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R45D04]∩HsapRELA[AD.R65D05]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002254 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328992"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS32151</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS32151</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R48D11]∩HsapRELA[AD.R51D07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002255 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329395"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331983"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS31522</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS31522</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R49A06]∩HsapRELA[AD.R89B06]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002256 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328611"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS24588</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS24588</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R56B05]∩HsapRELA[AD.R25G10]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002257 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0304332"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS27959</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS27959</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R60F09]∩HsapRELA[AD.R48A08]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002258 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328852"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332237"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS27978</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS27978</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R65F12]∩HsapRELA[AD.R41H07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002259 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332263"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS35902</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS35902</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R68A08]∩HsapRELA[AD.VT014340]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002260 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329349"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332264"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS42983</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS42983</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R68B03]∩HsapRELA[AD.R83H09]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002261 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328899"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332296"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS27580</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS27580</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R70E08]∩HsapRELA[AD.R45F09]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002262 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328715"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332406"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS42968</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS42968</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R77F03]∩HsapRELA[AD.R31H05]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002263 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332421"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390256"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS39616</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS39616</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R78H08]∩HsapRELA[AD.VT050106]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002264 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329988"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS21077</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS21077</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R82F01]∩HsapRELA[AD.VT017413]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002265 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329813"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332498"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS24252</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS24252</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R83D12]∩HsapRELA[AD.VT012596]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002266 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332506"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS39070</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS39070</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R83H09]∩HsapRELA[AD.VT065322]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002267 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329189"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS21206</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS21206</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT007780]∩HsapRELA[AD.R68A10]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002268 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330907"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333211"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS51316</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS51316</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT013121]∩HsapRELA[AD.VT049245]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002269 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333984"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS45221</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS45221</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT029309]∩HsapRELA[AD.VT018689]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002270 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328671"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334448"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS47568</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS47568</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT041692]∩HsapRELA[AD.R29B04]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002271 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334687"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS45251</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS45251</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT045575]∩HsapRELA[AD.VT022004]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002272 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329491"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334770"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS46348</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS46348</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT046831]∩HsapRELA[AD.VT000877]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002273 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334770"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390257"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS46337</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS46337</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT046831]∩HsapRELA[AD.VT037550]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002274 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0335270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390259"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS49970</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS49970</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT062645]∩HsapRELA[AD.R78E09]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002275 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0335270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0390258"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS49941</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS49941</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT062645]∩HsapRELA[AD.VT026839]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002276 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0326413"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331509"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS01613</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS01613</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R23E07]∩HsapRELA[AD.R22H02]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002277 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328321"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>AMB-GAL4</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R60F09]∩HsapRELA[AD.R11E07]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002278 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330954"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0331580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69913</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69913</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R26D04]∩HsapRELA[AD.VT050229]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002279 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329724"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69457</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69457</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.R55D08]∩HsapRELA[AD.VT008660]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002280 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332765"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS66794</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS66794</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT002057]∩HsapRELA[AD.VT002857]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002281 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330590"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332765"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS66793</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS66793</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT002057]∩HsapRELA[AD.VT040569]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002282 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332780"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS64946</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS64946</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT002223]∩HsapRELA[AD.VT017683]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002283 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0332892"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69505</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69505</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT005534]∩HsapRELA[AD.VT008474]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002284 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330296"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69514</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69514</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT008660]∩HsapRELA[AD.VT027104]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002285 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330300"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS65424</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS65424</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT010054]∩HsapRELA[AD.VT027273]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002286 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333364"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS45323</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS45323</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT016254]∩HsapRELA[AD.VT019330]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002287 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330338"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333462"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS64927</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS64927</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT017683]∩HsapRELA[AD.VT028555]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002288 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0329998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333613"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS54798</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS54798</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT020732]∩HsapRELA[AD.VT017683]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002289 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002289">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0333687"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS66864</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS66864</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT022246]∩HsapRELA[AD.VT024647]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002290 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328754"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69540</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69540</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT033614]∩HsapRELA[AD.R34F03]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002291 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328754"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334581"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69542</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69542</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT043700]∩HsapRELA[AD.R34F03]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002292 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0330544"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0334687"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69429</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69429</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT045575]∩HsapRELA[AD.VT039470]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://flybase.org/reports/FBco0002293 -->
+
+    <owl:Class rdf:about="http://flybase.org/reports/FBco0002293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0328376"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://flybase.org/reports/FBal0335348"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000028>SS69920</obo:IAO_0000028>
+        <oboInOwl:hasDbXref>FlyBase</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SS69920</oboInOwl:hasExactSynonym>
+        <rdfs:label>ScerGAL4[DBD.VT064568]∩HsapRELA[AD.R14D05]</rdfs:label>
     </owl:Class>
     
 

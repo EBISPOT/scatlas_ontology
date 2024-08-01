@@ -188,7 +188,6 @@ http://purl.obolibrary.org/obo/FBbt_00048998
 http://purl.obolibrary.org/obo/FBbt_00049590
 http://purl.obolibrary.org/obo/FBbt_00051052
 http://purl.obolibrary.org/obo/FBbt_00058017
-http://purl.obolibrary.org/obo/FBbt_00058173
 http://purl.obolibrary.org/obo/FBbt_00058227
 http://purl.obolibrary.org/obo/FBbt_00100520
 http://purl.obolibrary.org/obo/FBbt_00110030

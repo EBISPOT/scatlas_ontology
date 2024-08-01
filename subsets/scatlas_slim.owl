@@ -21,8 +21,8 @@
      xmlns:Orphanet_="http://www.orpha.net/ORDO/Orphanet_#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/scatlas/subsets/scatlas_slim.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-06-01/subsets/scatlas_slim.owl"/>
-        <owl:versionInfo>2024-06-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/subsets/scatlas_slim.owl"/>
+        <owl:versionInfo>2024-08-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -554,24 +554,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mondo#broadMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#broadMatch"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#closeMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#closeMatch"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#exactMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#exactMatch"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check"/>
@@ -587,18 +569,6 @@
     <!-- http://purl.obolibrary.org/obo/mondo#excluded_synonym -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_synonym"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#narrowMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#narrowMatch"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#relatedMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#relatedMatch"/>
     
 
 
@@ -971,6 +941,12 @@
     <!-- http://www.orpha.net/ORDO/Orphanet_#symbol -->
 
     <owl:AnnotationProperty rdf:about="http://www.orpha.net/ORDO/Orphanet_#symbol"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
     
 
 

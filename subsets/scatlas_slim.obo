@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: scatlas/releases/2024-06-01/subsets/scatlas_slim.owl
+data-version: scatlas/releases/2024-08-01/subsets/scatlas_slim.owl
 ontology: scatlas/subsets/scatlas_slim
-property_value: owl:versionInfo "2024-06-01" xsd:string
+property_value: owl:versionInfo "2024-08-01" xsd:string
 
 [Typedef]
 id: VFBext:0000008

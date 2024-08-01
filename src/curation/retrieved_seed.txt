@@ -302,6 +302,7 @@ http://flybase.org/reports/FBal0328329
 http://flybase.org/reports/FBal0328335
 http://flybase.org/reports/FBal0328336
 http://flybase.org/reports/FBal0328339
+http://flybase.org/reports/FBal0328340
 http://flybase.org/reports/FBal0328343
 http://flybase.org/reports/FBal0328345
 http://flybase.org/reports/FBal0328346
@@ -317,6 +318,7 @@ http://flybase.org/reports/FBal0328367
 http://flybase.org/reports/FBal0328372
 http://flybase.org/reports/FBal0328373
 http://flybase.org/reports/FBal0328374
+http://flybase.org/reports/FBal0328376
 http://flybase.org/reports/FBal0328378
 http://flybase.org/reports/FBal0328379
 http://flybase.org/reports/FBal0328381
@@ -431,6 +433,7 @@ http://flybase.org/reports/FBal0328664
 http://flybase.org/reports/FBal0328667
 http://flybase.org/reports/FBal0328668
 http://flybase.org/reports/FBal0328669
+http://flybase.org/reports/FBal0328671
 http://flybase.org/reports/FBal0328674
 http://flybase.org/reports/FBal0328677
 http://flybase.org/reports/FBal0328678
@@ -463,6 +466,7 @@ http://flybase.org/reports/FBal0328752
 http://flybase.org/reports/FBal0328754
 http://flybase.org/reports/FBal0328755
 http://flybase.org/reports/FBal0328757
+http://flybase.org/reports/FBal0328759
 http://flybase.org/reports/FBal0328762
 http://flybase.org/reports/FBal0328771
 http://flybase.org/reports/FBal0328772
@@ -508,6 +512,7 @@ http://flybase.org/reports/FBal0328889
 http://flybase.org/reports/FBal0328892
 http://flybase.org/reports/FBal0328894
 http://flybase.org/reports/FBal0328898
+http://flybase.org/reports/FBal0328899
 http://flybase.org/reports/FBal0328904
 http://flybase.org/reports/FBal0328907
 http://flybase.org/reports/FBal0328908
@@ -544,6 +549,7 @@ http://flybase.org/reports/FBal0328984
 http://flybase.org/reports/FBal0328985
 http://flybase.org/reports/FBal0328988
 http://flybase.org/reports/FBal0328989
+http://flybase.org/reports/FBal0328992
 http://flybase.org/reports/FBal0328993
 http://flybase.org/reports/FBal0328996
 http://flybase.org/reports/FBal0328998
@@ -593,7 +599,6 @@ http://flybase.org/reports/FBal0329113
 http://flybase.org/reports/FBal0329114
 http://flybase.org/reports/FBal0329115
 http://flybase.org/reports/FBal0329117
-http://flybase.org/reports/FBal0329118
 http://flybase.org/reports/FBal0329123
 http://flybase.org/reports/FBal0329128
 http://flybase.org/reports/FBal0329129
@@ -683,6 +688,7 @@ http://flybase.org/reports/FBal0329342
 http://flybase.org/reports/FBal0329343
 http://flybase.org/reports/FBal0329347
 http://flybase.org/reports/FBal0329348
+http://flybase.org/reports/FBal0329349
 http://flybase.org/reports/FBal0329351
 http://flybase.org/reports/FBal0329352
 http://flybase.org/reports/FBal0329355
@@ -696,6 +702,7 @@ http://flybase.org/reports/FBal0329370
 http://flybase.org/reports/FBal0329375
 http://flybase.org/reports/FBal0329389
 http://flybase.org/reports/FBal0329391
+http://flybase.org/reports/FBal0329395
 http://flybase.org/reports/FBal0329398
 http://flybase.org/reports/FBal0329401
 http://flybase.org/reports/FBal0329402
@@ -722,6 +729,7 @@ http://flybase.org/reports/FBal0329474
 http://flybase.org/reports/FBal0329481
 http://flybase.org/reports/FBal0329484
 http://flybase.org/reports/FBal0329489
+http://flybase.org/reports/FBal0329491
 http://flybase.org/reports/FBal0329500
 http://flybase.org/reports/FBal0329505
 http://flybase.org/reports/FBal0329506
@@ -736,6 +744,7 @@ http://flybase.org/reports/FBal0329530
 http://flybase.org/reports/FBal0329536
 http://flybase.org/reports/FBal0329540
 http://flybase.org/reports/FBal0329544
+http://flybase.org/reports/FBal0329548
 http://flybase.org/reports/FBal0329553
 http://flybase.org/reports/FBal0329556
 http://flybase.org/reports/FBal0329563
@@ -765,6 +774,7 @@ http://flybase.org/reports/FBal0329709
 http://flybase.org/reports/FBal0329712
 http://flybase.org/reports/FBal0329716
 http://flybase.org/reports/FBal0329717
+http://flybase.org/reports/FBal0329724
 http://flybase.org/reports/FBal0329735
 http://flybase.org/reports/FBal0329739
 http://flybase.org/reports/FBal0329741
@@ -776,10 +786,12 @@ http://flybase.org/reports/FBal0329773
 http://flybase.org/reports/FBal0329785
 http://flybase.org/reports/FBal0329791
 http://flybase.org/reports/FBal0329804
+http://flybase.org/reports/FBal0329813
 http://flybase.org/reports/FBal0329816
 http://flybase.org/reports/FBal0329819
 http://flybase.org/reports/FBal0329827
 http://flybase.org/reports/FBal0329830
+http://flybase.org/reports/FBal0329833
 http://flybase.org/reports/FBal0329840
 http://flybase.org/reports/FBal0329843
 http://flybase.org/reports/FBal0329844
@@ -801,6 +813,7 @@ http://flybase.org/reports/FBal0329972
 http://flybase.org/reports/FBal0329985
 http://flybase.org/reports/FBal0329986
 http://flybase.org/reports/FBal0329987
+http://flybase.org/reports/FBal0329988
 http://flybase.org/reports/FBal0329989
 http://flybase.org/reports/FBal0329995
 http://flybase.org/reports/FBal0329998
@@ -811,6 +824,7 @@ http://flybase.org/reports/FBal0330018
 http://flybase.org/reports/FBal0330026
 http://flybase.org/reports/FBal0330033
 http://flybase.org/reports/FBal0330043
+http://flybase.org/reports/FBal0330046
 http://flybase.org/reports/FBal0330052
 http://flybase.org/reports/FBal0330059
 http://flybase.org/reports/FBal0330061
@@ -870,15 +884,18 @@ http://flybase.org/reports/FBal0330284
 http://flybase.org/reports/FBal0330286
 http://flybase.org/reports/FBal0330289
 http://flybase.org/reports/FBal0330290
+http://flybase.org/reports/FBal0330296
 http://flybase.org/reports/FBal0330297
 http://flybase.org/reports/FBal0330298
 http://flybase.org/reports/FBal0330299
+http://flybase.org/reports/FBal0330300
 http://flybase.org/reports/FBal0330301
 http://flybase.org/reports/FBal0330308
 http://flybase.org/reports/FBal0330311
 http://flybase.org/reports/FBal0330321
 http://flybase.org/reports/FBal0330325
 http://flybase.org/reports/FBal0330337
+http://flybase.org/reports/FBal0330338
 http://flybase.org/reports/FBal0330348
 http://flybase.org/reports/FBal0330351
 http://flybase.org/reports/FBal0330354
@@ -917,6 +934,7 @@ http://flybase.org/reports/FBal0330516
 http://flybase.org/reports/FBal0330520
 http://flybase.org/reports/FBal0330528
 http://flybase.org/reports/FBal0330540
+http://flybase.org/reports/FBal0330544
 http://flybase.org/reports/FBal0330546
 http://flybase.org/reports/FBal0330547
 http://flybase.org/reports/FBal0330558
@@ -986,6 +1004,7 @@ http://flybase.org/reports/FBal0330887
 http://flybase.org/reports/FBal0330894
 http://flybase.org/reports/FBal0330897
 http://flybase.org/reports/FBal0330903
+http://flybase.org/reports/FBal0330907
 http://flybase.org/reports/FBal0330914
 http://flybase.org/reports/FBal0330917
 http://flybase.org/reports/FBal0330918
@@ -1067,6 +1086,7 @@ http://flybase.org/reports/FBal0331232
 http://flybase.org/reports/FBal0331233
 http://flybase.org/reports/FBal0331237
 http://flybase.org/reports/FBal0331238
+http://flybase.org/reports/FBal0331242
 http://flybase.org/reports/FBal0331245
 http://flybase.org/reports/FBal0331247
 http://flybase.org/reports/FBal0331259
@@ -1108,6 +1128,7 @@ http://flybase.org/reports/FBal0331343
 http://flybase.org/reports/FBal0331354
 http://flybase.org/reports/FBal0331357
 http://flybase.org/reports/FBal0331359
+http://flybase.org/reports/FBal0331360
 http://flybase.org/reports/FBal0331363
 http://flybase.org/reports/FBal0331376
 http://flybase.org/reports/FBal0331379
@@ -1165,6 +1186,7 @@ http://flybase.org/reports/FBal0331499
 http://flybase.org/reports/FBal0331503
 http://flybase.org/reports/FBal0331505
 http://flybase.org/reports/FBal0331507
+http://flybase.org/reports/FBal0331509
 http://flybase.org/reports/FBal0331510
 http://flybase.org/reports/FBal0331519
 http://flybase.org/reports/FBal0331523
@@ -1195,6 +1217,7 @@ http://flybase.org/reports/FBal0331588
 http://flybase.org/reports/FBal0331592
 http://flybase.org/reports/FBal0331597
 http://flybase.org/reports/FBal0331598
+http://flybase.org/reports/FBal0331609
 http://flybase.org/reports/FBal0331610
 http://flybase.org/reports/FBal0331612
 http://flybase.org/reports/FBal0331615
@@ -1316,6 +1339,7 @@ http://flybase.org/reports/FBal0331972
 http://flybase.org/reports/FBal0331978
 http://flybase.org/reports/FBal0331979
 http://flybase.org/reports/FBal0331981
+http://flybase.org/reports/FBal0331983
 http://flybase.org/reports/FBal0331991
 http://flybase.org/reports/FBal0331992
 http://flybase.org/reports/FBal0331999
@@ -1375,6 +1399,7 @@ http://flybase.org/reports/FBal0332164
 http://flybase.org/reports/FBal0332166
 http://flybase.org/reports/FBal0332174
 http://flybase.org/reports/FBal0332177
+http://flybase.org/reports/FBal0332180
 http://flybase.org/reports/FBal0332182
 http://flybase.org/reports/FBal0332183
 http://flybase.org/reports/FBal0332187
@@ -1392,6 +1417,7 @@ http://flybase.org/reports/FBal0332227
 http://flybase.org/reports/FBal0332228
 http://flybase.org/reports/FBal0332229
 http://flybase.org/reports/FBal0332235
+http://flybase.org/reports/FBal0332237
 http://flybase.org/reports/FBal0332239
 http://flybase.org/reports/FBal0332240
 http://flybase.org/reports/FBal0332243
@@ -1404,6 +1430,7 @@ http://flybase.org/reports/FBal0332256
 http://flybase.org/reports/FBal0332259
 http://flybase.org/reports/FBal0332260
 http://flybase.org/reports/FBal0332262
+http://flybase.org/reports/FBal0332263
 http://flybase.org/reports/FBal0332264
 http://flybase.org/reports/FBal0332268
 http://flybase.org/reports/FBal0332272
@@ -1415,6 +1442,7 @@ http://flybase.org/reports/FBal0332285
 http://flybase.org/reports/FBal0332288
 http://flybase.org/reports/FBal0332290
 http://flybase.org/reports/FBal0332292
+http://flybase.org/reports/FBal0332296
 http://flybase.org/reports/FBal0332298
 http://flybase.org/reports/FBal0332300
 http://flybase.org/reports/FBal0332303
@@ -1456,6 +1484,7 @@ http://flybase.org/reports/FBal0332391
 http://flybase.org/reports/FBal0332396
 http://flybase.org/reports/FBal0332397
 http://flybase.org/reports/FBal0332402
+http://flybase.org/reports/FBal0332406
 http://flybase.org/reports/FBal0332407
 http://flybase.org/reports/FBal0332409
 http://flybase.org/reports/FBal0332411
@@ -1483,6 +1512,7 @@ http://flybase.org/reports/FBal0332473
 http://flybase.org/reports/FBal0332476
 http://flybase.org/reports/FBal0332478
 http://flybase.org/reports/FBal0332480
+http://flybase.org/reports/FBal0332482
 http://flybase.org/reports/FBal0332483
 http://flybase.org/reports/FBal0332485
 http://flybase.org/reports/FBal0332487
@@ -1551,11 +1581,13 @@ http://flybase.org/reports/FBal0332747
 http://flybase.org/reports/FBal0332754
 http://flybase.org/reports/FBal0332756
 http://flybase.org/reports/FBal0332757
+http://flybase.org/reports/FBal0332765
 http://flybase.org/reports/FBal0332768
 http://flybase.org/reports/FBal0332769
 http://flybase.org/reports/FBal0332771
 http://flybase.org/reports/FBal0332774
 http://flybase.org/reports/FBal0332777
+http://flybase.org/reports/FBal0332780
 http://flybase.org/reports/FBal0332786
 http://flybase.org/reports/FBal0332789
 http://flybase.org/reports/FBal0332793
@@ -1584,6 +1616,7 @@ http://flybase.org/reports/FBal0332953
 http://flybase.org/reports/FBal0332962
 http://flybase.org/reports/FBal0332977
 http://flybase.org/reports/FBal0332988
+http://flybase.org/reports/FBal0332990
 http://flybase.org/reports/FBal0332995
 http://flybase.org/reports/FBal0332996
 http://flybase.org/reports/FBal0332999
@@ -1598,6 +1631,7 @@ http://flybase.org/reports/FBal0333043
 http://flybase.org/reports/FBal0333054
 http://flybase.org/reports/FBal0333055
 http://flybase.org/reports/FBal0333061
+http://flybase.org/reports/FBal0333062
 http://flybase.org/reports/FBal0333067
 http://flybase.org/reports/FBal0333069
 http://flybase.org/reports/FBal0333072
@@ -1656,6 +1690,7 @@ http://flybase.org/reports/FBal0333348
 http://flybase.org/reports/FBal0333349
 http://flybase.org/reports/FBal0333354
 http://flybase.org/reports/FBal0333358
+http://flybase.org/reports/FBal0333364
 http://flybase.org/reports/FBal0333365
 http://flybase.org/reports/FBal0333367
 http://flybase.org/reports/FBal0333373
@@ -1671,6 +1706,7 @@ http://flybase.org/reports/FBal0333446
 http://flybase.org/reports/FBal0333447
 http://flybase.org/reports/FBal0333450
 http://flybase.org/reports/FBal0333461
+http://flybase.org/reports/FBal0333462
 http://flybase.org/reports/FBal0333466
 http://flybase.org/reports/FBal0333469
 http://flybase.org/reports/FBal0333477
@@ -1705,6 +1741,7 @@ http://flybase.org/reports/FBal0333605
 http://flybase.org/reports/FBal0333607
 http://flybase.org/reports/FBal0333610
 http://flybase.org/reports/FBal0333611
+http://flybase.org/reports/FBal0333613
 http://flybase.org/reports/FBal0333617
 http://flybase.org/reports/FBal0333618
 http://flybase.org/reports/FBal0333625
@@ -1720,6 +1757,7 @@ http://flybase.org/reports/FBal0333657
 http://flybase.org/reports/FBal0333660
 http://flybase.org/reports/FBal0333667
 http://flybase.org/reports/FBal0333686
+http://flybase.org/reports/FBal0333687
 http://flybase.org/reports/FBal0333698
 http://flybase.org/reports/FBal0333702
 http://flybase.org/reports/FBal0333707
@@ -1804,6 +1842,7 @@ http://flybase.org/reports/FBal0334109
 http://flybase.org/reports/FBal0334119
 http://flybase.org/reports/FBal0334125
 http://flybase.org/reports/FBal0334126
+http://flybase.org/reports/FBal0334127
 http://flybase.org/reports/FBal0334134
 http://flybase.org/reports/FBal0334135
 http://flybase.org/reports/FBal0334143
@@ -1857,6 +1896,7 @@ http://flybase.org/reports/FBal0334426
 http://flybase.org/reports/FBal0334427
 http://flybase.org/reports/FBal0334438
 http://flybase.org/reports/FBal0334442
+http://flybase.org/reports/FBal0334448
 http://flybase.org/reports/FBal0334458
 http://flybase.org/reports/FBal0334467
 http://flybase.org/reports/FBal0334478
@@ -1922,6 +1962,7 @@ http://flybase.org/reports/FBal0334751
 http://flybase.org/reports/FBal0334758
 http://flybase.org/reports/FBal0334760
 http://flybase.org/reports/FBal0334766
+http://flybase.org/reports/FBal0334770
 http://flybase.org/reports/FBal0334779
 http://flybase.org/reports/FBal0334781
 http://flybase.org/reports/FBal0334783
@@ -2004,6 +2045,7 @@ http://flybase.org/reports/FBal0335237
 http://flybase.org/reports/FBal0335242
 http://flybase.org/reports/FBal0335253
 http://flybase.org/reports/FBal0335259
+http://flybase.org/reports/FBal0335270
 http://flybase.org/reports/FBal0335291
 http://flybase.org/reports/FBal0335293
 http://flybase.org/reports/FBal0335295
@@ -2018,6 +2060,7 @@ http://flybase.org/reports/FBal0335342
 http://flybase.org/reports/FBal0335343
 http://flybase.org/reports/FBal0335344
 http://flybase.org/reports/FBal0335345
+http://flybase.org/reports/FBal0335348
 http://flybase.org/reports/FBal0335349
 http://flybase.org/reports/FBal0335358
 http://flybase.org/reports/FBal0335359
@@ -2176,7 +2219,14 @@ http://flybase.org/reports/FBal0373628
 http://flybase.org/reports/FBal0373796
 http://flybase.org/reports/FBal0373797
 http://flybase.org/reports/FBal0375033
+http://flybase.org/reports/FBal0390255
+http://flybase.org/reports/FBal0390256
+http://flybase.org/reports/FBal0390257
+http://flybase.org/reports/FBal0390258
+http://flybase.org/reports/FBal0390259
+http://flybase.org/reports/FBal0390370
 http://flybase.org/reports/FBal0391079
+http://flybase.org/reports/FBal0399949
 http://flybase.org/reports/FBco0000001
 http://flybase.org/reports/FBco0000002
 http://flybase.org/reports/FBco0000003
@@ -2934,7 +2984,6 @@ http://flybase.org/reports/FBco0000754
 http://flybase.org/reports/FBco0000755
 http://flybase.org/reports/FBco0000756
 http://flybase.org/reports/FBco0000757
-http://flybase.org/reports/FBco0000758
 http://flybase.org/reports/FBco0000759
 http://flybase.org/reports/FBco0000760
 http://flybase.org/reports/FBco0000761
@@ -4417,6 +4466,59 @@ http://flybase.org/reports/FBco0002237
 http://flybase.org/reports/FBco0002238
 http://flybase.org/reports/FBco0002239
 http://flybase.org/reports/FBco0002240
+http://flybase.org/reports/FBco0002241
+http://flybase.org/reports/FBco0002242
+http://flybase.org/reports/FBco0002243
+http://flybase.org/reports/FBco0002244
+http://flybase.org/reports/FBco0002245
+http://flybase.org/reports/FBco0002246
+http://flybase.org/reports/FBco0002247
+http://flybase.org/reports/FBco0002248
+http://flybase.org/reports/FBco0002249
+http://flybase.org/reports/FBco0002250
+http://flybase.org/reports/FBco0002251
+http://flybase.org/reports/FBco0002252
+http://flybase.org/reports/FBco0002253
+http://flybase.org/reports/FBco0002254
+http://flybase.org/reports/FBco0002255
+http://flybase.org/reports/FBco0002256
+http://flybase.org/reports/FBco0002257
+http://flybase.org/reports/FBco0002258
+http://flybase.org/reports/FBco0002259
+http://flybase.org/reports/FBco0002260
+http://flybase.org/reports/FBco0002261
+http://flybase.org/reports/FBco0002262
+http://flybase.org/reports/FBco0002263
+http://flybase.org/reports/FBco0002264
+http://flybase.org/reports/FBco0002265
+http://flybase.org/reports/FBco0002266
+http://flybase.org/reports/FBco0002267
+http://flybase.org/reports/FBco0002268
+http://flybase.org/reports/FBco0002269
+http://flybase.org/reports/FBco0002270
+http://flybase.org/reports/FBco0002271
+http://flybase.org/reports/FBco0002272
+http://flybase.org/reports/FBco0002273
+http://flybase.org/reports/FBco0002274
+http://flybase.org/reports/FBco0002275
+http://flybase.org/reports/FBco0002276
+http://flybase.org/reports/FBco0002277
+http://flybase.org/reports/FBco0002278
+http://flybase.org/reports/FBco0002279
+http://flybase.org/reports/FBco0002280
+http://flybase.org/reports/FBco0002281
+http://flybase.org/reports/FBco0002282
+http://flybase.org/reports/FBco0002283
+http://flybase.org/reports/FBco0002284
+http://flybase.org/reports/FBco0002285
+http://flybase.org/reports/FBco0002286
+http://flybase.org/reports/FBco0002287
+http://flybase.org/reports/FBco0002288
+http://flybase.org/reports/FBco0002289
+http://flybase.org/reports/FBco0002290
+http://flybase.org/reports/FBco0002291
+http://flybase.org/reports/FBco0002292
+http://flybase.org/reports/FBco0002293
 http://purl.obolibrary.org/obo/BFO_0000001
 http://purl.obolibrary.org/obo/BFO_0000002
 http://purl.obolibrary.org/obo/BFO_0000003
@@ -4747,6 +4849,7 @@ http://purl.obolibrary.org/obo/CHEBI_23132
 http://purl.obolibrary.org/obo/CHEBI_23134
 http://purl.obolibrary.org/obo/CHEBI_23135
 http://purl.obolibrary.org/obo/CHEBI_23148
+http://purl.obolibrary.org/obo/CHEBI_231547
 http://purl.obolibrary.org/obo/CHEBI_23229
 http://purl.obolibrary.org/obo/CHEBI_23230
 http://purl.obolibrary.org/obo/CHEBI_23232
@@ -5249,7 +5352,6 @@ http://purl.obolibrary.org/obo/CHEBI_3387
 http://purl.obolibrary.org/obo/CHEBI_33916
 http://purl.obolibrary.org/obo/CHEBI_33917
 http://purl.obolibrary.org/obo/CHEBI_33958
-http://purl.obolibrary.org/obo/CHEBI_33975
 http://purl.obolibrary.org/obo/CHEBI_33976
 http://purl.obolibrary.org/obo/CHEBI_33977
 http://purl.obolibrary.org/obo/CHEBI_33978
@@ -5383,7 +5485,6 @@ http://purl.obolibrary.org/obo/CHEBI_36357
 http://purl.obolibrary.org/obo/CHEBI_36358
 http://purl.obolibrary.org/obo/CHEBI_36359
 http://purl.obolibrary.org/obo/CHEBI_36360
-http://purl.obolibrary.org/obo/CHEBI_36364
 http://purl.obolibrary.org/obo/CHEBI_3638
 http://purl.obolibrary.org/obo/CHEBI_36388
 http://purl.obolibrary.org/obo/CHEBI_36389
@@ -6698,7 +6799,6 @@ http://purl.obolibrary.org/obo/CL_0002563
 http://purl.obolibrary.org/obo/CL_0002570
 http://purl.obolibrary.org/obo/CL_0002573
 http://purl.obolibrary.org/obo/CL_0002575
-http://purl.obolibrary.org/obo/CL_0002577
 http://purl.obolibrary.org/obo/CL_0002584
 http://purl.obolibrary.org/obo/CL_0002586
 http://purl.obolibrary.org/obo/CL_0002592
@@ -6710,8 +6810,10 @@ http://purl.obolibrary.org/obo/CL_0002618
 http://purl.obolibrary.org/obo/CL_0002620
 http://purl.obolibrary.org/obo/CL_0002622
 http://purl.obolibrary.org/obo/CL_0002625
+http://purl.obolibrary.org/obo/CL_0002631
 http://purl.obolibrary.org/obo/CL_0002632
 http://purl.obolibrary.org/obo/CL_0002633
+http://purl.obolibrary.org/obo/CL_0002653
 http://purl.obolibrary.org/obo/CL_0002658
 http://purl.obolibrary.org/obo/CL_0002659
 http://purl.obolibrary.org/obo/CL_0002671
@@ -7194,6 +7296,7 @@ http://purl.obolibrary.org/obo/FBbt_00007039
 http://purl.obolibrary.org/obo/FBbt_00007042
 http://purl.obolibrary.org/obo/FBbt_00007046
 http://purl.obolibrary.org/obo/FBbt_00007089
+http://purl.obolibrary.org/obo/FBbt_00007108
 http://purl.obolibrary.org/obo/FBbt_00007137
 http://purl.obolibrary.org/obo/FBbt_00007141
 http://purl.obolibrary.org/obo/FBbt_00007149
@@ -7351,6 +7454,7 @@ http://purl.obolibrary.org/obo/FBbt_00057014
 http://purl.obolibrary.org/obo/FBbt_00057169
 http://purl.obolibrary.org/obo/FBbt_00057175
 http://purl.obolibrary.org/obo/FBbt_00058145
+http://purl.obolibrary.org/obo/FBbt_00058173
 http://purl.obolibrary.org/obo/FBbt_00058198
 http://purl.obolibrary.org/obo/FBbt_00058201
 http://purl.obolibrary.org/obo/FBbt_00058202
@@ -7364,6 +7468,7 @@ http://purl.obolibrary.org/obo/FBbt_00058226
 http://purl.obolibrary.org/obo/FBbt_00058230
 http://purl.obolibrary.org/obo/FBbt_00058232
 http://purl.obolibrary.org/obo/FBbt_00058238
+http://purl.obolibrary.org/obo/FBbt_00058239
 http://purl.obolibrary.org/obo/FBbt_00058244
 http://purl.obolibrary.org/obo/FBbt_00058246
 http://purl.obolibrary.org/obo/FBbt_00058247
@@ -7396,6 +7501,7 @@ http://purl.obolibrary.org/obo/FBbt_00059272
 http://purl.obolibrary.org/obo/FBbt_00059274
 http://purl.obolibrary.org/obo/FBbt_00059276
 http://purl.obolibrary.org/obo/FBbt_00059289
+http://purl.obolibrary.org/obo/FBbt_00059323
 http://purl.obolibrary.org/obo/FBbt_00067010
 http://purl.obolibrary.org/obo/FBbt_00067011
 http://purl.obolibrary.org/obo/FBbt_00067016
@@ -7531,11 +7637,9 @@ http://purl.obolibrary.org/obo/GO_0050896
 http://purl.obolibrary.org/obo/GO_0051324
 http://purl.obolibrary.org/obo/GO_0065010
 http://purl.obolibrary.org/obo/GO_0070062
-http://purl.obolibrary.org/obo/GO_0071704
 http://purl.obolibrary.org/obo/GO_0098762
 http://purl.obolibrary.org/obo/GO_0098764
 http://purl.obolibrary.org/obo/GO_0110165
-http://purl.obolibrary.org/obo/GO_1901576
 http://purl.obolibrary.org/obo/GO_1903561
 http://purl.obolibrary.org/obo/HANCESTRO_0004
 http://purl.obolibrary.org/obo/HANCESTRO_0005
@@ -7548,6 +7652,7 @@ http://purl.obolibrary.org/obo/HANCESTRO_0463
 http://purl.obolibrary.org/obo/HANCESTRO_0487
 http://purl.obolibrary.org/obo/HANCESTRO_0498
 http://purl.obolibrary.org/obo/HANCESTRO_0566
+http://purl.obolibrary.org/obo/HANCESTRO_0601
 http://purl.obolibrary.org/obo/HANCESTRO_0602
 http://purl.obolibrary.org/obo/HP_0000077
 http://purl.obolibrary.org/obo/HP_0000079
@@ -8313,8 +8418,6 @@ http://purl.obolibrary.org/obo/MONDO_0700124
 http://purl.obolibrary.org/obo/MONDO_0700223
 http://purl.obolibrary.org/obo/MONDO_0800064
 http://purl.obolibrary.org/obo/MONDO_0859689
-http://purl.obolibrary.org/obo/MONDO_1011300
-http://purl.obolibrary.org/obo/MONDO_1011327
 http://purl.obolibrary.org/obo/MONDO_1011336
 http://purl.obolibrary.org/obo/MPATH_0
 http://purl.obolibrary.org/obo/MPATH_579
@@ -11871,6 +11974,7 @@ http://www.ebi.ac.uk/efo/EFO_0001159
 http://www.ebi.ac.uk/efo/EFO_0001160
 http://www.ebi.ac.uk/efo/EFO_0001161
 http://www.ebi.ac.uk/efo/EFO_0001162
+http://www.ebi.ac.uk/efo/EFO_0001166
 http://www.ebi.ac.uk/efo/EFO_0001167
 http://www.ebi.ac.uk/efo/EFO_0001168
 http://www.ebi.ac.uk/efo/EFO_0001169
@@ -13703,6 +13807,7 @@ http://www.ebi.ac.uk/efo/EFO_0008527
 http://www.ebi.ac.uk/efo/EFO_0008528
 http://www.ebi.ac.uk/efo/EFO_0008549
 http://www.ebi.ac.uk/efo/EFO_0008550
+http://www.ebi.ac.uk/efo/EFO_0008560
 http://www.ebi.ac.uk/efo/EFO_0008568
 http://www.ebi.ac.uk/efo/EFO_0008573
 http://www.ebi.ac.uk/efo/EFO_0008581

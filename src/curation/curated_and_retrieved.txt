@@ -1350,6 +1350,7 @@ http://purl.obolibrary.org/obo/FBbt_00057012
 http://purl.obolibrary.org/obo/FBbt_00057014
 http://purl.obolibrary.org/obo/FBbt_00057169
 http://purl.obolibrary.org/obo/FBbt_00057175
+http://purl.obolibrary.org/obo/FBbt_00058173
 http://purl.obolibrary.org/obo/FBbt_00058198
 http://purl.obolibrary.org/obo/FBbt_00058205
 http://purl.obolibrary.org/obo/FBbt_00058207
