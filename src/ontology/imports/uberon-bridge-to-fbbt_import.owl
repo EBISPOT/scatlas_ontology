@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/uberon-bridge-to-fbbt_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/imports/uberon-bridge-to-fbbt_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uberon/releases/2024-07-02/bridge/uberon-bridge-to-fbbt.owl>)
-Annotation(owl:versionInfo "2024-08-01")
+<http://purl.obolibrary.org/obo/scatlas/releases/2026-01-19/imports/uberon-bridge-to-fbbt_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uberon/releases/2025-12-04/bridge/uberon-bridge-to-fbbt.owl>)
+Annotation(owl:versionInfo "2026-01-19")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00000052>))
@@ -103,12 +103,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6001780>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6004535>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_6005526>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 
 
 
@@ -118,228 +114,228 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00000001> (<http://purl.obolibrary.org/obo/FBbt_00000001>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00000001> "multicellular organism (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000468> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000468> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00000052> (<http://purl.obolibrary.org/obo/FBbt_00000052>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00000052> "embryo (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00000111> (<http://purl.obolibrary.org/obo/FBbt_00000111>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00000111> "ectoderm (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000111> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000924> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000111> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000924> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00000126> (<http://purl.obolibrary.org/obo/FBbt_00000126>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00000126> "mesoderm (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000126> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000926> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00000126> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000926> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00000126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001668> (<http://purl.obolibrary.org/obo/FBbt_00001668>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001668> "insect embryonic/larval lymph gland (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001668> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001668> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001668> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001668> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001668> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001722> (<http://purl.obolibrary.org/obo/FBbt_00001722>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001722> "insect ring gland (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001722> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001722> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001722> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001722> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001722> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001761> (<http://purl.obolibrary.org/obo/FBbt_00001761>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001761> "imaginal disc (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001761> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000939> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001761> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000939> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001761> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001766> (<http://purl.obolibrary.org/obo/FBbt_00001766>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001766> "insect eye-antennal disc (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001766> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001766> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001766> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001766> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001766> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001767> (<http://purl.obolibrary.org/obo/FBbt_00001767>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001767> "insect antennal disc (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001767> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001767> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001767> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001767> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001767> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001778> (<http://purl.obolibrary.org/obo/FBbt_00001778>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001778> "insect wing disc (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001778> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001778> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001778> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001778> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001778> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00001780> (<http://purl.obolibrary.org/obo/FBbt_00001780>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00001780> "insect ventral thoracic disc (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001780> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001780> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00001780> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6001780> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00001780> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00002952> (<http://purl.obolibrary.org/obo/FBbt_00002952>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00002952> "prepupa (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00002952> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003142> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00002952> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003142> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00002952> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00002953> (<http://purl.obolibrary.org/obo/FBbt_00002953>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00002953> "pupa (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00002953> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003143> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00002953> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003143> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00002953> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00003154> (<http://purl.obolibrary.org/obo/FBbt_00003154>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00003154> "dorsal vessel heart (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00003154> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0015230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00003154> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0015230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00003154> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004482> (<http://purl.obolibrary.org/obo/FBbt_00004482>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004482> "insect head capsule (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004482> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004482> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004482> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004511> (<http://purl.obolibrary.org/obo/FBbt_00004511>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004511> "antenna (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004511> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000972> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004511> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000972> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004511> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004535> (<http://purl.obolibrary.org/obo/FBbt_00004535>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004535> "insect proboscis (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004535> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6004535> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004535> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6004535> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004535> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004783> (<http://purl.obolibrary.org/obo/FBbt_00004783>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004783> "haltere (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004783> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000987> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004783> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000987> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004783> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004857> (<http://purl.obolibrary.org/obo/FBbt_00004857>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004857> "reproductive system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004857> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000990> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004857> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000990> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004857> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004864> (<http://purl.obolibrary.org/obo/FBbt_00004864>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004864> "female reproductive system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004864> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000474> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004864> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000474> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004864> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004865> (<http://purl.obolibrary.org/obo/FBbt_00004865>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004865> "ovary (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004865> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000992> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004865> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000992> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004865> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00004928> (<http://purl.obolibrary.org/obo/FBbt_00004928>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00004928> "testis (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004928> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00004928> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00004928> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005055> (<http://purl.obolibrary.org/obo/FBbt_00005055>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005055> "digestive system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005056> (<http://purl.obolibrary.org/obo/FBbt_00005056>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005056> "renal system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005056> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005056> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005061> (<http://purl.obolibrary.org/obo/FBbt_00005061>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005061> "hemolymph (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005061> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005061> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005066> (<http://purl.obolibrary.org/obo/FBbt_00005066>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005066> "arthropod fat body (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003917> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0003917> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005068> (<http://purl.obolibrary.org/obo/FBbt_00005068>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005068> "endocrine system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005068> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000949> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005068> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000949> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005093> (<http://purl.obolibrary.org/obo/FBbt_00005093>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005093> "nervous system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005093> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005093> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005094> (<http://purl.obolibrary.org/obo/FBbt_00005094>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005094> "central nervous system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005094> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005094> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005095> (<http://purl.obolibrary.org/obo/FBbt_00005095>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005095> "brain (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005095> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000955> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005095> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000955> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005097> (<http://purl.obolibrary.org/obo/FBbt_00005097>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005097> "ventral nerve cord (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005097> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000934> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005097> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000934> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005098> (<http://purl.obolibrary.org/obo/FBbt_00005098>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005098> "peripheral nervous system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005098> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005098> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005162> (<http://purl.obolibrary.org/obo/FBbt_00005162>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005162> "eye (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000970> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000970> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005333> (<http://purl.obolibrary.org/obo/FBbt_00005333>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005333> "late embryo (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005333> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000323> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005333> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000323> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005333> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005379> (<http://purl.obolibrary.org/obo/FBbt_00005379>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005379> "foregut (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005379> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005379> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005379> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005382> (<http://purl.obolibrary.org/obo/FBbt_00005382>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005382> "saliva-secreting gland (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005382> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005382> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005382> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005383> (<http://purl.obolibrary.org/obo/FBbt_00005383>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005383> "midgut (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005383> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005383> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005383> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005384> (<http://purl.obolibrary.org/obo/FBbt_00005384>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005384> "hindgut (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005384> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005384> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005384> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005526> (<http://purl.obolibrary.org/obo/FBbt_00005526>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005526> "insect dorsal epidermis primordium (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005526> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6005526> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005526> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_6005526> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005526> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005786> (<http://purl.obolibrary.org/obo/FBbt_00005786>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005786> "Malpighian tubule (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005786> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005786> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005786> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00005801> (<http://purl.obolibrary.org/obo/FBbt_00005801>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00005801> "mushroom body (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005801> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00005801> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00005801> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007000> (<http://purl.obolibrary.org/obo/FBbt_00007000>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00007000> "appendage (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00007692> (<http://purl.obolibrary.org/obo/FBbt_00007692>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00007692> "sensory system (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007692> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00007692> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00007692> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00047153> (<http://purl.obolibrary.org/obo/FBbt_00047153>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00047153> "anus (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00047153> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001245> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00047153> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001245> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00047153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 # Class: <http://purl.obolibrary.org/obo/FBbt_00058291> (<http://purl.obolibrary.org/obo/FBbt_00058291>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/FBbt_00058291> "circulatory system dorsal vessel (drosophila)")
-EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058291> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0015231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FBbt_00058291> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0015231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7227>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00058291> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7227>))
 
 
 )
