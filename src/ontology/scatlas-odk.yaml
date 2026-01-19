@@ -75,3 +75,7 @@ components:
     - filename: fbbt.owl
     - filename: cl.owl
 robot_java_args: '-Xmx10G'
+
+git_main_branch: master
+workflows:
+  - qc
