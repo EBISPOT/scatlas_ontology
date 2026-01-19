@@ -18,7 +18,7 @@ import_group:
       is_large: TRUE
       use_gzipped: TRUE
       make_base: TRUE
-      mirror_from: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
+      mirror_from: http://purl.obolibrary.org/obo/upheno/chebi_slim.owl
     - id: go
       make_base: TRUE
       base_iris:
@@ -75,3 +75,7 @@ components:
     - filename: fbbt.owl
     - filename: cl.owl
 robot_java_args: '-Xmx10G'
+
+git_main_branch: master
+workflows:
+  - qc

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/scatlas/imports/wbls_import.owl>
-<http://purl.obolibrary.org/obo/scatlas/releases/2024-08-01/imports/wbls_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/wbls/releases/2024-04-09/wbls-base.owl>)
-Annotation(owl:versionInfo "2024-08-01")
+<http://purl.obolibrary.org/obo/scatlas/releases/2026-01-19/imports/wbls_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/wbls/releases/2025-08-12/wbls-base.owl>)
+Annotation(owl:versionInfo "2026-01-19")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/WBls_0000001>))
@@ -48,25 +48,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/WBls_0000825>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002087>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/type>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#auto-generated-by>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
 
 
 
@@ -76,30 +58,17 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#sav
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000001> (free-living nematode stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:jl") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000001> "The nematode life-cycle stage that occurs entirely outside of a host organism.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000001> "jl16")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000001> "2015-03-19T10:42:18Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000001> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000001> "WBls:0000001")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000001> "free-living nematode stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000001> <http://purl.obolibrary.org/obo/WBls_0000101>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000003> (embryo Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000003> "The whole period of embryogenesis in the nematode Caenorhabditis elegans, from the formation of an egg until hatching.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000003> "embryo")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000003> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000003> "WBls:0000003")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000003> "embryo Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000003> <http://purl.obolibrary.org/obo/WBls_0000102>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000003> <http://purl.obolibrary.org/obo/WBls_0000803>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000022> (postembryonic Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000022> "A developemental life stage of the nematode Caenorhabditis elegans that occurs from egg hatching until death.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000022> "postembryonic")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000022> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000022> "WBls:0000022")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000022> "postembryonic Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000022> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000022> <http://purl.obolibrary.org/obo/WBls_0000804>)
@@ -107,10 +76,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000022> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000023> (larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000023> "A developmental life stage of the nematode Caenorhabditis elegans that occurs from egg hatching until adulthood.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000023> "larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000023> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000023> "WBls:0000023")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000023> "larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000023> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000023> <http://purl.obolibrary.org/obo/WBls_0000105>)
@@ -120,10 +85,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000023> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000024> (L1 larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000024> "The first stage larva. At 25 Centigrade, it ranges 14-25.5 hours after fertilization, 0-11.5 hours after hatch.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000024> "L1 larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000024> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000024> "WBls:0000024")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000024> "L1 larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000024> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000024> <http://purl.obolibrary.org/obo/WBls_0000106>)
@@ -133,10 +94,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000024> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000026> (L1-L2 molt Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000026> "The stage when an animal shifts from L1 larva to L2 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000026> "L1-L2 molt")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000026> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000026> "WBls:0000026")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000026> "L1-L2 molt Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000026> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000026> <http://purl.obolibrary.org/obo/WBls_0000824>)
@@ -145,10 +102,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000026> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000027> (L2 larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000027> "The second stage larva. At 25 Centigrade, it ranges 25.5-32.5 hours after fertilization, 11.5-18.5 hours after hatch.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000027> "L2 larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000027> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000027> "WBls:0000027")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000027> "L2 larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000027> <http://purl.obolibrary.org/obo/WBls_0000107>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000027> <http://purl.obolibrary.org/obo/WBls_0000819>)
@@ -158,10 +111,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000027> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000029> (L2-L3 molt Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000029> "The stage when an animal shifts from L2 larva to L3 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000029> "L2-L3 molt")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000029> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000029> "WBls:0000029")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000029> "L2-L3 molt Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000029> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000029> <http://purl.obolibrary.org/obo/WBls_0000824>)
@@ -170,10 +119,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000029> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000032> (dauer larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-87969-433-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000032> "A third stage larva specialized for dispersal and long term survival.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000032> "dauer larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000032> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000032> "WBls:0000032")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000032> "dauer larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000032> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000032> <http://purl.obolibrary.org/obo/WBls_0000817>)
@@ -182,10 +127,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000032> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000035> (L3 larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000035> "The third stage larva. At 25 Centigrade, it ranges 32.5-40 hours after fertilization, 18.5-26 hours after hatch.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000035> "L3 larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000035> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000035> "WBls:0000035")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000035> "L3 larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000035> <http://purl.obolibrary.org/obo/WBls_0000108>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000035> <http://purl.obolibrary.org/obo/WBls_0000820>)
@@ -195,10 +136,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000035> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000037> (L3-L4 molt Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000037> "The stage when an animal shifts from L3 larva to L4 larva. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000037> "L3-L4 molt")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000037> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000037> "WBls:0000037")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000037> "L3-L4 molt Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000037> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000037> <http://purl.obolibrary.org/obo/WBls_0000824>)
@@ -207,10 +144,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000037> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000038> (L4 larva Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000038> "The fourth stage larva. At 25 Centigrade, it ranges 40-49.5 hours after fertilization, 26-35.5 hours after hatch.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000038> "L4 larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000038> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000038> "WBls:0000038")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000038> "L4 larva Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000038> <http://purl.obolibrary.org/obo/WBls_0000109>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000038> <http://purl.obolibrary.org/obo/WBls_0000821>)
@@ -221,10 +154,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000038> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000040> (L4-adult molt Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000040> "The stage when an animal shifts from L4 larva to adult. It includes the synthesis of new cuticle, cease of phrayngeal pumping during a lethargus stage, and the shed off of old cuticle.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000040> "L4-adult molt")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000040> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000040> "WBls:0000040")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000040> "L4-adult molt Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000040> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000040> <http://purl.obolibrary.org/obo/WBls_0000824>)
@@ -232,10 +161,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000040> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000041> (adult Ce)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:wjc") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000041> "The stage that begins when a C.elegans individual is fully-developed and has reached maturity.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000041> "adult")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000041> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000041> "WBls:0000041")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000041> "adult Ce")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000041> <http://purl.obolibrary.org/obo/WBls_0000104>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000041> <http://purl.obolibrary.org/obo/WBls_0000816>)
@@ -246,45 +171,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000041> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000075> (worm life stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000075> "A developemental life stage of a worm")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000075> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000075> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000075> "WBls:0000075")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000075> "worm life stage")
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000101> (Nematode life stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:jl") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000101> "Any developmental stage in a nematode, including embryo, larva and adult stage.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000101> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000101> "2013-11-25T06:13:37Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000101> "all stages nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000101> "nematode developmental stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000101> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000101> "WBls:0000101")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000101> "Nematode life stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000101> <http://purl.obolibrary.org/obo/WBls_0000075>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000102> (nematode embryo)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000102> "The whole period of embryogenesis in a nematode, from the formation of an egg until hatching.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000102> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000102> "2013-11-25T06:14:14Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000102> "embryo nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000102> "nematode egg stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000102> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000102> "WBls:0000102")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000102> "nematode embryo")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000102> <http://purl.obolibrary.org/obo/WBls_0000101>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000104> (nematode adult)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000104> "The nematode life-stage that begins when the organism is fully-developed and has reached maturity.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000104> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000104> "2013-11-25T06:18:53Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000104> "L5")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000104> "adult nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000104> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000104> "WBls:0000104")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000104> "nematode adult")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000104> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000104> <http://purl.obolibrary.org/obo/WBls_0000101>)
@@ -292,36 +192,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000104> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000105> (nematode larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000105> "The stage that begins after hatching and ends when the nematode becomes adult.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000105> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000105> "2013-11-25T06:19:27Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/WBls_0000105> "larval stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000105> "larva nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000105> "nematode larva")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000105> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000105> "WBls:0000105")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000105> "nematode larval stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000105> <http://purl.obolibrary.org/obo/WBls_0000101>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000106> (L1 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000106> "The first stage larva of nematodes.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000106> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000106> "2013-11-25T06:20:28Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000106> "L1 larva nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000106> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000106> "WBls:0000106")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000106> "L1 larval stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000106> <http://purl.obolibrary.org/obo/WBls_0000105>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000107> (L2 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000107> "The second stage larva of nematodes.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000107> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000107> "2013-11-25T06:20:54Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000107> "L2 larva nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000107> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000107> "WBls:0000107")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000107> "L2 larval stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000107> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000107> <http://purl.obolibrary.org/obo/WBls_0000105>)
@@ -329,12 +209,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000107> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000108> (L3 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000108> "The third stage larva of nematodes.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000108> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000108> "2013-11-25T06:21:33Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000108> "L3 larva nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000108> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000108> "WBls:0000108")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000108> "L3 larval stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000108> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000108> <http://purl.obolibrary.org/obo/WBls_0000105>)
@@ -342,12 +216,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000108> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000109> (L4 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:dr") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000109> "The fourth stage larva of nematodes.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/WBls_0000109> "danielaraciti")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/WBls_0000109> "2013-11-25T06:22:48Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/WBls_0000109> "L4 larva nematode")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000109> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000109> "WBls:0000109")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000109> "L4 larval stage")
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000109> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000109> <http://purl.obolibrary.org/obo/WBls_0000105>)
@@ -355,89 +223,59 @@ SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000109> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000803> (C. elegans life stage occurring during embryogenesis)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000803> "A C. elegans life stage that occurs during embryogenesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000803> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000803> "WBls:0000803")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000803> "C. elegans life stage occurring during embryogenesis"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000803> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000825> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000003>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000803> <http://purl.obolibrary.org/obo/WBls_0000825>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000804> (C. elegans life stage occurring post embryogenesis)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000804> "A C. elegans life stage that occurs after embryogenesis")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000804> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000804> "WBls:0000804")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000804> "C. elegans life stage occurring post embryogenesis"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000804> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000825> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000022>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000804> <http://purl.obolibrary.org/obo/WBls_0000825>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000816> (C. elegans life stage occurring during adulthood)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000816> "A C. elegans life stage that occurs during the adult life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000816> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000816> "WBls:0000816")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000816> "C. elegans life stage occurring during adulthood"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000816> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000804> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000041>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000816> <http://purl.obolibrary.org/obo/WBls_0000804>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000817> (C. elegans life stage occurring during larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000817> "A C. elegans life stage that occurs during the larval life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000817> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000817> "WBls:0000817")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000817> "C. elegans life stage occurring during larval stage"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000817> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000804> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000023>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000817> <http://purl.obolibrary.org/obo/WBls_0000804>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000818> (C. elegans life stage occurring during L1 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000818> "A C. elegans life stage that occurs during the L1 larval life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000818> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000818> "WBls:0000818")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000818> "C. elegans life stage occurring during L1 larval stage"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000818> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000817> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000024>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000818> <http://purl.obolibrary.org/obo/WBls_0000817>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000819> (C. elegans life stage occurring during L2 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000819> "A C. elegans life stage that occurs during the L2 larval life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000819> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000819> "WBls:0000819")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000819> "C. elegans life stage occurring during L2 larval stage"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000819> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000817> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000027>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000819> <http://purl.obolibrary.org/obo/WBls_0000817>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000820> (C. elegans life stage occurring during L3 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000820> "A C. elegans life stage that occurs during the L3 larval life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000820> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000820> "WBls:0000820")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000820> "C. elegans life stage occurring during L3 larval stage"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000820> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000817> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000035>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000820> <http://purl.obolibrary.org/obo/WBls_0000817>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000821> (C. elegans life stage occurring during L4 larval stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000821> "A C. elegans life stage that occurs during the L4 larval life stage")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000821> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000821> "WBls:0000821")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000821> "C. elegans life stage occurring during L4 larval stage"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/WBls_0000821> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/WBls_0000817> ObjectUnionOf(<http://purl.obolibrary.org/obo/WBls_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/WBls_0000038>))))
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000821> <http://purl.obolibrary.org/obo/WBls_0000817>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000824> (C. elegans life stage occurring during larval molt)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000824> "C. elegans life stage that occurs during a larval molt")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000824> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000824> "WBls:0000824")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000824> "C. elegans life stage occurring during larval molt"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000824> <http://purl.obolibrary.org/obo/WBls_0000817>)
 
 # Class: <http://purl.obolibrary.org/obo/WBls_0000825> (C. elegans life stage)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WB:WBPerson2987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/WBls_0000825> "A life stage of the nematode Caenorhabditis elegans")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/WBls_0000825> "worm_development")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/WBls_0000825> "WBls:0000825")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/WBls_0000825> "C. elegans life stage"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/WBls_0000825> <http://purl.obolibrary.org/obo/WBls_0000001>)
 
